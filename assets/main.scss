@@ -20,7 +20,7 @@ $spacing-unit:     50px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #d33682;
+$brand-color:      #800000;
 
 $grey-color:       #3F3F3F;
 $grey-color-light: lighten($grey-color, 50%);
@@ -43,4 +43,4 @@ $on-laptop:        700px;
 // }
 
 // Import partials from the `minima` theme.
-@import "academic";
+@import "minima";
