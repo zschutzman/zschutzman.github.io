@@ -13,4 +13,5 @@ gems:
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: academic
+shortbio: Zach is a PhD student at the University of Pennsylvania, Department of Computer and Information Science.  His research interests include game theory and mechanism design, machine learning, and computing for the social sciences.
