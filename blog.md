@@ -4,7 +4,7 @@ title: Blog
 permalink: /blog/
 ---
 
-<br>
+
 
 
 <ul>
