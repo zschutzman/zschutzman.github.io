@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: default
 title: Blog
 permalink: /blog/
 ---
-
-
 
 
 <ul>
