@@ -1,9 +1,10 @@
 ---
-layout: default
+layout: page
 title: Blog
 permalink: /blog/
 ---
 
+---
 
 <ul>
   {% for post in site.posts %}
@@ -12,6 +13,15 @@ permalink: /blog/
 	
 <br>
 {{ post.content | strip_html | truncatewords: 20 }}
-    </li>
+<hr>
+
+
+
+
+ </li>
+
+
+
+
   {% endfor %}
 </ul>
