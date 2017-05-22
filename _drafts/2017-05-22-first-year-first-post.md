@@ -9,7 +9,7 @@ mathjax: true
 
 So I'm one academic year into grad school.  A lot has happened in the year since I graduated from Colby: I moved from Waterville to Philadelphia, I completed two semeseters of graduate level CS coursework with minimal undergrad training in the discipline, I've started working on some interesting research problems, and I've met some interesting people.  I've now tried three times to get a blog going, but I had very little time and energy this year to sit down, set up the site, and get some content out there.
 
-This blog will host a variety of post types.  There will be personal stuff (like this), some discussions of my research and papers by others which I find interesting, posts on math/cs education, and discussions of current events.  For `hot takes' and irreverent commentary on pop culture and complaints about the minutiae of my life, I'd like to direct you to my [Twitter account, where I go by the handle @zschutzy](https://twitter.com/zschutzy).
+This blog will host a variety of post types.  There will be personal stuff (like this), some discussions of my research and papers by others which I find interesting, posts on math/cs education, and discussions of current events.  For `hot takes' and irreverent commentary on pop culture and complaints about the minutiae of my life, I'd like to direct you to my Twitter account, where I go by the handle [@zschutzy](https://twitter.com/zschutzy).
 
 
 ----
