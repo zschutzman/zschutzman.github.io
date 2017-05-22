@@ -6,8 +6,10 @@ permalink: /teaching/
 
 
 
-* I'll publish my course notes and lecture notes here
+* My Course and Lecture Notes
 	- Notes for [Theory of Computation (UPenn CIS511, Spring 2017)](http://zachschutzman.com/assets/toc511.pdf)
+
+----
 
 * I was a TA/grader/tutor at Colby College for:
 	- Calculus (MA121,122)
