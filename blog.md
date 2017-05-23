@@ -18,7 +18,7 @@ title: Blog
 <br>
 {% endif %}
 
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> {{ post.date | date_to_string }}
 
 	
 
