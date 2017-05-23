@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Blog
+title: The Blog
 permalink: /blog/
 ---
+
+#### Welcome to my blog!
 
 ---
 
