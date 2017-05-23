@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "First Year, First Post"
-date:   2017-05-21
+date:   2017-05-22
 categories: life,personal,gradschool
-mathjax: false
+mathjax: true
 author: Zach
 ---
 So I'm one academic year into grad school.  A lot has happened in the year since I graduated from Colby: I moved from Waterville to Philadelphia, I completed two semeseters of graduate level CS coursework with minimal undergrad training in the discipline, I've started working on some interesting research problems, and I've met some interesting people.  I've now tried three times to get a blog going, but I had very little time and energy this year to sit down, set up the site, and get some content out there.
@@ -22,7 +22,7 @@ A lot of people (both in and outside of my academic circle) ask me *what exactly
 
 #### 2. ***Statistical Learning Theory***
 
- The topic of *machine learning* is a hot one these days.  In general, machine learning is really just applied statistics.  There are a lot of different algorithms for machine learning and people who use these in applied settings spend a lot of time thinking about which kinds of algorithms are good at their task at hand.  On the theoretical side, we are often interested in *mathematically proving* limitations and capabilities of machine learning.  This area deals with questions like *how much data do I need for my model to be 'good'?* 
+ The topic of *machine learning* is a hot one these days.  In general, machine learning is really just applied statistics.  There are a lot of different algorithms for machine learning and people who use these in applied settings spend a lot of time thinking about which kinds of algorithms are good at their task at hand.  On the theoretical side, we are often interested in *mathematically proving* limitations and capabilities of machine learning.  This area deals with questions like *how much data do I need for my model to be 'good'?* As it turns out, there are some kinds of problems that are hard for computers to learn (given current assumptions about the $P \ vs \ NP$ problem).
 
 #### 3. ***Computing for the Social Sciences***
 
