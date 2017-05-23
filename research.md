@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: twocol
 title: Research
 permalink: /research/
 ---

@@ -1,10 +1,12 @@
 ---
-layout: page
-title: The Blog
+layout: blog
 permalink: /blog/
+title: Blog
 ---
 
-#### Welcome to my blog!
+# The Blog
+{: style="color:#800000;" :}
+
 
 ---
 
@@ -13,17 +15,11 @@ permalink: /blog/
 
 {% if post.image == true %}
 ![]({{ site.url }}/assets/images/{{post.imagefile}}){:style="float: left;"}
-
-&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
 {% endif %}
 
-<a href="{{ post.url }}" style="font-size:1.5em;">{{ post.title }}</a>	
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3> ({{ post.date | date_to_string }} | Tags: {{ post | tags }})
 
-
-      
-
-
-      
 	
 
 {{ post.content | strip_html | truncatewords: 40 }}

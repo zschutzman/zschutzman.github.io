@@ -1,13 +1,16 @@
 ---
-layout: page
+layout: twocol
 title: Teaching and Notes
 permalink: /teaching/
 ---
 
+# Teaching and Notes
+{: style="color:#800000;" :}
+
+<br>
 
 
-* My Course and Lecture Notes
-	- Notes for [Theory of Computation (UPenn CIS511, Spring 2017)](http://zachschutzman.com/assets/toc511.pdf)
+Notes for [Theory of Computation (UPenn CIS511, Spring 2017)](http://zachschutzman.com/assets/toc511.pdf)
 
 ----
 

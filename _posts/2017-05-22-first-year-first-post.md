@@ -2,7 +2,7 @@
 layout: post
 title:  "First Year, First Post"
 date:   2017-05-22
-categories: life,personal,gradschool
+tags: personal gradschool research
 mathjax: true
 author: Zach
 ---

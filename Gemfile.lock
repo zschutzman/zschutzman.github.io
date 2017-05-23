@@ -122,6 +122,8 @@ GEM
     jekyll-sitemap (1.0.0)
       jekyll (~> 3.3)
     jekyll-swiss (0.4.0)
+    jekyll-tagging (1.1.0)
+      nuggets
     jekyll-theme-architect (0.0.3)
       jekyll (~> 3.3)
     jekyll-theme-cayman (0.0.3)
@@ -171,6 +173,7 @@ GEM
     net-dns (0.8.0)
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
+    nuggets (1.5.0)
     octokit (4.6.2)
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.14.0)
@@ -201,6 +204,7 @@ DEPENDENCIES
   academic
   github-pages
   jekyll-data
+  jekyll-tagging
   minima
 
 BUNDLED WITH
