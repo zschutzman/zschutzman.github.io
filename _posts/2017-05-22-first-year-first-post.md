@@ -26,7 +26,7 @@ A lot of people (both in and outside of my academic circle) ask me *what exactly
 
 #### 3. ***Computing for the Social Sciences***
 
- In the last 25 years or so, personal computers have become powerful and accessible enough to chug through and solve a variety of really big problems which are provably computationally difficult and large volumes of data have become available at the click of a button.  This opens up new doors for research on problems which affect the day-to-day lives of people and the governance of society.  The problem that I am currently working on is related to optimal drawing of congressional districts, which given access to voting records and Census data is now something that can be rigorously studied.  Some of my peers are working on using computational techniques to improve health insurance markets, school choice and drawing school districts, and using crowdsourcing techniques for gathering data.
+ In the last 25 years or so, personal computers have become powerful and accessible enough to chug through and solve a variety of really big problems which are provably computationally difficult and large volumes of data have become available at the click of a button.  This opens up new doors for research on problems which affect the day-to-day lives of people and the governance of society.  The problem that I am currently working on is related to optimal drawing of congressional districts, which given access to voting records and Census data, is now something that can be rigorously studied.  Some of my peers are working on using computational techniques to improve health insurance markets, school choice and drawing school districts, and using crowdsourcing techniques for gathering data.
 
 ----
 
