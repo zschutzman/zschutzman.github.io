@@ -1,6 +1,6 @@
 # Site settings
 title: Zachary I. Schutzman
-email: ianzach (at) seas (dot) upenn (dot) edu
+email: ianzach@seas.upenn.edu
 description: > # this means to ignore newlines until "baseurl:"
  I do math and computers
 # baseurl: "/" # the subpath of your site, e.g. /blog/
