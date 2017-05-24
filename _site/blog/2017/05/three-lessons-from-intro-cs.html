@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <title>Life Lessons from Theater&#58; Part 1
+  <title>Three Lessons from Being an Intro CS TA
   Zachary I. Schutzman
 </title>
   
@@ -21,7 +21,7 @@
   
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/blog/2017/04/life-lessons-from-theater-1.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2017/05/three-lessons-from-intro-cs.html">
   <link rel="alternate" type="application/rss+xml" title="
   Zachary I. Schutzman
 " href="/feed.xml">
@@ -263,12 +263,12 @@
   
     
     <div class="wrapper">
-      <h1 class="post-title" itemprop="name headline">Life Lessons from Theater&amp;#58; Part 1</h1>
+      <h1 class="post-title" itemprop="name headline">Three Lessons from Being an Intro CS TA</h1>
       <p class="post-meta">
-        <time datetime="2017-04-02T00:00:00-04:00" itemprop="datePublished">
+        <time datetime="2017-05-22T00:00:00-04:00" itemprop="datePublished">
           
 
-  Apr 2, 2017
+  May 22, 2017
 
 
         </time>
@@ -277,6 +277,8 @@
 
 
 
+         •
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Zach</span></span>
         
 
 
@@ -291,20 +293,23 @@
 
 
   <div class="post-content" itemprop="articleBody">
-    <h2 id="this-is-the-first-part-of-a-series-of-short-posts-about-life-lessons-ive-learned-from-the-wet-and-wild-world-of-student-theater">This is the first part of a series of short posts about life lessons I’ve learned from the wet and wild world of student theater.</h2>
-<p>As a grad student in an engineering school, I spend a lot of time in a cultural bubble which has a lot of scorn for the arts and humanities.  I want to show myself and others that there is value in the arts (and particularly arts education), even for engineers.</p>
-
-<p>I’ll start these posts with the motivating anecdote, which, luckily for you readers, will often involve yours truly in some sort of predicament or embarassing situation.</p>
+    <p>This fall, I will be a teaching assistant for <a href="cis.upenn.edu/~mkearns/teaching/networkedlife">NETS 112</a>, a gateway course which is basically a mathematical treatment of some of the foundational concepts of social networks.  The course is open to students of all levels, but it is designed primarily for first-years.  I’m planning to spend some time this summer preparing a little bit for this role, as I’ve never formally taken a course covering this material.
+‘
+Going over some notes from my Mathematical Reasoning course (I CAN’T BELIEVE I TOOK THAT ALMOST FOUR YEARS AGO!) has reminded me of some of the things I learned from TA’ing Colby’s gateway computer science course, Computational Thinking (CS151/152).  I took the course myself and served as a lab TA for three more iterations of the course, so I figured I’d share some of the things I learned from that role.</p>
 
 <hr />
 
-<p>Imagine you are a sixteen year-old boy, a sophomore at a Catholic high school.  You are in the inaugural offering of Alicia Greenwood’s Play Production course, performing in a shockingly good, if not a little frenetic, rendition of Woody Allen’s <em>God</em>.  For those who don’t know, <em>God</em> is a fast-paced, self-referential comedy with, like, thirty characters, although no more than five are ever on stage at a time.  The seven of us in the cast pulled off this masterful illusion by making rapid costume changes as we crossed behind the stage, exiting through one door as one character, and entering through the other seconds later as another.  The other missing detail here is that I went to an <em>all boys</em> high school, so three of us in the cast also ended up playing the few female characters in the show.</p>
+<h3 style="color:#800000;" id="1-intro-cs-is-just-problem-solving-in-front-of-a-screen">1. Intro CS is just problem-solving in front of a screen.</h3>
 
-<p>So Brendan and I are supposed to come on as Bob and Wendy Fate (respectively), two tourists who appear out of nowhere to give guidance to Diabetes, the play’s hero/writer.  The hiccup occurs when Brendan, who is supposed to enter with an interjecting introduction, gets caught up in his costume change and isn’t there to enter with me.  I can’t just stand there and do nothing but watch the audience in this black box theater die of secondhand embarassment; I need to do <em>something</em>, and <em>quick</em>.</p>
+<p>At the introductory level, there are two important skills to learn: programming and problem-solving.  In a way, these skills are parallel but independent.  Problem-solving is about how to go from Point A to Point B and programming is about constructing a sequence of unambiguous instructions to complete a task.  Computational thinking is really just using those unambiguous instructions to solve problems.  Frequently the best way to help a student with their work was to step away from the computer and have them draw some pictures or use English sentences to describe how they would solve the problem, then translate that work into a programming language.</p>
 
-<p>I clear my throat (buying precious seconds), clop over to the door wearing my cheap granny wig, terrible floral blouse, and chunky wedge sandals, and let loose with my best Jersey-nana-on-her-Florida-vacation ad-lib.  I’m stomping around, in character, yelling for Bob to get his sorry butt in there.  It worked (mostly).  I got a few laughs from the audience, I don’t think anyone really noticed that we were moments away from theatrical disaster, and I stayed in character.</p>
+<h3 style="color:#800000;" id="2-lots-of-students-start-under-the-impression-that-computers-are-magic--they-most-certainly-are-not">2. Lots of students start under the impression that computers are magic.  They most certainly are not.</h3>
 
-<p>The lesson: <strong>Sometimes, things go wrong.  Just go with it.</strong></p>
+<p>Students who have never programmed before often end up frustrated that their code doesn’t do what they want it to. Computers are <em>exceptionally bad</em> at a lot of things, including interpreting your intentions; they just follow the instructions you give them.  You can’t tell the machine to “move the cursor to coordinate (x,y)” without first making sure it knows <em>how to move the cursor</em> <strong>and</strong> that it has <em>knowledge of the coordinate system</em>.</p>
+
+<h3 style="color:#800000;" id="3-everybodys-intuition-works-differently">3. Everybody’s intuition works differently.</h3>
+
+<p>I was working with a student who was having trouble with a task involving storing various pieces of information in some lists.  We stepped away from the computer and talked through how we might solve the problem by hand, and she very quickly came up with an excellent solution to the problem, but still struggled with implementing it in code.  She asked me if she could rename the variables from <code class="highlighter-rouge">list1</code>, <code class="highlighter-rouge">list2</code>, etc. to <code class="highlighter-rouge">bucket1</code>, <code class="highlighter-rouge">bucket2</code>, etc.  After doing this, programming the solution to the problem was more intuitive and she easily completed the task.</p>
 
 
   </div>
@@ -313,10 +318,10 @@
 
 
   
-   <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/2017/04/life-lessons-from-theater-1.html&t=Life Lessons from Theater&#58; Part 1" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="http://localhost:4000/assets/images/Facebook.png"></a>
-    <a href="https://twitter.com/intent/tweet?source=http://localhost:4000/blog/2017/04/life-lessons-from-theater-1.html&text=Life Lessons from Theater&#58; Part 1:%20http://localhost:4000/blog/2017/04/life-lessons-from-theater-1.html&via=zschutzy" target="_blank" title="Tweet"><img alt="Tweet" src="http://localhost:4000/assets/images/Twitter.png"></a>
-    <a href="https://plus.google.com/share?url=http://localhost:4000/blog/2017/04/life-lessons-from-theater-1.html" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="http://localhost:4000/assets/images/Google+.png"></a>
-    <a href="http://www.reddit.com/submit?url=http://localhost:4000/blog/2017/04/life-lessons-from-theater-1.html&title=Life Lessons from Theater&#58; Part 1" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="http://localhost:4000/assets/images/Reddit.png"></a>
+   <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/2017/05/three-lessons-from-intro-cs.html&t=Three Lessons from Being an Intro CS TA" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="http://localhost:4000/assets/images/Facebook.png"></a>
+    <a href="https://twitter.com/intent/tweet?source=http://localhost:4000/blog/2017/05/three-lessons-from-intro-cs.html&text=Three Lessons from Being an Intro CS TA:%20http://localhost:4000/blog/2017/05/three-lessons-from-intro-cs.html&via=zschutzy" target="_blank" title="Tweet"><img alt="Tweet" src="http://localhost:4000/assets/images/Twitter.png"></a>
+    <a href="https://plus.google.com/share?url=http://localhost:4000/blog/2017/05/three-lessons-from-intro-cs.html" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="http://localhost:4000/assets/images/Google+.png"></a>
+    <a href="http://www.reddit.com/submit?url=http://localhost:4000/blog/2017/05/three-lessons-from-intro-cs.html&title=Three Lessons from Being an Intro CS TA" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="http://localhost:4000/assets/images/Reddit.png"></a>
 
  
   </p>
