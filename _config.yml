@@ -23,3 +23,6 @@ tag_feed_layout: tag_feed
 tag_feed_dir: tag
 
 tag_permalink_style: pretty
+
+
+google_analytics: UA-99847995-1
