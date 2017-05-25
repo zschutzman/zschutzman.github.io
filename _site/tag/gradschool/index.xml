@@ -3,7 +3,7 @@
  <title>Your Title - gradschool</title>
  <link href="http://example.com/tag/gradschool/index.xml" rel="self"/>
  <link href="http://example.com/tag/gradschool.html"/>
- <updated>2017-05-24T13:56:05-04:00</updated>
+ <updated>2017-05-25T13:31:27-04:00</updated>
  <id>http://example.com/tag/gradschool.html</id>
  <author>
    <name>Author Here</name>
@@ -28,7 +28,7 @@
 
 &lt;h4 style=&quot;color:#800000;&quot; id=&quot;2-statistical-learning-theory&quot;&gt;2. &lt;strong&gt;&lt;em&gt;Statistical Learning Theory&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;p&gt;The topic of &lt;em&gt;machine learning&lt;/em&gt; is a hot one these days.  In general, machine learning is really just applied statistics.  There are a lot of different algorithms for machine learning and people who use these in applied settings spend a lot of time thinking about which kinds of algorithms are good at their task at hand.  On the theoretical side, we are often interested in &lt;em&gt;mathematically proving&lt;/em&gt; limitations and capabilities of machine learning.  This area deals with questions like &lt;em&gt;how much data do I need for my model to be ‘good’?&lt;/em&gt; As it turns out, there are some kinds of problems that are hard for computers to learn (given current assumptions about the $P \ vs \ NP$ problem).&lt;/p&gt;
+&lt;p&gt;The topic of &lt;em&gt;machine learning&lt;/em&gt; is a hot one these days.  In general, machine learning is really just applied statistics.  There are a lot of different algorithms for machine learning and people who use these in applied settings spend a lot of time thinking about which kinds of algorithms are good at their task at hand.  On the theoretical side, we are often interested in &lt;em&gt;mathematically proving&lt;/em&gt; limitations and capabilities of machine learning.  This area deals with questions like &lt;em&gt;how much data do I need for my model to be ‘good’?&lt;/em&gt; As it turns out, there are some kinds of problems that are hard for computers to learn (given current assumptions about the computational complexity of problems like factoring integers or graph coloring).&lt;/p&gt;
 
 &lt;h4 style=&quot;color:#800000;&quot; id=&quot;3-computing-for-the-social-sciences&quot;&gt;3. &lt;strong&gt;&lt;em&gt;Computing for the Social Sciences&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;
 
