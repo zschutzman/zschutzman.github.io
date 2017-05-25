@@ -10,7 +10,7 @@ permalink: /teaching/
 <br>
 
 
-Notes for [Theory of Computation (UPenn CIS511, Spring 2017)](http://zachschutzman.com/assets/toc511.pdf)
+Notes for [Theory of Computation (UPenn CIS511, Spring 2017)](http://zachschutzman.com/assets/notes/toc511.pdf)
 
 ----
 
