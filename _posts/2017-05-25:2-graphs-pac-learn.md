@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Graphs are PAC-Learnable from Subgraphs"
-date:   2017-05-23
+date:   2017-05-25
 tags: research math
 mathjax: true
 author: Zach
