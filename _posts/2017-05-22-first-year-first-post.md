@@ -25,7 +25,7 @@ A lot of people (both in and outside of my academic circle) ask me *what exactly
 #### 2. ***Statistical Learning Theory*** 
 {: style="color:#800000;" :}
 
- The topic of *machine learning* is a hot one these days.  In general, machine learning is really just applied statistics.  There are a lot of different algorithms for machine learning and people who use these in applied settings spend a lot of time thinking about which kinds of algorithms are good at their task at hand.  On the theoretical side, we are often interested in *mathematically proving* limitations and capabilities of machine learning.  This area deals with questions like *how much data do I need for my model to be 'good'?* As it turns out, there are some kinds of problems that are hard for computers to learn (given current assumptions about the computational complexity of factoring integers).
+ The topic of *machine learning* is a hot one these days.  In general, machine learning is really just applied statistics.  There are a lot of different algorithms for machine learning and people who use these in applied settings spend a lot of time thinking about which kinds of algorithms are good at their task at hand.  On the theoretical side, we are often interested in *mathematically proving* limitations and capabilities of machine learning.  This area deals with questions like *how much data do I need for my model to be 'good'?* As it turns out, there are some kinds of problems that are hard for computers to learn (given current assumptions about the computational complexity of problems like factoring integers or graph coloring).
 
 #### 3. ***Computing for the Social Sciences*** 
 {: style="color:#800000;" :}
