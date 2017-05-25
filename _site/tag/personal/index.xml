@@ -3,7 +3,7 @@
  <title>Your Title - personal</title>
  <link href="http://example.com/tag/personal/index.xml" rel="self"/>
  <link href="http://example.com/tag/personal.html"/>
- <updated>2017-05-25T13:31:27-04:00</updated>
+ <updated>2017-05-25T15:17:00-04:00</updated>
  <id>http://example.com/tag/personal.html</id>
  <author>
    <name>Author Here</name>
@@ -12,7 +12,7 @@
  <entry>
    <title>First Year, First Post</title>
    <link href="http://example.com/blog/2017/05/first-year-first-post.html"/>
-   <updated>2017-05-22T00:00:00-04:00</updated>
+   <updated>2017-05-24T00:00:00-04:00</updated>
    <id>http://example.com/blog/2017/05/first-year-first-post</id>
    <content type="html">&lt;p&gt;So I’m one academic year into grad school.  A lot has happened in the year since I graduated from Colby: I moved from Waterville to Philadelphia, I completed two semeseters of graduate level CS coursework with minimal undergrad training in the discipline, I’ve started working on some interesting research problems, and I’ve met some interesting people.  I’ve now tried three times to get a blog going, but I had very little time and energy this year to sit down, set up the site, and get some content out there.&lt;/p&gt;
 

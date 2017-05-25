@@ -3,7 +3,7 @@
  <title>Your Title - math</title>
  <link href="http://example.com/tag/math/index.xml" rel="self"/>
  <link href="http://example.com/tag/math.html"/>
- <updated>2017-05-25T13:31:27-04:00</updated>
+ <updated>2017-05-25T15:17:00-04:00</updated>
  <id>http://example.com/tag/math.html</id>
  <author>
    <name>Author Here</name>
@@ -12,7 +12,7 @@
  <entry>
    <title>Graphs are PAC-Learnable from Subgraphs</title>
    <link href="http://example.com/blog/2017/05/graphs-pac-learn.html"/>
-   <updated>2017-05-23T00:00:00-04:00</updated>
+   <updated>2017-05-25T00:00:00-04:00</updated>
    <id>http://example.com/blog/2017/05/graphs-pac-learn</id>
    <content type="html">&lt;p&gt;This semester I took a course on Computational Learning Theory, which deals with the statistical and computational underpinnings of machine learning.  As part of our final project, Hadi Elzayn and I proved that graphs are Probabily-Approximately Correct (PAC)-learnable from labeled supergraph/subgraph examples in polynomial sample complexity.  Here’s a presentation of that proof as well as a fun little way of trying out $\TeX$ on the blog.&lt;/p&gt;
 
