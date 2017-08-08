@@ -44,6 +44,7 @@ Voting rights legislation does not exist in a vacuum.  During the Civil Rights E
 {: style="color:#800000;" :} 
 
 This ended up being more of a Q&A/brainstorming session, so the amount of "actual content" is relatively low.  The takeaways are that the modern mathematical aspect of gerrymandering is relatively undeveloped, and techniques from group theory, geometry, topology, and graph theory may be useful. [Link to Zach's Notes](http://zachschutzman.com/assets/notes/mggg.pdf#page=10)
+
 ----
 
 
