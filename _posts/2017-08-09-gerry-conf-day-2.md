@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Gerrymandr - Day 2"
-date:   2017-08-08
+date:   2017-08-09
 tags: research math personal
 mathjax: true
 author: Zach
