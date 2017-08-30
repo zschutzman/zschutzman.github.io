@@ -24,5 +24,7 @@ My notes from [the Metric Geometry and Gerrymandering Group's August 2017 Confer
 * I was a TA/grader/tutor at Colby College for:
 	- Calculus (MA121,122)
 	- Micro- and Macro Economic Principles/Theory (EC133,134,223,224)
+	- Game Theory (EC379)
 	- Statistics (SC212,231)
 	- Computational Thinking (CS151)
+	
