@@ -4,8 +4,6 @@ title: Research
 permalink: /research/
 ---
 
-
-
 # Research
 {: style="color:#800000;" :}
 
