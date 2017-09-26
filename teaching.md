@@ -10,13 +10,16 @@ permalink: /teaching/
 <br>
 
 
-Notes for [Theory of Computation (UPenn CIS511, Spring 2017)](http://zachschutzman.com/assets/notes/toc511.pdf)
+
 
 ----
 
-This fall, I will be a TA for [Michael Kearns'](http://cis.upenn.edu/~mkearns) course [Networked Life (NETS112)](http://www.cis.upenn.edu/~mkearns/teaching/NetworkedLife/)!
+This fall, I am a TA for [Michael Kearns'](http://cis.upenn.edu/~mkearns) course [Networked Life (NETS112)](http://www.cis.upenn.edu/~mkearns/teaching/NetworkedLife/)!
 
 ----
+Notes for [Theory of Computation (UPenn CIS 511, Spring 2017)](http://zachschutzman.com/assets/notes/toc511.pdf)
+
+[comment]: # Notes for [Topology (UPenn Math 500, Fall 2017)](http://zachschutzman.com/assets/notes/topo500.pdf)
 
 My notes from [the Metric Geometry and Gerrymandering Group's August 2017 Conference](http://zachschutzman.com/assets/notes/mggg.pdf).  For more information about the MGGG, see their site [here](sites.tufts.edu/gerrymandr)
 
