@@ -1,6 +1,7 @@
 ---
 layout: twocol
 mathjax: true
+invisible: true
 ---
 
 
