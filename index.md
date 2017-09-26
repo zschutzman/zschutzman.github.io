@@ -6,7 +6,7 @@ mathjax: true
 
 # About Me 
 {: style="color:#800000;" :}
-I am a first-year PhD student in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania.  My research interests are game theory, mechanism design, machine learning, computing in the social sciences, and how those areas interact and intersect. I am also interested in math/cs education, particularly at the high school level.
+I am a second-year PhD student in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth).  My research interests are game theory, mechanism design, machine learning, computing in the social sciences, and how those areas interact and intersect. 
 
 
 
