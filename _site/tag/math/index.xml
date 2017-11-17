@@ -3,11 +3,53 @@
  <title>Your Title - math</title>
  <link href="http://example.com/tag/math/index.xml" rel="self"/>
  <link href="http://example.com/tag/math.html"/>
- <updated>2017-09-26T13:54:45-04:00</updated>
+ <updated>2017-11-16T14:55:55-05:00</updated>
  <id>http://example.com/tag/math.html</id>
  <author>
    <name>Author Here</name>
  </author>
+ 
+ <entry>
+   <title>Cute Theorems: The Fibonacci Subspace</title>
+   <link href="http://example.com/blog/2017/11/cute-theorem-fib-vecs.html"/>
+   <updated>2017-11-04T00:00:00-04:00</updated>
+   <id>http://example.com/blog/2017/11/cute-theorem-fib-vecs</id>
+   <content type="html">&lt;p&gt;This is (the first post in!) a series about cute theorems in mathematics. I’m interested in presenting ideas and results that connect seemingly disparate topics in mathematics by building them up from the basics.  What constitutes a ‘cute’ theorem?  Well, that’s mostly subjective, but I’m thinking about a few criteria. First, it should bring together two or more topics not typically seen together.  Second, the result shouldn’t be trivial, but should still be relatively simple to prove.  Third, the result should be less important than the machinery and intuition needed to actually arrive at the proof of the theorem.&lt;/p&gt;
+
+&lt;p&gt;This first post is a theorem which relates the Fibonacci sequence to a vector space.  This is something I first came across in my linear algebra course.  The professor had done some research on the properties of matrices with entries from the Fibonacci sequence, and we spent a few classes exploring some of the curiosities in that work.  This theorem is one which is not hard to prove using the tools from a first course in linear algebra.&lt;/p&gt;
+
+&lt;div class=&quot;theorem&quot;&gt;
+The Fibonacci-style sequences span a two-dimensional subspace of the infinite dimensional vector space of real sequences.
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;fibonacci-style-sequences&quot;&gt;Fibonacci-style sequences&lt;/h2&gt;
+
+&lt;p&gt;The Fibonacci sequence $F=(0,1,1,2,3,5,8,13,21,34,55,89,\dots)$ is extremely well-known and gets a lot of attention in pop-math spheres.  One way to define the sequence is by letting $F_1$, the first term, be $0$, $F_2$, the second term, be $1$, and defining a recurrence $F_{n+2} = F_{n+1} + F_{n}$.  We can do this with other starting values.  Maybe we want $L_1=2$ and $L_2=1$.  Then applying the rule $L_{n+2}=L_{n+1}+L_n$, we get the sequence $L=(2,1,3,4,7,11,18,29,47,\dots)$.  This sequence also has a name, the &lt;em&gt;Lucas numbers&lt;/em&gt;.  Let’s notice that the &lt;em&gt;entire sequence&lt;/em&gt; depends only on the choice of the first two values we pick.&lt;/p&gt;
+
+&lt;h2 id=&quot;sequences-form-a-vector-space&quot;&gt;Sequences form a vector space&lt;/h2&gt;
+&lt;p&gt;Let’s think about the set of all sequences over the real numbers.  That is, all of the things that look like $(r_1,r_2,r_3,\dots)$ where each $r_i$ is a real number.  Clearly our Fibonacci-style sequences, which are sequences of natural numbers, live in this set.  Is there any kind of interesting structure we can put on this set? Yes!  We can define a &lt;em&gt;vector space&lt;/em&gt; over the set of real sequences!&lt;/p&gt;
+
+&lt;p&gt;Remember from linear algebra that a vector space is a collection of objects (called &lt;em&gt;vectors&lt;/em&gt;) and a scalar field where you can sensibly add two vectors together to get another vector, you can sensibly multiply a vector by a scalar to get another vector, and there is a special zero vector which behaves the way a zero should.&lt;/p&gt;
+
+&lt;p&gt;We can see that we can easily put such a structure on the set of real sequences in the obvious way.  If $R=(r_1,r_2,r_3,\dots)$ and $S=(s_1,s_2,s_3,\dots)$ are two sequences, we can add them together by saying that $R+S=(r_1+s_2,r_2_s_2,r_3+s_3,\dots)$, we can multiply by a scalar $c$ by saying that $c R=(c r_1,c r_2,c r_3,\dots)$, and the sequence $\vec{0} = (0,0,0,\dots)$ is certainly a real sequence which satisfies $\vec{0}+R = R+\vec{0} = R$ for any sequence $R$.  We can see that this space is infinite dimensional, as finite collection of vectors of size $k$ can only span a subspace of dimension at most $k$, and I can find a $k+1$-dimension subspace not spanned by your collection of vectors.&lt;/p&gt;
+
+&lt;p&gt;So what?  Well, let’s look at the Fibonacci-style sequences.  These clearly form a &lt;em&gt;subset&lt;/em&gt; of all real sequences.  Do they form a &lt;em&gt;subspace&lt;/em&gt;?  That is, if we restrict our view to only the Fibonacci-style sequences, do these form a vector space in their own right?  Yes!&lt;/p&gt;
+
+&lt;p&gt;First, we can see that the sequence $\vec{0}=(0,0,0,\dots)$ is a Fibonacci-style sequence, as it is the one defined by starting values $\vec{0}_1=0$ and $\vec{0}_2=0$.  If we mutliply a Fibonacci-style sequence by a constant $c$, we still have a Fibonacci-style sequence.  The sequence starting with values $a_1$ and $a_2$ looks like $A= (a_1,a_2,a_1+a_2,a_1+2a_2,2a_1+3a_2,\dots)$.  Then multiplying this by $c$ gives us $c A = (c a_1,c a_2,c(a_1+a_2),c (a_1+2a_2),c(2a_1+3a_2),\dots)$, but this is just the Fibonacci-style sequence where we start with values $c a_1$ and $c a_2$.  Finally, what if we add two Fibonacci-style sequences?  Let’s take the sequences $A=(a_1,a_2,a_1+a_2,a_1+2a_2,2a_1+3a_2,\dots)$ and $B=(b_1,b_2,b_1+b_2,b_1+2b_2,2b_1+3b_2,\dots)$.  Then $A+B=(a_1+b_1,a_2+b_2,a_1+b_1+a_2+b_2,a_1+b_1+2(a_2+b_2),2(a_1+b_1)+3(a_2+b_2),\dots)$.  Well, this is just the Fibonacci-style sequence with starting values $a_1+b_1$ and $a_2+b_2$, so this indeed forms a vector space which is a subspace of the space of all real sequences!&lt;/p&gt;
+
+&lt;h2 id=&quot;the-dimension-of-this-subspace&quot;&gt;The dimension of this subspace&lt;/h2&gt;
+
+&lt;p&gt;Now, a natural question to ask is about the dimension of this subspace.  We know it must be at least two, because we have two sequences, the Fibonacci numbers and the Lucas numbers, which are not scalar multiples of each other, so the space cannot be one-dimensional.  Could it be infinite-dimensional like the space of all real sequences?  Actually, no, this is a two-dimensional vector space!  It seems a little crazy at first; there are infinitely many Fibonacci-style sequences (we get a different one for each pair of starting values), and the ambient space of all real sequences is infinite dimensional, so it might feel a little weird that this seemingly arbitrary choice of a subspace should have finite dimension, let alone one so small, but if you think about it a bit, it makes sense.  The idea of dimension can be thought of as the (minimum) number of parameters needed to uniquely identify some element.  Since any Fibonacci-style sequence is determined entirely by its two initial values, we can loosely thing about a Fibonacci-style sequence as living in some two-dimensional space. We can formalize this by proving that the subspace of Fibonacci-style sequences is two-dimensional as a vector space.&lt;/p&gt;
+
+&lt;p&gt;Let’s take the Fibonacci sequence and another Fibonacci-style sequence $B=(1,0,1,1,2,3,5,8,\dots)$, which is the sequence with starting values $1$ and $0$.  One is not a scalar multiple of the other, so these are linearly independent elements in the space of Fibonacci-style sequences.  We can show that any Fibonacci-style sequence can be written as a linear combination of these two sequences, that is, they form a basis of the subspace of such sequences.  Take an arbitrary (non-zero) Fibonacci-style sequence $A=(a_1,a_2,a_1+a_2,a_1+2a_2,2a_1+3a_2,\dots)$.  If we look closely, we can see that the &lt;em&gt;coefficients&lt;/em&gt; in front of $a_2$ look like they follow the Fibonacci sequence and those in front of  $a_1$ follow our new sequence $B$.  We can write any term of this sequence as $A_n = a_1B_n + a_2F_n$, and thus the whole sequence $A = a_1B + a_2 F$.  Thus any Fibonacci-style sequence can be written as a linear combination of the two basis vectors $B$ and $F$.&lt;/p&gt;
+
+&lt;p&gt;Why does this work?  Well, since any Fibonacci-style sequence is determined entirely by its first two values, all we have to do is pick two independent sequences for our basis and look at how to write the vector $(a_1,a_2)$ as a linear combination of the first two values of our basis sequences.  Since now we’re just working over $\mathbb{R}^2$, we can solve this as a system of equations in the familiar way.&lt;/p&gt;
+
+&lt;p&gt;I’ve only ever seen this result (and generalizations of it) as mathematical curiosities.  If you’re looking for a copy of $\mathbb{R}^2$ in the vector space of real sequences, there are much better choices.  For example, the sequences $(1,0,0,0,\dots)$ and $(0,1,0,0,0,\dots)$ form an orthonormal basis for such a subpsace, and having the tails of all your sequences be zero makes them &lt;em&gt;so much easier&lt;/em&gt; to work with.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Gerrymandr - Day 3</title>
@@ -40,19 +82,6 @@
 
 &lt;p&gt;This talk was very mathematical and it went very quickly, so I’m not sure I’m in an excellent position to give a good summary, but here we go.  Optimal transport is a topic in mathematics/statistics/physics/computer science which addresses problems of the flavor “If I have X cannonballs scattered on the ground and they need to be brought to Y different cannons, what is the most efficient way of moving them?”  There are discrete and continuous versions of this problem, but for redistricting, we are interested in a model where we allocate parcels of land (a continuous thing) into a fixed number of districts (a finite and discrete number of things).  It turns out this problem looks a lot like linear programming, which means that there is a nice correspondence between this approach and other optimization techniques.  At this point, it is unclear how or if optimal transport will be useful in the redistricting problem, but according to Nestor and Justin (experts), it is certainly an area worth exploring.  &lt;a href=&quot;http://zachschutzman.com/assets/notes/mggg.pdf#page=26&quot;&gt;Link to Zach’s Notes&lt;/a&gt;&lt;/p&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>Gerrymandr - Day 3</title>
-   <link href="http://example.com/blog/2017/08/gerry-conf-day-3.html"/>
-   <updated>2017-08-10T00:00:00-04:00</updated>
-   <id>http://example.com/blog/2017/08/gerry-conf-day-3</id>
-   <content type="html">&lt;p&gt;This week, I am at the &lt;a href=&quot;sites.tufts.edu/gerrymandr&quot;&gt;Metric Geometry and Gerrymandering Group&lt;/a&gt;’s conference/workshop in Somerville, and, given my poor level of information retention from EC earlier this summer, I wanted to take a more deliberate approach to absorbing and processing the information that’s being given to me this week.  I’m taking notes during the talks and I’ve decided to write these blog posts to reflect on each day of the conference, for both my benefit and yours, dear reader.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Day Three was (unsurprisingly) excellent.  I made a stronger effort to interact more with other people approaching gerrymandering from a computational and mathematical approach.  One thing that has been difficult with my research thusfar is that I haven’t been able to pin down a nice juicy research problem.  Part of that is just my own lack of expertise and not feeling comfortable attacking a problem which has aspects (law, sociology, politics) that I am unequivocally not well-versed in.  The other part has been that I haven’t been able to interact with other math/CS professionals who have spent time thinking about this problem in a research capacity.  Getting to do that has helped me develop a whole menu of ideas, as well as some excellent contacts and collaborators across the country.&lt;/p&gt;
 </content>
  </entry>
  

@@ -3,7 +3,7 @@
  <title>Your Title - research</title>
  <link href="http://example.com/tag/research/index.xml" rel="self"/>
  <link href="http://example.com/tag/research.html"/>
- <updated>2017-09-26T13:54:45-04:00</updated>
+ <updated>2017-11-16T14:55:55-05:00</updated>
  <id>http://example.com/tag/research.html</id>
  <author>
    <name>Author Here</name>
@@ -40,19 +40,6 @@
 
 &lt;p&gt;This talk was very mathematical and it went very quickly, so I’m not sure I’m in an excellent position to give a good summary, but here we go.  Optimal transport is a topic in mathematics/statistics/physics/computer science which addresses problems of the flavor “If I have X cannonballs scattered on the ground and they need to be brought to Y different cannons, what is the most efficient way of moving them?”  There are discrete and continuous versions of this problem, but for redistricting, we are interested in a model where we allocate parcels of land (a continuous thing) into a fixed number of districts (a finite and discrete number of things).  It turns out this problem looks a lot like linear programming, which means that there is a nice correspondence between this approach and other optimization techniques.  At this point, it is unclear how or if optimal transport will be useful in the redistricting problem, but according to Nestor and Justin (experts), it is certainly an area worth exploring.  &lt;a href=&quot;http://zachschutzman.com/assets/notes/mggg.pdf#page=26&quot;&gt;Link to Zach’s Notes&lt;/a&gt;&lt;/p&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>Gerrymandr - Day 3</title>
-   <link href="http://example.com/blog/2017/08/gerry-conf-day-3.html"/>
-   <updated>2017-08-10T00:00:00-04:00</updated>
-   <id>http://example.com/blog/2017/08/gerry-conf-day-3</id>
-   <content type="html">&lt;p&gt;This week, I am at the &lt;a href=&quot;sites.tufts.edu/gerrymandr&quot;&gt;Metric Geometry and Gerrymandering Group&lt;/a&gt;’s conference/workshop in Somerville, and, given my poor level of information retention from EC earlier this summer, I wanted to take a more deliberate approach to absorbing and processing the information that’s being given to me this week.  I’m taking notes during the talks and I’ve decided to write these blog posts to reflect on each day of the conference, for both my benefit and yours, dear reader.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Day Three was (unsurprisingly) excellent.  I made a stronger effort to interact more with other people approaching gerrymandering from a computational and mathematical approach.  One thing that has been difficult with my research thusfar is that I haven’t been able to pin down a nice juicy research problem.  Part of that is just my own lack of expertise and not feeling comfortable attacking a problem which has aspects (law, sociology, politics) that I am unequivocally not well-versed in.  The other part has been that I haven’t been able to interact with other math/CS professionals who have spent time thinking about this problem in a research capacity.  Getting to do that has helped me develop a whole menu of ideas, as well as some excellent contacts and collaborators across the country.&lt;/p&gt;
 </content>
  </entry>
  
