@@ -819,6 +819,16 @@ ul.share-buttons li{
     font-weight: bold;
     font-style: normal;
 }
+.conjecture {
+    display: block;
+    margin: 12px 0;
+    font-style: italic;
+}
+.conjecture:before {
+    content: "Conjecture.";
+    font-weight: bold;
+    font-style: normal;
+}
 .lemma {
     display: block;
     margin: 12px 0;
@@ -839,6 +849,19 @@ ul.share-buttons li{
     font-style: italic;
 }
 .proof:after {
+    content: "\25FC";
+    float:right;
+}
+.disproof {
+    display: block;
+    margin: 12px 0;
+    font-style: normal;
+}
+.disproof:before {
+    content: "Disproof.";
+    font-style: italic;
+}
+.disproof:after {
     content: "\25FC";
     float:right;
 }
