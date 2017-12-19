@@ -17,7 +17,7 @@ permalink: /teaching/
 ----
 Notes for [Theory of Computation (UPenn CIS 511, Spring 2017)](http://zachschutzman.com/assets/notes/toc511.pdf)
 
-[comment]: # Notes for [Topology (UPenn Math 500, Fall 2017)](http://zachschutzman.com/assets/notes/topo500.pdf)
+My (exceptionally incomplete) notes for [Topology (UPenn Math 500, Fall 2017)](http://zachschutzman.com/assets/notes/topo500.pdf)
 
 My notes from [the Metric Geometry and Gerrymandering Group's August 2017 Conference](http://zachschutzman.com/assets/notes/mggg.pdf).  For more information about the MGGG, see their site [here](http://sites.tufts.edu/gerrymandr)
 
@@ -25,9 +25,9 @@ My notes from [the Metric Geometry and Gerrymandering Group's August 2017 Confer
 
 ----
 
-In the spring, I will be a TA for Algorithmic Game Theory (NETS 412)
+In the spring, I will be a TA for [Bo Waggoner's](https://www.bowaggoner.com/) course [Algorithmic Game Theory (NETS 412)](https://www.bowaggoner.com/courses/2018/nets412/)
 
-This fall, I am a TA for [Michael Kearns'](http://cis.upenn.edu/~mkearns) course [Networked Life (NETS112)](http://www.cis.upenn.edu/~mkearns/teaching/NetworkedLife/)
+I was a TA for the Fall 2017 iteration of [Michael Kearns'](http://cis.upenn.edu/~mkearns) course [Networked Life (NETS112)](http://www.cis.upenn.edu/~mkearns/teaching/NetworkedLife/)
 
 ----
 * I was a TA/grader/tutor at Colby College for:
