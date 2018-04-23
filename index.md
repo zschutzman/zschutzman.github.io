@@ -9,9 +9,10 @@ invisible: true
 {: style="color:#800000;" :}
 I am a second-year PhD student in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth). 
 
+
 My research interests include game theory and mechanism design, learning theory, algorithmic fairness, and computational social science, which is to say I am interested in how strategic decision-making and social norms interact with algorithmic processes.
 
-I also maintain an interest in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), the intentional drawing of district lines to favor some electoral outcome. I am primarily interested in the connections to mathematics and the computational sciences, but I try to stay aprised of the legal and sociopolitical aspects as well.
+I also maintain an interest in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), the intentional drawing of district lines to favor some electoral outcome, especially the mathematical and computational aspects of deciding how to draw the lines for reapportionment.  I am extremely excited to be working with the Metric Geometry and Gerrymandering Group in Boston this summer at the [Voting Rights Data Institute](http://gerrydata.org)!
 
 I am affiliated with the [CS Theory Reserach Group](http://theory.cis.upenn.edu/index.html), the [Warren Center for Network & Data Sciences](http://warrencenter.upenn.edu/), and the [Penn Research in Machine Learning (PRiML)](https://priml.upenn.edu/) group.
 
