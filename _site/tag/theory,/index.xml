@@ -3,7 +3,7 @@
  <title>Your Title - theory,</title>
  <link href="http://example.com/tag/theory,/index.xml" rel="self"/>
  <link href="http://example.com/tag/theory,.html"/>
- <updated>2017-12-11T14:01:22-05:00</updated>
+ <updated>2018-04-23T10:01:12-04:00</updated>
  <id>http://example.com/tag/theory,.html</id>
  <author>
    <name>Author Here</name>
@@ -51,7 +51,7 @@ We’ll start by noting that any graph which is strongly connected must also be 
 &lt;ul&gt;
   &lt;li&gt;Reflexivity: any vertex is vacuously strongly connected to itself by the ‘empty’ path.&lt;/li&gt;
   &lt;li&gt;Symmetry: If $u$ and $v$ are strongly connected, then there exists a path following arcs from u to v and from v to u, but this is exactly the same as saying that $v$ and $u$ are strongly connected.&lt;/li&gt;
-  &lt;li&gt;Transitivity: If $u$ is strongly connected to $v$ and $v$ is strongly connected to $w$, we  can find a $u$-$w$ path following arcs by just concatenating the $u$-$v$ and $v$-$w$ ones.  Similarly, to get a $w$-$u$ path, we can follow the $w$-$v$ path then the v-u path.&lt;/li&gt;
+  &lt;li&gt;Transitivity: If $u$ is strongly connected to $v$ and $v$ is strongly connected to $w$, we  can find a $u$-$w$ path following arcs by just concatenating the $u$-$v$ and $v$-$w$ ones.  Similarly, to get a $w$-$u$ path, we can follow the $w$-$v$ path then the $v$-$u$ path.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Since this is a proper equivalence relation, it induces a partition on the vertices, and since we’ve assumed that G is not strongly connected, it must partition the vertices into at least two nonempty components.  This graph does not satisfy the requirements we have on in- and out-degrees, but it is weakly, but not strongly, connected, and the partition into strongly connected components is shown.&lt;/p&gt;
@@ -75,7 +75,9 @@ We’ll start by noting that any graph which is strongly connected must also be 
 &lt;p&gt;Okay, so $D$ is a directed graph  with no cycles, so what?  Well, a directed, acyclic graph &lt;em&gt;must&lt;/em&gt; have at least one vertex with in-degree zero.  This vertex, let’s call it $d_1$, presents a problem.  If  its in-degree is zero, its out-degree must be something non-zero, because $D$ is connected and has more than one vertex.  Back up in $G$, this means that there is at least one arc leaving the vertices in the $d_1$ chunk, but none coming in from any other chunks.  This means that the total out-degree of these vertices must be greater than the total in-degree.  But wait!  We assumed that every vertex had in- and out-degree equal, so this situation shouldn’t arise.  Hence we have found our contradiction, and the theorem holds.&lt;/p&gt;
 &lt;div style=&quot;text-align: right&quot;&gt; &amp;#9724; &lt;/div&gt;
 
-&lt;p&gt;So what’s the takeaway?  Well, the theorem itself implies that when we are working with directed graphs where every vertex has in-degree equal to its out-degree, we don’t have to worry about a distinction between strong and weak connectedness, and having fewer things to worry about is definitely something we should all want.&lt;/p&gt;
+&lt;p&gt;So what’s the takeaway?  Well, the theorem itself implies that when we are working with directed graphs where every vertex has in-degree equal to its out-degree, we don’t have to worry about a distinction between strong and weak connectedness, and having fewer things to worry about is definitely something we should all want.  This is convinient for studying certain objects in algebraic graph theory, such as graph automorphisms, arc-transitivity, and flows and circulations.&lt;/p&gt;
+
+&lt;p&gt;Also, sometimes when you’re wrong you get to learn a new thing!&lt;/p&gt;
 
 </content>
  </entry>
