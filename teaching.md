@@ -25,7 +25,7 @@ My notes from [the Metric Geometry and Gerrymandering Group's August 2017 Confer
 
 ----
 
-In the spring, I will be a TA for [Bo Waggoner's](https://www.bowaggoner.com/) course [Algorithmic Game Theory (NETS 412)](https://www.bowaggoner.com/courses/2018/nets412/)
+I was a TA for [Bo Waggoner's](https://www.bowaggoner.com/) course [Algorithmic Game Theory (NETS 412)](https://www.bowaggoner.com/courses/2018/nets412/) in Spring 2018
 
 I was a TA for the Fall 2017 iteration of [Michael Kearns'](http://cis.upenn.edu/~mkearns) course [Networked Life (NETS112)](http://www.cis.upenn.edu/~mkearns/teaching/NetworkedLife/)
 
