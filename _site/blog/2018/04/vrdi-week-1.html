@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <title>Gerrymandr - Day 2
+  <title>GerryCamp Week 1
   Zachary I. Schutzman
 </title>
   
@@ -21,7 +21,7 @@
   
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/blog/2017/08/gerry-conf-day-2.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2018/04/vrdi-week-1.html">
   <link rel="alternate" type="application/rss+xml" title="
   Zachary I. Schutzman
 " href="/feed.xml">
@@ -341,12 +341,12 @@
   
     
     <div class="wrapper">
-      <h1 class="post-title" itemprop="name headline">Gerrymandr - Day 2</h1>
+      <h1 class="post-title" itemprop="name headline">GerryCamp Week 1</h1>
       <p class="post-meta">
-        <time datetime="2017-08-09T00:00:00-04:00" itemprop="datePublished">
+        <time datetime="2018-04-23T00:00:00-04:00" itemprop="datePublished">
           
 
-  Aug 9, 2017
+  Apr 23, 2018
 
 
         </time>
@@ -371,29 +371,14 @@
 
 
   <div class="post-content" itemprop="articleBody">
-    <p>This week, I am at the <a href="sites.tufts.edu/gerrymandr">Metric Geometry and Gerrymandering Group</a>’s conference/workshop in Somerville, and, given my poor level of information retention from EC earlier this summer, I wanted to take a more deliberate approach to absorbing and processing the information that’s being given to me this week.  I’m taking notes during the talks and I’ve decided to write these blog posts to reflect on each day of the conference, for both my benefit and yours, dear reader.</p>
+    <p>This summer I am working with the <a href="sites.tufts.edu/mggg">MGGG</a> as a Graduate Fellow with the <a href="gerrydata.org">Voting Rights Data Institute</a>, a.k.a. gerrymandering summer camp a.k.a. GerryCamp.  I’m writing these weekly posts both as a way of documenting my work and experience as well as a sort of proof-of-life for my friends and colleagues I (temporarily) abandoned in Philadelphia.</p>
 
-<hr />
+<p>This week mostly consisted of a battery of talks geared towards getting us all up to speed with the terminology, tools, and techniques used in redistricting as well as getting us familiar with the Boston (well, not <em>in</em> Boston, but nearby) area, as our working spaces are split among the campuses of Tufts, MIT, and Harvard.  Everyone comes from a wide range of backgrounds, and it’s been a lot of fun helping people learn about topics they may not have seen before.</p>
 
-<p>Day Two was just as much fun as Day One.  I’ll say again, the best part of this thing is that I get to meet a broad range of people with extremely diverse interests and viewpoints.  Part of the mission of this conference is to work with educators on how to effectively teach and communicate the issues and challenges of gerrymandering, because as any political scientist will tell you, awareness of and engagement with technical policy issues is extremly low among the general population, and getting people to know about and understand an issue is the first step towards widespread support for reform.  Being able to think and talk about redistricting from the from the viewpoint of experts in complexity theory, middle school education, law, civil rights, mathematics, physics, statistics, urban planning, and software development has been really helpful for me to be able to frame the problem of gerrymandering in different ways, and I think that when I get back into research, I’ll have a much better idea of how to navigate my work because I can take into account the multifaceted nature of the problem.</p>
+<p>There are 52 undergraduate and graduate students at the VRDI, so we are each going to become an expert in an assigned state’s (plus DC and Puerto Rico) electoral and redistricting issues.  I have the great state of Maine, so stay tuned for some more stuff about that.  I think I’m giving a brief talk next week about apportionment in Maine, so maybe I can organize that into a cohesive document with lots of pretty maps and pictures.  Maybe I’ll do a blog post where I vent some of my complaints about how the election data doesn’t line up nicely with the census data…</p>
 
-<p>I also think I’d like to put together “An Interdisciplinary Primer on Redistricting” both for the benefit of myself and my research, but also to be a quick and simple resource for people interested in moving around throughout the very broad space that this problem sits in.</p>
+<p>Finally, some goals for next week.  A few of us are trying to prove some theorems about projective geometry and graph partitioning, and with some luck we’ll be able to write down some definitive proofs or disproofs of these statements.  One major roadblock on the analytic side of the redistricting problem is that the space of all possible redistrictings (partitions of a map into a given number of equipopulous and contiguous pieces) is really, really, really, really big, and we don’t have a great way to randomly choose some plan in that set.  Something I’d like to do this week is either give a good algorithm to do so or prove that no good algorithm exists.</p>
 
-<hr />
-
-<p>As with the previous post, I’ll give a brief blurb for each talk, along with a link to my notes and the video of the talk (if available).</p>
-
-<h3 style="color:#800000;" id="1-talk-1-ellen-katz-on-race-and-redistricting">1. Talk 1: Ellen Katz on Race and Redistricting</h3>
-
-<p>Ellen is a legal scholar, and presented a modern history of court cases related to racial issues in voting rights and redistricting.  This talk is a nice companion piece to Kristen Clarke’s talk from the previous day.  She really got at the legal precedent surrounding some of the subtleties of why gerrymandering is such a sticky legal issue, such as how we can discern between a plan which unfairly packs minorities and one which is fairly providing majority-minority districts.  <a href="http://zachschutzman.com/assets/notes/mggg.pdf#page=12">Link to Zach’s Notes</a> | <a href="https://www.youtube.com/watch?v=nLN9pNBDczg&amp;index=5&amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au">Link to Video of the Talk</a></p>
-
-<h3 style="color:#800000;" id="2-talk-2-megan-gall-on-geographic-issues-in-redistricting">2. Talk 2: Megan Gall on Geographic Issues in Redistricting</h3>
-
-<p>Megan is a GIS expert and works with legal scholars to do data analysis and produce maps related to redistricting.  While there are a number of criteria for redistricting, such as compactness and preservation f existing political borders, these are loosely defined, vague, and not always strictly applied.  Additionally, every state has different rules regarding how state and federal districts are drawn, and sometimes even within a state, the rules for drawing congresisonal districts are very different than the ones guiding the drawing of state districts.  As analysts, a major hurdle is getting good data.  Since election and voter data only exists down to a certain resolution, we need to use statistical methods to make inferences about how different groups of voters behave, as a claim of disenfranchisement which violates Section 2 of the VRA requires layers to be able to argue that an affected group <em>both</em> votes as a bloc <em>and</em> is not afforded proper representation. <a href="http://zachschutzman.com/assets/notes/mggg.pdf#page=14">Link to Zach’s Notes</a> | <a href="https://www.youtube.com/watch?v=rdaTDlFro5w&amp;index=6&amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au">Link to Video of the Talk</a></p>
-
-<h3 style="color:#800000;" id="3-talk-3-and-4-wendy-cho-and-yan-liu-on-computational-issues">3. Talk 3 and 4: Wendy Cho and Yan Liu on Computational Issues</h3>
-
-<p>The morning talk was the “general audience” presentation and the afternoon was the more “technical” view of Cho and Liu’s project which implements a massively parallel genetic algorithm for sampling from the space of redistricting maps.  In an ideal world, we could evaluate how good or bad a gerrymander is by using statistical tests to compare the map to a distribution of maps.  For example, if someone is claiming that their map is not a partisan gerrymander, but it looks a lot like a draw from the distribution over maps with a strong partisan bias, we may have evidence of intentional gerrymandering.  At a high level, the two major computational issues we have to deal with are that the actual space of maps that split a state into the correct number of contiguous districts is absolutely massive, and that picking the map which optimizes against some constraints and objectives is computationally very difficult.  Here we design a genetic algorithm which runs in parallel on a supercomputer to try to get a good sample of maps.  Genetic algorithms are nice because they run quickly and they don’t require the designer to know a lot about what the sample space actually looks like.  The downside is that you can’t prove a lot of things about how good the solution you get is, or how long it will take to find a good solution.  <a href="http://zachschutzman.com/assets/notes/mggg.pdf#page=17">Link to Zach’s Notes</a> | <a href="https://www.youtube.com/watch?v=P_U_x2p48AI&amp;index=11&amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au">Link to Video of the Talk</a></p>
 
   </div>
 
@@ -401,10 +386,10 @@
 
 
   
-   <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/2017/08/gerry-conf-day-2.html&t=Gerrymandr - Day 2" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="http://localhost:4000/assets/images/Facebook.png"></a>
-    <a href="https://twitter.com/intent/tweet?source=http://localhost:4000/blog/2017/08/gerry-conf-day-2.html&text=Gerrymandr - Day 2:%20http://localhost:4000/blog/2017/08/gerry-conf-day-2.html&via=zschutzy" target="_blank" title="Tweet"><img alt="Tweet" src="http://localhost:4000/assets/images/Twitter.png"></a>
-    <a href="https://plus.google.com/share?url=http://localhost:4000/blog/2017/08/gerry-conf-day-2.html" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="http://localhost:4000/assets/images/Google+.png"></a>
-    <a href="http://www.reddit.com/submit?url=http://localhost:4000/blog/2017/08/gerry-conf-day-2.html&title=Gerrymandr - Day 2" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="http://localhost:4000/assets/images/Reddit.png"></a>
+   <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/2018/04/vrdi-week-1.html&t=GerryCamp Week 1" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="http://localhost:4000/assets/images/Facebook.png"></a>
+    <a href="https://twitter.com/intent/tweet?source=http://localhost:4000/blog/2018/04/vrdi-week-1.html&text=GerryCamp Week 1:%20http://localhost:4000/blog/2018/04/vrdi-week-1.html&via=zschutzy" target="_blank" title="Tweet"><img alt="Tweet" src="http://localhost:4000/assets/images/Twitter.png"></a>
+    <a href="https://plus.google.com/share?url=http://localhost:4000/blog/2018/04/vrdi-week-1.html" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="http://localhost:4000/assets/images/Google+.png"></a>
+    <a href="http://www.reddit.com/submit?url=http://localhost:4000/blog/2018/04/vrdi-week-1.html&title=GerryCamp Week 1" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="http://localhost:4000/assets/images/Reddit.png"></a>
 
  
   </p>

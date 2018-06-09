@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Your Title - redistricting</title>
+ <link href="http://example.com/tag/redistricting/index.xml" rel="self"/>
+ <link href="http://example.com/tag/redistricting.html"/>
+ <updated>2018-06-09T13:47:11-04:00</updated>
+ <id>http://example.com/tag/redistricting.html</id>
+ <author>
+   <name>Author Here</name>
+ </author>
+ 
+ <entry>
+   <title>GerryCamp Week 1</title>
+   <link href="http://example.com/blog/2018/04/vrdi-week-1.html"/>
+   <updated>2018-04-23T00:00:00-04:00</updated>
+   <id>http://example.com/blog/2018/04/vrdi-week-1</id>
+   <content type="html">&lt;p&gt;This summer I am working with the &lt;a href=&quot;sites.tufts.edu/mggg&quot;&gt;MGGG&lt;/a&gt; as a Graduate Fellow with the &lt;a href=&quot;gerrydata.org&quot;&gt;Voting Rights Data Institute&lt;/a&gt;, a.k.a. gerrymandering summer camp a.k.a. GerryCamp.  I’m writing these weekly posts both as a way of documenting my work and experience as well as a sort of proof-of-life for my friends and colleagues I (temporarily) abandoned in Philadelphia.&lt;/p&gt;
+
+&lt;p&gt;This week mostly consisted of a battery of talks geared towards getting us all up to speed with the terminology, tools, and techniques used in redistricting as well as getting us familiar with the Boston (well, not &lt;em&gt;in&lt;/em&gt; Boston, but nearby) area, as our working spaces are split among the campuses of Tufts, MIT, and Harvard.  Everyone comes from a wide range of backgrounds, and it’s been a lot of fun helping people learn about topics they may not have seen before.&lt;/p&gt;
+
+&lt;p&gt;There are 52 undergraduate and graduate students at the VRDI, so we are each going to become an expert in an assigned state’s (plus DC and Puerto Rico) electoral and redistricting issues.  I have the great state of Maine, so stay tuned for some more stuff about that.  I think I’m giving a brief talk next week about apportionment in Maine, so maybe I can organize that into a cohesive document with lots of pretty maps and pictures.  Maybe I’ll do a blog post where I vent some of my complaints about how the election data doesn’t line up nicely with the census data…&lt;/p&gt;
+
+&lt;p&gt;Finally, some goals for next week.  A few of us are trying to prove some theorems about projective geometry and graph partitioning, and with some luck we’ll be able to write down some definitive proofs or disproofs of these statements.  One major roadblock on the analytic side of the redistricting problem is that the space of all possible redistrictings (partitions of a map into a given number of equipopulous and contiguous pieces) is really, really, really, really big, and we don’t have a great way to randomly choose some plan in that set.  Something I’d like to do this week is either give a good algorithm to do so or prove that no good algorithm exists.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+</feed>
