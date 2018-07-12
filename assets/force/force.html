@@ -1,12 +1,53 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Force-Directed Layout</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
     <link type="text/css" rel="stylesheet" href="force.css"/>
-  </head>
-  <body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>This is a thing</h2>
+
+<div class="row">
+  <div class="column left" style="background-color:#fff;">
+    <h2> Interactive Graph </h2>
     <div id="chart"></div>
     <script type="text/javascript" src="force.js"></script>
-  </body>
+  </div>
+  <div class="column right" style="background-color:#fff;">
+    <h2>Info</h2>
+    <p>Coming soon...</p>
+  </div>
+</div>
+
+</body>
 </html>
