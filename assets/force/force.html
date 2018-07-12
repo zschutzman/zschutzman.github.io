@@ -1,53 +1,42 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Force-Directed Layout</title>
+    <title>Metagraph</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
     <link type="text/css" rel="stylesheet" href="force.css"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-    box-sizing: border-box;
-}
+    
 
-/* Create two unequal columns that floats next to each other */
-.column {
-    float: left;
-    padding: 10px;
+    
+  </head>
+  <body>
+  <h2> Metagraph and Metagraph-modulo-D<sub>8</sub></h2>
+<style type="text/css">
+.divLeft {
+    display:inline;
 }
-
-.left {
-  width: 75%;
-}
-
-.right {
-  width: 25%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.divRight {
+    display:inline;
 }
 </style>
-</head>
-<body>
 
-<h2>Metagraph of the 4x4 Grid into Parts of Size 4</h2>
 
-<div class="row">
-  <div class="column left" style="background-color:#fff;">
-    <h2> Interactive Graph </h2>
-    <div id="chart"></div>
+<div class="divLeft" id="chart1"></div>
+    
     <script type="text/javascript" src="force.js"></script>
-  </div>
-  <div class="column right" style="background-color:#fff;">
-    <h2>Info</h2>
-    <p>Coming soon...</p>
-  </div>
-</div>
 
-</body>
+<div class="divRight" id="chart2"></div>
+        
+     <script type="text/javascript" src="force2.js"></script>
+
+   
+
+    
+    
+    
+    
+    
+
+  </body>
 </html>
+
+
