@@ -1,6 +1,6 @@
 
 var w = Math.round(window.innerWidth*.73),
-    h = window.innerHeight,
+    h = Math.round(window.innerHeight*.8),
     fill = d3.scale.category20();
 
 var vis = d3.select("#chart")
