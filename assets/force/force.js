@@ -34,7 +34,7 @@ d3.json("gr.json", function(json) {
       .attr("cx", function(d) { return d.x; })
       .attr("cy", function(d) { return d.y; })
       .attr("r", function(d) {return Math.round(2*d.deg);})
-      .style("fill", function(d) { if (d.Type == 20) return 'black'; if (d.Type == 21) return 'yellow'; return fill(d.Type); })
+      .style("fill", function(d) { if (d.Type == 20) return 'PapayaWhip'; if (d.Type == 21) return 'Gold'; return fill(d.Type); })
       .call(force.drag);
 
   node.append("svg:title")
