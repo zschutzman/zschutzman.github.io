@@ -1,5 +1,5 @@
-var w = 800,
-    h = 800,
+var w = Math.round(.35*window.innerWidth)
+    h = Math.round(.8*window.innerHeight)
     fill = d3.scale.category20();
    
     
@@ -38,27 +38,43 @@ d3.json("gr2.json", function(json) {
       .attr("type", function(d) {return d.Type;})
       .style("fill", function(d) { if (d.Type == 20) return 'PapayaWhip'; if (d.Type == 21) return 'Gold'; return fill(d.Type); })
       .call(force.drag)
+ 
       
-      
-      .on("click", function(){
+      .on("mouseover",function(){
         console.log(d3.select(this).attr("type"));
         var t = d3.select(this).attr("type");
-        var c = d3.select(this)
-        
-        
-        vis2.selectAll("circle.node")
-            .each(function(d){
-                d3.select(this).attr("r",function(d) {return Math.round(1.2*d.orbit)+3;});
-            });
-        c.attr("r",20);
-        
-        vis.selectAll("circle.node")
+       d3.select(this).attr("r",20);          
+          
+      
+         vis.selectAll("circle.node")
             .each(function(d){
                 var u = d3.select(this).attr("type");
-                if (u==t){d3.select(this).attr("r",20);}
-                else{d3.select(this).attr("r",function(d) {return Math.round(2*d.deg);});}
+                 if (u==t){d3.select(this).attr("r",20);}
+               
+                
             });
-      });
+
+      })
+      
+      .on("mouseout", function(){
+            vis.selectAll("circle.node")
+            .each(function(d){
+            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg);})
+                
+            });    
+      
+         vis2.selectAll("circle.node")
+            .each(function(d){
+            d3.select(this).attr("r", function(d) {return Math.round(1.2*d.orbit)+3;})
+
+            });
+     });
+     
+      
+      
+      
+      
+    
                 
 
 
