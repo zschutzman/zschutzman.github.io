@@ -1,7 +1,6 @@
-var w = Math.round(.35*window.innerWidth)
-    h = Math.round(.8*window.innerHeight)
+var w = Math.round(.4*document.documentElement.clientWidth)
+    h = Math.round(.8*document.documentElement.clientHeight)
     fill = d3.scale.category20();
-   
     
 var vis2 = d3.select("#chart2")
   .append("svg")
