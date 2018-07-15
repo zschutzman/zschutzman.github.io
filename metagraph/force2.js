@@ -1,6 +1,4 @@
-var w = Math.round(.4*document.documentElement.clientWidth)
-    h = Math.round(.8*document.documentElement.clientHeight)
-    fill = d3.scale.category20();
+
     
 var vis2 = d3.select("#chart2")
   .append("svg")
@@ -40,7 +38,6 @@ d3.json("gr2.json", function(json) {
  
       
       .on("mouseover",function(){
-        console.log(d3.select(this).attr("type"));
         var t = d3.select(this).attr("type");
        d3.select(this).attr("r",20);          
           
@@ -72,7 +69,7 @@ d3.json("gr2.json", function(json) {
       
       
       
-      
+
     
                 
 
