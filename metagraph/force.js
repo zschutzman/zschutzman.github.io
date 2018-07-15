@@ -60,6 +60,7 @@ d3.json("gr.json", function(json) {
       .style("stroke-width", 0)
       .style("stroke", "black")
       .style("opacity", 1.)
+      .attr("on",0)
       .style("fill", function(d) { if (d.Type == 20) return 'PapayaWhip'; if (d.Type == 21) return 'Gold'; return fill(d.Type); })
       .call(force.drag)
       .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
@@ -178,12 +179,22 @@ function neighboring(a, b) {
 }
 
 function connectedNodes() {
-
-
+    if (d3.select(this).attr("on") ==1){
         node.style("opacity", 1);
+        console.log("1");
         node.style("stroke-width",0);
+        d3.select(this).attr("on",0);
         toggle = 0;
-        
+        return;
+    }
+    
+    else{
+        node.style("opacity", 1);
+        console.log("2");
+        node.style("stroke-width",0);
+        d3.select(this).attr("on",1);
+        toggle = 0;
+    }
 
     if (toggle == 0) {
         d = d3.select(this).node().__data__;
@@ -193,9 +204,11 @@ function connectedNodes() {
         node.style("stroke-width", function(o) {
                         return neighboring(d, o) | neighboring(o, d) | o === d ? 3 : 0;
         });
-        toggle = 0;
-    } 
 
+    }
+    
+
+    toggle = 1-toggle;
 } 
   
   
