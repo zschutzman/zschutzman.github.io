@@ -19,6 +19,7 @@ d3.json("gr2.json", function(json) {
       .data(json.links)
     .enter().append("svg:line")
       .attr("class", "link")
+      .attr("stroke", "#555")
       .style("stroke-width", function(d) { return Math.sqrt(d.value); })
       .attr("x1", function(d) { return d.source.x; })
       .attr("y1", function(d) { return d.source.y; })

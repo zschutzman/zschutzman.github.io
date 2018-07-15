@@ -41,6 +41,7 @@ d3.json("gr.json", function(json) {
       .data(json.links)
     .enter().append("svg:line")
       .attr("class", "link")
+      .attr("stroke","#555")
       .style("stroke-width", function(d) { return Math.sqrt(d.value); })
       .attr("x1", function(d) { return d.source.x; })
       .attr("y1", function(d) { return d.source.y; })
@@ -107,8 +108,27 @@ d3.json("gr.json", function(json) {
             tooltip.transition()		
                 .duration(500)		
                 .style("opacity", 0);	            
-     });
-         
+     })
+      
+      
+    .on("click", function(){
+        var c = d3.select(this);
+        var c2 = this
+        var x = d3.select(this).attr("cx");
+        var y = d3.select(this).attr("cy");
+        vis.selectAll("line.link").each(function(d){
+            var u1 = d3.select(this).attr("x1");
+            var u2 = d3.select(this).attr("x2");
+            var v1 = d3.select(this).attr("y1");
+            var v2 = d3.select(this).attr("y2");
+            d3.select(this).attr("stroke-width", function(d){if ((u1 == x || u2 == x) && (v1==y || v2 == y)) return 8; return Math.sqrt(d.value);})
+            d3.select(this).attr("stroke", function(d){if ((u1 == x || u2 == x) && (v1==y || v2 == y)) return "#000"; return "#555";});
+
+        });
+    });
+
+    
+
       
 
 
