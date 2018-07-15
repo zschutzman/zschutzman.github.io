@@ -199,7 +199,7 @@ function connectedNodes() {
     if (toggle == 0) {
         d = d3.select(this).node().__data__;
         node.style("opacity", function (o) {
-            return neighboring(d, o) | neighboring(o, d) | o === d ? 1 : 0.5;
+            return neighboring(d, o) | neighboring(o, d) | o === d ? 1 : 0.7;
         });
         node.style("stroke-width", function(o) {
                         return neighboring(d, o) | neighboring(o, d) | o === d ? 3 : 0;
