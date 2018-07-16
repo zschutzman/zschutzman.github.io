@@ -129,7 +129,7 @@ function do_update(){
         });
     }
     
-do_update
+do_update;
     
  
     
