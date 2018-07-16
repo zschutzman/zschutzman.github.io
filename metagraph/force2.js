@@ -38,7 +38,7 @@ d3.json("gr2.json", function(json) {
       .style("fill", function(d) { if (d.Type == 20) return 'PapayaWhip'; if (d.Type == 21) return 'Gold'; return fill(d.Type); })
       .call(force.drag)
       .attr("on",0)
-            .style("stroke-width", 0)
+      .style("stroke-width", 0)
       .style("stroke", "black")
       .style("opacity", 1.)
       .on("click",connectedNodes2)
@@ -99,24 +99,27 @@ d3.json("gr2.json", function(json) {
 
 vis2.selectAll("line.link").each(function(d){
      linkedByIndex2[d.source.index + "," + d.target.index] = 1;
-     console.log("sss");
 });
 
 
 
 function connectedNodes2() {
-    if (d3.select(this).attr("on") ==1){
-        node.style("opacity", 1);
-        node.style("stroke-width",0);
-        d3.select(this).attr("on",0);
-        var tp = d3.select(this).attr("type");
-        vis.selectAll("circle.node").each(function(d){
+        console.log(d3.select(this).attr("on"), "ON", toggle, "TOG");
+
+          vis.selectAll("circle.node").each(function(d){
            
                 d3.select(this).attr("on",0);
                 d3.select(this).style("stroke-width",0);
                 d3.select(this).style("opacity",1);
             
-        });
+        });       
+    
+    if (d3.select(this).attr("on") ==1){
+        node.style("opacity", 1);
+        node.style("stroke-width",0);
+        d3.select(this).attr("on",0);
+        var tp = d3.select(this).attr("type");
+
         
         
         
@@ -125,13 +128,14 @@ function connectedNodes2() {
     }
     
     else{
+   
         node.style("opacity", 1);
         node.style("stroke-width",0);
         d3.select(this).attr("on",1);
         
         var tp = d3.select(this).attr("type");
         vis.selectAll("circle.node").each(function(d){
-                            d3.select(this).attr("on",1);
+                            //d3.select(this).attr("on",1);
                 d3.select(this).style("stroke-width",0);
             var tq = d3.select(this).attr("type");
             if (tp == tq) {
@@ -161,7 +165,6 @@ function connectedNodes2() {
          var tp = d3.select(this).attr("type");
         vis.selectAll("circle.node").each(function(e){
             var tq = d3.select(this).attr("type");
-            console.log(d3.select(this).style("opacity"));
             if (tp == tq) {
                 oth = d3.select(this);
                 
@@ -186,7 +189,6 @@ function connectedNodes2() {
     } 
    
   
-  console.log(toggle);
   
 }
 
@@ -206,7 +208,6 @@ function connectedNodes2() {
 
 
 });
-console.log(linkedByIndex2);
 
 function neighboring2(a, b) {
     return linkedByIndex2[a.index + "," + b.index];
