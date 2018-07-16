@@ -48,7 +48,7 @@ _.times(squaresColumn, function(n) {
     })
     
     .attr("party",0)
-    .style("fill","#888")
+    .style("fill",fill[4])
     .style("stroke","#555")
     .style("stroke-width",5)
     
@@ -80,9 +80,9 @@ function do_update(){
 
     grd.selectAll('rect').each(function(d){
         //console.log(d3.select(this).attr("party"));
-        if (d3.select(this).attr("party") == 0) d3.select(this).style("fill", "#888");
-        if (d3.select(this).attr("party") == 1) d3.select(this).style("fill", "red");
-        if (d3.select(this).attr("party") == -1) d3.select(this).style("fill", "blue");
+        if (d3.select(this).attr("party") == 0) d3.select(this).style("fill", fill[4]);
+        if (d3.select(this).attr("party") == 1) d3.select(this).style("fill", fill[8]);
+        if (d3.select(this).attr("party") == -1) d3.select(this).style("fill", fill[0]);
 
     });
 

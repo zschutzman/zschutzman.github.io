@@ -62,7 +62,7 @@ d3.json("gr.json", function(json) {
       .style("stroke", "black")
       .style("opacity", 1.)
       .attr("on",0)
-      .style("fill", "#ccc")
+      .style("fill", fill[4])
       .call(force.drag)
       .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
 
