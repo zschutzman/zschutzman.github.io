@@ -1,6 +1,6 @@
 var w = Math.round(.35*document.documentElement.clientWidth)
     h = Math.round(.8*document.documentElement.clientHeight)
-fill = ['#0000ff','#535cf7','#6495ed','#7a8ab6','#808080','#c57664','#ff6347','#ff4429','#ff0000']
+fill = ['#0000ff','#5934df','#7250c0','#7d69a0','#808080','#aa7264','#ca6048','#e6462a','#ff0000']
    wp = Math.round(.20*document.documentElement.clientWidth);
 
 
