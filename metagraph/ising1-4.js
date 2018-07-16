@@ -58,7 +58,7 @@ d3.json("gr.json", function(json) {
       .attr("str_rep", function(d){ return d.str_rep.split('\n').join("").split(" ").join("");})
       .attr("html_rep", function(d) {return d.html_rep;})
       .attr("r", function(d) {return Math.round(2*d.deg);})
-      .style("stroke-width", 2)
+      .style("stroke-width", 0)
       .style("stroke", "black")
       .style("opacity", 1.)
       .attr("on",0)
