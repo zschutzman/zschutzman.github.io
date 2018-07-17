@@ -163,25 +163,29 @@ function connectedNodes2() {
          var oth;
          var oth2;
          var tp = d3.select(this).attr("type");
-        vis.selectAll("circle.node").each(function(e){
-            var tq = d3.select(this).attr("type");
-            if (tp == tq) {
+         
+         vis.selectAll("circle.node").each(function(e){
+             var tq = d3.select(this).attr("type");
+                if (tp == tq) {
                 oth = d3.select(this);
-                
-                
-            
-        
-
-        oth2 = oth.node().__data__;
-        return;
-            }
-        });
-        vis.selectAll("circle.node").each(function(e){
-            d3.select(this).style("opacity", function(o){return neighboring(oth2, o) | neighboring(o, oth2) | o === d ? 1 : 0.7;});
-            d3.select(this).style("stroke-width", function(o) {return neighboring(oth2, o) | neighboring(o, oth2) | o === d ? 3 : 0;});
-    });
-        oth.style("opacity",1);
+                oth2 = oth.node().__data__;
+             
+                     oth.style("opacity",1);
         oth.style("stroke-width",3);
+             
+            vis.selectAll("circle.node").each(function(e){
+                var c = d3.select(this).style("opacity");
+                var f = d3.select(this).style("stroke-width");
+            d3.select(this).style("opacity", function(o){return neighboring(oth2, o) | neighboring(o, oth2) | o === d ? 1 : c;});
+            d3.select(this).style("stroke-width", function(o) {return neighboring(oth2, o) | neighboring(o, oth2) | o === d ? 3 : f;});
+            
+            });
+                }
+             
+         });
+         
+         
+
     
 
     toggle = 1-toggle;
