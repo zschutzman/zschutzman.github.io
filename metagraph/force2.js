@@ -176,16 +176,20 @@ function connectedNodes2() {
             vis.selectAll("circle.node").each(function(e){
                 var c = d3.select(this).style("opacity");
                 var f = d3.select(this).style("stroke-width");
-            d3.select(this).style("opacity", function(o){return neighboring(oth2, o) | neighboring(o, oth2) | o === d ? 1 : c;});
+            d3.select(this).style("opacity", function(o){return neighboring(oth2, o) | neighboring(o, oth2) | o === d ? 1 : .7;});
             d3.select(this).style("stroke-width", function(o) {return neighboring(oth2, o) | neighboring(o, oth2) | o === d ? 3 : f;});
             
             });
                 }
              
+             
          });
          
-         
-
+         vis.selectAll("circle.node").each(function(e){
+             var sw = d3.select(this).style("stroke-width");
+             console.log("SW",sw);
+   d3.select(this).style("opacity", function(o){ if (sw == '3px') return 1; return .7;});
+         });
     
 
     toggle = 1-toggle;
