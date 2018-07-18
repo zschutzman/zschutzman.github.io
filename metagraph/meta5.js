@@ -41,7 +41,7 @@ d3.json(g, function(json) {
       .attr("class", "node")
       .style("r",10)
       .attr("html_rep", function(d) {return d.html_rep;})
-      .attr("idno", function(d) {return "i"+d.name;})
+      .attr("idno", function(d) {return d.name;})
       .call(force.drag)
       .on("click",swapgraph);
   node.append("rect").attr("width", 75)
@@ -51,7 +51,7 @@ d3.json(g, function(json) {
       .style("stroke-width",5)
             .attr("x", -8)
       .attr("y", -8)
-      .attr("idno", function(d) {return "i"+d.name;});
+      .attr("idno", function(d) {return d.name;});
   node.append("image")
       .attr("xlink:href", "m5-imgs/whole/im_"+idno+".png")
       .attr("x", -8)
@@ -60,7 +60,7 @@ d3.json(g, function(json) {
       .attr("height", 75)
       .attr("html_rep", function(d) {return d.html_rep;})
       .style("border",5)
-      .attr("idno", function(d) {return "i"+d.name;})
+      .attr("idno", function(d) {return d.name;})
 
 
       
