@@ -104,13 +104,14 @@ d3.json(fn, function(error, treeData) {
       .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
       .attr("transform", function(d) { return "translate(" + radialPoint(d.x, d.y) + ")"; })
       .attr("districts", function(d) { return d.data.tup;})
-            .attr("idno", function(d) {return d.name;})
+            .attr("idno", function(d) {return d.data.name;})
   /*.call(d3.drag()
     .on("start", dragstarted)
     .on("drag", dragged)
     .on("end", dragended))*/
 
-            .on("click",swapgraph)
+            .on("click",
+                swapgraph)
 
       .on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
 
@@ -125,7 +126,7 @@ d3.json(fn, function(error, treeData) {
    
        
         tooltip.style("visibility", "visible");
-        tooltip.html('<p style="margin:0;padding:0;font-size:50px;letter-spacing:-10px;line-height:35px;">' + c.attr( "html_rep" ) + "</p>");
+        tooltip.html('<p style="margin:0;padding:0;font-size:50px;letter-spacing:-10px;line-height:35px;">' + d3.select(this).data()[0].data.html_rep + "</p>");
 
         tooltip.transition()		
         .duration(200)		
@@ -154,16 +155,16 @@ d3.json(fn, function(error, treeData) {
                 .style("opacity", 0);	            
      });
 
-  node.append("rect").attr("width", 90)//90
-      .attr("height", 90)//90
-      .style("stroke","#666")
+  node.append("rect").attr("width", 100)//90
+      .attr("height", 100)//90
+      .style("stroke", "#666")
       .style("stroke-width",2)
-       .attr("x", -37)//-37
-      .attr("y", -37)//-37
+       .attr("x", -42)//-37
+      .attr("y", -42)//-37
       .attr("str_rep", function(d){ return d.data.str_rep.split('\n').join("").split(" ").join("");})
-      .attr("idno", function(d) {return d.name;})
+      .attr("idno", function(d) {return d.data.name;})
         .attr("districts", function(d) { return d.data.tup;})
-        .style("fill",simp_fill[1])
+        .style("fill", function(d) {return get_my_col(d);})
   /*node.append("image")
       .attr("xlink:href", function(d) {return "m5-imgs/whole/im_"+d.data.name+".png";})
       .attr("x", -30)
@@ -196,32 +197,17 @@ function radialPoint(x, y) {
   return [(y = +y) * Math.cos(x -= Math.PI / 2), y * Math.sin(x)];
 }
 
+
+
 mk_gr("m5-graphs/whole_trees2/g0.json",0);
 
-function swapgraph(){
-    if (d3.event.defaultPrevented) return;
-    if (idno == d3.select(this).data()[0].data.name) return;
-              tooltip.style("visibility", "hidden");
+  
+ function cl_gr(){
+       svg.selectAll(".link").remove();
+    svg.selectAll(".node").remove();
+ }
   
 
-            tooltip.transition()		
-                .duration(200)		
-                .style("opacity", 0);
-                
-                
-                
-    tx = d3.select(this).attr("cx");
-    ty = d3.select(this).attr("cy");
-    
-    svg.selectAll(".link").remove();
-    svg.selectAll(".node").remove();
-    mk_gr("m5-graphs/whole_trees2/g"+d3.select(this).data()[0].data.name+".json", d3.select(this).data()[0].data.name);
-    do_update(-1);
-    get_col(-1);
-    //do_update2();
-
-    
-}
 
 
 //////////////////////
@@ -292,7 +278,7 @@ _.times(squaresColumn, function(n) {
      clsq = true;
      do_update(this);
      //do_update2();
-     get_col(-1);
+     get_col();
      compute_hists();
     }
     );
@@ -326,6 +312,20 @@ function do_update(r){
 
 
         
+}
+
+function get_my_col(rect){
+    var cnt = 0;
+  var chk = dist_wins;
+
+ distloop = rect.data.tup;
+             for(var i=0;i<5;i++){
+             cnt += Math.sign(chk[distloop[i]]);
+            }
+            
+            
+            var col = Math.sign(cnt) + 1;
+            return simp_fill[col];
 }
 /*
 function do_update2(){
@@ -372,9 +372,10 @@ function do_update2(){
     clsq = false;
     }
  */   
-function get_col(chkstr){
+function get_col(){
         
         var chk = compute_hists();
+        
         dist1=0;
         dist2=0;
         dist3=0;
@@ -382,7 +383,7 @@ function get_col(chkstr){
         dist5=0;
         cnt=0;
 
-        svg.selectAll("rect").each(function(e){
+        svg.selectAll("rect").each(function(){
             distloop = d3.select(this).attr("districts");
             distloop = JSON.parse("[" +  distloop.split("(").join("").split(")").join("") + "]")
             for(var i=0;i<5;i++){
@@ -487,18 +488,15 @@ function compute_hists() {
         });
         
         dist_wins[i] = Math.sign(tot);
-        //console.log(dist_wins[i],tot);
         
         
 
     }
     for (var key in plan_wins){
             var key2 = JSON.parse("[" +  key.split("(").join("").split(")").join("") + "]");
-           // console.log(key2);
         for (var d=0;d<5;d++){
             
             var c = dist_wins[key2[d]];
-            //console.log();
             if (c>0){plan_wins[key][0] +=1;}
             if (c<0){plan_wins[key][1] +=1;}
             
@@ -511,12 +509,78 @@ function compute_hists() {
         
         
     }
-
-    console.log("NEW HISTS: ", r_win_i, b_win_i);
+    
   return dist_wins;
 }
 
 
 
 
-get_col(-1);
+//get_col();
+
+
+function swapgraph(){
+    var newgr = d3.select(this).data()[0].data.name;
+    console.log(newgr);
+    if (d3.event.defaultPrevented) return;
+    if (idno == d3.select(this).data()[0].data.name) return;
+              tooltip.style("visibility", "hidden");
+  
+
+            tooltip.transition()		
+                .duration(200)		
+                .style("opacity", 0);
+                
+                
+                
+    tx = d3.select(this).attr("cx");
+    ty = d3.select(this).attr("cy");
+   
+    var n = 0;
+
+    
+    
+    svg.selectAll("g").each(function(){n++;})
+    .transition()
+    .duration(200)
+    .style("opacity",0)
+    .on("end",function(){n--;if(!n){cl_gr();
+                                    mk_gr("m5-graphs/whole_trees2/g"+newgr+".json", newgr);
+                                    svg.selectAll("g").transition()
+    .duration(200)
+    .style("opacity",1);
+                                   }
+                        });
+    var cnt = 0;
+    var chk = compute_hists();
+
+    do_update(-1);
+
+
+    
+    
+    
+    //mk_gr("m5-graphs/whole_trees2/g"+d3.select(this).data()[0].data.name+".json", d3.select(this).data()[0].data.name);
+    
+/*
+    var svg2 = jQuery.extend(true, {}, svg);
+    svg.transition()		
+        .duration(2000)		
+        .style("opacity",0);	
+    svg.selectAll(".link").remove();
+    svg.selectAll(".node").remove();
+    mk_gr("m5-graphs/whole_trees2/g"+d3.select(this).data()[0].data.name+".json", d3.select(this).data(
+
+    )[0].data.name);
+        svg.transition()
+        .duration(2000)
+        .style("opacity",1);
+            svg2.transition()		
+        .duration(2000)		
+        .style("opacity",0);	
+    delete svg2;*/
+
+    //do_update2();
+
+    
+}
