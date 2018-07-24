@@ -15,23 +15,23 @@ var clsq = false;
 
 
  var request = new XMLHttpRequest();
-   request.open("GET", "../plan_strings.json", false);
+   request.open("GET", "./plan_strings.json", false);
    request.send(null)
    var plan_strings = JSON.parse(request.responseText);
 
    
  var request = new XMLHttpRequest();
-   request.open("GET", "../dist_strings.json", false);
+   request.open("GET", "./dist_strings.json", false);
    request.send(null)
    var dist_strings = JSON.parse(request.responseText);
 
  var request = new XMLHttpRequest();
-   request.open("GET", "../dist_wins.json", false);
+   request.open("GET", "./dist_wins.json", false);
    request.send(null)
    var dist_wins = JSON.parse(request.responseText);
    
  var request = new XMLHttpRequest();
-   request.open("GET", "../plan_wins.json", false);
+   request.open("GET", "./plan_wins.json", false);
    request.send(null)
    var plan_wins = JSON.parse(request.responseText);
    
