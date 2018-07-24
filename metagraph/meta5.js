@@ -50,14 +50,15 @@ var bwin=0;
 var hoff = 130;
 var voff = 15;
 var winbox = d3.select("body").append("svg")
-            .attr("width",500)
+            .attr("width",350)
             .attr("height",200)
+
             
-            var wgrp = winbox.append("g");
+            var wgrp = winbox.append("g").attr("transform","translate(0,15)");
             
-            wgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
+            //wgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
             wgrp.append("text") .text("Seat Distribution:")  .attr('dy','0.35em');
-            var tr0 = wgrp.append("text").attr("transform","translate(0,"+voff+")").attr('dy','0.35em').attr("i", 0).attr("party",'r').text("AAA");
+            var tr0 = wgrp.append("text").attr("transform","translate(0,"+voff+")").attr('dy','0.35em').attr("i", 0).attr("party",'r');
             var tr1 = wgrp.append("text").attr("transform","translate(0,"+2*voff+")").attr('dy','0.35em').attr("i",1).attr("party",'r');
             var tr2 = wgrp.append("text").attr("transform","translate(0,"+3*voff+")").attr('dy','0.35em').attr("i",2).attr("party",'r');
             var tr3 = wgrp.append("text").attr("transform","translate(0,"+4*voff+")").attr('dy','0.35em').attr("i",3).attr("party",'r');
@@ -107,7 +108,7 @@ var tooltip = d3.select("body")
 
 var svg = d3.select("body").append("svg")
         .attr("width", width/3)
-    .attr("height", height/1.5).attr("transform", "translate(" + (width/3) + ",0)");
+    .attr("height", height/1.5)//.attr("transform", "translate(" + (width/3) + ",0)");
  
        
  
@@ -266,7 +267,7 @@ var grd = d3.select('body').append('svg')
   .attr("width", width/3)
   .attr("height",height/1.5)
 
-  .attr("transform","translate("+width/3+","+height/4+")");
+  .attr("transform","translate("+width/9+","+height/4+")");
   
   
 var chk = "";
@@ -636,3 +637,4 @@ function swapgraph(){
 
     
 }
+compute_hists();
