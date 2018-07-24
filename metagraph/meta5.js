@@ -146,15 +146,22 @@ d3.json(fn, function(error, treeData) {
       .attr("y", -37)
       .attr("str_rep", function(d){ return d.data.str_rep.split('\n').join("").split(" ").join("");})
       .attr("idno", function(d) {return d.name;})
-  node.append("image")
+  /*node.append("image")
       .attr("xlink:href", function(d) {return "m5-imgs/whole/im_"+d.data.name+".png";})
       .attr("x", -30)
       .attr("y", -30)
       .attr("width", 75)
       .attr("height", 75)
-      .attr("html_rep", function(d) {return d.data.html_rep;})
+      .attr("html_rep", function(d) {return d.data.html_rep;})*/
 
-      
+ node.append("foreignObject")
+ .attr("width",100)
+ .attr("height", 90)
+ .attr("x",-43)
+ .attr("y",-45)
+ .append("xhtml:body")
+ 
+ .html(function(d) {return '<p style="margin:0;padding:0;font-size:23px;letter-spacing:-4px;line-height:17px;">'+d.data.html_rep+'</p>';});   
   node.append("text")
       .attr("dy", 3)
       .attr("x", function(d) { return d.children ? -8 : 8; })
