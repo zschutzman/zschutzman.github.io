@@ -1,13 +1,12 @@
-
-var width = 800,
-    height = 800,
+var width = Math.round(1*document.documentElement.clientWidth)
+    height = Math.round(1*document.documentElement.clientHeight)
     idno = 0;
     
-    
+
 var w = width;
 
 var h = height;
-    
+console.log(w,h);    
 var lx=-1;
 var ly=-1;
   
@@ -55,13 +54,19 @@ var tooltip = d3.select("body")
 	
 
 var svg = d3.select("body").append("svg")
-        .attr("width", width)
-    .attr("height", height)
+        .attr("width", width/3)
+    .attr("height", height/1.5).attr("transform", "translate(" + (width/3) + ",0)");
  
-    g = svg.append("g").attr("transform", "translate(" + (width / 2 + 25) + "," + (height / 2) + ")");
+       
+ 
+    g = svg.append("g") .attr("transform", "translate(" + (width/6 ) + "," + (height/3) + ")");
+    //.attr("width",0)
+    //.attr("height",0)
+    
+
 
 var tree = d3.tree()
-    .size([2 * Math.PI, Math.min(width,height)/2.5])
+    .size([2 * Math.PI, Math.min(width,height)/7])
     .separation(function(a, b) { return (a.parent == b.parent ? 1000 : 2000) / a.depth; });
 
 
@@ -77,7 +82,7 @@ d3.json(fn, function(error, treeData) {
   var root = d3.hierarchy(treeData);
   tree(root);
 
-  var link = g.selectAll(".link")
+ /* var link = g.selectAll(".link")
     .data(root.links())
     .enter().append("path")
       .attr("class", "link")
@@ -87,8 +92,8 @@ d3.json(fn, function(error, treeData) {
       .style("stroke","red")
       .attr("d", d3.linkRadial()
           .angle(function(d) { return d.x; })
-          .radius(function(d) { return d.y; }));
-/*var link = g.selectAll(".link")
+          .radius(function(d) { return d.y; }));*/
+var link = g.selectAll(".link")
     .data(root.links())
     .enter().append("line")
       .attr("class", "link")
@@ -96,7 +101,7 @@ d3.json(fn, function(error, treeData) {
       .attr("x1", function(d) { return radialPoint(d.source.x,d.source.y)[0]; })
       .attr("y1", function(d) { return radialPoint(d.source.x,d.source.y)[1]; })
       .attr("x2", function(d) { return radialPoint(d.target.x,d.target.y)[0]; })
-      .attr("y2", function(d) { return radialPoint(d.target.x,d.target.y)[1]; });*/
+      .attr("y2", function(d) { return radialPoint(d.target.x,d.target.y)[1]; });
 
   var node = g.selectAll(".node")
     .data(root.descendants())
@@ -155,12 +160,12 @@ d3.json(fn, function(error, treeData) {
                 .style("opacity", 0);	            
      });
 
-  node.append("rect").attr("width", 100)//90
-      .attr("height", 100)//90
+  node.append("rect").attr("width", 27)//90
+      .attr("height", 27)//90
       .style("stroke", "#666")
       .style("stroke-width",2)
-       .attr("x", -42)//-37
-      .attr("y", -42)//-37
+       .attr("x", -10)//-37
+      .attr("y", -10)//-37
       .attr("str_rep", function(d){ return d.data.str_rep.split('\n').join("").split(" ").join("");})
       .attr("idno", function(d) {return d.data.name;})
         .attr("districts", function(d) { return d.data.tup;})
@@ -174,21 +179,15 @@ d3.json(fn, function(error, treeData) {
       .attr("html_rep", function(d) {return d.data.html_rep;})*/
 
  node.append("foreignObject")
- .attr("width",100)
- .attr("height", 90)
- .attr("x",-43)
- .attr("y",-45)
+ .attr("width",40)
+ .attr("height", 27)
+ .attr("x",-16)
+ .attr("y",-17)
  .append("xhtml:body")
  
- .html(function(d) {return '<p style="margin:0;padding:0;font-size:23px;letter-spacing:-4px;line-height:17px;">'+d.data.html_rep+'</p>';});  
+ .html(function(d) {return '<p style="margin:0;padding:0;font-size:6px;letter-spacing:-1px;line-height:5px;">'+d.data.html_rep+'</p>';});  
  
-  node.append("text")
-      .attr("dy", 3)
-      .attr("x", function(d) { return d.children ? -8 : 8; })
-      .style("text-anchor", function(d) { return d.children ? "end" : "start"; })
-      .text(function(d) { 
-        return d.data.name;
-      });
+
 });
 
 
@@ -212,9 +211,10 @@ mk_gr("m5-graphs/whole_trees2/g0.json",0);
 
 //////////////////////
 var grd = d3.select('body').append('svg')
-  .attr("width", width-300)
-  .attr("height",height-300)
-  .attr("transform","translate(200,-100)");
+  .attr("width", width/3)
+  .attr("height",height/1.5)
+
+  .attr("transform","translate("+width/3+","+height/4+")");
   
   
 var chk = "";
@@ -226,12 +226,12 @@ var dist5 = 0;
 var cnt = 0;  
   
 
-var simp_fill = ['#0000ff','#808080','#ff0000'];
+var simp_fill = ['#244999','#BBAA90','#D22532'];
 
 // calculate number of rows and columns
 var squaresRow = 5;
 var squaresColumn = 5;
-var square=70;
+var square=25;
 
 // loop over number of columns
 _.times(squaresColumn, function(n) {
@@ -260,18 +260,18 @@ _.times(squaresColumn, function(n) {
     .attr("party",0)
     .style("fill",simp_fill[1])
     .style("stroke","#555")
-    .style("stroke-width",5)
+    .style("stroke-width",1)
     
     
     
     .on("mouseover",function(d){
         d3.select(this).style("stroke","#000");
-        d3.select(this).style("stroke-width","6");
+        d3.select(this).style("stroke-width","3");
     })
     
     .on("mouseout", function(d){
         d3.select(this).style("stroke","#555");
-        d3.select(this).style("stroke-width","5")
+        d3.select(this).style("stroke-width","1")
     })
     
     .on("click", function(d){
