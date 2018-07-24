@@ -3,6 +3,7 @@ var width = 800,
     height = 800,
     idno = 0;
     
+    
 var w = width;
 
 var h = height;
@@ -24,6 +25,21 @@ var clsq = false;
    request.open("GET", "../dist_strings.json", false);
    request.send(null)
    var dist_strings = JSON.parse(request.responseText);
+
+ var request = new XMLHttpRequest();
+   request.open("GET", "../dist_wins.json", false);
+   request.send(null)
+   var dist_wins = JSON.parse(request.responseText);
+   
+ var request = new XMLHttpRequest();
+   request.open("GET", "../plan_wins.json", false);
+   request.send(null)
+   var plan_wins = JSON.parse(request.responseText);
+   
+   
+for (var key in plan_wins){
+    plan_wins[key] = JSON.parse("[" +  plan_wins[key].split("(").join("").split(")").join("") + "]");}
+      
 var r_win_i = [0,0,0,0,0,0];
 var b_win_i = [0,0,0,0,0,0];
 var n_win_i = [0,0,0,0,0,0];
@@ -87,6 +103,7 @@ d3.json(fn, function(error, treeData) {
     .enter().append("g")
       .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
       .attr("transform", function(d) { return "translate(" + radialPoint(d.x, d.y) + ")"; })
+      .attr("districts", function(d) { return d.data.tup;})
             .attr("idno", function(d) {return d.name;})
   /*.call(d3.drag()
     .on("start", dragstarted)
@@ -137,15 +154,16 @@ d3.json(fn, function(error, treeData) {
                 .style("opacity", 0);	            
      });
 
-  node.append("rect").attr("width", 90)
-      .attr("height", 90)
-      .style("fill", function(d) {return get_col(d.data.str_rep.split('\n').join("").split(" ").join(""));})
+  node.append("rect").attr("width", 90)//90
+      .attr("height", 90)//90
       .style("stroke","#666")
       .style("stroke-width",2)
-       .attr("x", -37)
-      .attr("y", -37)
+       .attr("x", -37)//-37
+      .attr("y", -37)//-37
       .attr("str_rep", function(d){ return d.data.str_rep.split('\n').join("").split(" ").join("");})
       .attr("idno", function(d) {return d.name;})
+        .attr("districts", function(d) { return d.data.tup;})
+        .style("fill",simp_fill[1])
   /*node.append("image")
       .attr("xlink:href", function(d) {return "m5-imgs/whole/im_"+d.data.name+".png";})
       .attr("x", -30)
@@ -161,7 +179,8 @@ d3.json(fn, function(error, treeData) {
  .attr("y",-45)
  .append("xhtml:body")
  
- .html(function(d) {return '<p style="margin:0;padding:0;font-size:23px;letter-spacing:-4px;line-height:17px;">'+d.data.html_rep+'</p>';});   
+ .html(function(d) {return '<p style="margin:0;padding:0;font-size:23px;letter-spacing:-4px;line-height:17px;">'+d.data.html_rep+'</p>';});  
+ 
   node.append("text")
       .attr("dy", 3)
       .attr("x", function(d) { return d.children ? -8 : 8; })
@@ -198,7 +217,8 @@ function swapgraph(){
     svg.selectAll(".node").remove();
     mk_gr("m5-graphs/whole_trees2/g"+d3.select(this).data()[0].data.name+".json", d3.select(this).data()[0].data.name);
     do_update(-1);
-    do_update2();
+    get_col(-1);
+    //do_update2();
 
     
 }
@@ -271,7 +291,8 @@ _.times(squaresColumn, function(n) {
     .on("click", function(d){
      clsq = true;
      do_update(this);
-     do_update2();
+     //do_update2();
+     get_col(-1);
      compute_hists();
     }
     );
@@ -279,9 +300,8 @@ _.times(squaresColumn, function(n) {
 
 });
     
-    
+  
 function do_update(r){
-            console.log("YAAA");
    
     //if (d3.event != null && d3.event.defaultPrevented) return;
         if (d3.event != null && r != -1){
@@ -291,7 +311,6 @@ function do_update(r){
         }
   
 
-        console.log("YAAA");
 
     grd.selectAll('rect').each(function(d){
         //console.log(d3.select(this).attr("party"));
@@ -306,8 +325,9 @@ function do_update(r){
         n_win_i = [0,0,0,0,0,0];
 
 
-        console.log("HHH");
+        
 }
+/*
 function do_update2(){
         g.selectAll("rect").each(function(d){
             var hld = this;
@@ -351,50 +371,36 @@ function do_update2(){
         });
     clsq = false;
     }
-    
+ */   
 function get_col(chkstr){
-        var chk = chkstr;
+        
+        var chk = compute_hists();
         dist1=0;
         dist2=0;
         dist3=0;
         dist4=0;
         dist5=0;
         cnt=0;
-        console.log("YAAA");
 
-        grd.selectAll("rect").each(function(e){
+        svg.selectAll("rect").each(function(e){
+            distloop = d3.select(this).attr("districts");
+            distloop = JSON.parse("[" +  distloop.split("(").join("").split(")").join("") + "]")
+            for(var i=0;i<5;i++){
+             cnt += Math.sign(chk[distloop[i]]);
+            }
 
-            var b = parseInt(d3.select(this).attr("party"));
-            if (chk[cnt] == 1){
-            dist1 = dist1 + b;
-            } else  if (chk[cnt] == 2){
-            dist2 = dist2 + b;
-            }else   if (chk[cnt] == 3){
-            dist3 = dist3 + b;
-            }else   if (chk[cnt] == 4){
-            dist4 = dist4 + b;
-            }else   if (chk[cnt] == 5){
-            dist5 = dist5 + b;
-                       }
-            cnt = cnt+1;
-
-        });
-        dist1 = Math.sign(dist1);
-        dist2 = Math.sign(dist2);
-        dist3 = Math.sign(dist3);
-        dist4 = Math.sign(dist4);
-        dist5 = Math.sign(dist5);
+        
+   
         
 
-        var col = Math.sign(dist1 + dist2 + dist3 + dist4 + dist5) + 1;
-
-        return simp_fill[col];
+        var col = Math.sign(cnt) + 1;
+        d3.select(this).style("fill", simp_fill[col]);
     
-    
+    });
 }
 
 
-function compute_hists(){
+/*function compute_hists(){
         r_win_i = [0,0,0,0,0,0];
         b_win_i = [0,0,0,0,0,0];
         n_win_i = [0,0,0,0,0,0];    
@@ -454,6 +460,63 @@ function compute_hists(){
 }
     
     console.log(b_win_i,r_win_i);
+
+}*/
+
+
+
+
+function compute_hists() {
+    var st;
+    r_win_i = [0,0,0,0,0,0];
+    b_win_i = [0,0,0,0,0,0];
+    n_win_i = [0,0,0,0,0,0];  
+    Object.keys(dist_wins).forEach(v => dist_wins[v] = 0);
+    Object.keys(plan_wins).forEach(v => plan_wins[v] = [0,0]);
+
+    for(var i=0; i<Object.keys(dist_strings).length; i++){
+    var cnt = 0;
+    var tot = 0;
+        st = dist_strings[i];
+        grd.selectAll("rect").each(function(e){
+
+            var b = parseInt(d3.select(this).attr("party"));
+            tot = tot + (b*st[cnt]);
+            cnt = cnt+1;
+
+        });
+        
+        dist_wins[i] = Math.sign(tot);
+        //console.log(dist_wins[i],tot);
+        
+        
+
+    }
+    for (var key in plan_wins){
+            var key2 = JSON.parse("[" +  key.split("(").join("").split(")").join("") + "]");
+           // console.log(key2);
+        for (var d=0;d<5;d++){
+            
+            var c = dist_wins[key2[d]];
+            //console.log();
+            if (c>0){plan_wins[key][0] +=1;}
+            if (c<0){plan_wins[key][1] +=1;}
+            
+            
+            
+        }
+        
+       r_win_i[plan_wins[key][0]] +=1;
+       b_win_i[plan_wins[key][1]] +=1;
+        
+        
+    }
+
+    console.log("NEW HISTS: ", r_win_i, b_win_i);
+  return dist_wins;
 }
 
-compute_hists();
+
+
+
+get_col(-1);
