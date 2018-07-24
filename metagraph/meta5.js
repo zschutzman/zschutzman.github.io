@@ -46,6 +46,58 @@ var rwin = 0;
 var bwin=0;
 
 
+
+var hoff = 130;
+var voff = 15;
+var winbox = d3.select("body").append("svg")
+            .attr("width",500)
+            .attr("height",200)
+            
+            var wgrp = winbox.append("g");
+            
+            wgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
+            wgrp.append("text") .text("Seat Distribution:")  .attr('dy','0.35em');
+            var tr0 = wgrp.append("text").attr("transform","translate(0,"+voff+")").attr('dy','0.35em').attr("i", 0).attr("party",'r').text("AAA");
+            var tr1 = wgrp.append("text").attr("transform","translate(0,"+2*voff+")").attr('dy','0.35em').attr("i",1).attr("party",'r');
+            var tr2 = wgrp.append("text").attr("transform","translate(0,"+3*voff+")").attr('dy','0.35em').attr("i",2).attr("party",'r');
+            var tr3 = wgrp.append("text").attr("transform","translate(0,"+4*voff+")").attr('dy','0.35em').attr("i",3).attr("party",'r');
+            var tr4 = wgrp.append("text").attr("transform","translate(0,"+5*+voff+")").attr('dy','0.35em').attr("i",4).attr("party",'r');
+            var tr5 = wgrp.append("text").attr("transform","translate(0,"+6*+voff+")").attr('dy','0.35em').attr("i",5).attr("party",'r');
+            
+            var tb0 = wgrp.append("text").attr("transform","translate("+hoff+","+voff+")").attr('dy','0.35em').attr("i",0).attr("party",'b');
+            var tb1 = wgrp.append("text").attr("transform","translate("+hoff+","+2*voff+")").attr('dy','0.35em').attr("i",1).attr("party",'b');
+            var tb2 = wgrp.append("text").attr("transform","translate("+hoff+","+3*voff+")").attr('dy','0.35em').attr("i",2).attr("party",'b');
+            var tb3 = wgrp.append("text").attr("transform","translate("+hoff+","+4*voff+")").attr('dy','0.35em').attr("i",3).attr("party",'b');
+            var tb4 = wgrp.append("text").attr("transform","translate("+hoff+","+5*+voff+")").attr('dy','0.35em').attr("i",4).attr("party",'b');
+            var tb5 = wgrp.append("text").attr("transform","translate("+hoff+","+6*+voff+")").attr('dy','0.35em').attr("i",5).attr("party",'b');
+
+
+var tb_list = [tb0,tb1,tb2,tb3,tb4,tb5];
+var tr_list = [tr0,tr1,tr2,tr3,tr4,tr5]
+console.log(tb_list);
+
+            
+function update_textboxes(){
+    
+wgrp.selectAll("text").each(function(d){
+    
+    var i = d3.select(this).attr("i");
+    var p = d3.select(this).attr("party");
+    console.log(p);
+    if (i != null){
+        if (p=='r'){
+            console.log(d3.select(this).attr("text"));
+            d3.select(this).text("Red Wins " + i + ": " + r_win_i[i]);
+        }
+        if (p=='b'){
+                d3.select(this).text("Blue Wins " + i + ": " + b_win_i[i]);
+        }
+    }
+     
+ });
+}
+            
+            
 var tooltip = d3.select("body")
 	.append("div")
 	.style("position", "absolute")
@@ -509,7 +561,7 @@ function compute_hists() {
         
         
     }
-    
+    update_textboxes();
   return dist_wins;
 }
 
