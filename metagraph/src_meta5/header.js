@@ -60,7 +60,13 @@ var clsq = false;
    request.send(null)
    var part_plan2html = JSON.parse(request.responseText);
 
+   
+ var request = new XMLHttpRequest();
+   request.open("GET", "./dist_lookup.json", false);
+   request.send(null)
+   var dist_lookup = JSON.parse(request.responseText);
 
+console.log(dist_lookup);
    
 for (var key in plan_wins){
     plan_wins[key] = JSON.parse("[" +  plan_wins[key].split("(").join("").split(")").join("") + "]");}
@@ -85,7 +91,30 @@ function testclick(){
     plan.push(parseInt(d3.select(this).attr("distno")));
   
     distbox.selectAll("g").remove();
-    if (plan.length ==5){plan = [];}
+    if (plan.length ==5){
+     
+        var newgr = "("+plan.join(", ")+")";
+        console.log(newgr);
+        newgr = dist_lookup[newgr];
+        console.log(newgr);
+        var n = 0;
+        if (newgr !=idno){
+               graph.selectAll("g").each(function(){n++;})
+    .transition()
+    .duration(200)
+    .style("opacity",0)
+    .on("end",function(){n--;if(!n){cl_gr();
+                                    mk_gr("m5-graphs/whole_trees2/g"+newgr+".json", newgr);
+                                    graph.selectAll("g").transition()
+    .duration(200)
+    .style("opacity",1);
+                                   }
+                        });
+        }
+    
+        
+        
+        plan = [];}
     constr_distbox();
     
 }
