@@ -25,9 +25,9 @@ My notes from [the Metric Geometry and Gerrymandering Group's August 2017 Confer
 
 ----
 
-I was a TA for [Bo Waggoner's](https://www.bowaggoner.com/) course [Algorithmic Game Theory (NETS 412)](https://www.bowaggoner.com/courses/2018/nets412/) in Spring 2018
+* I was a TA for [Bo Waggoner's](https://www.bowaggoner.com/) course [Algorithmic Game Theory (NETS 412)](https://www.bowaggoner.com/courses/2018/nets412/) in Spring 2018
 
-I was a TA for the Fall 2017 iteration of [Michael Kearns'](http://cis.upenn.edu/~mkearns) course [Networked Life (NETS112)](http://www.cis.upenn.edu/~mkearns/teaching/NetworkedLife/)
+* I was a TA for the Fall 2017 iteration of [Michael Kearns'](http://cis.upenn.edu/~mkearns) course [Networked Life (NETS112)](http://www.cis.upenn.edu/~mkearns/teaching/NetworkedLife/)
 
 ----
 * I was a TA/grader/tutor at Colby College for:
@@ -35,5 +35,5 @@ I was a TA for the Fall 2017 iteration of [Michael Kearns'](http://cis.upenn.edu
 	- Micro- and Macro Economic Principles/Theory (EC133,134,223,224)
 	- Game Theory (EC379)
 	- Statistics (SC212,231)
-	- Computational Thinking (CS151)
+	- Computational Thinking (CS151/152)
 	
