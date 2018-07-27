@@ -6,7 +6,7 @@ var vis2 = d3.select("#chart2")
     .attr("height", h);
     
 
-d3.json("gr2.json", function(json) {
+d3.json("src-meta4/data/gr2.json", function(json) {
   var force = d3.layout.force()
       .charge(-150)
       .linkDistance(50)

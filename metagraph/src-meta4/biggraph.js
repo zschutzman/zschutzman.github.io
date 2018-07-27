@@ -18,9 +18,7 @@ var tooltip = d3.select("body")
 	.style("opacity", 0);
 	
 
-function neighboring(a, b) {
-    return linkedByIndex[a.index + "," + b.index];
-}
+
  
 // Define the div for the tooltip
 var div = d3.select("body").append("div")	
@@ -28,7 +26,7 @@ var div = d3.select("body").append("div")
     .style("opacity", 0);
 
     
-d3.json("graph5.json", function(json) {
+d3.json("src-meta4/data/gr.json", function(json) {
   var force = d3.layout.force()
       .charge(-150)
       .linkDistance(50)
@@ -49,15 +47,6 @@ d3.json("graph5.json", function(json) {
       .attr("y2", function(d) { return d.target.y; })
       .attr("u",function(d) {return d3.select(d.source);})
       .attr("v", function(d) {return d.target;});
-      
-      
-      
-vis.selectAll("line.link").each(function(d){
-     linkedByIndex[d.source.index + "," + d.target.index] = 1;
-     linkedByIndex[d.target.index + "," + d.target.index] = 1;
-    linkedByIndex[d.target.index + "," + d.source.index] = 1;
-
-});
 
   var node = vis.selectAll("circle.node")
       .data(json.nodes)
@@ -74,7 +63,7 @@ vis.selectAll("line.link").each(function(d){
       .attr("on",0)
       .style("fill", function(d) { if (d.Type == 20) return 'PapayaWhip'; if (d.Type == 21) return 'Gold'; return fill(d.Type); })
       .call(force.drag)
-      .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
+      .on("mousemove", function(){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
 
       .on("mouseover",function(){
         var t = d3.select(this).attr("type");
@@ -149,7 +138,12 @@ vis.selectAll("line.link").each(function(d){
   });
   
   
+vis.selectAll("line.link").each(function(d){
+     linkedByIndex[d.source.index + "," + d.target.index] = 1;
+     linkedByIndex[d.target.index + "," + d.target.index] = 1;
+    linkedByIndex[d.target.index + "," + d.source.index] = 1;
 
+});
 
 
 
@@ -253,7 +247,9 @@ function connectedNodes() {
 });
 
 
-
+function neighboring(a, b) {
+    return linkedByIndex[a.index + "," + b.index];
+}
 
 
 
