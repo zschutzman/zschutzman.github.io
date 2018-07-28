@@ -234,7 +234,7 @@ function swapgraph(){
                         });
     var cnt = 0;
     var chk = compute_hists();
-
+    
     do_update(-1);
 
 
