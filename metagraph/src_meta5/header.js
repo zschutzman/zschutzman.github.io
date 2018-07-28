@@ -2,7 +2,8 @@ var width = Math.round(1*document.documentElement.clientWidth)
     height = Math.round(1*document.documentElement.clientHeight)
     idno = 0;
     
-
+var num_red = 0;
+var red_this = 0;
 var w = width;
 
 var h = height;
@@ -65,6 +66,12 @@ var clsq = false;
    request.open("GET", "./src_meta5/data/dist_lookup.json", false);
    request.send(null)
    var dist_lookup = JSON.parse(request.responseText);
+   
+ var request = new XMLHttpRequest();
+   request.open("GET", "./src_meta5/data/elec_dist.json", false);
+   request.send(null)
+   var elec_dist = JSON.parse(request.responseText);
+
 
 console.log(dist_lookup);
    

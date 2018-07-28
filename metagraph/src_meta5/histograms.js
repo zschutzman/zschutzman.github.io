@@ -28,7 +28,7 @@ var deltabox = d3.select("body").append("svg")
             var dgrp = deltabox.append("g").attr("transform","translate(0,15)");
             
             //wgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
-            dgrp.append("text") .text("For this districting plan, among all distributions with 0 Red voters:")  .attr('dy','0.35em');
+            dgrp.append("text") .text("For this districting plan, among all distributions with "+num_red+" Red voters:")  .attr('dy','0.35em');
             var tr0 = dgrp.append("text").attr("transform","translate(0,"+voff+")").attr('dy','0.35em').attr("i", 0).attr("party",'r');
             var tr1 = dgrp.append("text").attr("transform","translate(0,"+2*voff+")").attr('dy','0.35em').attr("i",1).attr("party",'r');
             var tr2 = dgrp.append("text").attr("transform","translate(0,"+3*voff+")").attr('dy','0.35em').attr("i",2).attr("party",'r');
@@ -41,6 +41,13 @@ var tr_list = [tr0,tr1,tr2,tr3,tr4,tr5]
 
             
 function update_textboxes(){
+    
+    console.log("RED THIS", red_this);
+    num_red = 0;
+    grd.selectAll('rect').each(function(d){
+        if (d3.select(this).attr("party") == 1) num_red+=1;
+
+    });
     
 wgrp.selectAll("text").each(function(d){
     
@@ -59,12 +66,12 @@ dgrp.selectAll("text").each(function(d){
     var p = d3.select(this).attr("party");
     if (i != null){
        
-        d3.select(this).text("Red Wins " + i + ": " + "{LOOKUP}");
+        d3.select(this).text("Red Wins " + i + ": " + elec_dist[num_red][i]);
         
 
     }
     else{
-     d3.select(this).text("Among all distributions with {LOOKUP} Red voters, this plan results in:")
+     d3.select(this).text(red_this + "Among all distributions with "+num_red +" Red voters, this plan results in:")
     }
 });
 }
@@ -110,6 +117,5 @@ function compute_hists() {
         
         
     }
-    update_textboxes();
   return dist_wins;
 }
