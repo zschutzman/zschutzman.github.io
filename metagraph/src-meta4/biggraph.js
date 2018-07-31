@@ -9,7 +9,7 @@ var toggle = 0;
  
 var vis = d3.select("#chart1")
   .append("svg")
-    .attr("width", w)
+    .attr("width", w-wp/2)
     .attr("height", h);
     
 
@@ -34,7 +34,7 @@ d3.json("src-meta4/data/gr.json", function(json) {
       .linkDistance(50)
       .nodes(json.nodes)
       .links(json.links)
-      .size([w, h])
+      .size([w-wp/2, h])
       .start();
 
   var link = vis.selectAll("line.link")

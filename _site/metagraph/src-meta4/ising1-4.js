@@ -7,7 +7,7 @@ var toggle = 0;
  
 var vis3 = d3.select("#chart2")
   .append("svg")
-    .attr("width", w)
+    .attr("width", w-wp/2)
     .attr("height", h);
 
 var tooltip = d3.select("body")
@@ -31,7 +31,7 @@ d3.json("src-meta4/data/gr.json", function(json) {
       .linkDistance(50)
       .nodes(json.nodes)
       .links(json.links)
-      .size([w, h])
+      .size([w-wp/2, h])
       .start();
 
   var link = vis3.selectAll("line.link")
