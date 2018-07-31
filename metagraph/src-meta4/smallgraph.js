@@ -55,6 +55,14 @@ d3.json("src-meta4/data/gr2.json", function(json) {
                
                 
             });
+            
+         vis3.selectAll("circle.node")
+            .each(function(d){
+                var u = d3.select(this).attr("type");
+                 if (u==t){d3.select(this).attr("r",20);}
+               
+                
+            });
 
       })
       
@@ -70,6 +78,12 @@ d3.json("src-meta4/data/gr2.json", function(json) {
             d3.select(this).attr("r", function(d) {return Math.round(1.2*d.orbit)+3;})
 
             });
+            
+            vis3.selectAll("circle.node")
+            .each(function(d){
+            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg);})
+                
+            });   
      });
      
     
@@ -115,7 +129,14 @@ function connectedNodes2() {
                 d3.select(this).style("stroke-width",0);
                 d3.select(this).style("opacity",1);
             
-        });       
+        });
+                  vis3.selectAll("circle.node").each(function(d){
+           
+                d3.select(this).attr("on",0);
+                d3.select(this).style("stroke-width",0);
+                d3.select(this).style("opacity",1);
+            
+        });   
     
     if (d3.select(this).attr("on") ==1){
         node.style("opacity", 1);
@@ -149,7 +170,17 @@ function connectedNodes2() {
             }
         });
         
-        
+         vis3.selectAll("circle.node").each(function(d){
+                            //d3.select(this).attr("on",1);
+                d3.select(this).style("stroke-width",0);
+            var tq = d3.select(this).attr("type");
+            if (tp == tq) {
+               
+                d3.select(this).attr("on",1);
+                d3.select(this).style("opacity",1);
+                
+            }
+        });       
         
         
         toggle = 0;
@@ -193,7 +224,35 @@ function connectedNodes2() {
              console.log("SW",sw);
    d3.select(this).style("opacity", function(o){ if (sw == '3px') return 1; return .7;});
          });
-    
+
+         
+         
+         vis3.selectAll("circle.node").each(function(e){
+             var tq = d3.select(this).attr("type");
+                if (tp == tq) {
+                oth = d3.select(this);
+                oth2 = oth.node().__data__;
+             
+                     oth.style("opacity",1);
+        oth.style("stroke-width",3);
+             
+            vis3.selectAll("circle.node").each(function(e){
+                var c = d3.select(this).style("opacity");
+                var f = d3.select(this).style("stroke-width");
+            d3.select(this).style("opacity", function(o){return neighboring(oth2, o) | neighboring(o, oth2) | o === d ? 1 : .7;});
+            d3.select(this).style("stroke-width", function(o) {return neighboring(oth2, o) | neighboring(o, oth2) | o === d ? 3 : f;});
+            
+            });
+                }
+             
+             
+         });
+         
+         vis3.selectAll("circle.node").each(function(e){
+             var sw = d3.select(this).style("stroke-width");
+             console.log("SW",sw);
+   d3.select(this).style("opacity", function(o){ if (sw == '3px') return 1; return .7;});
+         });
 
     toggle = 1-toggle;
         
