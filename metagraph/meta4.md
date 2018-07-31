@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Adding custom JavaScript for a specific post
 customjs:
  - https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js
  - src-meta4/biggraph.js
@@ -9,4 +8,4 @@ customjs:
 
 
 <div id="chart1"></div>
-<div id="chart2"></dag>
+<div id="chart2"></div>
