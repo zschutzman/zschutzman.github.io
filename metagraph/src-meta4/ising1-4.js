@@ -1,9 +1,10 @@
 
 var elecfill = ['#0000ff','#5934df','#7250c0','#7d69a0','#808080','#aa7264','#ca6048','#e6462a','#ff0000'];
+var elecfill = ['orange','#5934df','#7250c0','#7d69a0','#808080','#aa7264','#ca6048','#e6462a','green'];
 
 
 
-var toggle = 0;
+
  
 var vis3 = d3.select("#chart2")
   .append("svg")
@@ -19,10 +20,7 @@ var tooltip = d3.select("body")
 
 
  
-// Define the div for the tooltip
-var div = d3.select("body").append("div")	
-    .attr("class", "tooltip")				
-    .style("opacity", 0);
+
 
     
 d3.json("src-meta4/data/gr.json", function(json) {
@@ -68,7 +66,7 @@ d3.json("src-meta4/data/gr.json", function(json) {
       .on("mouseover",function(){
         var t = d3.select(this).attr("type");
         var c = d3.select(this)          
-        tooltip.style("vis3ibility", "vis3ible");
+        tooltip.style("visibility", "visible");
         tooltip.html('<p style="margin:0;padding:0;font-size:50px;letter-spacing:-10px;line-height:35px;">' + c.attr( "html_rep" ) + "</p>");
         
         
@@ -92,7 +90,7 @@ d3.json("src-meta4/data/gr.json", function(json) {
       })
       
       .on("mouseout", function(){
-          tooltip.style("vis3ibility", "hidden");
+          tooltip.style("visibility", "hidden");
                 vis3.selectAll("circle.node")
             .each(function(d){
             d3.select(this).attr("r", function(d) {return Math.round(2*d.deg);})
@@ -172,6 +170,14 @@ function neighboring(a, b) {
 
 function connectedNodes() {
         if (d3.event.defaultPrevented) return;
+        
+          vis.selectAll("circle.node").each(function(d){
+           
+                d3.select(this).attr("on",0);
+                d3.select(this).style("stroke-width",0);
+                d3.select(this).style("opacity",1);
+            
+        });  
 
     if (d3.select(this).attr("on") ==1){
         node.style("opacity", 1);
@@ -179,6 +185,17 @@ function connectedNodes() {
         node.style("stroke-width",0);
         d3.select(this).attr("on",0);
         toggle = 0;
+        
+        
+                vis2.selectAll("circle.node").each(function(d){
+           
+                d3.select(this).attr("on",0);
+                d3.select(this).style("stroke-width",0);
+                d3.select(this).style("opacity",1);
+            
+        });
+        
+        
         return;
     }
     
@@ -188,6 +205,34 @@ function connectedNodes() {
         node.style("stroke-width",0);
         d3.select(this).attr("on",1);
         toggle = 0;
+        
+                vis.selectAll("circle.node").each(function(d){
+                            //d3.select(this).attr("on",1);
+                d3.select(this).style("stroke-width",0);
+            var tq = d3.select(this).attr("type");
+            if (tp == tq) {
+               
+                d3.select(this).attr("on",1);
+                d3.select(this).style("opacity",1);
+                
+            }
+        });
+                
+                
+        var tp = d3.select(this).attr("type");
+        vis2.selectAll("circle.node").each(function(d){
+                            //d3.select(this).attr("on",1);
+                d3.select(this).style("stroke-width",0);
+            var tq = d3.select(this).attr("type");
+            if (tp == tq) {
+               d3.select(this).attr("on",1);
+
+                d3.select(this).style("opacity",1);
+                
+            }
+        });
+        
+        
     }
 
     if (toggle == 0) {
@@ -198,8 +243,60 @@ function connectedNodes() {
         node.style("stroke-width", function(o) {
                         return neighboring(d, o) | neighboring(o, d) | o === d ? 3 : 0;
         });
+        
+        
+        
+              var oth;
+         var oth2;
+         var tp = d3.select(this).attr("type");   
+        
+        vis.selectAll("circle.node").each(function(e){
+
+             var tq = d3.select(this).attr("type");
+                if (tp == tq) {
+                oth = d3.select(this);
+                oth2 = oth.node().__data__;
+             
+                     oth.style("opacity",1);
+        oth.style("stroke-width",3);
+             
+            vis.selectAll("circle.node").each(function(e){
+                var c = d3.select(this).style("opacity");
+                var f = d3.select(this).style("stroke-width");
+            d3.select(this).style("opacity", function(o){return neighboring(oth2, o) | neighboring(o, oth2) | o === d ? 1 : .7;});
+            d3.select(this).style("stroke-width", function(o) {return neighboring(oth2, o) | neighboring(o, oth2) | o === d ? 3 : f;});
+            
+            });
+                }
+             
+             
+         });  
+                 var oth;
+         var oth2;
+         var tp = d3.select(this).attr("type");
+        vis2.selectAll("circle.node").each(function(e){
+            var tq = d3.select(this).attr("type");
+            if (tp == tq) {
+                oth = d3.select(this);
+                
+                
+            
+        
+
+        oth2 = oth.node().__data__;
+        
+            }
+        });
+        vis2.selectAll("circle.node").each(function(e){
+            d3.select(this).style("opacity", function(o){return neighboring2(oth2, o) | neighboring2(o, oth2) | o === d ? 1 : 0.7;});
+            d3.select(this).style("stroke-width", function(o) {return neighboring2(oth2, o) | neighboring2(o, oth2) | o === d ? 3 : 0;});
+    });
+               oth.style("opacity",1);
+        oth.style("stroke-width",3); 
+      
 
     }
+    
     
 
     toggle = 1-toggle;

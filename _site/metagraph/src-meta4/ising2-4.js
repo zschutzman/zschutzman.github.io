@@ -31,6 +31,8 @@ function get_col(chkstr){
     });
 }
 var simp_fill = ['#0000ff','#808080','#ff0000'];
+var simp_fill = ['orange','#808080','green'];
+
 
 // create the svg
 var grd = d3.select('#chart2').append('svg').attr("transform","translate(0,"+(-h/3) +")")

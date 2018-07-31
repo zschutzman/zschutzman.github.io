@@ -1,5 +1,5 @@
 var w = Math.round(.45*document.body.clientWidth)
-    h = 2*Math.round(1*document.body.clientHeight)
+    h = Math.round(1*document.body.clientHeight)
     fill = d3.scale.category20()
     wp = Math.round(.25*document.body.clientWidth);
 console.log(w,wp,h);
