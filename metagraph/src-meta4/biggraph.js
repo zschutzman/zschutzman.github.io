@@ -6,7 +6,7 @@ var linkedByIndex = {};
     
 var toggle = 0;
  
-var vis = d3.select("#chart1")
+var vis = d3.select("body")
   .append("svg")
     .attr("width", w+wp)
     .attr("height", h);

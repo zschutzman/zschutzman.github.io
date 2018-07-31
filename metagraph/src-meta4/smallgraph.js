@@ -1,6 +1,6 @@
 
  var linkedByIndex2 = {};   
-var vis2 = d3.select("#chart2")
+var vis2 = d3.select("body")
   .append("svg")
     .attr("width", w)
     .attr("height", h);
