@@ -66,8 +66,8 @@ _.times(squaresColumn, function(n) {
       id: function(d, i) {
         return 's-' + (n + 1) + (i + 1);
       },
-      width: square/2,
-      height: square,
+      width: square,
+      height: square/2,
       x: function(d, i) {
         return (i * 1.07*square + 35);
       },
@@ -142,14 +142,14 @@ function do_update(){
     grd2grp.selectAll('rect').each(function(d){
         
         if (d3.select(this).attr("mask") == 2 && d3.select(this).attr("id") == clid){ 
-            var tempw = parseInt(d3.select(this).attr("width"));
-            if (parseInt(tempw)>= square){d3.select(this).attr("width",0);}
+            var tempw = parseInt(d3.select(this).attr("height"));
+            if (parseInt(tempw)>= square){d3.select(this).attr("height",0);}
             else{
-                d3.select(this).attr("width", tempw + (square/10.0));
+                d3.select(this).attr("height", tempw + (square/10.0));
             }
             
             
-                d3.select(this).attr("party", parseInt(d3.select(this).attr("width"))/square);
+                d3.select(this).attr("party", parseInt(d3.select(this).attr("height"))/square);
             
             
         }
@@ -212,15 +212,15 @@ function do_update(){
     grd2grp.selectAll('rect').each(function(d){
         
         if (d3.select(this).attr("mask") == 2 && d3.select(this).attr("id") == clid){ 
-            var tempw = parseInt(d3.select(this).attr("width"));
+            var tempw = parseInt(d3.select(this).attr("height"));
             
-            if (parseFloat(tempw)<= 0){d3.select(this).attr("width",square);}
+            if (parseFloat(tempw)<= 0){d3.select(this).attr("height",square);}
             else{
-                d3.select(this).attr("width", tempw - (square/10.0));
+                d3.select(this).attr("height", tempw - (square/10.0));
             }
             
             
-                d3.select(this).attr("party", parseInt(d3.select(this).attr("width"))/square);
+                d3.select(this).attr("party", parseInt(d3.select(this).attr("height"))/square);
             
             
         }
