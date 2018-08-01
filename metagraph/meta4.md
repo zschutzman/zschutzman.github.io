@@ -21,6 +21,7 @@ customjs:
 <br />
 
 -->
+## This page is currently a work-in-progress
 <center>
 <h2> Welcome to Gridlandia!</h2>
 <br/>
@@ -69,12 +70,14 @@ The graph on the right is the metagraph where plans which are symmetric are merg
 
 <div id="chart1" style="width:100% text-align:left"></div>
 
-Now let's think about elections in Gridlandia.  Gridlandia has plurality elections and two political parties, the Green Party and the Orange Party.  For simplicity, we'll start by assuming that everyone in the same cell votes the same way -- either for the Green candidate, the Orange candidate, or neither.  Within each district, the candidate which gets the most votes wins the election, and ties are not resolved.  Below, click a cell once to turn it green, a second time to turn it orange, and a third time to turn it grey again.  On the left, the nodes in the metagraph will change color to indicate which party wins a legislative majority under the corresponding plan.  A node will remain grey if the number of Green- and Orange-favoring districts is equal.
+Now let's think about elections in Gridlandia.  Gridlandia has plurality elections and two political parties, the Green Party and the Orange Party.  For simplicity, we'll start by assuming that everyone in the same cell votes the same way -- either for the Green candidate or the Orange candidate.  Within each district, the candidate which gets the most votes wins the election, and ties are not resolved.  Below, click a cell once to change its color.  On the left, the nodes in the metagraph will change color to indicate which party wins a legislative majority under the corresponding plan.  A node will remain grey if the number of Green- and Orange-favoring districts is equal.
 
 
 <div id="chart2" style="width:100% text-align:left"></div>
 
 
+Let's make things a little more realistic.  Instead of each cell voting entirely for one party, there are some Green and some Orange supporters in each cell -- a total of ten in each square.  The same electoral rules apply, but now we can think about a *distribution* of votes in each cell.  Left click on a square to increase the percentage of Orange voters, or right click it to decrease the percentage of Orange voters.  
 
-<!---<div id="chart3" style="width:100% text-align:left"></div>-->
+
+<div id="chart3" style="width:100% text-align:left"></div>
 

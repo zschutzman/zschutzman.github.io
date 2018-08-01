@@ -3,9 +3,9 @@
   {{ site.data.academic_i18n.links[plang] }}
 </span>
 <ul class="contact-list {{ include.class }}">
-  <li>
+<!--  <li>
     {% include _icons/rss.html %}
-  </li>
+  </li> -->
 
   {% if site.github_username %}
   <li>
@@ -16,6 +16,12 @@
   {% if site.twitter_username %}
   <li>
     {% include _icons/twitter.html username=site.twitter_username %}
+  </li>
+  {% endif %}
+  
+  {% if site.curriculuml %}
+  <li>
+    {% include _icons/file.html curriculum=site.curriculumurl %}
   </li>
   {% endif %}
 

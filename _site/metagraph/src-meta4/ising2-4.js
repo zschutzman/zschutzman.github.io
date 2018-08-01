@@ -4,32 +4,7 @@ var dist2 = 0;
 var dist3 = 0;
 var dist4 = 0;
 var cnt = 0;
-function get_col(chkstr){
-        var chk = chkstr;
-        dist1=0;
-        dist2=0;
-        dist3=0;
-        dist4=0;
-        dist5=0;
-        cnt=0;
-        console.log("YAAA");
 
-        grd.selectAll("rect").each(function(e){
-            console.log(d3.select(e));
-            for(var i=0;i<5;i++){
-                console.log(d3.select(this).attr("districts"), "DISTRICTS");
-             cnt += dist_wins[d3.select(this).attr("districts")[i]];   
-            }
-
-        
-   
-        
-
-        var col = Math.sign(cnt) + 1;
-        d3.select(this).style("fill", simp_fill[col]);
-    
-    });
-}
 var simp_fill = ['#0000ff','#808080','#ff0000'];
 var simp_fill = ['orange','#808080','green'];
 
@@ -75,8 +50,8 @@ _.times(squaresColumn, function(n) {
       y: (n * 1.07*square + 35),
     })
     
-    .attr("party",0)
-    .style("fill",elecfill[4])
+    .attr("party",function(d,i) {return i<2 ? -1:1;})
+    .style("fill",function(d,i){ return i<2 ? simp_fill[-1]:simp_fill[1];})
     .style("stroke","#555")
     .style("stroke-width",5)
     
@@ -92,30 +67,32 @@ _.times(squaresColumn, function(n) {
         d3.select(this).style("stroke-width","5")
     })
     
-    .on("click",do_update)
+    .on("click",function(d){
+        do_updateis(this);})
 
 
 });
     
     
-function do_update(){    
+function do_updateis(r){    
+        if (d3.event != null && r != -1){
         if (d3.event.defaultPrevented) return;
 
-        var t = parseInt(d3.select(this).attr("party"));
-        d3.select(this).attr("party", t+1);
-        if (d3.select(this).attr("party") == 2){d3.select(this).attr("party",-1);}
+        var t = parseInt(d3.select(r).attr("party"));
+        d3.select(r).attr("party", t+2);
+        if (d3.select(r).attr("party") >= 2){d3.select(r).attr("party",-1);}
   
 
-
+        }
     grd.selectAll('rect').each(function(d){
         //console.log(d3.select(this).attr("party"));
-        if (d3.select(this).attr("party") == 0) d3.select(this).style("fill", elecfill[4]);
-        if (d3.select(this).attr("party") == 1) d3.select(this).style("fill", elecfill[8]);
-        if (d3.select(this).attr("party") == -1) d3.select(this).style("fill", elecfill[0]);
+        if (d3.select(this).attr("party") == 0) d3.select(this).style("fill", simp_fill[1]);
+        if (d3.select(this).attr("party") == 1) d3.select(this).style("fill", simp_fill[2]);
+        if (d3.select(this).attr("party") == -1) d3.select(this).style("fill", simp_fill[0]);
 
     });
 
-
+        
     
         vis3.selectAll("circle.node").each(function(d){
             var hld = this;
@@ -153,7 +130,7 @@ function do_update(){
         });
     }
     
-do_update;
+do_updateis(-1);
     
  
     

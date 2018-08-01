@@ -1,5 +1,5 @@
 var w = Math.round(.5*document.getElementById("chart1").clientWidth);
-    h = Math.round(.7*document.getElementById("chart1").clientWidth);
+    h = Math.round(.6*document.getElementById("chart1").clientWidth);
     fill = d3.scale.category20()
     wp = Math.round(.2*document.getElementById("chart1").clientWidth);
 console.log(w,wp,h);
@@ -107,20 +107,20 @@ d3.json("src-meta4/data/gr.json", function(json) {
           tooltip.style("visibility", "hidden");
                 vis.selectAll("circle.node")
             .each(function(d){
-            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg);})
+            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg)-1;})
                 
             });    
       
          vis2.selectAll("circle.node")
             .each(function(d){
-            d3.select(this).attr("r", function(d) {return Math.round(1.2*d.orbit)+3;})
+            d3.select(this).attr("r", function(d) {return Math.round(1.2*d.orbit)+2;})
 
             });
             
             
             vis3.selectAll("circle.node")
             .each(function(d){
-            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg);})
+            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg)-1;})
                 
             }); 
             

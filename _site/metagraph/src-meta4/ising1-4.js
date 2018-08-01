@@ -59,7 +59,7 @@ d3.json("src-meta4/data/gr.json", function(json) {
       .style("stroke", "black")
       .style("opacity", 1.)
       .attr("on",0)
-      .style("fill", elecfill[4])
+      .style("fill", function(d){return get_my_col_sm(d);})
       .call(force.drag)
       .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
 
@@ -93,7 +93,7 @@ d3.json("src-meta4/data/gr.json", function(json) {
           tooltip.style("visibility", "hidden");
                 vis3.selectAll("circle.node")
             .each(function(d){
-            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg);})
+            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg)-1;})
                 
             });    
       
@@ -306,6 +306,37 @@ function connectedNodes() {
   
   
 });
+
+
+ function get_my_col_sm(circ){
+            dist1=0;
+        dist2=0;
+        dist3=0;
+        dist4=0;
+        cnt=0;
+      chk = circ.str_rep.split('\n').join("").split(" ").join("");
+        grd.selectAll("rect").each(function(e){
+            var b = parseInt(d3.select(this).attr("party"));
+            if (chk[cnt] == 1){
+            dist1 = dist1 + b;
+            } else  if (chk[cnt] == 2){
+            dist2 = dist2 + b;
+            }else   if (chk[cnt] == 3){
+            dist3 = dist3 + b;
+            }else   if (chk[cnt] == 4){
+            dist4 = dist4 + b;
+                       }
+            cnt = cnt+1;
+
+        });
+        dist1 = Math.sign(dist1);
+        dist2 = Math.sign(dist2);
+        dist3 = Math.sign(dist3);
+        dist4 = Math.sign(dist4);
+        
+        var col = Math.sign(dist1 + dist2 + dist3 + dist4) + 1;
+        return simp_fill[col];
+}
 
 
 

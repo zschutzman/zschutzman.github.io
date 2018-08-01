@@ -69,19 +69,19 @@ d3.json("src-meta4/data/gr2.json", function(json) {
       .on("mouseout", function(){
             vis.selectAll("circle.node")
             .each(function(d){
-            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg);})
+            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg)-1;})
                 
             });    
       
          vis2.selectAll("circle.node")
             .each(function(d){
-            d3.select(this).attr("r", function(d) {return Math.round(1.2*d.orbit)+3;})
+            d3.select(this).attr("r", function(d) {return Math.round(1.2*d.orbit)+2;})
 
             });
             
             vis3.selectAll("circle.node")
             .each(function(d){
-            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg);})
+            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg)-1;})
                 
             });   
      });
