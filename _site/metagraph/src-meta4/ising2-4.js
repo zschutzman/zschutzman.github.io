@@ -8,19 +8,18 @@ var cnt = 0;
 var simp_fill = ['#0000ff','#808080','#ff0000'];
 var simp_fill = ['orange','#808080','green'];
 
-
+var square=30;
 // create the svg
 var grd = d3.select('#chart2').append('svg').attr("transform","translate("+(w-wp)/4+","+(-h/3) +")")
   .attr({
-    width: 5*50,
-    height: 5*50
+    width: 5*square,
+    height: 5*square
   });
 
 
 // calculate number of rows and columns
 var squaresRow = 4;
 var squaresColumn = 4;
-var square=50;
 
 // loop over number of columns
 _.times(squaresColumn, function(n) {
@@ -45,9 +44,9 @@ _.times(squaresColumn, function(n) {
       width: square,
       height: square,
       x: function(d, i) {
-        return (i * 1.07*square + 35);
+        return (i * 1.07*square + square/2);
       },
-      y: (n * 1.07*square + 35),
+      y: (n * 1.07*square + square/2),
     })
     
     .attr("party",function(d,i) {return i<2 ? -1:1;})

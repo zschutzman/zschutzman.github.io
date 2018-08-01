@@ -309,48 +309,43 @@
 <br />
 
 -->
-<h2 id="this-page-is-currently-a-work-in-progress">This page is currently a work-in-progress</h2>
 <center>
 <h2> Welcome to Gridlandia!</h2>
 <br />
 
-<p style="margin:0;padding:0;font-size:50px;letter-spacing:-10px;line-height:35px;">
-<span style="color:#a17caa">&#9724;</span> <span style="color:#a17caa">&#9724;</span> <span style="color:#a17caa">&#9724;</span> <span style="color:#a17caa">&#9724;</span><br /> <span style="color:#a17caa">&#9724;</span> <span style="color:#a17caa">&#9724;</span> <span style="color:#a17caa">&#9724;</span> <span style="color:#a17caa">&#9724;</span><br /> <span style="color:#a17caa">&#9724;</span> <span style="color:#a17caa">&#9724;</span> <span style="color:#a17caa">&#9724;</span> <span style="color:#a17caa">&#9724;</span><br /> <span style="color:#a17caa">&#9724;</span> <span style="color:#a17caa">&#9724;</span> <span style="color:#a17caa">&#9724;</span> <span style="color:#a17caa">&#9724;</span></p>
+<p align="center">
+  <img width="200" src="imgs/blankgrid.png?raw=true" /> <br />
+
+</p>
+
+
 </center>
 <p><br /></p>
 
 <p>Gridlandia is trying to draw legislative districts for its upcoming elections.  The rules are that there must be four districts, they must be contiguous, and they must all be of the same size.  Since Gridlandia is laid out neatly in a four-by-four grid, it’s not too hard to write all of the allowed districting plans down.  There are only 117 of them.</p>
 <center>
 Here is one:
-<p style="margin:0;padding:0;font-size:50px;letter-spacing:-10px;line-height:35px;">
-<span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span><br /> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br /> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br /> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span></p>
+<p align="center">
+  <img width="150" src="imgs/fillgrid.png?raw=true" /> <br />
+
+
+</p>
+
 </center>
-<p><br /></p>
 
 <p>We can impose a <em>graph</em> structure on the collection of all of these plans, where each node is a plan and two plans are connected if one can be transformed into the other by swapping a pair of cells in adjacent districts.</p>
 
-<p style="float:left; width:150px">Here are two adjacent ones</p>
-<p style="margin:0;padding:0;font-size:20px;letter-spacing:-4px;line-height:14px;width:100px;float:left;justify:center;">
-<span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span><br /> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br /> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br /> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span></p>
-<p style="margin:0;padding:0;font-size:20px;letter-spacing:-4px;line-height:14px;width:100px;float:left;">
-<span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span><br /> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span><br /> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span><br /> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span></p>
-<p style="float:left;width:200px">since we can swap these two cells </p>
-<p style="margin:0;padding:0;font-size:20px;letter-spacing:-4px;line-height:14px;width:100px;float:left;">
-<span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#666666">&#9724;</span><br /> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#666666">&#9724;</span> <span style="color:#F4D03F">&#9724;</span><br /> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span><br /> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span></p>
-<p style="float:left;width:200px">to turn the first into the second. </p>
+<p style="text-align:center;"> <img width="75" src="imgs/fillgrid.png?raw=true" />&nbsp; &nbsp;&nbsp;&nbsp;<img width="75" src="imgs/showswapgrid.png?raw=true" /> &nbsp;&nbsp;&nbsp;&nbsp;<img width="75" src="imgs/swapgrid.png?raw=true" /> <br />
+	<font size="3"> We can transfom the plan on the left into the plan on the right by swapping these two cells. </font>
 
-<p><br /><br /></p>
+</p>
 
 <p>We call this structure the <strong>metagraph of districting plans</strong>.  Below, you can interact with this mathematical object.  The graph on the left is the complete metagraph.  Since Gridlandia is so symmetric, it might be useful to consider two districting plans to be <em>the same</em> if one can be transformed into the other by rotating or flipping the plan.  For example,</p>
 
-<p style="float:left; width:150px">Here are two symmetric ones</p>
-<p style="margin:0;padding:0;font-size:20px;letter-spacing:-4px;line-height:14px;width:100px;float:left;justify:center;">
-<span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span><br /> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br /> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br /> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span></p>
-<p style="margin:0;padding:0;font-size:20px;letter-spacing:-4px;line-height:14px;width:100px;float:left;">
-<span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br /> <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br /> <span style="color:#73C6B6">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br /> <span style="color:#73C6B6">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#CD6155">&#9724;</span></p>
-<p style="float:left;width:200px">by a 90 degree rotation. </p>
+<p style="text-align:center"> <img width="75" src="imgs/fillgrid.png?raw=true" />&nbsp;&nbsp;&nbsp;&nbsp; <img width="75" src="imgs/rotgrid.png?raw=true" /><br />
+	<font size="3"> We can transfom the plan on the left into the plan on the right by rotating 90 degrees. </font>
 
-<p><br /><br /></p>
+</p>
 
 <p>The graph on the right is the metagraph where plans which are symmetric are merged into the same node, and two nodes are linked if any two of their two constituent nodes are linked in the full metagraph.</p>
 

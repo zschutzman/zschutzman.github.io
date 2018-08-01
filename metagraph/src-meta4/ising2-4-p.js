@@ -13,15 +13,14 @@ var simp_fill = ['orange','#808080','green'];
 var grd2 = d3.select('#chart3').append('svg')
 .attr("transform","translate("+(w-wp)/4+","+(-h/3) +")")
   .attr({
-    width: 5*50,
-    height: 5*50
+    width: 5*square,
+    height: 5*square
   });
 
 var grd2grp = grd2.append("g")
 // calculate number of rows and columns
 var squaresRow = 4;
 var squaresColumn = 4;
-var square=50;
 
 // loop over number of columns
 _.times(squaresColumn, function(n) {
@@ -42,9 +41,9 @@ _.times(squaresColumn, function(n) {
       width: square,
       height: square,
       x: function(d, i) {
-        return (i * 1.07*square + 35);
+        return (i * 1.07*square + square/2);
       },
-      y: (n * 1.07*square + 35),
+      y: (n * 1.07*square + square/2),
     })
     
     .attr("party",0)
@@ -69,9 +68,9 @@ _.times(squaresColumn, function(n) {
       width: square,
       height: square/2,
       x: function(d, i) {
-        return (i * 1.07*square + 35);
+        return (i * 1.07*square + square/2);
       },
-      y: (n * 1.07*square + 35),
+      y: (n * 1.07*square + square/2),
     })
     
     .attr("party",.5)
@@ -101,9 +100,9 @@ _.times(squaresColumn, function(n) {
       width: square,
       height: square,
       x: function(d, i) {
-        return (i * 1.07*square + 35);
+        return (i * 1.07*square + square/2);
       },
-      y: (n * 1.07*square + 35),
+      y: (n * 1.07*square + square/2),
     })
     
     .attr("mask",3)
