@@ -35,17 +35,17 @@ var simp_fill = ['orange','#808080','green'];
 
 
 // create the svg
-var grd = d3.select('#chart2').append('svg').attr("transform","translate(0,"+(-h/3) +")")
+var grd = d3.select('#chart2').append('svg').attr("transform","translate("+(w-wp)/4+","+(-h/3) +")")
   .attr({
-    width: 5*70,
-    height: 5*70
+    width: 5*50,
+    height: 5*50
   });
 
 
 // calculate number of rows and columns
 var squaresRow = 4;
 var squaresColumn = 4;
-var square=70;
+var square=50;
 
 // loop over number of columns
 _.times(squaresColumn, function(n) {

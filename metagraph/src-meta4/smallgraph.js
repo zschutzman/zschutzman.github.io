@@ -2,18 +2,18 @@
  var linkedByIndex2 = {};   
 var vis2 = d3.select("#chart1")
   .append("svg")
-    .attr("width", w-wp/1.2)
+    .attr("width", w-wp)
     .attr("height", h)
     .attr("transform","translate(50,0)");
     
 
 d3.json("src-meta4/data/gr2.json", function(json) {
   var force = d3.layout.force()
-      .charge(-150)
-      .linkDistance(50)
+      .charge(-125)
+      .linkDistance(40)
       .nodes(json.nodes)
       .links(json.links)
-      .size([w-wp/1.2, h])
+      .size([w-wp, h])
       .start();
 
   var link = vis2.selectAll("line.link")
@@ -34,7 +34,7 @@ d3.json("src-meta4/data/gr2.json", function(json) {
       .attr("class", "node")
       .attr("cx", function(d) { return d.x; })
       .attr("cy", function(d) { return d.y; })
-      .attr("r", function(d) {return Math.round(1.2*d.orbit)+3;})
+      .attr("r", function(d) {return Math.round(1.2*d.orbit)+2;})
       .attr("type", function(d) {return d.Type;})
       .style("fill", function(d) { if (d.Type == 20) return 'PapayaWhip'; if (d.Type == 21) return 'Gold'; return fill(d.Type); })
       .call(force.drag)

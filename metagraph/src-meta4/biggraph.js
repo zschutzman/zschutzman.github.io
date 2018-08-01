@@ -1,7 +1,7 @@
-var w = Math.round(.45*document.body.clientWidth)
-    h = Math.round(1*document.body.clientHeight)
+var w = Math.round(.5*document.getElementById("chart1").clientWidth);
+    h = Math.round(.7*document.getElementById("chart1").clientWidth);
     fill = d3.scale.category20()
-    wp = Math.round(.25*document.body.clientWidth);
+    wp = Math.round(.2*document.getElementById("chart1").clientWidth);
 console.log(w,wp,h);
 var linkedByIndex = {};
 
@@ -9,8 +9,10 @@ var toggle = 0;
  
 var vis = d3.select("#chart1")
   .append("svg")
-    .attr("width", w-wp/2)
-    .attr("height", h);
+    .attr("width", w+wp)
+    .attr("height", h)
+    .style("float","left");
+    //.attr("transform","translate(-"+wp+",0)");
     
 
 var tooltip = d3.select("body")
@@ -30,11 +32,11 @@ var div = d3.select("body").append("div")
     
 d3.json("src-meta4/data/gr.json", function(json) {
   var force = d3.layout.force()
-      .charge(-150)
-      .linkDistance(50)
+      .charge(-125)
+      .linkDistance(40)
       .nodes(json.nodes)
       .links(json.links)
-      .size([w-wp/2, h])
+      .size([w+wp, h])
       .start();
 
   var link = vis.selectAll("line.link")
@@ -58,7 +60,7 @@ d3.json("src-meta4/data/gr.json", function(json) {
       .attr("cy", function(d) { return d.y; })
       .attr("type", function(d) {return d.Type;})
       .attr("html_rep", function(d) {return d.html_rep;})
-      .attr("r", function(d) {return Math.round(2*d.deg);})
+      .attr("r", function(d) {return Math.round(2*d.deg)-1;})
       .style("stroke-width", 0)
       .style("stroke", "black")
       .style("opacity", 1.)
@@ -164,7 +166,6 @@ vis.selectAll("line.link").each(function(d){
 function connectedNodes() {
         if (d3.event.defaultPrevented) return;
 
-            console.log(d3.select(this).attr("on"), "ON", toggle, "TOG");
 
     if (d3.select(this).attr("on") ==1){
         node.style("opacity", 1);

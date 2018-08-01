@@ -8,7 +8,7 @@ var elecfill = ['orange','#5934df','#7250c0','#7d69a0','#808080','#aa7264','#ca6
  
 var vis3 = d3.select("#chart2")
   .append("svg")
-    .attr("width", w-wp/2)
+    .attr("width", w+wp)
     .attr("height", h);
 
 var tooltip = d3.select("body")
@@ -25,11 +25,11 @@ var tooltip = d3.select("body")
     
 d3.json("src-meta4/data/gr.json", function(json) {
   var force = d3.layout.force()
-      .charge(-150)
-      .linkDistance(50)
+      .charge(-125)
+      .linkDistance(40)
       .nodes(json.nodes)
       .links(json.links)
-      .size([w-wp/2, h])
+      .size([w+wp, h])
       .start();
 
   var link = vis3.selectAll("line.link")
@@ -54,7 +54,7 @@ d3.json("src-meta4/data/gr.json", function(json) {
       .attr("type", function(d) {return d.Type;})
       .attr("str_rep", function(d){ return d.str_rep.split('\n').join("").split(" ").join("");})
       .attr("html_rep", function(d) {return d.html_rep;})
-      .attr("r", function(d) {return Math.round(2*d.deg);})
+      .attr("r", function(d) {return Math.round(2*d.deg)-1;})
       .style("stroke-width", 0)
       .style("stroke", "black")
       .style("opacity", 1.)
