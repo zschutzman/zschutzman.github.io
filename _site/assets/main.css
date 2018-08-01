@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: "PT Serif", serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 1.25rem;
   line-height: 2rem;
   font-weight: 400;
@@ -141,7 +141,7 @@ h2 {
       line-height: 1.3224em; } }
 
 h3 {
-  font-family: "PT Serif", serif; }
+  font-family: "PT Sans", sans-serif; }
 
 h3, h4 {
   font-weight: normal; }
@@ -972,7 +972,7 @@ form input {
   .msg-404 .description {
     font-size: 2.111rem;
     line-height: 2.5332rem;
-    font-family: "PT Serif", serif; }
+    font-family: "PT Sans", sans-serif; }
     @media (max-width: 75em) {
       .msg-404 .description {
         font-size: 1.653em;

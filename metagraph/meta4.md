@@ -7,6 +7,8 @@ customjs:
  - src-meta4/smallgraph.js
  - src-meta4/ising1-4.js
  - src-meta4/ising2-4.js
+ - src-meta4/ising1-4-p.js
+ - src-meta4/ising2-4-p.js
 ---
 
 
@@ -60,6 +62,8 @@ We call this structure the **metagraph of districting plans**.  Below, you can i
 
 <br/><br/>
 
+
+
 The graph on the right is the metagraph where plans which are symmetric are merged into the same node, and two nodes are linked if any two of their two constituent nodes are linked in the full metagraph.
 
 
@@ -68,5 +72,9 @@ The graph on the right is the metagraph where plans which are symmetric are merg
 Now let's think about elections in Gridlandia.  Gridlandia has plurality elections and two political parties, the Green Party and the Orange Party.  For simplicity, we'll start by assuming that everyone in the same cell votes the same way -- either for the Green candidate, the Orange candidate, or neither.  Within each district, the candidate which gets the most votes wins the election, and ties are not resolved.  Below, click a cell once to turn it green, a second time to turn it orange, and a third time to turn it grey again.  On the left, the nodes in the metagraph will change color to indicate which party wins a legislative majority under the corresponding plan.  A node will remain grey if the number of Green- and Orange-favoring districts is equal.
 
 
-<div id="chart2" style="width:110%"></div>
+<div id="chart2" style="width:100% text-align:left"></div>
+
+
+
+<!---<div id="chart3" style="width:100% text-align:left"></div>-->
 
