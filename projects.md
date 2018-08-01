@@ -15,4 +15,4 @@ permalink: /projects/
 
 
 ----
-[Four x Four Metagraph](/metagraph/meta4)
+[Four x Four Metagraph](/metagraph/metagrid)
