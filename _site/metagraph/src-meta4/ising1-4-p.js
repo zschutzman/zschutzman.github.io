@@ -1,6 +1,5 @@
 
-var elecfill = ['#0000ff','#5934df','#7250c0','#7d69a0','#808080','#aa7264','#ca6048','#e6462a','#ff0000'];
-var elecfill = ['orange','#5934df','#7250c0','#7d69a0','#808080','#aa7264','#ca6048','#e6462a','green'];
+
 
 
 
@@ -93,7 +92,7 @@ d3.json("src-meta4/data/gr.json", function(json) {
           tooltip.style("visibility", "hidden");
                 vis5.selectAll("circle.node")
             .each(function(d){
-            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg);})
+            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg)-1;})
                 
             });    
       

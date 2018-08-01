@@ -5,10 +5,9 @@ var dist3 = 0;
 var dist4 = 0;
 var cnt = 0;
 
-var simp_fill = ['#0000ff','#808080','#ff0000'];
-var simp_fill = ['orange','#808080','green'];
+var simp_fill = [elecfill[0],elecfill[4],elecfill[8]];
 
-var square=30;
+var square=10*Math.round(Math.min(4,(w-wp)/5));
 // create the svg
 var grd = d3.select('#chart2').append('svg').attr("transform","translate("+(w-wp)/4+","+(-h/3) +")")
   .attr({
@@ -50,7 +49,7 @@ _.times(squaresColumn, function(n) {
     })
     
     .attr("party",function(d,i) {return i<2 ? -1:1;})
-    .style("fill",function(d,i){ return i<2 ? simp_fill[-1]:simp_fill[1];})
+    .style("fill",function(d,i){ return i<2 ? simp_fill[0]:simp_fill[2];})
     .style("stroke","#555")
     .style("stroke-width",5)
     

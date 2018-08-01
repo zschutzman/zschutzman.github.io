@@ -40,8 +40,6 @@ Gridlandia is trying to draw legislative districts for its upcoming elections.  
 Here is one:
 <p align="center">
   <img width="150"  src="imgs/fillgrid.png?raw=true"> <br />
-
-
 </p>
 
 </center>
@@ -52,9 +50,6 @@ We can impose a *graph* structure on the collection of all of these plans, where
 	<font size="3"> We can transfom the plan on the left into the plan on the right by swapping these two cells. </font>
 
 </p>
-
-
-
 
 We call this structure the **metagraph of districting plans**.  Below, you can interact with this mathematical object.  The graph on the left is the complete metagraph.  Since Gridlandia is so symmetric, it might be useful to consider two districting plans to be *the same* if one can be transformed into the other by rotating or flipping the plan.  For example, 
 
@@ -70,14 +65,26 @@ The graph on the right is the metagraph where plans which are symmetric are merg
 
 <div id="chart1" style="width:100% text-align:left"></div>
 
-Now let's think about elections in Gridlandia.  Gridlandia has plurality elections and two political parties, the Green Party and the Orange Party.  For simplicity, we'll start by assuming that everyone in the same cell votes the same way -- either for the Green candidate or the Orange candidate.  Within each district, the candidate which gets the most votes wins the election, and ties are not resolved.  Below, click a cell once to change its color.  On the left, the nodes in the metagraph will change color to indicate which party wins a legislative majority under the corresponding plan.  A node will remain grey if the number of Green- and Orange-favoring districts is equal.
+Now let's think about elections in Gridlandia.  Gridlandia has plurality elections and two political parties, the <span style="color:#b2abd2"> **Purple** </span> Party and the <span style="color:#fdb863"> **Orange** </span>
+ Party.  For simplicity, we'll start by assuming that everyone in the same cell votes the same way -- either for the <span style="color:#b2abd2"> **Purple** </span> candidate or the <span style="color:#fdb863"> **Orange** </span>
+ candidate.  Within each district, the candidate which gets the most votes wins the election, and ties are not resolved.  Below, click a cell once to change its color.  On the left, the nodes in the metagraph will change color to indicate which party wins a legislative majority under the corresponding plan.  A node will remain grey if the number of <span style="color:#b2abd2"> **Purple** </span>- and <span style="color:#fdb863"> **Orange** </span>
+-favoring districts is equal.
 
 
 <div id="chart2" style="width:100% text-align:left"></div>
 
 
-Let's make things a little more realistic.  Instead of each cell voting entirely for one party, there are some Green and some Orange supporters in each cell -- a total of ten in each square.  The same electoral rules apply, but now we can think about a *distribution* of votes in each cell.  Left click on a square to increase the percentage of Orange voters, or right click it to decrease the percentage of Orange voters.  
+Let's make things a little more realistic.  Instead of each cell voting entirely for one party, there are some <span style="color:#b2abd2"> **Purple** </span> and some <span style="color:#fdb863"> **Orange** </span>
+ supporters in each cell -- a total of ten in each square.  The same electoral rules apply, but now we can think about a *distribution* of votes in each cell.  Left click on a square to increase the percentage of <span style="color:#fdb863"> **Orange** </span>
+ voters, or right click it to decrease the percentage of Orange voters.  
 
 
 <div id="chart3" style="width:100% text-align:left"></div>
 
+<br/><br/>
+
+<div style="text-align:right; color:#aaaaaa;line-height:14px"><small>
+Version 0.8 <br/>
+August 1, 2018 <br/>
+Zachary Schutzman, VRDI</small>
+</div>

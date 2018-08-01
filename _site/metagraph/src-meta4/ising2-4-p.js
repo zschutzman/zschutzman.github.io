@@ -5,8 +5,7 @@ var dist3 = 0;
 var dist4 = 0;
 var cnt = 0;
 
-var simp_fill = ['#0000ff','#808080','#ff0000'];
-var simp_fill = ['orange','#808080','green'];
+
 
 
 // create the svg

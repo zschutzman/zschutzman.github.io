@@ -1,5 +1,5 @@
 var w = Math.round(.5*document.getElementById("chart1").clientWidth);
-    h = Math.round(.6*document.getElementById("chart1").clientWidth);
+    h = 700//Math.round(.6*document.getElementById("chart1").clientWidth);
     fill = d3.scale.category20()
     wp = Math.round(.2*document.getElementById("chart1").clientWidth);
 console.log(w,wp,h);

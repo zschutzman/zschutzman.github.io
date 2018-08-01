@@ -1,7 +1,9 @@
 
 var elecfill = ['#0000ff','#5934df','#7250c0','#7d69a0','#808080','#aa7264','#ca6048','#e6462a','#ff0000'];
-var elecfill = ['orange','#5934df','#7250c0','#7d69a0','#808080','#aa7264','#ca6048','#e6462a','green'];
 
+elecfill[0] = '#fdb863';
+elecfill[4] = '#909090';
+elecfill[8] = '#b2abd2';
 
 
 
