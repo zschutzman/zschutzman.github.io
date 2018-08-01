@@ -76,14 +76,14 @@ Now let's think about elections in Gridlandia.  Gridlandia has plurality electio
 
 Let's make things a little more realistic.  Instead of each cell voting entirely for one party, there are some <span style="color:#b2abd2"> **Purple** </span> and some <span style="color:#fdb863"> **Orange** </span>
  supporters in each cell -- a total of ten in each square.  The same electoral rules apply, but now we can think about a *distribution* of votes in each cell.  Left click on a square to increase the percentage of <span style="color:#fdb863"> **Orange** </span>
- voters, or right click it to decrease the percentage of Orange voters.  
+ voters, or right click it to decrease the percentage of <span style="color:#fdb863"> **Orange** </span> voters.  
+ 
+ What happens when the <span style="color:#fdb863"> **Orange** </span> party has a slight majority in most of the cells but a few are 90 or 100 percent <span style="color:#b2abd2"> **Purple** </span>?  Under which configurations can the minority party still win three out of four districts?  Are there any distributions of voters that cause there to be a <span style="color:#b2abd2"> **Purple** </span> colored metagraph node surrounded entirely by <span style="color:#fdb863"> **Orange** </span> colored nodes?
 
 
 <div id="chart3" style="width:100% text-align:left"></div>
-
-<br/><br/>
-
-<div style="text-align:right; color:#aaaaaa;line-height:14px"><small>
+<div style="text-align:right; color:#aaaaaa;line-height:14px" width="100%"><small>
+<hr style="width:80%">
 Version 0.8 <br/>
 August 1, 2018 <br/>
 Zachary Schutzman, VRDI</small>

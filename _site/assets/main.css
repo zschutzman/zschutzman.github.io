@@ -268,7 +268,7 @@ h5 + table, h6 + table {
 /**
  * Hr
  */
-hr {
+hrdash {
   color: #3F3F3F;
   margin: 50px auto 25px auto;
   width: 100%;
@@ -278,11 +278,47 @@ hr {
   font-size: 1.15rem;
   line-height: 1.84rem; }
   @media (max-width: 75em) {
+    hrdash {
+      font-size: 1.15rem;
+      line-height: 1.84rem; } }
+  @media (max-width: 45em) {
+    hrdash {
+      font-size: 0.95rem;
+      line-height: 1.84rem; } }
+
+hr {
+  color: #bfbfbf;
+  margin: 50px auto 25px auto;
+  width: 100%;
+  padding-left: 10%;
+  border: none;
+  border-top: 1px solid #bfbfbf;
+  font-size: 1.15rem;
+  line-height: 1.84rem; }
+  @media (max-width: 75em) {
     hr {
       font-size: 1.15rem;
       line-height: 1.84rem; } }
   @media (max-width: 45em) {
     hr {
+      font-size: 0.95rem;
+      line-height: 1.84rem; } }
+
+hrhalf {
+  color: #bfbfbf;
+  margin: 50px auto 25px auto;
+  width: 50%;
+  padding-left: 10%;
+  border: none;
+  border-top: 1px solid #bfbfbf;
+  font-size: 1.15rem;
+  line-height: 1.84rem; }
+  @media (max-width: 75em) {
+    hrhalf {
+      font-size: 1.15rem;
+      line-height: 1.84rem; } }
+  @media (max-width: 45em) {
+    hrhalf {
       font-size: 0.95rem;
       line-height: 1.84rem; } }
 
