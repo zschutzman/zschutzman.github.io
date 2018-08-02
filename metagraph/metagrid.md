@@ -133,7 +133,7 @@ In the meantime, we've incorporated nine additional cells, for a total of 25.  S
 
 
 
-<div style="text-align:right; color:#aaaaaa;line-height:14px" width="100%"><small>
+<div style="text-align:right; color:#888888;line-height:14px" width="100%"><small>
 <hr style="width:80%">
 
 This page developed from a project at the <br/>
