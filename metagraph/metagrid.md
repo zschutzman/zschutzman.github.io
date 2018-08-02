@@ -35,6 +35,21 @@ customjs:
 <br />
 
 -->
+
+<div style="text-align:right; color:#aaaaaa;line-height:14px" width="100%"><small>
+This page developed from a project at the <a href="http://gerrydata.org">Voting Rights Data Institute</a> during the summer of 2018<br/>
+and is joint with Seth Drew, Eugene Henninger-Voss, and Amara Jaeger.<br/>
+Special thanks to Mira Bernstein, whose <a href="https://docs.google.com/spreadsheets/d/1U8XXRwwJ3zLLu9Xx-xsrePBFsCXkYYFj_MB4t-ZaZ4k/edit#gid=2131508220">Liliputia project</a> served as inspiration.
+
+Version 0.8 <br/>
+August 1, 2018 <br/>
+Zachary Schutzman
+<hr style="width:80%">
+
+</div>
+
+
+
 <center>
 <h2> Welcome to Gridlandia!</h2>
 <br/>
@@ -123,9 +138,9 @@ In the meantime, we've incorporated nine additional cells, for a total of 25.  S
 
 <div style="text-align:right; color:#aaaaaa;line-height:14px" width="100%"><small>
 <hr style="width:80%">
-This page developed from a project at the [Voting Rights Data Institute](http://gerrydata.org) during the summer of 2018<br/>
+This page developed from a project at the <a href="http://gerrydata.org">Voting Rights Data Institute</a> during the summer of 2018<br/>
 and is joint with Seth Drew, Eugene Henninger-Voss, and Amara Jaeger.<br/>
-Special thanks to Mira Bernstein, whose [Liliputia project](https://docs.google.com/spreadsheets/d/1U8XXRwwJ3zLLu9Xx-xsrePBFsCXkYYFj_MB4t-ZaZ4k/edit#gid=2131508220) inspired this.
+Special thanks to Mira Bernstein, whose <a href="https://docs.google.com/spreadsheets/d/1U8XXRwwJ3zLLu9Xx-xsrePBFsCXkYYFj_MB4t-ZaZ4k/edit#gid=2131508220">Liliputia project</a> served as inspiration.
 
 Version 0.8 <br/>
 August 1, 2018 <br/>
