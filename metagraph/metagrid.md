@@ -45,10 +45,10 @@ Version 0.8 <br/>
 August 1, 2018 <br/>
 Zachary Schutzman
 <br/>
-
-<hr style="width:80%">
-<br/>
 </div>
+<hr style="width:80%">
+
+
 
 
 
