@@ -1,8 +1,10 @@
 ---
 layout: default
 customjs:
- - https://d3js.org/d3.v3.min.js
+ - loc_d3v3.js
+ - https://d3js.org/d3.v4.min.js
  - https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js
+ - http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js
  - src-meta4/biggraph.js
  - src-meta4/smallgraph.js
  - src-meta4/ising1-4.js
@@ -14,6 +16,17 @@ customjs:
 
 
 <!---
+
+
+
+ - src-meta5/header.js
+ - src-meta5/histograms.js
+ - src-meta5/graph.js
+ - src-meta5/grid.js
+ - src-meta5/init.js
+
+
+
 <p style="float:left; width:150px">Here are two:</p> <center> <p style="margin:0;padding:0;font-size:20px;letter-spacing:-4px;line-height:14px;width:100px;float:left;justify:center;">
 <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br/> <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br/> <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span><br/> <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span></p><p style="margin:0;padding:0;font-size:20px;letter-spacing:-4px;line-height:14px;width:100px;float:left;">
 <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span><br/> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br/> <span style="color:#A569BD">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br/> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#CD6155">&#9724;</span></p>
@@ -82,6 +95,25 @@ Let's make things a little more realistic.  Instead of each cell voting entirely
 
 
 <div id="chart3" style="width:100% text-align:left"></div>
+<hr style="width:80%">
+
+<!--Let's do the 5x5?
+
+### Intro
+
+
+
+<div id="graph" style="width:100% text-align:left"></div>
+
+
+### Meta-tree and recenter-er
+
+### Click squares and see histograms - whole squares
+
+### Is it possible for partial squares?-->
+
+
+
 <div style="text-align:right; color:#aaaaaa;line-height:14px" width="100%"><small>
 <hr style="width:80%">
 Version 0.8 <br/>

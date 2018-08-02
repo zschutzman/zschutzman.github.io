@@ -9,7 +9,7 @@ var cnt = 0;
 
 
 // create the svg
-var grd2 = d3.select('#chart3').append('svg')
+var grd2 = d3v3.select('#chart3').append('svg')
 .attr("transform","translate("+(w-wp)/4+","+(-h/3) +")")
   .attr({
     width: 5*square,
@@ -27,7 +27,7 @@ _.times(squaresColumn, function(n) {
     
     
   var rows = grd2grp.selectAll('rect' + ' .row-' + (n + 1))
-    .data(d3.range(squaresRow))
+    .data(d3v3.range(squaresRow))
     .enter().append('rect')
  
     .attr({
@@ -54,7 +54,7 @@ _.times(squaresColumn, function(n) {
 
 
   var rows = grd2grp.selectAll('rect' + ' .row-' + (n + 1))
-    .data(d3.range(squaresRow))
+    .data(d3v3.range(squaresRow))
     .enter().append('rect')
  
     .attr({
@@ -86,7 +86,7 @@ _.times(squaresColumn, function(n) {
 
   // create each set of rows
   var rows = grd2grp.selectAll('rect' + ' .row-' + (n + 1))
-    .data(d3.range(squaresRow))
+    .data(d3v3.range(squaresRow))
     .enter().append('rect')
  
     .attr({
@@ -113,13 +113,13 @@ _.times(squaresColumn, function(n) {
     
     
     .on("mouseover",function(d){
-        d3.select(this).style("stroke","#000");
-        d3.select(this).style("stroke-width","6");
+        d3v3.select(this).style("stroke","#000");
+        d3v3.select(this).style("stroke-width","6");
     })
     
     .on("mouseout", function(d){
-        d3.select(this).style("stroke","#555");
-        d3.select(this).style("stroke-width","5")
+        d3v3.select(this).style("stroke","#555");
+        d3v3.select(this).style("stroke-width","5")
     })
     
     .on("click",do_update)
@@ -130,8 +130,8 @@ _.times(squaresColumn, function(n) {
     
     
 function do_update(){    
-        if (d3.event.defaultPrevented) return;
-        var clid = d3.select(this).attr("id");
+        if (d3v3.event.defaultPrevented) return;
+        var clid = d3v3.select(this).attr("id");
 
 
 
@@ -139,15 +139,15 @@ function do_update(){
 
     grd2grp.selectAll('rect').each(function(d){
         
-        if (d3.select(this).attr("mask") == 2 && d3.select(this).attr("id") == clid){ 
-            var tempw = parseInt(d3.select(this).attr("height"));
-            if (parseInt(tempw)>= square){d3.select(this).attr("height",0);}
+        if (d3v3.select(this).attr("mask") == 2 && d3v3.select(this).attr("id") == clid){ 
+            var tempw = parseInt(d3v3.select(this).attr("height"));
+            if (parseInt(tempw)>= square){d3v3.select(this).attr("height",0);}
             else{
-                d3.select(this).attr("height", tempw + (square/10.0));
+                d3v3.select(this).attr("height", tempw + (square/10.0));
             }
             
             
-                d3.select(this).attr("party", parseInt(d3.select(this).attr("height"))/square);
+                d3v3.select(this).attr("party", parseInt(d3v3.select(this).attr("height"))/square);
             
             
         }
@@ -158,7 +158,7 @@ function do_update(){
     
         vis5.selectAll("circle.node").each(function(d){
             var hld = this;
-            chk = d3.select(this).attr("str_rep");
+            chk = d3v3.select(this).attr("str_rep");
    
     
         dist1=0;
@@ -169,8 +169,8 @@ function do_update(){
     
 
         grd2grp.selectAll("rect").each(function(e){
-            if (d3.select(this).attr("mask") == 2){
-            var b = parseFloat(d3.select(this).attr("party"));
+            if (d3v3.select(this).attr("mask") == 2){
+            var b = parseFloat(d3v3.select(this).attr("party"));
             if (chk[cnt] == 1){
             dist1 = dist1 + b;
             } else  if (chk[cnt] == 2){
@@ -189,7 +189,7 @@ function do_update(){
         dist3 = Math.sign(2-dist3);
         dist4 = Math.sign(2-dist4);
         var col = Math.sign(dist1 + dist2 + dist3 + dist4) + 1;
-        d3.select(this).style("fill", simp_fill[col]);
+        d3v3.select(this).style("fill", simp_fill[col]);
         });
     }
 
@@ -199,9 +199,9 @@ function do_update(){
     
     
  function do_updaterc(){    
-        if (d3.event.defaultPrevented) return;
-        d3.event.preventDefault();
-        var clid = d3.select(this).attr("id");
+        if (d3v3.event.defaultPrevented) return;
+        d3v3.event.preventDefault();
+        var clid = d3v3.select(this).attr("id");
 
 
 
@@ -209,16 +209,16 @@ function do_update(){
 
     grd2grp.selectAll('rect').each(function(d){
         
-        if (d3.select(this).attr("mask") == 2 && d3.select(this).attr("id") == clid){ 
-            var tempw = parseInt(d3.select(this).attr("height"));
+        if (d3v3.select(this).attr("mask") == 2 && d3v3.select(this).attr("id") == clid){ 
+            var tempw = parseInt(d3v3.select(this).attr("height"));
             
-            if (parseFloat(tempw)<= 0){d3.select(this).attr("height",square);}
+            if (parseFloat(tempw)<= 0){d3v3.select(this).attr("height",square);}
             else{
-                d3.select(this).attr("height", tempw - (square/10.0));
+                d3v3.select(this).attr("height", tempw - (square/10.0));
             }
             
             
-                d3.select(this).attr("party", parseInt(d3.select(this).attr("height"))/square);
+                d3v3.select(this).attr("party", parseInt(d3v3.select(this).attr("height"))/square);
             
             
         }
@@ -229,7 +229,7 @@ function do_update(){
     
         vis5.selectAll("circle.node").each(function(d){
             var hld = this;
-            chk = d3.select(this).attr("str_rep");
+            chk = d3v3.select(this).attr("str_rep");
    
     
         dist1=0;
@@ -240,8 +240,8 @@ function do_update(){
     
 
         grd2grp.selectAll("rect").each(function(e){
-            if (d3.select(this).attr("mask") == 2){
-            var b = parseFloat(d3.select(this).attr("party"));
+            if (d3v3.select(this).attr("mask") == 2){
+            var b = parseFloat(d3v3.select(this).attr("party"));
             if (chk[cnt] == 1){
             dist1 = dist1 + b;
             } else  if (chk[cnt] == 2){
@@ -260,7 +260,7 @@ function do_update(){
         dist3 = Math.sign(2-dist3);
         dist4 = Math.sign(2-dist4);
         var col = Math.sign(dist1 + dist2 + dist3 + dist4) + 1;
-        d3.select(this).style("fill", simp_fill[col]);
+        d3v3.select(this).style("fill", simp_fill[col]);
         });
     }   
 do_update;

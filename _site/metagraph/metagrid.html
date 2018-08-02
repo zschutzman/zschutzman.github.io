@@ -302,6 +302,17 @@
     
       <div class="wrapper">
         <!---
+
+
+
+ - src-meta5/header.js
+ - src-meta5/histograms.js
+ - src-meta5/graph.js
+ - src-meta5/grid.js
+ - src-meta5/init.js
+
+
+
 <p style="float:left; width:150px">Here are two:</p> <center> <p style="margin:0;padding:0;font-size:20px;letter-spacing:-4px;line-height:14px;width:100px;float:left;justify:center;">
 <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br/> <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br/> <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span><br/> <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span></p><p style="margin:0;padding:0;font-size:20px;letter-spacing:-4px;line-height:14px;width:100px;float:left;">
 <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span><br/> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br/> <span style="color:#A569BD">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br/> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#CD6155">&#9724;</span></p>
@@ -363,6 +374,23 @@ Here is one:
 <p>What happens when the <span style="color:#fdb863"> <strong>Orange</strong> </span> party has a slight majority in most of the cells but a few are 90 or 100 percent <span style="color:#b2abd2"> <strong>Purple</strong> </span>?  Under which configurations can the minority party still win three out of four districts?  Are there any distributions of voters that cause there to be a <span style="color:#b2abd2"> <strong>Purple</strong> </span> colored metagraph node surrounded entirely by <span style="color:#fdb863"> <strong>Orange</strong> </span> colored nodes?</p>
 
 <div id="chart3" style="width:100% text-align:left"></div>
+<hr style="width:80%" />
+
+<!--Let's do the 5x5?
+
+### Intro
+
+
+
+<div id="graph" style="width:100% text-align:left"></div>
+
+
+### Meta-tree and recenter-er
+
+### Click squares and see histograms - whole squares
+
+### Is it possible for partial squares?-->
+
 <div style="text-align:right; color:#aaaaaa;line-height:14px" width="100%"><small>
 <hr style="width:80%" />
 Version 0.8 <br />
@@ -508,9 +536,13 @@ Zachary Schutzman, VRDI</small>
   
   <!-- Custom JavaScript files set in YAML front matter -->
 
-<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="loc_d3v3.js"></script>
+
+<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 <script type="text/javascript" src="src-meta4/biggraph.js"></script>
 

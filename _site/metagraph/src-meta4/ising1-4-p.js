@@ -5,12 +5,12 @@
 
 
  
-var vis5 = d3.select("#chart3")
+var vis5 = d3v3.select("#chart3")
   .append("svg")
     .attr("width", w+wp)
     .attr("height", h);
 
-var tooltip = d3.select("body")
+var tooltip = d3v3.select("body")
 	.append("div")
 	.style("position", "absolute")
 	.style("z-index", "10")
@@ -22,8 +22,8 @@ var tooltip = d3.select("body")
 
 
     
-d3.json("src-meta4/data/gr.json", function(json) {
-  var force = d3.layout.force()
+d3v3.json("src-meta4/data/gr.json", function(json) {
+  var force = d3v3.layout.force()
       .charge(-125)
       .linkDistance(40)
       .nodes(json.nodes)
@@ -41,7 +41,7 @@ d3.json("src-meta4/data/gr.json", function(json) {
       .attr("y1", function(d) { return d.source.y; })
       .attr("x2", function(d) { return d.target.x; })
       .attr("y2", function(d) { return d.target.y; })
-      .attr("u",function(d) {return d3.select(d.source);})
+      .attr("u",function(d) {return d3v3.select(d.source);})
       .attr("v", function(d) {return d.target;});
 
   var node = vis5.selectAll("circle.node")
@@ -63,8 +63,8 @@ d3.json("src-meta4/data/gr.json", function(json) {
       .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
 
       .on("mouseover",function(){
-        var t = d3.select(this).attr("type");
-        var c = d3.select(this)          
+        var t = d3v3.select(this).attr("type");
+        var c = d3v3.select(this)          
         tooltip.style("visibility", "visible");
         tooltip.html('<p style="margin:0;padding:0;font-size:50px;letter-spacing:-10px;line-height:35px;">' + c.attr( "html_rep" ) + "</p>");
         
@@ -78,9 +78,9 @@ d3.json("src-meta4/data/gr.json", function(json) {
      
        vis5.selectAll("circle.node")
             .each(function(d){
-            var u = d3.select(this).attr("type");
+            var u = d3v3.select(this).attr("type");
         
-            if (u==t){d3.select(this).attr("r",20);}  });    
+            if (u==t){d3v3.select(this).attr("r",20);}  });    
       
  
             
@@ -92,7 +92,7 @@ d3.json("src-meta4/data/gr.json", function(json) {
           tooltip.style("visibility", "hidden");
                 vis5.selectAll("circle.node")
             .each(function(d){
-            d3.select(this).attr("r", function(d) {return Math.round(2*d.deg)-1;})
+            d3v3.select(this).attr("r", function(d) {return Math.round(2*d.deg)-1;})
                 
             });    
       
@@ -138,21 +138,21 @@ function neighboring5(a, b) {
 }
 
 function connectedNodes3() {
-        if (d3.event.defaultPrevented) return;
+        if (d3v3.event.defaultPrevented) return;
         
           vis.selectAll("circle.node").each(function(d){
            
-                d3.select(this).attr("on",0);
-                d3.select(this).style("stroke-width",0);
-                d3.select(this).style("opacity",1);
+                d3v3.select(this).attr("on",0);
+                d3v3.select(this).style("stroke-width",0);
+                d3v3.select(this).style("opacity",1);
             
         });  
 
-    if (d3.select(this).attr("on") ==1){
+    if (d3v3.select(this).attr("on") ==1){
         node.style("opacity", 1);
         console.log("1");
         node.style("stroke-width",0);
-        d3.select(this).attr("on",0);
+        d3v3.select(this).attr("on",0);
         toggle = 0;
       
         
@@ -163,19 +163,19 @@ function connectedNodes3() {
         node.style("opacity", 1);
         console.log("2");
         node.style("stroke-width",0);
-        d3.select(this).attr("on",1);
+        d3v3.select(this).attr("on",1);
         toggle = 0;
 
                 
                 
-        var tp = d3.select(this).attr("type");
+        var tp = d3v3.select(this).attr("type");
 
         
         
     }
 
     if (toggle == 0) {
-        d = d3.select(this).node().__data__;
+        d = d3v3.select(this).node().__data__;
         node.style("opacity", function (o) {
             return neighboring5(d, o) | neighboring5(o, d) | o === d ? 1 : 0.7;
         });
