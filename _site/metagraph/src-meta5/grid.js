@@ -1,6 +1,6 @@
 var parties = [-1,1];
 
-var grd3 = d3.select('#graph').append('svg')
+var grd3 = d3.select('#graph2').append('svg')
   .attr("width", (square5*6))
   .attr("height",square5*6)
 
@@ -61,8 +61,8 @@ _.times(square5sColumn, function(n) {
     
     .on("click", function(d){
      clsq = true;
-     do_update(this);
-     get_col();
+     do_update2(this);
+     get_col_2();
      //compute_hists();
      update_textboxes();
     }
@@ -72,7 +72,7 @@ _.times(square5sColumn, function(n) {
 });
     
   
-function do_update(r){
+function do_update2(r){
         if (d3.event != null && r != -1){
             var t = parseInt(d3.select(r).attr("party"));
             d3.select(r).attr("party", t+2);

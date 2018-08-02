@@ -1,7 +1,7 @@
-mk_gr("m5-graphs/whole_trees2/g0.json",0);
-do_update(-1);
+mk_gr2("m5-graphs/whole_trees2/g0.json",0);
+do_update2(-1);
 
-get_col();
+get_col_2();
 
 //update_textboxes();
 

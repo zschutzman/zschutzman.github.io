@@ -1,4 +1,4 @@
-var winbox = d3.select("#graph").append("svg")
+var winbox = d3.select("#graph2").append("svg")
             .attr("width",350)
             .attr("height",200)
             .attr("transform","translate(0,-400)")

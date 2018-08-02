@@ -18,12 +18,12 @@ customjs:
 <!---
 
 
-
  - src-meta5/header.js
  - src-meta5/histograms.js
  - src-meta5/graph.js
  - src-meta5/grid.js
  - src-meta5/init.js
+
 
 
 
@@ -103,12 +103,17 @@ Let's make things a little more realistic.  Instead of each cell voting entirely
 
 
 
-<div id="graph" style="width:100% text-align:left"></div>
+
+
+
 
 
 ### Meta-tree and recenter-er
+<div id="graph" style="width:100% text-align:left"></div>
+
 
 ### Click squares and see histograms - whole squares
+<div id="graph2" style="width:100% text-align:left"></div>
 
 ### Is it possible for partial squares?-->
 

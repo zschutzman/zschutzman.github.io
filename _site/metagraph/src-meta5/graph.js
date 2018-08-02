@@ -4,26 +4,24 @@ var tooltip2 = d3.select("body")
 	.style("z-index", "10")
 	.style("opacity", 0);
 	
-
 var graph = d3.select("#graph").append("svg")
-        .attr("width", width/3)
-    .attr("height", height/1.5)
-    .attr("transform", "translate(" + "-100" + ",-300)");
+    .attr("width", width+wp)
+    .attr("height", height);
  
        
  
-    g = graph.append("g") .attr("transform", "translate(" + (width/6 ) + "," + (height/3) + ")");
+    var treegroup = graph.append("g").attr("transform", "translate(" + ((width+wp)/2 ) + "," + (height/3) + ")");
 
     
 
 
 var tree = d3.tree()
-    .size([2 * Math.PI, Math.min(width,height)/7])
+    .size([2 * Math.PI, Math.min(width,height)/3])
     .separation(function(a, b) { return (a.parent == b.parent ? 1000 : 2000) / a.depth; });
 
 
     
-function mk_gr(fn,num) {
+function mk_gr2(fn,num) {
     console.log(idno2);
     idno2 = num;
     console.log(fn,parseInt(num),idno2);
@@ -34,7 +32,7 @@ d3.json(fn, function(error, treeData) {
   var root = d3.hierarchy(treeData);
   tree(root);
 
- /* var link = g.selectAll(".link")
+ /* var link = treegroup.selectAll(".link")
     .data(root.links())
     .enter().append("path")
       .attr("class", "link")
@@ -45,7 +43,7 @@ d3.json(fn, function(error, treeData) {
       .attr("d", d3.linkRadial()
           .angle(function(d) { return d.x; })
           .radius(function(d) { return d.y; }));*/
-var link = g.selectAll(".link")
+var link = treegroup.selectAll(".link")
     .data(root.links())
     .enter().append("line")
       .attr("class", "link")
@@ -55,7 +53,7 @@ var link = g.selectAll(".link")
       .attr("x2", function(d) { return radialPoint(d.target.x,d.target.y)[0]; })
       .attr("y2", function(d) { return radialPoint(d.target.x,d.target.y)[1]; });
 
-  var node = g.selectAll(".node")
+  var node = treegroup.selectAll(".node")
     .data(root.descendants())
     .enter().append("g")
       .attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
@@ -65,16 +63,16 @@ var link = g.selectAll(".link")
 
 
             .on("click",
-                swapgraph)
+                swapgraph2)
 
       .on("mousemove", function(){return tooltip2.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
 
       .on("mouseover",function(){
           
         var c = d3.select(this);
-        g.selectAll("rect").each(function(){
+        treegroup.selectAll("rect").each(function(){
             if (d3.select(this).data()[0].data.name == c.data()[0].data.name){
-                d3.select(this).style("stroke-width",6);
+                d3.select(this).style("stroke-width",10);
                 return;
             }
         });
@@ -82,7 +80,7 @@ var link = g.selectAll(".link")
    
        
         tooltip2.style("visibility", "visible");
-        tooltip2.html(function(d){return "HERE:  <p><img width='100' src='m5-imgs/whole/im_"+c.data()[0].data.name+".png'></p>";});  
+        tooltip2.html(function(d){return "<span><img width='100' src='m5-imgs/whole/im_"+c.data()[0].data.name+".png'></span>";});  
 
 
         tooltip2.transition()		
@@ -98,38 +96,38 @@ var link = g.selectAll(".link")
           
           
         var c = d3.select(this);
-        g.selectAll("rect").each(function(){
+        treegroup.selectAll("rect").each(function(){
             if (d3.select(this).attr("idno2") == c.attr("idno2")){
-                d3.select(this).style("stroke-width",2);
+                d3.select(this).style("stroke-width",6);
                 return;
             }
         });
           tooltip2.style("visibility", "hidden");
-  
+//   
 
             tooltip2.transition()		
                 .duration(500)		
                 .style("opacity", 0);	            
      });
 
-  node.append("rect").attr("width", 27)//90
-      .attr("height", 27)//90
-      .style("stroke", "#666")
-      .style("stroke-width",2)
-       .attr("x", -10)//-37
-      .attr("y", -10)//-37
+  node.append("rect").attr("width", function(d){return d.data.name == idno2 ? 60:40;})//90
+      .attr("height", function(d){return d.data.name == idno2 ? 60:40;})//90
+      .style("stroke", function(d) {return get_my_col2(d);})
+      .style("stroke-width",6)
+       .attr("x", -20)//-37
+      .attr("y", -20)//-37
       .attr("str_rep", function(d){ return d.data.str_rep.split('\n').join("").split(" ").join("");})
       
         .attr("districts", function(d) { return d.data.tup;})
         .attr("idno2", function(d) {return d.data.name;})
-        .style("fill", function(d) {return get_my_col(d);})
+        .style("fill", function(d) {return get_my_col2(d);})
 
 
  node.append("image")
- .attr("width",40)
- .attr("height", 27)
- .attr("x",-16)
- .attr("y",-17)
+ .attr("width", function(d){return d.data.name == idno2 ? 60:40;})
+ .attr("height", function(d){return d.data.name == idno2 ? 60:40;})
+ .attr("x",-20)
+ .attr("y",-20)
  .attr("xlink:href",function(d){return "m5-imgs/whole/im_"+d.data.name+".png";});  
  
 
@@ -153,7 +151,7 @@ function radialPoint(x, y) {
  
  
  
- function get_my_col(rect){
+ function get_my_col2(rect){
     var cnt = 0;
   var chk = dist_wins;
   
@@ -176,7 +174,7 @@ function radialPoint(x, y) {
 
 
 
-function get_col(){
+function get_col_2(){
         
         var chk = compute_hists();
         
@@ -210,6 +208,7 @@ function get_col(){
             }
         }
         d3.select(this).style("fill", simp_fill[col]);
+        d3.select(this).style("stroke", simp_fill[col]);
     
     });
 }
@@ -217,7 +216,7 @@ function get_col(){
 
 
 
-function swapgraph(){
+function swapgraph2(){
     var newgr = d3.select(this).data()[0].data.name;
     if (d3.event.defaultPrevented) return;
     if (idno2 == d3.select(this).data()[0].data.name) return;
@@ -242,7 +241,7 @@ function swapgraph(){
     .duration(200)
     .style("opacity",0)
     .on("end",function(){n--;if(!n){cl_gr();
-                                    mk_gr("m5-graphs/whole_trees2/g"+newgr+".json", newgr);
+                                    mk_gr2("m5-graphs/whole_trees2/g"+newgr+".json", newgr);
                                     graph.selectAll("g").transition()
     .duration(200)
     .style("opacity",1);
@@ -251,7 +250,7 @@ function swapgraph(){
     var cnt = 0;
     var chk = compute_hists();
     
-    do_update(-1);
+    do_update2(-1);
 
 
     

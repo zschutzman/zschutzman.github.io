@@ -109,7 +109,7 @@ function distboxclick(){
     .duration(200)
     .style("opacity",0)
     .on("end",function(){n--;if(!n){cl_gr();
-                                    mk_gr("m5-graphs/whole_trees2/g"+newgr+".json", newgr);
+                                    mk_gr2("m5-graphs/whole_trees2/g"+newgr+".json", newgr);
                                     graph.selectAll("g").transition()
     .duration(200)
     .style("opacity",1);
@@ -129,7 +129,7 @@ function distboxclick(){
 
 var distbox = d3.select("#graph").append("svg")
             .attr("width",300)
-            .attr("height",800);
+            .attr("height",h);
 
 distbox.append("rect")
     .attr("x",0)
@@ -205,7 +205,7 @@ for (var k=0; k<40; k++){
                 
                 
             j+=1;
-            if (j==4){j=0; i+=1;}
+            if (j==5){j=0; i+=1;}
                 }
 }
 }
@@ -247,7 +247,7 @@ else if (plan.length >= 1){
                 
                 
             j+=1;
-            if (j==4){j=0; i+=1;}
+            if (j==5){j=0; i+=1;}
     }}
     
     
@@ -277,7 +277,7 @@ else if (plan.length >= 1){
     .duration(200)
     .style("opacity",0)
     .on("end",function(){n--;if(!n){cl_gr();
-                                    mk_gr("m5-graphs/whole_trees2/g"+newgr+".json", newgr);
+                                    mk_gr2("m5-graphs/whole_trees2/g"+newgr+".json", newgr);
                                     graph.selectAll("g").transition()
     .duration(200)
     .style("opacity",1);
@@ -295,7 +295,7 @@ else if (plan.length >= 1){
 
 
 
-var distbox2 = d3.select("#graph").append("svg")
+var distbox2 = d3.select("#graph2").append("svg")
             .attr("width",300)
             .attr("height",800);
 
@@ -373,7 +373,7 @@ for (var k=0; k<40; k++){
                 
                 
             j+=1;
-            if (j==4){j=0; i+=1;}
+            if (j==5){j=0; i+=1;}
                 }
 }
 }
@@ -415,7 +415,7 @@ else if (plan.length >= 1){
                 
                 
             j+=1;
-            if (j==4){j=0; i+=1;}
+            if (j==5){j=0; i+=1;}
     }}
     
     
