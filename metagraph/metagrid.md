@@ -104,14 +104,14 @@ Let's make things a little more realistic.  Instead of each cell voting entirely
  supporters in each cell -- a total of ten in each square.  The same electoral rules apply, but now we can think about a *distribution* of votes in each cell.  Left click on a square to increase the percentage of <span style="color:#fdb863"> **Orange** </span>
  voters, or right click it to decrease the percentage of <span style="color:#fdb863"> **Orange** </span> voters.  
 
- What happens when the <span style="color:#fdb863"> **Orange** </span> party has a slight majority in most of the cells but a few are 90 or 100 percent <span style="color:#b2abd2"> **Purple** </span>?  Under which configurations can the minority party still win three out of four districts?  Are there any distributions of voters that cause there to be a <span style="color:#b2abd2"> **Purple** </span> colored metagraph node surrounded entirely by <span style="color:#fdb863"> **Orange** </span> colored nodes?
+ What happens when the <span style="color:#fdb863"> **Orange** </span> party has a slight majority in most of the cells but a few are 90 or 100 percent <span style="color:#b2abd2"> <b>Purple</b></span>?  Under which configurations can the minority party still win three out of four districts?  Are there any distributions of voters that cause there to be a <span style="color:#b2abd2"> **Purple** </span> colored metagraph node surrounded entirely by <span style="color:#fdb863"> **Orange** </span> colored nodes?
 
 
-<!--<div id="chart3" style="width:100% text-align:left"></div>
+<div id="chart3" style="width:100% text-align:left"></div>
 <hr style="width:80%">
 
 
-
+<!--
 <h2> Welcome Back to Gridlandia </h2>
 
 In the meantime, we've incorporated nine additional cells, for a total of 25.  Since the population has increased, we'd now like to draw *five* districts.  The same rules apply: each district must be contiguous and of the same size.  There are 4006 districting plans which satisfy these criteria, and we can construct the metagraph in the same way, with a node for each plan and an edge between plans that can be transformed into each other by swapping cells in adjacent districts.  We can write these all down, but this is too many to show all at once as a metagraph.  Instead, we'll show a local picture of the metagraph where you can see a districting plan and all of the other plans which can be formed by swapping one or two pairs of cells.
@@ -136,8 +136,16 @@ In the meantime, we've incorporated nine additional cells, for a total of 25.  S
 <div style="text-align:right; color:#aaaaaa;line-height:14px" width="100%"><small>
 <hr style="width:80%">
 
+This page developed from a project at the <br/>
+<a href="http://gerrydata.org">Voting Rights Data Institute</a>,
+Summer 2018 and is joint with <br/>
+Seth Drew, Eugene Henninger-Voss, and Amara Jaeger. <br/>
+Special thanks to Mira Bernstein, whose <a href="https://docs.google.com/spreadsheets/d/1U8XXRwwJ3zLLu9Xx-xsrePBFsCXkYYFj_MB4t-ZaZ4k/edit#gid=2131508220">Liliputia project</a> served as inspiration.
+<br/><br/>
+
 Version 0.8 <br/>
 August 1, 2018 <br/>
-Zachary Schutzman
+
+
 </small>
 </div>

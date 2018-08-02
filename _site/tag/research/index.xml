@@ -3,7 +3,7 @@
  <title>Your Title - research</title>
  <link href="http://example.com/tag/research/index.xml" rel="self"/>
  <link href="http://example.com/tag/research.html"/>
- <updated>2018-08-02T16:36:03-04:00</updated>
+ <updated>2018-08-02T18:01:08-04:00</updated>
  <id>http://example.com/tag/research.html</id>
  <author>
    <name>Author Here</name>
@@ -14,31 +14,38 @@
    <link href="http://example.com/blog/2017/08/gerry-conf-day-3.html"/>
    <updated>2017-08-10T00:00:00-04:00</updated>
    <id>http://example.com/blog/2017/08/gerry-conf-day-3</id>
-   <content type="html">&lt;p&gt;This week, I am at the &lt;a href=&quot;sites.tufts.edu/gerrymandr&quot;&gt;Metric Geometry and Gerrymandering Group&lt;/a&gt;’s conference/workshop in Somerville, and, given my poor level of information retention from EC earlier this summer, I wanted to take a more deliberate approach to absorbing and processing the information that’s being given to me this week.  I’m taking notes during the talks and I’ve decided to write these blog posts to reflect on each day of the conference, for both my benefit and yours, dear reader.&lt;/p&gt;
+   <content type="html">This week, I am at the [Metric Geometry and Gerrymandering Group](sites.tufts.edu/gerrymandr)'s conference/workshop in Somerville, and, given my poor level of information retention from EC earlier this summer, I wanted to take a more deliberate approach to absorbing and processing the information that's being given to me this week.  I'm taking notes during the talks and I've decided to write these blog posts to reflect on each day of the conference, for both my benefit and yours, dear reader.
 
-&lt;hr /&gt;
+----
 
-&lt;p&gt;Day Three was (unsurprisingly) excellent.  I made a stronger effort to interact more with other people approaching gerrymandering from a computational and mathematical approach.  One thing that has been difficult with my research thusfar is that I haven’t been able to pin down a nice juicy research problem.  Part of that is just my own lack of expertise and not feeling comfortable attacking a problem which has aspects (law, sociology, politics) that I am unequivocally not well-versed in.  The other part has been that I haven’t been able to interact with other math/CS professionals who have spent time thinking about this problem in a research capacity.  Getting to do that has helped me develop a whole menu of ideas, as well as some excellent contacts and potential research collaborators across the country.&lt;/p&gt;
 
-&lt;hr /&gt;
+Day Three was (unsurprisingly) excellent.  I made a stronger effort to interact more with other people approaching gerrymandering from a computational and mathematical approach.  One thing that has been difficult with my research thusfar is that I haven't been able to pin down a nice juicy research problem.  Part of that is just my own lack of expertise and not feeling comfortable attacking a problem which has aspects (law, sociology, politics) that I am unequivocally not well-versed in.  The other part has been that I haven't been able to interact with other math/CS professionals who have spent time thinking about this problem in a research capacity.  Getting to do that has helped me develop a whole menu of ideas, as well as some excellent contacts and potential research collaborators across the country.
 
-&lt;p&gt;As before, I’ll give a brief blurb for each talk, along with a link to my notes and the video of the talk (if available).&lt;/p&gt;
+----
 
-&lt;h3 style=&quot;color:#800000;&quot; id=&quot;1-talk-1-guy-uriel-charles-on-a-legal-and-conceptual-primer-for-redistricting&quot;&gt;1. Talk 1: Guy-Uriel Charles on A Legal and Conceptual Primer for Redistricting&lt;/h3&gt;
+As before, I'll give a brief blurb for each talk, along with a link to my notes and the video of the talk (if available).
 
-&lt;p&gt;Guy is a law professor, and approached the problem of redistricting from a more judicial standpoint, in contrast to the civil rights-focus of Kristen’s talk on the first day and the historical lens of Ellen’s talk on the second.  Guy layed out the constitutional framework under which redistricting cases are justiciable, and picked apart the judicial rationale for the opinions in &lt;em&gt;Bandemer&lt;/em&gt; and &lt;em&gt;Vieth&lt;/em&gt;, two important redistricting cases the Supreme Court heard.  He also described some of the differences between the judicial approach to political and racial gerrymanders. Weighing in on a perceived political gerrymander could be seen as an infringement on a state’s right to structure the legislature and a clear case of judical overreach, while there are constitutionally-based arguments that racial gerrymanders violate guaranteed rights and federal law, like the VRA.   &lt;a href=&quot;http://zachschutzman.com/assets/notes/mggg.pdf#page=21&quot;&gt;Link to Zach’s Notes&lt;/a&gt; | &lt;a href=&quot;https://www.youtube.com/watch?v=UBt6bBgcwxI&amp;amp;index=12&amp;amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au&quot;&gt;Link to Video of the Talk&lt;/a&gt;&lt;/p&gt;
+### 1. Talk 1: Guy-Uriel Charles on A Legal and Conceptual Primer for Redistricting
+{: style=&quot;color:#800000;&quot; :} 
 
-&lt;h3 style=&quot;color:#800000;&quot; id=&quot;2-talk-2-robert-cheetham-on-districtbuilder&quot;&gt;2. Talk 2: Robert Cheetham on DistrictBuilder&lt;/h3&gt;
+Guy is a law professor, and approached the problem of redistricting from a more judicial standpoint, in contrast to the civil rights-focus of Kristen's talk on the first day and the historical lens of Ellen's talk on the second.  Guy layed out the constitutional framework under which redistricting cases are justiciable, and picked apart the judicial rationale for the opinions in *Bandemer* and *Vieth*, two important redistricting cases the Supreme Court heard.  He also described some of the differences between the judicial approach to political and racial gerrymanders. Weighing in on a perceived political gerrymander could be seen as an infringement on a state's right to structure the legislature and a clear case of judical overreach, while there are constitutionally-based arguments that racial gerrymanders violate guaranteed rights and federal law, like the VRA.   [Link to Zach's Notes](http://zachschutzman.com/assets/notes/mggg.pdf#page=21) \| [Link to Video of the Talk](https://www.youtube.com/watch?v=UBt6bBgcwxI&amp;index=12&amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au)
 
-&lt;p&gt;Robert is the CEO of Azavea, a GIS software engineering B-corporation in Philadelphia.  His talk was a presentation of a tool called DistrictBuilder they built a few years ago.  DistrictBuilder is free and open source (and available on Github somewhere…) and allows users to draw their own legislative maps while being able to see live statistics about their plan.  The software was used for a few redistricting contests, notably one in Virginia where the contestants’ maps were used as part of a suit against the state for gerrymandering, and here in Philly where active citizens using the tool were able to get the legislature reengaged in drawing more representative districts. &lt;a href=&quot;http://zachschutzman.com/assets/notes/mggg.pdf#page=23&quot;&gt;Link to Zach’s Notes&lt;/a&gt; | &lt;a href=&quot;https://www.youtube.com/watch?v=CqzU_tyGv8o&amp;amp;index=13&amp;amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au&quot;&gt;Link to Video of the Talk&lt;/a&gt;&lt;/p&gt;
+### 2. Talk 2: Robert Cheetham on DistrictBuilder
+{: style=&quot;color:#800000;&quot; :} 
 
-&lt;h3 style=&quot;color:#800000;&quot; id=&quot;3-talk-3-justin-solomon-on-computational-geometry&quot;&gt;3. Talk 3: Justin Solomon on Computational Geometry&lt;/h3&gt;
+Robert is the CEO of Azavea, a GIS software engineering B-corporation in Philadelphia.  His talk was a presentation of a tool called DistrictBuilder they built a few years ago.  DistrictBuilder is free and open source (and available on Github somewhere...) and allows users to draw their own legislative maps while being able to see live statistics about their plan.  The software was used for a few redistricting contests, notably one in Virginia where the contestants' maps were used as part of a suit against the state for gerrymandering, and here in Philly where active citizens using the tool were able to get the legislature reengaged in drawing more representative districts. [Link to Zach's Notes](http://zachschutzman.com/assets/notes/mggg.pdf#page=23) \| [Link to Video of the Talk](https://www.youtube.com/watch?v=CqzU_tyGv8o&amp;index=13&amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au)
 
-&lt;p&gt;Justin is a computer scientist at MIT EECS and he does things in the realm of computational geometry.  Since redistricting has an inherent geometric component, the expertise of geometers may be useful in the problem.  To begin with, most reasonable framings of the redistricting problem are at least NP-Complete.  Additionally, some formulations of the problem look like problems for which there does not exist a good polynomial time approximation (unless $P=NP$).  Therefore, we need to be a little more creative with our approach.  Additionally, since we are working with highly numerical information in practice, we also have to worry about issues like measurement precision of the data and arithmetic underflow.  There are a number of open problems in this area which I am excited to try to tackle.  &lt;a href=&quot;http://zachschutzman.com/assets/notes/mggg.pdf#page=24&quot;&gt;Link to Zach’s Notes&lt;/a&gt; | &lt;a href=&quot;https://www.youtube.com/watch?v=HJIAhW1FIZ0&amp;amp;index=14&amp;amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au&quot;&gt;Link to Video of the Talk&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 style=&quot;color:#800000;&quot; id=&quot;3-talk-4-nestor-guillen-and-justin-solomon-on-optimal-transport&quot;&gt;3. Talk 4: Nestor Guillen and Justin Solomon on Optimal Transport&lt;/h3&gt;
+### 3. Talk 3: Justin Solomon on Computational Geometry
+{: style=&quot;color:#800000;&quot; :} 
 
-&lt;p&gt;This talk was very mathematical and it went very quickly, so I’m not sure I’m in an excellent position to give a good summary, but here we go.  Optimal transport is a topic in mathematics/statistics/physics/computer science which addresses problems of the flavor “If I have X cannonballs scattered on the ground and they need to be brought to Y different cannons, what is the most efficient way of moving them?”  There are discrete and continuous versions of this problem, but for redistricting, we are interested in a model where we allocate parcels of land (a continuous thing) into a fixed number of districts (a finite and discrete number of things).  It turns out this problem looks a lot like linear programming, which means that there is a nice correspondence between this approach and other optimization techniques.  At this point, it is unclear how or if optimal transport will be useful in the redistricting problem, but according to Nestor and Justin (experts), it is certainly an area worth exploring.  &lt;a href=&quot;http://zachschutzman.com/assets/notes/mggg.pdf#page=26&quot;&gt;Link to Zach’s Notes&lt;/a&gt;&lt;/p&gt;
+Justin is a computer scientist at MIT EECS and he does things in the realm of computational geometry.  Since redistricting has an inherent geometric component, the expertise of geometers may be useful in the problem.  To begin with, most reasonable framings of the redistricting problem are at least NP-Complete.  Additionally, some formulations of the problem look like problems for which there does not exist a good polynomial time approximation (unless $P=NP$).  Therefore, we need to be a little more creative with our approach.  Additionally, since we are working with highly numerical information in practice, we also have to worry about issues like measurement precision of the data and arithmetic underflow.  There are a number of open problems in this area which I am excited to try to tackle.  [Link to Zach's Notes](http://zachschutzman.com/assets/notes/mggg.pdf#page=24) \| [Link to Video of the Talk](https://www.youtube.com/watch?v=HJIAhW1FIZ0&amp;index=14&amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au)
+
+
+### 3. Talk 4: Nestor Guillen and Justin Solomon on Optimal Transport
+{: style=&quot;color:#800000;&quot; :} 
+
+This talk was very mathematical and it went very quickly, so I'm not sure I'm in an excellent position to give a good summary, but here we go.  Optimal transport is a topic in mathematics/statistics/physics/computer science which addresses problems of the flavor &quot;If I have X cannonballs scattered on the ground and they need to be brought to Y different cannons, what is the most efficient way of moving them?&quot;  There are discrete and continuous versions of this problem, but for redistricting, we are interested in a model where we allocate parcels of land (a continuous thing) into a fixed number of districts (a finite and discrete number of things).  It turns out this problem looks a lot like linear programming, which means that there is a nice correspondence between this approach and other optimization techniques.  At this point, it is unclear how or if optimal transport will be useful in the redistricting problem, but according to Nestor and Justin (experts), it is certainly an area worth exploring.  [Link to Zach's Notes](http://zachschutzman.com/assets/notes/mggg.pdf#page=26) 
 
 </content>
  </entry>
@@ -48,29 +55,34 @@
    <link href="http://example.com/blog/2017/08/gerry-conf-day-2.html"/>
    <updated>2017-08-09T00:00:00-04:00</updated>
    <id>http://example.com/blog/2017/08/gerry-conf-day-2</id>
-   <content type="html">&lt;p&gt;This week, I am at the &lt;a href=&quot;sites.tufts.edu/gerrymandr&quot;&gt;Metric Geometry and Gerrymandering Group&lt;/a&gt;’s conference/workshop in Somerville, and, given my poor level of information retention from EC earlier this summer, I wanted to take a more deliberate approach to absorbing and processing the information that’s being given to me this week.  I’m taking notes during the talks and I’ve decided to write these blog posts to reflect on each day of the conference, for both my benefit and yours, dear reader.&lt;/p&gt;
+   <content type="html">This week, I am at the [Metric Geometry and Gerrymandering Group](sites.tufts.edu/gerrymandr)'s conference/workshop in Somerville, and, given my poor level of information retention from EC earlier this summer, I wanted to take a more deliberate approach to absorbing and processing the information that's being given to me this week.  I'm taking notes during the talks and I've decided to write these blog posts to reflect on each day of the conference, for both my benefit and yours, dear reader.
 
-&lt;hr /&gt;
+----
 
-&lt;p&gt;Day Two was just as much fun as Day One.  I’ll say again, the best part of this thing is that I get to meet a broad range of people with extremely diverse interests and viewpoints.  Part of the mission of this conference is to work with educators on how to effectively teach and communicate the issues and challenges of gerrymandering, because as any political scientist will tell you, awareness of and engagement with technical policy issues is extremly low among the general population, and getting people to know about and understand an issue is the first step towards widespread support for reform.  Being able to think and talk about redistricting from the from the viewpoint of experts in complexity theory, middle school education, law, civil rights, mathematics, physics, statistics, urban planning, and software development has been really helpful for me to be able to frame the problem of gerrymandering in different ways, and I think that when I get back into research, I’ll have a much better idea of how to navigate my work because I can take into account the multifaceted nature of the problem.&lt;/p&gt;
 
-&lt;p&gt;I also think I’d like to put together “An Interdisciplinary Primer on Redistricting” both for the benefit of myself and my research, but also to be a quick and simple resource for people interested in moving around throughout the very broad space that this problem sits in.&lt;/p&gt;
+Day Two was just as much fun as Day One.  I'll say again, the best part of this thing is that I get to meet a broad range of people with extremely diverse interests and viewpoints.  Part of the mission of this conference is to work with educators on how to effectively teach and communicate the issues and challenges of gerrymandering, because as any political scientist will tell you, awareness of and engagement with technical policy issues is extremly low among the general population, and getting people to know about and understand an issue is the first step towards widespread support for reform.  Being able to think and talk about redistricting from the from the viewpoint of experts in complexity theory, middle school education, law, civil rights, mathematics, physics, statistics, urban planning, and software development has been really helpful for me to be able to frame the problem of gerrymandering in different ways, and I think that when I get back into research, I'll have a much better idea of how to navigate my work because I can take into account the multifaceted nature of the problem.
 
-&lt;hr /&gt;
+I also think I'd like to put together &quot;An Interdisciplinary Primer on Redistricting&quot; both for the benefit of myself and my research, but also to be a quick and simple resource for people interested in moving around throughout the very broad space that this problem sits in.
 
-&lt;p&gt;As with the previous post, I’ll give a brief blurb for each talk, along with a link to my notes and the video of the talk (if available).&lt;/p&gt;
+----
 
-&lt;h3 style=&quot;color:#800000;&quot; id=&quot;1-talk-1-ellen-katz-on-race-and-redistricting&quot;&gt;1. Talk 1: Ellen Katz on Race and Redistricting&lt;/h3&gt;
+As with the previous post, I'll give a brief blurb for each talk, along with a link to my notes and the video of the talk (if available).
 
-&lt;p&gt;Ellen is a legal scholar, and presented a modern history of court cases related to racial issues in voting rights and redistricting.  This talk is a nice companion piece to Kristen Clarke’s talk from the previous day.  She really got at the legal precedent surrounding some of the subtleties of why gerrymandering is such a sticky legal issue, such as how we can discern between a plan which unfairly packs minorities and one which is fairly providing majority-minority districts.  &lt;a href=&quot;http://zachschutzman.com/assets/notes/mggg.pdf#page=12&quot;&gt;Link to Zach’s Notes&lt;/a&gt; | &lt;a href=&quot;https://www.youtube.com/watch?v=nLN9pNBDczg&amp;amp;index=5&amp;amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au&quot;&gt;Link to Video of the Talk&lt;/a&gt;&lt;/p&gt;
+### 1. Talk 1: Ellen Katz on Race and Redistricting 
+{: style=&quot;color:#800000;&quot; :} 
 
-&lt;h3 style=&quot;color:#800000;&quot; id=&quot;2-talk-2-megan-gall-on-geographic-issues-in-redistricting&quot;&gt;2. Talk 2: Megan Gall on Geographic Issues in Redistricting&lt;/h3&gt;
+Ellen is a legal scholar, and presented a modern history of court cases related to racial issues in voting rights and redistricting.  This talk is a nice companion piece to Kristen Clarke's talk from the previous day.  She really got at the legal precedent surrounding some of the subtleties of why gerrymandering is such a sticky legal issue, such as how we can discern between a plan which unfairly packs minorities and one which is fairly providing majority-minority districts.  [Link to Zach's Notes](http://zachschutzman.com/assets/notes/mggg.pdf#page=12) \| [Link to Video of the Talk](https://www.youtube.com/watch?v=nLN9pNBDczg&amp;index=5&amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au)
 
-&lt;p&gt;Megan is a GIS expert and works with legal scholars to do data analysis and produce maps related to redistricting.  While there are a number of criteria for redistricting, such as compactness and preservation f existing political borders, these are loosely defined, vague, and not always strictly applied.  Additionally, every state has different rules regarding how state and federal districts are drawn, and sometimes even within a state, the rules for drawing congresisonal districts are very different than the ones guiding the drawing of state districts.  As analysts, a major hurdle is getting good data.  Since election and voter data only exists down to a certain resolution, we need to use statistical methods to make inferences about how different groups of voters behave, as a claim of disenfranchisement which violates Section 2 of the VRA requires layers to be able to argue that an affected group &lt;em&gt;both&lt;/em&gt; votes as a bloc &lt;em&gt;and&lt;/em&gt; is not afforded proper representation. &lt;a href=&quot;http://zachschutzman.com/assets/notes/mggg.pdf#page=14&quot;&gt;Link to Zach’s Notes&lt;/a&gt; | &lt;a href=&quot;https://www.youtube.com/watch?v=rdaTDlFro5w&amp;amp;index=6&amp;amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au&quot;&gt;Link to Video of the Talk&lt;/a&gt;&lt;/p&gt;
+### 2. Talk 2: Megan Gall on Geographic Issues in Redistricting
+{: style=&quot;color:#800000;&quot; :} 
 
-&lt;h3 style=&quot;color:#800000;&quot; id=&quot;3-talk-3-and-4-wendy-cho-and-yan-liu-on-computational-issues&quot;&gt;3. Talk 3 and 4: Wendy Cho and Yan Liu on Computational Issues&lt;/h3&gt;
+Megan is a GIS expert and works with legal scholars to do data analysis and produce maps related to redistricting.  While there are a number of criteria for redistricting, such as compactness and preservation f existing political borders, these are loosely defined, vague, and not always strictly applied.  Additionally, every state has different rules regarding how state and federal districts are drawn, and sometimes even within a state, the rules for drawing congresisonal districts are very different than the ones guiding the drawing of state districts.  As analysts, a major hurdle is getting good data.  Since election and voter data only exists down to a certain resolution, we need to use statistical methods to make inferences about how different groups of voters behave, as a claim of disenfranchisement which violates Section 2 of the VRA requires layers to be able to argue that an affected group *both* votes as a bloc *and* is not afforded proper representation. [Link to Zach's Notes](http://zachschutzman.com/assets/notes/mggg.pdf#page=14) \| [Link to Video of the Talk](https://www.youtube.com/watch?v=rdaTDlFro5w&amp;index=6&amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au)
 
-&lt;p&gt;The morning talk was the “general audience” presentation and the afternoon was the more “technical” view of Cho and Liu’s project which implements a massively parallel genetic algorithm for sampling from the space of redistricting maps.  In an ideal world, we could evaluate how good or bad a gerrymander is by using statistical tests to compare the map to a distribution of maps.  For example, if someone is claiming that their map is not a partisan gerrymander, but it looks a lot like a draw from the distribution over maps with a strong partisan bias, we may have evidence of intentional gerrymandering.  At a high level, the two major computational issues we have to deal with are that the actual space of maps that split a state into the correct number of contiguous districts is absolutely massive, and that picking the map which optimizes against some constraints and objectives is computationally very difficult.  Here we design a genetic algorithm which runs in parallel on a supercomputer to try to get a good sample of maps.  Genetic algorithms are nice because they run quickly and they don’t require the designer to know a lot about what the sample space actually looks like.  The downside is that you can’t prove a lot of things about how good the solution you get is, or how long it will take to find a good solution.  &lt;a href=&quot;http://zachschutzman.com/assets/notes/mggg.pdf#page=17&quot;&gt;Link to Zach’s Notes&lt;/a&gt; | &lt;a href=&quot;https://www.youtube.com/watch?v=P_U_x2p48AI&amp;amp;index=11&amp;amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au&quot;&gt;Link to Video of the Talk&lt;/a&gt;&lt;/p&gt;
+
+### 3. Talk 3 and 4: Wendy Cho and Yan Liu on Computational Issues
+{: style=&quot;color:#800000;&quot; :} 
+
+The morning talk was the &quot;general audience&quot; presentation and the afternoon was the more &quot;technical&quot; view of Cho and Liu's project which implements a massively parallel genetic algorithm for sampling from the space of redistricting maps.  In an ideal world, we could evaluate how good or bad a gerrymander is by using statistical tests to compare the map to a distribution of maps.  For example, if someone is claiming that their map is not a partisan gerrymander, but it looks a lot like a draw from the distribution over maps with a strong partisan bias, we may have evidence of intentional gerrymandering.  At a high level, the two major computational issues we have to deal with are that the actual space of maps that split a state into the correct number of contiguous districts is absolutely massive, and that picking the map which optimizes against some constraints and objectives is computationally very difficult.  Here we design a genetic algorithm which runs in parallel on a supercomputer to try to get a good sample of maps.  Genetic algorithms are nice because they run quickly and they don't require the designer to know a lot about what the sample space actually looks like.  The downside is that you can't prove a lot of things about how good the solution you get is, or how long it will take to find a good solution.  [Link to Zach's Notes](http://zachschutzman.com/assets/notes/mggg.pdf#page=17) \| [Link to Video of the Talk](https://www.youtube.com/watch?v=P_U_x2p48AI&amp;index=11&amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au)
 </content>
  </entry>
  
@@ -79,36 +91,46 @@
    <link href="http://example.com/blog/2017/08/gerry-conf-day-1.html"/>
    <updated>2017-08-08T00:00:00-04:00</updated>
    <id>http://example.com/blog/2017/08/gerry-conf-day-1</id>
-   <content type="html">&lt;p&gt;This week, I am at the &lt;a href=&quot;sites.tufts.edu/gerrymandr&quot;&gt;Metric Geometry and Gerrymandering Group&lt;/a&gt;’s conference/workshop in Somerville, and, given my poor level of information retention from EC earlier this summer, I wanted to take a more deliberate approach to absorbing and processing the information that’s being given to me this week.  I’m taking notes during the talks and I’ve decided to write these blog posts to reflect on each day of the conference, for both my benefit and yours, dear reader.&lt;/p&gt;
+   <content type="html">This week, I am at the [Metric Geometry and Gerrymandering Group](sites.tufts.edu/gerrymandr)'s conference/workshop in Somerville, and, given my poor level of information retention from EC earlier this summer, I wanted to take a more deliberate approach to absorbing and processing the information that's being given to me this week.  I'm taking notes during the talks and I've decided to write these blog posts to reflect on each day of the conference, for both my benefit and yours, dear reader.
 
-&lt;hr /&gt;
+----
 
-&lt;p&gt;First, a little bit of background on gerrymandering and why it’s interesting to me.  I took AP US Government my junior year of high school, which was the 2010-2011 academic year.  For those who may have forgotten (or blocked it out), that was the election cycle in which the Tea Party mounted a major populist movement and swung a lot of legislative seats, both at the federal and state levels, to Republican control.  This was in conjunction with an effort called REDMAP, which sought to gain control of state legislatures in advance of the congressional redistritcing process following the 2010 Census in order to swing even more House of Representatives seats towards being “safe Republican” districts.  Since then, gerrymandering, or the art, science, and magic of drawing political districts to favor or disfavor certain outcomes, has been fascinating to me as someone who works at the intersection of mathematics, computing, and social science.&lt;/p&gt;
 
-&lt;p&gt;This conference brings together people from all three domains, plus others, and I am having a ridiculous amount of fun at this thing.  Like, to the point that I’m kind of in disbelief that I’m here for research purposes.  I have met some of &lt;em&gt;the most&lt;/em&gt; interesting people, as this conference has brought together a wide mix of people.  I met local government members, physicists, computer scientists, mathematicians, software engineers, and activists, all interesting in this problem from their own perspective.  It’s a lot of fun to be able to talk about how I think about the problem, how other people thing about the problem, and how to use tools and ideas from a range of disciplines to address gerrymandering.&lt;/p&gt;
 
-&lt;hr /&gt;
+First, a little bit of background on gerrymandering and why it's interesting to me.  I took AP US Government my junior year of high school, which was the 2010-2011 academic year.  For those who may have forgotten (or blocked it out), that was the election cycle in which the Tea Party mounted a major populist movement and swung a lot of legislative seats, both at the federal and state levels, to Republican control.  This was in conjunction with an effort called REDMAP, which sought to gain control of state legislatures in advance of the congressional redistritcing process following the 2010 Census in order to swing even more House of Representatives seats towards being &quot;safe Republican&quot; districts.  Since then, gerrymandering, or the art, science, and magic of drawing political districts to favor or disfavor certain outcomes, has been fascinating to me as someone who works at the intersection of mathematics, computing, and social science.
 
-&lt;p&gt;I’ll give a short blurb about each talk.  For more details, I’ll link my notes as well as videos if Tufts has made them available.  If you have a problem with the notes, tell me and I’ll fix it.  If you have a problem with the video, I’m not the person to complain to.&lt;/p&gt;
 
-&lt;h3 style=&quot;color:#800000;&quot; id=&quot;1-talk-1-moon-duchin-on-situating-redistricting-as-a-problem-in-multiple-disciplines&quot;&gt;1. Talk 1: Moon Duchin on Situating Redistricting as a Problem in Multiple Disciplines.&lt;/h3&gt;
-&lt;p&gt;Many people have thoughts and feelings about redistricting, and there are things to be learned from people with different backgrounds.  From law, we need to think about how drawing district lines affect voting rights, from political science we can think about how districting affects representation and electoral outcomes, and from mathematics, we can think about the shapes of the districts. &lt;a href=&quot;http://zachschutzman.com/assets/notes/mggg.pdf#page=2&quot;&gt;Link to Zach’s Notes&lt;/a&gt; | &lt;a href=&quot;https://www.youtube.com/watch?v=vdkvQ9y04K4&amp;amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au&amp;amp;index=1&quot;&gt;Link to Video of the Talk&lt;/a&gt;&lt;/p&gt;
+This conference brings together people from all three domains, plus others, and I am having a ridiculous amount of fun at this thing.  Like, to the point that I'm kind of in disbelief that I'm here for research purposes.  I have met some of *the most* interesting people, as this conference has brought together a wide mix of people.  I met local government members, physicists, computer scientists, mathematicians, software engineers, and activists, all interesting in this problem from their own perspective.  It's a lot of fun to be able to talk about how I think about the problem, how other people thing about the problem, and how to use tools and ideas from a range of disciplines to address gerrymandering.
 
-&lt;h3 style=&quot;color:#800000;&quot; id=&quot;2-talk-2-steve-ansolabehere-on-partisan-gerrymandering&quot;&gt;2. Talk 2: Steve Ansolabehere on Partisan Gerrymandering&lt;/h3&gt;
+----
 
-&lt;p&gt;How do we detect gerrymandering?  There are some simple tests like the distortion of representation relative to the population, efficiency metrics like wasted votes, and partisan bias, but none of these are smoking gun tools for detecting gerrymandering.  We are also interested in how to actually make good maps. Given technology developments in recent years, crowdsourcing may be a powerful tool for developing good maps.  Finally, we need to think about how to bridge the gap between scholarship and legal arguments.  Judges are experts in interpreting the law, but not necessarily mathematics, sociology, or electoral politics, so we need to find the balance between tools and techniques which are comprehensive and rigorous, but also easy to explain and interpret in a courtroom setting. &lt;a href=&quot;http://zachschutzman.com/assets/notes/mggg.pdf#page=6&quot;&gt;Link to Zach’s Notes&lt;/a&gt; | &lt;a href=&quot;https://www.youtube.com/watch?v=TDe72R8pjSc&amp;amp;index=2&amp;amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au&quot;&gt;Link to Video of the Talk&lt;/a&gt;&lt;/p&gt;
+I'll give a short blurb about each talk.  For more details, I'll link my notes as well as videos if Tufts has made them available.  If you have a problem with the notes, tell me and I'll fix it.  If you have a problem with the video, I'm not the person to complain to.
 
-&lt;h3 style=&quot;color:#800000;&quot; id=&quot;3-talk-3-kristen-clarke-on-voting-rights-litigation&quot;&gt;3. Talk 3: Kristen Clarke on Voting Rights Litigation&lt;/h3&gt;
+### 1. Talk 1: Moon Duchin on Situating Redistricting as a Problem in Multiple Disciplines. 
+{: style=&quot;color:#800000;&quot; :} 
+Many people have thoughts and feelings about redistricting, and there are things to be learned from people with different backgrounds.  From law, we need to think about how drawing district lines affect voting rights, from political science we can think about how districting affects representation and electoral outcomes, and from mathematics, we can think about the shapes of the districts. [Link to Zach's Notes](http://zachschutzman.com/assets/notes/mggg.pdf#page=2) \| [Link to Video of the Talk](https://www.youtube.com/watch?v=vdkvQ9y04K4&amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au&amp;index=1)
 
-&lt;p&gt;(Editorial note: this was an amazing talk.  If you have the opportunity to hear Kristen give a talk, go.)&lt;/p&gt;
+### 2. Talk 2: Steve Ansolabehere on Partisan Gerrymandering 
+{: style=&quot;color:#800000;&quot; :} 
 
-&lt;p&gt;Voting rights legislation does not exist in a vacuum.  During the Civil Rights Era, legislation was passed to correct severe problems of disenfranchisement, particularly in the South.  Recent events, such as the &lt;em&gt;Shelby&lt;/em&gt; verdict in 2013 have dismantled some of these protections, and we need to be aware of how certain policies, such as voter ID laws, disproportionately affect minority populations.  With respect to redistricting, it’s clear that there isn’t a cookie cutter approach that will magically solve every problem simultaneously.  Any solution must involve careful and rigorous analysis of data, laws, voting patterns, and the motivations of those drawing the lines. &lt;a href=&quot;http://zachschutzman.com/assets/notes/mggg.pdf#page=8&quot;&gt;Link to Zach’s Notes&lt;/a&gt; | &lt;a href=&quot;https://www.youtube.com/watch?v=CktwjlcBDH4&amp;amp;index=3&amp;amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au&quot;&gt;Link to Video of the Talk&lt;/a&gt;&lt;/p&gt;
+How do we detect gerrymandering?  There are some simple tests like the distortion of representation relative to the population, efficiency metrics like wasted votes, and partisan bias, but none of these are smoking gun tools for detecting gerrymandering.  We are also interested in how to actually make good maps. Given technology developments in recent years, crowdsourcing may be a powerful tool for developing good maps.  Finally, we need to think about how to bridge the gap between scholarship and legal arguments.  Judges are experts in interpreting the law, but not necessarily mathematics, sociology, or electoral politics, so we need to find the balance between tools and techniques which are comprehensive and rigorous, but also easy to explain and interpret in a courtroom setting. [Link to Zach's Notes](http://zachschutzman.com/assets/notes/mggg.pdf#page=6) \| [Link to Video of the Talk](https://www.youtube.com/watch?v=TDe72R8pjSc&amp;index=2&amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au)
 
-&lt;h3 style=&quot;color:#800000;&quot; id=&quot;2-talk-4-moon-duchin-and-max-engelstein-do-math&quot;&gt;2. Talk 4: Moon Duchin and Max Engelstein Do Math&lt;/h3&gt;
 
-&lt;p&gt;This ended up being more of a Q&amp;amp;A/brainstorming session, so the amount of “actual content” is relatively low.  The takeaways are that the modern mathematical aspect of gerrymandering is relatively undeveloped, and techniques from group theory, geometry, topology, and graph theory may be useful. &lt;a href=&quot;http://zachschutzman.com/assets/notes/mggg.pdf#page=10&quot;&gt;Link to Zach’s Notes&lt;/a&gt;&lt;/p&gt;
+### 3. Talk 3: Kristen Clarke on Voting Rights Litigation
+{: style=&quot;color:#800000;&quot; :} 
 
-&lt;hr /&gt;
+(Editorial note: this was an amazing talk.  If you have the opportunity to hear Kristen give a talk, go.)
+
+Voting rights legislation does not exist in a vacuum.  During the Civil Rights Era, legislation was passed to correct severe problems of disenfranchisement, particularly in the South.  Recent events, such as the *Shelby* verdict in 2013 have dismantled some of these protections, and we need to be aware of how certain policies, such as voter ID laws, disproportionately affect minority populations.  With respect to redistricting, it's clear that there isn't a cookie cutter approach that will magically solve every problem simultaneously.  Any solution must involve careful and rigorous analysis of data, laws, voting patterns, and the motivations of those drawing the lines. [Link to Zach's Notes](http://zachschutzman.com/assets/notes/mggg.pdf#page=8) \| [Link to Video of the Talk](https://www.youtube.com/watch?v=CktwjlcBDH4&amp;index=3&amp;list=PLr7G5jnVFYLiTpEiQkQB_FyQ372oSO8Au)
+
+
+### 2. Talk 4: Moon Duchin and Max Engelstein Do Math 
+{: style=&quot;color:#800000;&quot; :} 
+
+This ended up being more of a Q&amp;A/brainstorming session, so the amount of &quot;actual content&quot; is relatively low.  The takeaways are that the modern mathematical aspect of gerrymandering is relatively undeveloped, and techniques from group theory, geometry, topology, and graph theory may be useful. [Link to Zach's Notes](http://zachschutzman.com/assets/notes/mggg.pdf#page=10)
+
+----
+
 
 </content>
  </entry>
@@ -118,71 +140,93 @@
    <link href="http://example.com/blog/2017/05/graphs-pac-learn.html"/>
    <updated>2017-05-25T00:00:00-04:00</updated>
    <id>http://example.com/blog/2017/05/graphs-pac-learn</id>
-   <content type="html">&lt;p&gt;This semester I took a course on Computational Learning Theory, which deals with the statistical and computational underpinnings of machine learning.  As part of our final project, Hadi Elzayn and I proved that graphs are Probabily-Approximately Correct (PAC)-learnable from labeled supergraph/subgraph examples in polynomial sample complexity.  Here’s a presentation of that proof as well as a fun little way of trying out $\TeX$ on the blog.&lt;/p&gt;
+   <content type="html">This semester I took a course on Computational Learning Theory, which deals with the statistical and computational underpinnings of machine learning.  As part of our final project, Hadi Elzayn and I proved that graphs are Probabily-Approximately Correct (PAC)-learnable from labeled supergraph/subgraph examples in polynomial sample complexity.  Here's a presentation of that proof as well as a fun little way of trying out $\TeX$ on the blog.
 
-&lt;hr /&gt;
+----
 
-&lt;h2 id=&quot;positive-examples-are-supergraphs&quot;&gt;Positive Examples are Supergraphs&lt;/h2&gt;
 
-&lt;p&gt;We first consider a setting in which the Learner wishes to learn a graph $G$  on some vertex set $V=\{v_1,v_2,\dots,v_n\}$.  That is, the number of vertices is initially known, but the edges are initially unknown.  Observe that if $n$ is the number of vertices in the graph, our concept class contains $O(2^n)$ possible graphs, as we have each of the $\binom{n}{2} =\frac{n^2-n}{2}$ edges either present or absent in the true graph $G$.  Let $\mathcal{D}$ be some arbitrary distribution over all possible graphs on the vertex set $V$.  Let $EX(c,\mathcal{D})$ be a sampling oracle which returns a graph $G’$ and a label $y$, where $y=1$ if $G’$ is a supergraph of $G$ and $y=0$ if $G’$ is not a supergraph of $G$.  In other words, $y$ represents the answer to the question ‘Does $G’$ have at least every edge that is in $G$, and maybe some extras?’  We claim that $G$ is $(\epsilon,\delta)-$PAC learnable from $EX(c,\mathcal{D})$ with sufficiently many examples $m$, and that $m$ is only polynomial in $\epsilon$, $\delta$, and the number of vertices in the graph $n$.&lt;/p&gt;
+## Positive Examples are Supergraphs
 
-&lt;p&gt;Trying to learn from supergraphs might feel a little contrived, and admittedly it is.  It might be a more natural question of whether $G$ can be PAC-learned from examples which are its subgraphs.  We start with supergraphs because there is an elegant and straightforward reduction from a problem that is known to be PAC-learnable to the supergraph case, and after showing this correspondence, the claim that $G$ is learnable from subgraphs under the same conditions will follow easily.&lt;/p&gt;
+We first consider a setting in which the Learner wishes to learn a graph $G$  on some vertex set $V=\\{v_1,v_2,\dots,v_n\\}$.  That is, the number of vertices is initially known, but the edges are initially unknown.  Observe that if $n$ is the number of vertices in the graph, our concept class contains $O(2^n)$ possible graphs, as we have each of the $\binom{n}{2} =\frac{n^2-n}{2}$ edges either present or absent in the true graph $G$.  Let $\mathcal{D}$ be some arbitrary distribution over all possible graphs on the vertex set $V$.  Let $EX(c,\mathcal{D})$ be a sampling oracle which returns a graph $G'$ and a label $y$, where $y=1$ if $G'$ is a supergraph of $G$ and $y=0$ if $G'$ is not a supergraph of $G$.  In other words, $y$ represents the answer to the question 'Does $G'$ have at least every edge that is in $G$, and maybe some extras?'  We claim that $G$ is $(\epsilon,\delta)-$PAC learnable from $EX(c,\mathcal{D})$ with sufficiently many examples $m$, and that $m$ is only polynomial in $\epsilon$, $\delta$, and the number of vertices in the graph $n$.
+
+
+
+
+
+
+
+Trying to learn from supergraphs might feel a little contrived, and admittedly it is.  It might be a more natural question of whether $G$ can be PAC-learned from examples which are its subgraphs.  We start with supergraphs because there is an elegant and straightforward reduction from a problem that is known to be PAC-learnable to the supergraph case, and after showing this correspondence, the claim that $G$ is learnable from subgraphs under the same conditions will follow easily.
+
+
+
+
+
+
 
 &lt;div class=&quot;theorem&quot;&gt;
 Given error parameter $\epsilon$, confidence parameter $\delta$, a vertex set $V$, and an example oracle $EX(c,\mathcal{D})$, we can PAC-learn a graph $G$ from supergraphs using only positive examples with sample complexity polynomial in $\frac{1}{\epsilon},\frac{1}{\delta},$ and the number of vertices in $G$.
 &lt;/div&gt;
 
-&lt;p&gt;At a high level, our algorithm will start with the hypothesis $h=K^n$, the complete graph on $n$ vertices. That is, we assume that $G$ contains every possible edge. When we see a positive example $x$ from $EX(c,\mathcal{D})$, we delete from $h$ those edges not present in $x$.  We do this sufficiently many times to ensure we have error less than $\epsilon$ with probability at least $1-\delta$.&lt;/p&gt;
+
+At a high level, our algorithm will start with the hypothesis $h=K^n$, the complete graph on $n$ vertices. That is, we assume that $G$ contains every possible edge. When we see a positive example $x$ from $EX(c,\mathcal{D})$, we delete from $h$ those edges not present in $x$.  We do this sufficiently many times to ensure we have error less than $\epsilon$ with probability at least $1-\delta$.
+
 
 &lt;div class=&quot;lemma&quot;&gt;
 We never delete from $h$ any edge actually present in the true $G$.
 &lt;/div&gt;
 
-&lt;p&gt;To see this, consider the condition for deleting an edge.  We only delete an edge if we see a positive example $x$ where that edge is not present.  Since the example is positive, it contains at least all of the edges that $G$ does, so $G$ certainly cannot contain any edge &lt;em&gt;not&lt;/em&gt; present in $x$.  We therefore know that our hypothesis $h$ will always be a supergraph of the true graph $G$.&lt;/p&gt;
+To see this, consider the condition for deleting an edge.  We only delete an edge if we see a positive example $x$ where that edge is not present.  Since the example is positive, it contains at least all of the edges that $G$ does, so $G$ certainly cannot contain any edge *not* present in $x$.  We therefore know that our hypothesis $h$ will always be a supergraph of the true graph $G$.
 
-&lt;p&gt;This is starting to feel a little bit like learning a monotone boolean conjunction.  We will show at the end of this section the explicit reduction which demonstrates that this is &lt;em&gt;exactly equivalent&lt;/em&gt; to learning a monotone boolean conjunction, but for now, we proceed with the proof.&lt;/p&gt;
+This is starting to feel a little bit like learning a monotone boolean conjunction.  We will show at the end of this section the explicit reduction which demonstrates that this is *exactly equivalent* to learning a monotone boolean conjunction, but for now, we proceed with the proof.
 
-&lt;p&gt;Let $e$ be some possible edge, and denote $p(e)$ the probability that $e$ gets deleted from $h$ as a result of seeing some positive example from $EX(c,\mathcal{D})$.  Note that for all $e$ in the true graph $G$, $p(e)=0$, as we showed above that we will never remove such an edge from $h$.&lt;/p&gt;
+Let $e$ be some possible edge, and denote $p(e)$ the probability that $e$ gets deleted from $h$ as a result of seeing some positive example from $EX(c,\mathcal{D})$.  Note that for all $e$ in the true graph $G$, $p(e)=0$, as we showed above that we will never remove such an edge from $h$.
+
 
 &lt;div class=&quot;lemma&quot;&gt;
 The error of $h$, that is the probability that $h$ contains at least one edge not present in $G$ (equivalently, the probability that $h\neq G$) is upper-bounded by the sum of the $p(e)$ over all possible edges.
 &lt;/div&gt;
 
-&lt;p&gt;To see this, consider an edge $e$ which is in $h$.  Suppose $EX(c,\mathcal{D})$ gives us a positive example in which $e$ is not present. Since $e$ is in $h$ but is not in $G$, $h$ makes an error on that edge $e$.  We call $p(e)$ the probability that $e$ causes $h$ to make such an error, so $\sum\limits_{e\in G}p(e)$ must be an upper-bound on the error of $h$.&lt;/p&gt;
 
-&lt;p&gt;Call an edge &lt;em&gt;bad&lt;/em&gt; if $p(e)\geq \frac{e}{|E|}$.&lt;/p&gt;
+To see this, consider an edge $e$ which is in $h$.  Suppose $EX(c,\mathcal{D})$ gives us a positive example in which $e$ is not present. Since $e$ is in $h$ but is not in $G$, $h$ makes an error on that edge $e$.  We call $p(e)$ the probability that $e$ causes $h$ to make such an error, so $\sum\limits_{e\in G}p(e)$ must be an upper-bound on the error of $h$.
+
+Call an edge *bad* if $p(e)\geq \frac{e}{\|E\|}$.
+
 
 &lt;div class=&quot;lemma&quot;&gt;
 If $h$ has no bad edges, then the error of $h$ is less than $\epsilon$, as desired.
 &lt;/div&gt;
 
-&lt;p&gt;This follows directly from the previous Lemma.&lt;/p&gt;
 
-&lt;p&gt;We now need to show that we can achieve such a low error hypothesis with high probability.  What is the probability that a bad edge survives $m$ positive examples?  The probability that it survives any one draw is&lt;/p&gt;
+This follows directly from the previous Lemma.
 
-&lt;p&gt;$(1-p(e))\leq (1-\frac{\epsilon}{|E|})$&lt;/p&gt;
+We now need to show that we can achieve such a low error hypothesis with high probability.  What is the probability that a bad edge survives $m$ positive examples?  The probability that it survives any one draw is 
 
-&lt;p&gt;Then the probability that it survives $m$ draws is at most $(1-\frac{\epsilon}{|E|})^m$&lt;/p&gt;
+$(1-p(e))\leq (1-\frac{\epsilon}{\|E\|})$
 
-&lt;p&gt;In the worst case, every one of the $|E|$ edges is bad, so the probability that any bad edge survives $m$ draws is at most $|E|(1-\frac{\epsilon}{|E|})^m$.  We want to choose $m$ large enough to make this smaller than $\delta$.  Using Hoeffding’s Inequality and some basic algebra, we get&lt;/p&gt;
+Then the probability that it survives $m$ draws is at most $(1-\frac{\epsilon}{\|E\|})^m$
 
-&lt;p&gt;$m\geq \frac{|E|}{\epsilon}(\ln{|E|}+\ln{\frac{1}{\delta}})$&lt;/p&gt;
+In the worst case, every one of the $\|E\|$ edges is bad, so the probability that any bad edge survives $m$ draws is at most $\|E\|(1-\frac{\epsilon}{\|E\|})^m$.  We want to choose $m$ large enough to make this smaller than $\delta$.  Using Hoeffding's Inequality and some basic algebra, we get 
 
-&lt;p&gt;We have $m$ polynomial in $|E|$ (which is itself polynomial in the number of vertices in $G$), $\delta$, and $\epsilon$, hence graphs are efficiently PAC-learnable from supergraphs. $\square$&lt;/p&gt;
+$m\geq \frac{\|E\|}{\epsilon}(\ln{\|E\|}+\ln{\frac{1}{\delta}})$
 
-&lt;h2 id=&quot;the-same-as-conjunctions&quot;&gt;The Same As Conjunctions&lt;/h2&gt;
+We have $m$ polynomial in $\|E\|$ (which is itself polynomial in the number of vertices in $G$), $\delta$, and $\epsilon$, hence graphs are efficiently PAC-learnable from supergraphs. $\square$
 
-&lt;p&gt;This proof almost exactly followed the proof in Kearns and Vazirani of boolean conjuctions being efficiently PAC-learnable.  In fact, everything from the structure to the sample complexity bound carries through because learning a graph from supergraphs is equivalent to learning a boolean conjuction from positive examples.&lt;/p&gt;
+## The Same As Conjunctions
 
-&lt;p&gt;Let $e_{ij}$ be a possible edge in $G$, and let $x_{ij}$ be the boolean variable which takes on the value $1$ (or true) when $e_{ij}$ is actually an edge in $G$ and $0$ (or false) otherwise.  Then a graph is just a conjuction over the positive instances of the literals corresponding to edges in the graph.  Deleting edges when they do not appear in a supergraph is equivalent to deleting literals which are $0$ in a positive example.&lt;/p&gt;
+This proof almost exactly followed the proof in Kearns and Vazirani of boolean conjuctions being efficiently PAC-learnable.  In fact, everything from the structure to the sample complexity bound carries through because learning a graph from supergraphs is equivalent to learning a boolean conjuction from positive examples.
 
-&lt;p&gt;From here, it should be simple to see how we can learn a graph $G$ from positive examples which are subgraphs of $G$, simply by considering the negation of the previous problem.&lt;/p&gt;
+Let $e_{ij}$ be a possible edge in $G$, and let $x_{ij}$ be the boolean variable which takes on the value $1$ (or true) when $e_{ij}$ is actually an edge in $G$ and $0$ (or false) otherwise.  Then a graph is just a conjuction over the positive instances of the literals corresponding to edges in the graph.  Deleting edges when they do not appear in a supergraph is equivalent to deleting literals which are $0$ in a positive example.
 
-&lt;h2 id=&quot;positive-examples-are-subgraphs&quot;&gt;Positive Examples are Subgraphs&lt;/h2&gt;
+From here, it should be simple to see how we can learn a graph $G$ from positive examples which are subgraphs of $G$, simply by considering the negation of the previous problem.
 
-&lt;p&gt;In this version of the problem we begin with $h$ as the graph on $n$ vertices with no edges.  When we see a positive example $x$, we add to $h$ every edge in $x$.  The same proof carries through.  At all times, $h$ is a subgraph of the true graph $G$, we define $p(e)$ as the probability of &lt;em&gt;not&lt;/em&gt; adding an edge to $h$ which is truly present in $G$.  Since we only ever add edges we are certain are in $G$, $p(e)$ for any $e\notin G$ is zero.  A &lt;em&gt;bad edge&lt;/em&gt; is now one with probability greater than $\frac{\epsilon}{|E|}$ of not appearing in any positive example, and the proof of the sample complexity is identical.&lt;/p&gt;
+## Positive Examples are Subgraphs
 
-&lt;p&gt;This situation works because whereas learning from supergraphs was like learning a monotone conjunction over positive instances of literals, learning from subgraphs is like learning from negative examples of literals.  We start with the hypothesis ‘‘$e_1$ is not in $G$ and $e_2$ is not in $G$ and …’’ and as we see examples, we remove these literals until we get as our hypothesis a conjunction corresponding to the edges we are confident are not in $G$.  From here, it is easy to see how to move back and forth between a hypothesis consisting of edges we think are not in a graph and a hypothesis consisting of edges we know are in the graph.   Hence graphs are also PAC-learnable from subgraphs.&lt;/p&gt;
+In this version of the problem we begin with $h$ as the graph on $n$ vertices with no edges.  When we see a positive example $x$, we add to $h$ every edge in $x$.  The same proof carries through.  At all times, $h$ is a subgraph of the true graph $G$, we define $p(e)$ as the probability of *not* adding an edge to $h$ which is truly present in $G$.  Since we only ever add edges we are certain are in $G$, $p(e)$ for any $e\notin G$ is zero.  A *bad edge* is now one with probability greater than $\frac{\epsilon}{\|E\|}$ of not appearing in any positive example, and the proof of the sample complexity is identical.
+
+This situation works because whereas learning from supergraphs was like learning a monotone conjunction over positive instances of literals, learning from subgraphs is like learning from negative examples of literals.  We start with the hypothesis ''$e_1$ is not in $G$ and $e_2$ is not in $G$ and ...'' and as we see examples, we remove these literals until we get as our hypothesis a conjunction corresponding to the edges we are confident are not in $G$.  From here, it is easy to see how to move back and forth between a hypothesis consisting of edges we think are not in a graph and a hypothesis consisting of edges we know are in the graph.   Hence graphs are also PAC-learnable from subgraphs.
+
+
+
 
 </content>
  </entry>
@@ -192,29 +236,35 @@ If $h$ has no bad edges, then the error of $h$ is less than $\epsilon$, as desir
    <link href="http://example.com/blog/2017/05/first-year-first-post.html"/>
    <updated>2017-05-24T00:00:00-04:00</updated>
    <id>http://example.com/blog/2017/05/first-year-first-post</id>
-   <content type="html">&lt;p&gt;So I’m one academic year into grad school.  A lot has happened in the year since I graduated from Colby: I moved from Waterville to Philadelphia, I completed two semeseters of graduate level CS coursework with minimal undergrad training in the discipline, I’ve started working on some interesting research problems, and I’ve met some interesting people.  I’ve now tried three times to get a blog going, but I had very little time and energy this year to sit down, set up the site, and get some content out there.&lt;/p&gt;
+   <content type="html">So I'm one academic year into grad school.  A lot has happened in the year since I graduated from Colby: I moved from Waterville to Philadelphia, I completed two semeseters of graduate level CS coursework with minimal undergrad training in the discipline, I've started working on some interesting research problems, and I've met some interesting people.  I've now tried three times to get a blog going, but I had very little time and energy this year to sit down, set up the site, and get some content out there.
 
-&lt;p&gt;This blog will host a variety of post types.  There will be personal stuff (like this), some discussions of my research and papers by others which I find interesting, posts on math/cs education, and discussions of current events.  For ‘hot takes’ and irreverent commentary on pop culture and complaints about the minutiae of my life, I’d like to direct you to my Twitter account, where I go by the handle &lt;a href=&quot;https://twitter.com/zschutzy&quot;&gt;@zschutzy&lt;/a&gt;.&lt;/p&gt;
+This blog will host a variety of post types.  There will be personal stuff (like this), some discussions of my research and papers by others which I find interesting, posts on math/cs education, and discussions of current events.  For 'hot takes' and irreverent commentary on pop culture and complaints about the minutiae of my life, I'd like to direct you to my Twitter account, where I go by the handle [@zschutzy](https://twitter.com/zschutzy).
 
-&lt;hr /&gt;
 
-&lt;p&gt;A lot of people (both in and outside of my academic circle) ask me &lt;em&gt;what exactly it is that I do&lt;/em&gt;.  Admittedly, I’m still very early in the grad school process and there are no guarantees that what I do now will be what I do in five years or even five months, but here’s a quick rundown of the stuff that I spend sixty hours a week thinking about.&lt;/p&gt;
+----
 
-&lt;h4 style=&quot;color:#800000;&quot; id=&quot;1-computational-economics&quot;&gt;1. &lt;strong&gt;&lt;em&gt;Computational Economics&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;p&gt;Economics is the study of how society, institutions, and individuals allocate scarse resources.  One way that this happens in the everyday world is people buying goods and services from companies.  There are only so many apples at the Whole Foods, and they choose to set their price at, like, $7 per pound because that’s what they’ve determined is the profit-maximizing price (for whatever reason).  What happens when we have multiple people and multiple goods AND the people have more complex desires than just wanting some apples?  What if Alice and Bob show up to the store and Alice wants an apple and an orange and Bob wants an apple and a pear, neither of them will settle for having only one of the fruits (all-or-none), and there is only one apple?  How do we decide who gets the apple?  What if there dozens or hundreds of people and produce items?  It turns out that deciding the best allocation of goods in these settings is actually a really difficult problem for computers to solve, so Computational Economists come up with methods for finding approximate solutions to these kinds of problems in various settings.&lt;/p&gt;
+A lot of people (both in and outside of my academic circle) ask me *what exactly it is that I do*.  Admittedly, I'm still very early in the grad school process and there are no guarantees that what I do now will be what I do in five years or even five months, but here's a quick rundown of the stuff that I spend sixty hours a week thinking about.
 
-&lt;h4 style=&quot;color:#800000;&quot; id=&quot;2-statistical-learning-theory&quot;&gt;2. &lt;strong&gt;&lt;em&gt;Statistical Learning Theory&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;
+#### 1. ***Computational Economics*** 
+{: style=&quot;color:#800000;&quot; :}
 
-&lt;p&gt;The topic of &lt;em&gt;machine learning&lt;/em&gt; is a hot one these days.  In general, machine learning is really just applied statistics.  There are a lot of different algorithms for machine learning and people who use these in applied settings spend a lot of time thinking about which kinds of algorithms are good at their task at hand.  On the theoretical side, we are often interested in &lt;em&gt;mathematically proving&lt;/em&gt; limitations and capabilities of machine learning.  This area deals with questions like &lt;em&gt;how much data do I need for my model to be ‘good’?&lt;/em&gt; As it turns out, there are some kinds of problems that are hard for computers to learn (given current assumptions about the computational complexity of problems like factoring integers or graph coloring).&lt;/p&gt;
+ Economics is the study of how society, institutions, and individuals allocate scarse resources.  One way that this happens in the everyday world is people buying goods and services from companies.  There are only so many apples at the Whole Foods, and they choose to set their price at, like, $7 per pound because that's what they've determined is the profit-maximizing price (for whatever reason).  What happens when we have multiple people and multiple goods AND the people have more complex desires than just wanting some apples?  What if Alice and Bob show up to the store and Alice wants an apple and an orange and Bob wants an apple and a pear, neither of them will settle for having only one of the fruits (all-or-none), and there is only one apple?  How do we decide who gets the apple?  What if there dozens or hundreds of people and produce items?  It turns out that deciding the best allocation of goods in these settings is actually a really difficult problem for computers to solve, so Computational Economists come up with methods for finding approximate solutions to these kinds of problems in various settings.
 
-&lt;h4 style=&quot;color:#800000;&quot; id=&quot;3-computing-for-the-social-sciences&quot;&gt;3. &lt;strong&gt;&lt;em&gt;Computing for the Social Sciences&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;
+#### 2. ***Statistical Learning Theory*** 
+{: style=&quot;color:#800000;&quot; :}
 
-&lt;p&gt;In the last 25 years or so, personal computers have become powerful and accessible enough to chug through and solve a variety of really big problems which are provably computationally difficult and large volumes of data have become available at the click of a button.  This opens up new doors for research on problems which affect the day-to-day lives of people and the governance of society.  The problem that I am currently working on is related to optimal drawing of congressional districts, which given access to voting records and Census data, is now something that can be rigorously studied.  Some of my peers are working on using computational techniques to improve health insurance markets, school choice and drawing school districts, and using crowdsourcing techniques for gathering data.&lt;/p&gt;
+ The topic of *machine learning* is a hot one these days.  In general, machine learning is really just applied statistics.  There are a lot of different algorithms for machine learning and people who use these in applied settings spend a lot of time thinking about which kinds of algorithms are good at their task at hand.  On the theoretical side, we are often interested in *mathematically proving* limitations and capabilities of machine learning.  This area deals with questions like *how much data do I need for my model to be 'good'?* As it turns out, there are some kinds of problems that are hard for computers to learn (given current assumptions about the computational complexity of problems like factoring integers or graph coloring).
 
-&lt;hr /&gt;
+#### 3. ***Computing for the Social Sciences*** 
+{: style=&quot;color:#800000;&quot; :}
 
-&lt;p&gt;If you have any questions, comments, corrections, or suggestions, leave me a comment here or send me an email.  Enjoy!&lt;/p&gt;
+ In the last 25 years or so, personal computers have become powerful and accessible enough to chug through and solve a variety of really big problems which are provably computationally difficult and large volumes of data have become available at the click of a button.  This opens up new doors for research on problems which affect the day-to-day lives of people and the governance of society.  The problem that I am currently working on is related to optimal drawing of congressional districts, which given access to voting records and Census data, is now something that can be rigorously studied.  Some of my peers are working on using computational techniques to improve health insurance markets, school choice and drawing school districts, and using crowdsourcing techniques for gathering data.
+
+----
+
+
+If you have any questions, comments, corrections, or suggestions, leave me a comment here or send me an email.  Enjoy!
 </content>
  </entry>
  
