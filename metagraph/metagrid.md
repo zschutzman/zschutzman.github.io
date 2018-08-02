@@ -11,6 +11,11 @@ customjs:
  - src-meta4/ising2-4.js
  - src-meta4/ising1-4-p.js
  - src-meta4/ising2-4-p.js
+ - src-meta5/header.js
+ - src-meta5/histograms.js
+ - src-meta5/graph.js
+ - src-meta5/grid.js
+ - src-meta5/init.js
 ---
 
 
@@ -18,11 +23,7 @@ customjs:
 <!---
 
 
- - src-meta5/header.js
- - src-meta5/histograms.js
- - src-meta5/graph.js
- - src-meta5/grid.js
- - src-meta5/init.js
+
 
 
 
@@ -94,13 +95,14 @@ Let's make things a little more realistic.  Instead of each cell voting entirely
  What happens when the <span style="color:#fdb863"> **Orange** </span> party has a slight majority in most of the cells but a few are 90 or 100 percent <span style="color:#b2abd2"> **Purple** </span>?  Under which configurations can the minority party still win three out of four districts?  Are there any distributions of voters that cause there to be a <span style="color:#b2abd2"> **Purple** </span> colored metagraph node surrounded entirely by <span style="color:#fdb863"> **Orange** </span> colored nodes?
 
 
-<div id="chart3" style="width:100% text-align:left"></div>
+<!--<div id="chart3" style="width:100% text-align:left"></div>
 <hr style="width:80%">
 
-<!--Let's do the 5x5?
 
-### Intro
 
+<h2> Welcome Back to Gridlandia </h2>
+
+In the meantime, we've incorporated nine additional cells, for a total of 25.  Since the population has increased, we'd now like to draw *five* districts.  The same rules apply: each district must be contiguous and of the same size.  There are 4006 districting plans which satisfy these criteria, and we can construct the metagraph in the same way, with a node for each plan and an edge between plans that can be transformed into each other by swapping cells in adjacent districts.  We can write these all down, but this is too many to show all at once as a metagraph.  Instead, we'll show a local picture of the metagraph where you can see a districting plan and all of the other plans which can be formed by swapping one or two pairs of cells.
 
 
 
