@@ -65,7 +65,7 @@ We can impose a *graph* structure on the collection of all of these plans, where
 
 </p>
 
-We call this structure the **metagraph of districting plans**.  Below, you can interact with this mathematical object.  The graph on the left is the complete metagraph.  Since Gridlandia is so symmetric, it might be useful to consider two districting plans to be *the same* if one can be transformed into the other by rotating or flipping the plan.  For example, 
+We call this structure the **metagraph of districting plans**.  Below, you can interact with this mathematical object.  The graph on the left is the complete metagraph.  Since Gridlandia is so symmetric, it might be useful to consider two districting plans to be *the same* if one can be transformed into the other by rotating or flipping the plan.  For example,
 
 
 <p style="text-align:center"> <img width="75"  src="imgs/fillgrid.png?raw=true">&nbsp;&nbsp;&nbsp;&nbsp; <img width="75"  src="imgs/rotgrid.png?raw=true"><br/>
@@ -91,7 +91,7 @@ Now let's think about elections in Gridlandia.  Gridlandia has plurality electio
 Let's make things a little more realistic.  Instead of each cell voting entirely for one party, there are some <span style="color:#b2abd2"> **Purple** </span> and some <span style="color:#fdb863"> **Orange** </span>
  supporters in each cell -- a total of ten in each square.  The same electoral rules apply, but now we can think about a *distribution* of votes in each cell.  Left click on a square to increase the percentage of <span style="color:#fdb863"> **Orange** </span>
  voters, or right click it to decrease the percentage of <span style="color:#fdb863"> **Orange** </span> voters.  
- 
+
  What happens when the <span style="color:#fdb863"> **Orange** </span> party has a slight majority in most of the cells but a few are 90 or 100 percent <span style="color:#b2abd2"> **Purple** </span>?  Under which configurations can the minority party still win three out of four districts?  Are there any distributions of voters that cause there to be a <span style="color:#b2abd2"> **Purple** </span> colored metagraph node surrounded entirely by <span style="color:#fdb863"> **Orange** </span> colored nodes?
 
 
@@ -123,7 +123,11 @@ In the meantime, we've incorporated nine additional cells, for a total of 25.  S
 
 <div style="text-align:right; color:#aaaaaa;line-height:14px" width="100%"><small>
 <hr style="width:80%">
+This page developed from a project at the [Voting Rights Data Institute](http://gerrydata.org) during the summer of 2018<br/>
+and is joint with Seth Drew, Eugene Henninger-Voss, and Amara Jaeger.<br/>
+Special thanks to Mira Bernstein, whose [Liliputia project](https://docs.google.com/spreadsheets/d/1U8XXRwwJ3zLLu9Xx-xsrePBFsCXkYYFj_MB4t-ZaZ4k/edit#gid=2131508220) inspired this.
+
 Version 0.8 <br/>
 August 1, 2018 <br/>
-Zachary Schutzman, VRDI</small>
+Zachary Schutzman
 </div>
