@@ -44,8 +44,10 @@ Special thanks to Mira Bernstein, whose <a href="https://docs.google.com/spreads
 Version 0.8 <br/>
 August 1, 2018 <br/>
 Zachary Schutzman
-<hr style="width:80%">
+<br/>
 
+<hr style="width:80%">
+<br/>
 </div>
 
 
