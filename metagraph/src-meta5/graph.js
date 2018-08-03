@@ -4,27 +4,26 @@ var tooltip2 = d3.select("body")
 	.style("z-index", "10")
 	.style("opacity", 0);
 	
-var graph = d3.select("#graph").append("svg")
-    .attr("width", width+wp)
-    .attr("height", height);
+var graph = d3.select("#chart1").append("svg")
+    .attr("width", width)
+    .attr("height", width);
  
        
  
-    var treegroup = graph.append("g").attr("transform", "translate(" + ((width+wp)/2 ) + "," + (height/3) + ")");
+    var treegroup = graph.append("g").attr("transform", "translate(" + ((width)/2 ) + "," + (width/2) + ")");
 
     
 
 
 var tree = d3.tree()
-    .size([2 * Math.PI, Math.min(width,height)/3])
+    .size([2 * Math.PI, Math.min(width,height)/3.5])
     .separation(function(a, b) { return (a.parent == b.parent ? 1000 : 2000) / a.depth; });
 
 
     
 function mk_gr2(fn,num) {
-    console.log(idno2);
     idno2 = num;
-    console.log(fn,parseInt(num),idno2);
+    distpic.attr("xlink:href",function(d){return "m5-imgs/whole/im_"+idno2+".png";});
     
 d3.json(fn, function(error, treeData) {
   if (error) throw error;
@@ -161,11 +160,11 @@ function radialPoint(x, y) {
              cnt += Math.sign(chk[distloop[i]]);
             }
             
-              if (rect.data.name == idno2){red_this = (cnt+5)/2; update_textboxes();console.log("REDTHIS",red_this);}
+              if (rect.data.name == idno2){red_this = (cnt+5)/2; update_textboxes();}
       
 
             var col = Math.sign(cnt) + 1;
-            if (col == 1){console.log("FOUND A 1?");}
+           
             return simp_fill[col];
 }
 
@@ -184,7 +183,6 @@ function get_col_2(){
         dist4=0;
         dist5=0;
         red_this = 0;
-        console.log(graph.selectAll("rect"));
         graph.selectAll("rect").each(function(){
                     cnt=0;
 
@@ -195,18 +193,13 @@ function get_col_2(){
              
             }
 
-            if (d3.select(this).attr("idno2") == idno2){console.log("IN");red_this = (cnt + 5)/2;}
+            if (d3.select(this).attr("idno2") == idno2){red_this = (cnt + 5)/2;}
         
    
         
 
         var col = Math.sign(cnt) + 1;
-        if (col ==1){console.log("FOUND A 1??");
-            for(var i=0;i<5;i++){
-             console.log("IT",i,Math.sign(chk[distloop[i]]));
-             
-            }
-        }
+
         d3.select(this).style("fill", simp_fill[col]);
         d3.select(this).style("stroke", simp_fill[col]);
     

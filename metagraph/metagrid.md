@@ -5,17 +5,13 @@ customjs:
  - https://d3js.org/d3.v4.min.js
  - https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js
  - http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js
+ - src-meta5/header.js
  - src-meta4/biggraph.js
  - src-meta4/smallgraph.js
  - src-meta4/ising1-4.js
  - src-meta4/ising2-4.js
  - src-meta4/ising1-4-p.js
  - src-meta4/ising2-4-p.js
- - src-meta5/header.js
- - src-meta5/histograms.js
- - src-meta5/graph.js
- - src-meta5/grid.js
- - src-meta5/init.js
 ---
 
 
@@ -93,7 +89,7 @@ The graph on the right is the metagraph where plans which are symmetric are merg
 
 Now let's think about elections in Gridlandia.  Gridlandia has plurality elections and two political parties, the <span style="color:#b2abd2"> **Purple** </span> Party and the <span style="color:#fdb863"> **Orange** </span>
  Party.  For simplicity, we'll start by assuming that everyone in the same cell votes the same way -- either for the <span style="color:#b2abd2"> **Purple** </span> candidate or the <span style="color:#fdb863"> **Orange** </span>
- candidate.  Within each district, the candidate which gets the most votes wins the election, and ties are not resolved.  Below, click a cell once to change its color.  On the left, the nodes in the metagraph will change color to indicate which party wins a legislative majority under the corresponding plan.  A node will remain grey if the number of <span style="color:#b2abd2"> **Purple** </span>- and <span style="color:#fdb863"> **Orange** </span>
+ candidate.  Within each district, the candidate which gets the most votes wins the election, and ties are not resolved.  Below, click a cell once to change its color.  On the left, the nodes in the metagraph will change color to indicate which party wins a legislative majority under the corresponding plan.  A node will remain grey if the number of <span style="color:#b2abd2"> <b>Purple</b></span>- and <span style="color:#fdb863"><b>Orange</b></span>
 -favoring districts is equal.
 
 
@@ -108,7 +104,6 @@ Let's make things a little more realistic.  Instead of each cell voting entirely
 
 
 <div id="chart3" style="width:100% text-align:left"></div>
-<hr style="width:80%">
 
 
 <!--
@@ -134,7 +129,7 @@ In the meantime, we've incorporated nine additional cells, for a total of 25.  S
 
 
 <div style="text-align:right; color:#888888;line-height:14px" width="100%"><small>
-<hr style="width:80%">
+<hr style="width:100%">
 
 This page developed from a project at the <br/>
 <a href="http://gerrydata.org">Voting Rights Data Institute</a>,

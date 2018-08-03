@@ -107,19 +107,19 @@ _.times(squaresColumn, function(n) {
     .attr("mask",3)
     .style("fill","black")
     .style("stroke","#555")
-    .style("stroke-width",5)
+    .style("stroke-width",1)
     .style("fill-opacity",0)
     
     
     
     .on("mouseover",function(d){
         d3v3.select(this).style("stroke","#000");
-        d3v3.select(this).style("stroke-width","6");
+        d3v3.select(this).style("stroke-width","3");
     })
     
     .on("mouseout", function(d){
         d3v3.select(this).style("stroke","#555");
-        d3v3.select(this).style("stroke-width","5")
+        d3v3.select(this).style("stroke-width","1")
     })
     
     .on("click",do_update)

@@ -5,7 +5,6 @@ var dist3 = 0;
 var dist4 = 0;
 var cnt = 0;
 
-var simp_fill = [elecfill[0],elecfill[4],elecfill[8]];
 
 var square=10*Math.round(Math.min(4,(w-wp)/5));
 // create the svg
@@ -51,18 +50,18 @@ _.times(squaresColumn, function(n) {
     .attr("party",function(d,i) {return i<2 ? -1:1;})
     .style("fill",function(d,i){ return i<2 ? simp_fill[0]:simp_fill[2];})
     .style("stroke","#555")
-    .style("stroke-width",5)
+    .style("stroke-width",1)
     
     
     
     .on("mouseover",function(d){
         d3v3.select(this).style("stroke","#000");
-        d3v3.select(this).style("stroke-width","6");
+        d3v3.select(this).style("stroke-width","3");
     })
     
     .on("mouseout", function(d){
         d3v3.select(this).style("stroke","#555");
-        d3v3.select(this).style("stroke-width","5")
+        d3v3.select(this).style("stroke-width","1")
     })
     
     .on("click",function(d){

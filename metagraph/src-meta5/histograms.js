@@ -1,40 +1,40 @@
-var winbox = d3.select("#graph2").append("svg")
+
+
+var winbox = d3.select("#chart2").append("svg")
             .attr("width",350)
-            .attr("height",200)
-            .attr("transform","translate(0,-400)")
+            .attr("height",700);
+
+
 
 
             
-            var wgrp = winbox.append("g").attr("transform","translate(0,15)");
+            var wgrp = winbox.append("g");
             
             //wgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
-            wgrp.append("text") .text("For this distribution of votes, among all districting plans:")  .attr('dy','0.35em');
-            var tr0 = wgrp.append("text").attr("transform","translate(0,"+voff+")").attr('dy','0.35em').attr("i", 0).attr("party",'r');
-            var tr1 = wgrp.append("text").attr("transform","translate(0,"+2*voff+")").attr('dy','0.35em').attr("i",1).attr("party",'r');
-            var tr2 = wgrp.append("text").attr("transform","translate(0,"+3*voff+")").attr('dy','0.35em').attr("i",2).attr("party",'r');
-            var tr3 = wgrp.append("text").attr("transform","translate(0,"+4*voff+")").attr('dy','0.35em').attr("i",3).attr("party",'r');
-            var tr4 = wgrp.append("text").attr("transform","translate(0,"+5*+voff+")").attr('dy','0.35em').attr("i",4).attr("party",'r');
-            var tr5 = wgrp.append("text").attr("transform","translate(0,"+6*+voff+")").attr('dy','0.35em').attr("i",5).attr("party",'r');
+            wgrp.append("text") .text("For this distribution of votes, among all districting plans:")  .attr('dy','0.35em').attr("transform","translate(0,350)");;
+            var wr0 = wgrp.append("rect").attr("x",  0).attr("width",50).attr("fill","black").attr("i",0).attr("height",50).attr("y",350);
+            var wr1 = wgrp.append("rect").attr("x", 50).attr("width",50).attr("fill","green").attr("i",1).attr("height",50).attr("y",350);
+            var wr2 = wgrp.append("rect").attr("x",100).attr("width",50).attr("fill","blue").attr("i",2).attr("height",50).attr("y",350);
+            var wr3 = wgrp.append("rect").attr("x",150).attr("width",50).attr("fill","red").attr("i",3).attr("height",50).attr("y",350);
+            var wr4 = wgrp.append("rect").attr("x",200).attr("width",50).attr("fill","yellow").attr("i",4).attr("height",50).attr("y",350);
+            var wr5 = wgrp.append("rect").attr("x",250).attr("width",50).attr("fill","purple").attr("i",5).attr("height",50).attr("y",350);
 
 
             
-var deltabox = d3.select("#graph2").append("svg")
-            .attr("width",350)
-            .attr("height",200)
-            .attr("transform","translate(0,-400)")
+
 
 
             
-            var dgrp = deltabox.append("g").attr("transform","translate(0,15)");
+            var dgrp = winbox.append("g");
             
             //wgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
             dgrp.append("text") .text("For this districting plan, among all distributions with "+num_red+" Red voters:")  .attr('dy','0.35em');
-            var tr0 = dgrp.append("text").attr("transform","translate(0,"+voff+")").attr('dy','0.35em').attr("i", 0).attr("party",'r');
-            var tr1 = dgrp.append("text").attr("transform","translate(0,"+2*voff+")").attr('dy','0.35em').attr("i",1).attr("party",'r');
-            var tr2 = dgrp.append("text").attr("transform","translate(0,"+3*voff+")").attr('dy','0.35em').attr("i",2).attr("party",'r');
-            var tr3 = dgrp.append("text").attr("transform","translate(0,"+4*voff+")").attr('dy','0.35em').attr("i",3).attr("party",'r');
-            var tr4 = dgrp.append("text").attr("transform","translate(0,"+5*+voff+")").attr('dy','0.35em').attr("i",4).attr("party",'r');
-            var tr5 = dgrp.append("text").attr("transform","translate(0,"+6*+voff+")").attr('dy','0.35em').attr("i",5).attr("party",'r');            
+            var tr0 = dgrp.append("rect").attr("x",  0).attr("width",50).attr("fill","black").attr("i",0).attr("height",50).attr("y",50);
+            var tr1 = dgrp.append("rect").attr("x", 50).attr("width",50).attr("fill","green").attr("i",1).attr("height",50).attr("y",50);
+            var tr2 = dgrp.append("rect").attr("x",100).attr("width",50).attr("fill","blue").attr("i",2).attr("height",50).attr("y",50);
+            var tr3 = dgrp.append("rect").attr("x",150).attr("width",50).attr("fill","red").attr("i",3).attr("height",50).attr("y",50);
+            var tr4 = dgrp.append("rect").attr("x",200).attr("width",50).attr("fill","yellow").attr("i",4).attr("height",50).attr("y",50);
+            var tr5 = dgrp.append("rect").attr("x",250).attr("width",50).attr("fill","purple").attr("i",5).attr("height",50).attr("y",50);            
             
 
 var tr_list = [tr0,tr1,tr2,tr3,tr4,tr5]
@@ -42,31 +42,39 @@ var tr_list = [tr0,tr1,tr2,tr3,tr4,tr5]
             
 function update_textboxes(){
     
-    console.log("RED THIS", red_this);
     num_red = 0;
     grd3.selectAll('rect').each(function(d){
         if (d3.select(this).attr("party") == 1) num_red+=1;
 
     });
     
-wgrp.selectAll("text").each(function(d){
+wgrp.selectAll("rect").each(function(d){
     
     var i = d3.select(this).attr("i");
-    var p = d3.select(this).attr("party");
+
     if (i != null){
-       
-        d3.select(this).text("Red Wins " + i + ": " + r_win_i[i]);
+        var newh = r_win_i[i]/20;
+        d3.select(this).attr("height",newh);
+        d3.select(this).attr("y",700-newh)
         
 
     }
      
  });
-dgrp.selectAll("text").each(function(d){
+console.log(elec_dist[num_red]);
+
+
+dgrp.selectAll("rect").each(function(d){
+    console.log(this);
     var i = d3.select(this).attr("i");
-    var p = d3.select(this).attr("party");
     if (i != null){
+        var toth = 0;
+        for (var jnk in elec_dist[num_red]){toth += elec_dist[num_red][jnk];}
+        var newh = 200*elec_dist[num_red][i]/toth;
+        console.log(newh,"HEIGHT");
        
-        d3.select(this).text("Red Wins " + i + ": " + elec_dist[num_red][i]);
+        d3.select(this).attr("height" , newh);
+        d3.select(this).attr("y",350-newh)
         
 
     }
