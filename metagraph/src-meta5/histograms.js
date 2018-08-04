@@ -1,41 +1,73 @@
 
 
+
+
 var winbox = d3.select("#chart2").append("svg")
             .attr("width",350)
-            .attr("height",700);
+            .attr("height",604);
 
 
 
 
             
-            var wgrp = winbox.append("g");
-            
-            //wgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
-            wgrp.append("text") .text("For this distribution of votes, among all districting plans:")  .attr('dy','0.35em').attr("transform","translate(0,350)");;
-            var wr0 = wgrp.append("rect").attr("x",  0).attr("width",50).attr("fill","black").attr("i",0).attr("height",50).attr("y",350);
-            var wr1 = wgrp.append("rect").attr("x", 50).attr("width",50).attr("fill","green").attr("i",1).attr("height",50).attr("y",350);
-            var wr2 = wgrp.append("rect").attr("x",100).attr("width",50).attr("fill","blue").attr("i",2).attr("height",50).attr("y",350);
-            var wr3 = wgrp.append("rect").attr("x",150).attr("width",50).attr("fill","red").attr("i",3).attr("height",50).attr("y",350);
-            var wr4 = wgrp.append("rect").attr("x",200).attr("width",50).attr("fill","yellow").attr("i",4).attr("height",50).attr("y",350);
-            var wr5 = wgrp.append("rect").attr("x",250).attr("width",50).attr("fill","purple").attr("i",5).attr("height",50).attr("y",350);
-
-
-            
-
-
-
-            
-            var dgrp = winbox.append("g");
+            var wgrp = winbox.append("g").attr("transform","translate(0,15)");
             
             //wgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
-            dgrp.append("text") .text("For this districting plan, among all distributions with "+num_red+" Red voters:")  .attr('dy','0.35em');
-            var tr0 = dgrp.append("rect").attr("x",  0).attr("width",50).attr("fill","black").attr("i",0).attr("height",50).attr("y",50);
-            var tr1 = dgrp.append("rect").attr("x", 50).attr("width",50).attr("fill","green").attr("i",1).attr("height",50).attr("y",50);
-            var tr2 = dgrp.append("rect").attr("x",100).attr("width",50).attr("fill","blue").attr("i",2).attr("height",50).attr("y",50);
-            var tr3 = dgrp.append("rect").attr("x",150).attr("width",50).attr("fill","red").attr("i",3).attr("height",50).attr("y",50);
-            var tr4 = dgrp.append("rect").attr("x",200).attr("width",50).attr("fill","yellow").attr("i",4).attr("height",50).attr("y",50);
-            var tr5 = dgrp.append("rect").attr("x",250).attr("width",50).attr("fill","purple").attr("i",5).attr("height",50).attr("y",50);            
+            wgrp.append("text") .text("This distribution, all plans:")  .attr('dy','0.35em').attr('h',0).style("font-size","18px").attr("x",50);
+            var wr0 = wgrp.append("rect").attr("x",  0).attr("width",50).attr("fill","none").attr("i",0).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr1 = wgrp.append("rect").attr("x", 55).attr("width",50).attr("fill","none").attr("i",1).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr2 = wgrp.append("rect").attr("x",110).attr("width",50).attr("fill","none").attr("i",2).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr3 = wgrp.append("rect").attr("x",165).attr("width",50).attr("fill","none").attr("i",3).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr4 = wgrp.append("rect").attr("x",220).attr("width",50).attr("fill","none").attr("i",4).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr5 = wgrp.append("rect").attr("x",275).attr("width",50).attr("fill","none").attr("i",5).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+
+
+        wgrp.append("line")
+          .attr("stroke","#000")
+          .attr("stroke-width",3)
+          .attr("x1",0)
+          .attr("y1", 250)
+          .attr("x2", 325)
+          .attr("y2", 250);
+
+
             
+            wgrp.append("text") .text("0 Seats")  .attr('dy','0.15em').attr("x","3").attr('h',1).attr("y",259).style("font-size","12px");
+            wgrp.append("text") .text("1 Seat")  .attr('dy','0.15em').attr("x","58").attr('h',1).attr("y",259).style("font-size","12px");
+            wgrp.append("text") .text("2 Seats")  .attr('dy','0.15em').attr("x","113").attr('h',1).attr("y",259).style("font-size","12px");
+            wgrp.append("text") .text("3 Seats")  .attr('dy','0.15em').attr("x","168").attr('h',1).attr("y",259).style("font-size","12px");
+            wgrp.append("text") .text("4 Seats")  .attr('dy','0.15em').attr("x","223").attr('h',1).attr("y",259).style("font-size","12px");
+            wgrp.append("text") .text("5 Seats")  .attr('dy','0.15em').attr("x","278").attr('h',1).attr("y",259).style("font-size","12px");
+
+
+            
+            var dgrp = winbox.append("g").attr("transform","translate(0,15)");
+            
+            //wgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
+            dgrp.append("text") .text("This plan, all distributions with "+num_red+" Purple voters:")  .attr('dy','0.35em').attr("h",0).attr("x","15").attr("y",325).style("font-size","14px");
+            var tr0 = dgrp.append("rect").attr("x",  0).attr("width",50).attr("fill","none").attr("i",0).attr("height",50).attr("y",500).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);;
+            var tr1 = dgrp.append("rect").attr("x", 55).attr("width",50).attr("fill","none").attr("i",1).attr("height",50).attr("y",500).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);;
+            var tr2 = dgrp.append("rect").attr("x",110).attr("width",50).attr("fill","none").attr("i",2).attr("height",50).attr("y",500).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);;
+            var tr3 = dgrp.append("rect").attr("x",165).attr("width",50).attr("fill","none").attr("i",3).attr("height",50).attr("y",500).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);;
+            var tr4 = dgrp.append("rect").attr("x",220).attr("width",50).attr("fill","none").attr("i",4).attr("height",50).attr("y",500).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);;
+            var tr5 = dgrp.append("rect").attr("x",275).attr("width",50).attr("fill","none").attr("i",5).attr("height",50).attr("y",500).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);;            
+            
+
+
+        dgrp.append("line")
+          .attr("stroke","#000")
+          .attr("stroke-width",3)
+          .attr("x1",0)
+          .attr("y1", 550)
+          .attr("x2", 325)
+          .attr("y2", 550);
+
+            dgrp.append("text") .text("0 Seats")  .attr('dy','0.15em').attr("x","3").attr('h',1).attr("y",559).style("font-size","12px");
+            dgrp.append("text") .text("1 Seat")  .attr('dy','0.15em').attr("x","58").attr('h',1).attr("y",559).style("font-size","12px");
+            dgrp.append("text") .text("2 Seats")  .attr('dy','0.15em').attr("x","113").attr('h',1).attr("y",559).style("font-size","12px");
+            dgrp.append("text") .text("3 Seats")  .attr('dy','0.15em').attr("x","168").attr('h',1).attr("y",559).style("font-size","12px");
+            dgrp.append("text") .text("4 Seats")  .attr('dy','0.15em').attr("x","223").attr('h',1).attr("y",559).style("font-size","12px");
+            dgrp.append("text") .text("5 Seats")  .attr('dy','0.15em').attr("x","278").attr('h',1).attr("y",559).style("font-size","12px");
 
 var tr_list = [tr0,tr1,tr2,tr3,tr4,tr5]
 
@@ -53,9 +85,14 @@ wgrp.selectAll("rect").each(function(d){
     var i = d3.select(this).attr("i");
 
     if (i != null){
-        var newh = r_win_i[i]/20;
+        var newh = 200*r_win_i[i]/4006;
         d3.select(this).attr("height",newh);
-        d3.select(this).attr("y",700-newh)
+        d3.select(this).attr("y",250-newh);
+        if (i == red_this){
+            d3.select(this).style("fill","#99CC9A");
+        } else {
+            d3.select(this).style("fill","#cccccc");
+        }
         
 
     }
@@ -71,17 +108,22 @@ dgrp.selectAll("rect").each(function(d){
         var toth = 0;
         for (var jnk in elec_dist[num_red]){toth += elec_dist[num_red][jnk];}
         var newh = 200*elec_dist[num_red][i]/toth;
-        console.log(newh,"HEIGHT");
        
         d3.select(this).attr("height" , newh);
-        d3.select(this).attr("y",350-newh)
-        
+        d3.select(this).attr("y",550-newh)
+        if (i == red_this){
+            d3.select(this).style("fill","#66ABFF");
+        } else {
+            d3.select(this).style("fill","#cccccc");
+        }        
 
     }
-    else{
-     d3.select(this).text(red_this + "Among all distributions with "+num_red +" Red voters, this plan results in:")
-    }
 });
+    dgrp.selectAll("text").each(function(d){
+     if (d3.select(this).attr("h")==0){d3.select(this).text("This plan, all distributions with "+num_red+" Purple voters:");}
+    });
+    
+
 }
 function compute_hists() {
     var st;

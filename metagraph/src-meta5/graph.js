@@ -10,7 +10,7 @@ var graph = d3.select("#chart1").append("svg")
  
        
  
-    var treegroup = graph.append("g").attr("transform", "translate(" + ((width)/2 ) + "," + (width/2) + ")");
+    var treegroup = graph.append("g").attr("transform", "translate(" + ((width)/2 ) + "," + (width/2.2) + ")");
 
     
 

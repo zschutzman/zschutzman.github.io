@@ -335,7 +335,7 @@ else if (plan.length >= 1){
 
 
 
- var piccont = d3.select("#chart2").append("svg").attr("width", 130).attr("height",500).attr("transform","translate(25,100)");
+ var piccont = d3.select("#chart2").append("svg").attr("width", 200).attr("height",200).attr("transform","translate(25,-200)");
  var distpic = piccont.append("image")
  .attr("width", 130).attr("height",130)
  .attr("xlink:href",function(d){return "m5-imgs/whole/im_"+idno2+".png";});

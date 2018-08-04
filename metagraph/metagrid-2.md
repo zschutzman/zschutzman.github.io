@@ -7,9 +7,9 @@ customjs:
  - http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js
  - src-meta5/header.js
  - src-meta5/distbox.js
- - src-meta5/histograms.js
- - src-meta5/graph.js
  - src-meta5/grid.js
+ - src-meta5/graph.js
+ - src-meta5/histograms.js
  - src-meta5/init.js
 ---
 
@@ -22,9 +22,9 @@ customjs:
 
 
 
-<!-- 
 
-<h2> Welcome Back to Gridlandia </h2>
+
+<!-- <h2> Welcome Back to Gridlandia </h2>
 
 In the meantime, we've incorporated nine additional cells, for a total of 25.  Since the population has increased, we'd now like to draw *five* districts.  The same rules apply: each district must be contiguous and of the same size.  There are 4006 districting plans which satisfy these criteria, and we can construct the metagraph in the same way, with a node for each plan and an edge between plans that can be transformed into each other by swapping cells in adjacent districts.  We can write these all down, but this is too many to show all at once as a metagraph.  Instead, we'll show a local picture of the metagraph where you can see a districting plan and all of the other plans which can be formed by swapping one or two pairs of cells.
 
@@ -34,7 +34,7 @@ Click on a plan in the local metagraph to recenter at its neighborhood.  Alterna
 
 
 
-### Meta-tree and recenter-er
+
 <div id="chart1" style="width:100% text-align:left"></div>
 
 
@@ -43,19 +43,28 @@ Since there are 4006 possible districting plans, it's hard to get a good sense o
 
 Instead of trying to draw the whole metagraph, we can compute some *statistics* about all of the plans with respect to the distribution and also for the distribution with respect to all of the plans.  Here, you can build a plan using the panel on the left, or click to navigate through the metagraph in the previous section.  The current plan will be displayed next to the navigator panel.  Next to that, you can click the square to change the distributions of the voters, just as before.  Finally, there are two histograms.  
 
-The first shows, for the current plan, how many different ways there are to configure the distribution of voters for <span style="color:#fdb863"> <b>Orange</b></span> to win a certain number of seats.  The ***GREEN*** bar indicates the number of seats your current distribution gives the <span style="color:#fdb863"> <b>Orange</b></span> Party.  The second shows, for the distribution of voters you've chosen in the square to the left, how many districting plans give a certain number of seats to the <span style="color:#fdb863"> <b>Orange</b></span> Party, and the ***GREEN*** bar shows the number of seats the <span style="color:#fdb863"> <b>Orange</b></span> Party wins in your current plan.
+The first histogram shows how many distributions of voters with the same number of <span style="color:#fdb863"> <b>Orange</b></span> and <span style="color:#b2abd2"> <b>Purple</b></span> squares as the distribution you picked result in a certain number of seats for the <span style="color:#b2abd2"> <b>Purple</b></span> Party in your selected plan.  The number of <span style="color:#b2abd2"> <b>Purple</b></span> seats in your selected distribution is indicated by the <span style="color:#99CC9A"> <b>Green</b></span> bar.
 
+The second histogram shows how many <span style="color:#b2abd2"> <b>Purple</b></span> seats your distribution gives over all 4006 possible districting plans.  The number of <span style="color:#b2abd2"> <b>Purple</b></span> seats in your selected plan is indicated by the <span style="color:#66ABFF"> <b>Blue</b></span> bar.
 
+<span style="color:#b2abd2"> <b>Purple</b></span>
+<span style="color:#fdb863"> <b>Orange</b></span>
+<span style="color:#99CC9A"> <b>Green</b></span>
+<span style="color:#66ABFF"> <b>Blue</b></span>
 
-
-### Click squares and see histograms - whole squares
 <div id="chart2" style="width:100% text-align:left"></div>
 
 
 
+How should we interpret this?  
+
+Let's start with the first histogram, which we can look at as a *distribution over seat shares*.  If the <span style="color:#99CC9A"> <b>Green</b></span> bar is to the right of most of the distribution, it means that your plan gives *more* seats to the <span style="color:#b2abd2"> <b>Purple</b></span> Party than most of the other plans.  Conversely, if the <span style="color:#99CC9A"> <b>Green</b></span> bar is to the left of most of the distribution, it means your plan gives more seats to the 
+<span style="color:#fdb863"> <b>Orange</b></span> Party than most of the other plans. If we are concerned about gerrymandering, this may be evidence that the plan was selected to favor one of the parties. 
+
+The second histogram tells the same story in the other direction.  If the <span style="color:#66ABFF"> <b>Blue</b></span> bar is to the right of most of the distribution, it means that among all ways to arrange the same number of <span style="color:#b2abd2"> <b>Purple</b></span> and <span style="color:#fdb863"> <b>Orange</b></span> votes, your arrangement of voters gives more seats to the <span style="color:#b2abd2"> <b>Purple</b></span> Party than the average.  Conversely, if the <span style="color:#66ABFF"> <b>Blue</b></span> bar is to the left of most of the distribution, it means that your current arrangement of voters favors the <span style="color:#fdb863"> <b>Orange</b></span> Party.  If we are concerned about gerrymandering, this tells us whether or not the distribution of voters makes it difficult to draw plans which give each party a number of seats (roughly) proportional to the number of votes they receive.
 
 
-### Is it possible for partial squares? -->
+### Is it possible for partial squares? 
 
 
 
@@ -74,4 +83,4 @@ August 1, 2018 <br/>
 
 
 </small>
-</div>
+</div> -->

@@ -1,8 +1,8 @@
 var parties = [-1,1];
 
 var grd3 = d3.select('#chart1').append('svg')
-  .attr("width", (square5*6))
-  .attr("height",Math.min(width,height));
+  .attr("width", (square5*7))
+  .attr("height",square5*7).attr("transform","translate(35,-200)");
   
   
 var chk = "";
@@ -38,7 +38,7 @@ _.times(square5sColumn, function(n) {
       .attr("x", function(d, i) {
         return (i * 1.07*square5);
       })
-      .attr("y", (Math.min(width,height)/2 - 2.5 * square5 + n * 1.07*square5))
+      .attr("y", (square5 + n * 1.07*square5))
     
     .attr("party",function(d,i) {return party_init[4*n+i];})
     .style("fill",function(d) { return simp_fill[1+parseInt(d3.select(this).attr("party"))];})
@@ -71,8 +71,8 @@ _.times(square5sColumn, function(n) {
 
 
 var grd4 = d3.select('#chart2').append('svg')
-  .attr("width", (square5*6))
-  .attr("height",Math.min(width,height));
+  .attr("width", (square5*7))
+  .attr("height",square5*7).attr("transform","translate(0,-200)");
 
 // loop over number of columns
 _.times(square5sColumn, function(n) {
@@ -96,7 +96,7 @@ _.times(square5sColumn, function(n) {
       .attr("x", function(d, i) {
         return (i * 1.07*square5);
       })
-      .attr("y", (Math.min(width,height)/2 - 2.5 * square5 + n * 1.07*square5))
+      .attr("y", (square5 + n * 1.07*square5))
     
      .attr("party",function(d,i) {return party_init[4*n+i];})
     .style("fill",function(d) {return simp_fill[1+parseInt(d3.select(this).attr("party"))];})
