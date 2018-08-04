@@ -24,7 +24,20 @@ customjs:
 
 
 
-<!-- <h2> Welcome Back to Gridlandia </h2>
+<!-- 
+
+	<center>
+<h2> Welcome Back to Gridlandia!</h2>
+<br/>
+
+<p align="center">
+  <img width="200"  src="imgs/blankgrid5.png?raw=true"> <br />
+
+</p>
+
+
+</center>
+<br/>
 
 In the meantime, we've incorporated nine additional cells, for a total of 25.  Since the population has increased, we'd now like to draw *five* districts.  The same rules apply: each district must be contiguous and of the same size.  There are 4006 districting plans which satisfy these criteria, and we can construct the metagraph in the same way, with a node for each plan and an edge between plans that can be transformed into each other by swapping cells in adjacent districts.  We can write these all down, but this is too many to show all at once as a metagraph.  Instead, we'll show a local picture of the metagraph where you can see a districting plan and all of the other plans which can be formed by swapping one or two pairs of cells.
 

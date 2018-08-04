@@ -13,8 +13,9 @@ customjs:
  - src-meta4/ising1-4-p.js
  - src-meta4/ising2-4-p.js
 ---
-
-
+<!-- <p style="margin:0;padding:0;font-size:70px;letter-spacing:-14px;line-height:50px;width:300px;float:left;justify:center;">
+<span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> </p>
+<br/><br/> -->
 
 <!---
 
