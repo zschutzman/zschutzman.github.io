@@ -10,7 +10,7 @@ permalink: /projects/
 
 <br/>
 
- 
+
 <!-- <div style="border: 4px solid black; border-radius: 6px; padding: 25px">
 	<h1> GERRYMANDERING? </h1> -->
 <div style="border: 2px solid black;border-radius: 4px; background: #e3e3e3; position:relative;">
