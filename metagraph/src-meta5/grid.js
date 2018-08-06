@@ -167,6 +167,8 @@ function do_update2(r){
         b_win_i = [0,0,0,0,0,0];
         n_win_i = [0,0,0,0,0,0];
 
+        compute_hists();
+
 
         
 }

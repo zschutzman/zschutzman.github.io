@@ -98,11 +98,9 @@ vgrp.selectAll("rect").each(function(d){
     }
      
  });
-console.log(elec_dist[num_red]);
 
 
 dgrp.selectAll("rect").each(function(d){
-    console.log(this);
     var i = d3.select(this).attr("i");
     if (i != null){
         var toth = 0;
