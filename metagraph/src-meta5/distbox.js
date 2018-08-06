@@ -40,11 +40,15 @@ var distbox = d3.select("#chart1").append("svg")
             .attr("height",500);
 
 distbox.append("rect")
-    .attr("x",0)
-    .attr("y",0)
-    .attr("width",100)
-    .attr("height",15)
-    .style("fill","red")
+    .attr("x",30)
+    .attr("y",3)
+    .attr("rx",6)
+    .attr("ry",6)
+    .attr("width",60)
+    .attr("height",28)
+    .style("fill","#aac")
+    .style("stroke","black")
+    .style("stroke-width",3)
     .on("click", function(d) {
         plan = [];
         distbox.selectAll("g").remove();
@@ -52,10 +56,11 @@ distbox.append("rect")
         constr_distbox2();
     })
 distbox.append("text")
-   .attr("x",0)
-   .attr("y",7)
-   .text("RESET")
+   .attr("x",32)
+   .attr("y",17)
+   .text("Reset")
    .attr('dy','0.35em')
+   .style("font-size","20px")
        .on("click", function(d) {
         plan = [];
         distbox.selectAll("g").remove();
@@ -63,11 +68,11 @@ distbox.append("text")
         constr_distbox2();
        });
 distbox.append("rect")
-    .attr("x",0)
-    .attr("y",0)
-    .attr("width",100)
-    .attr("height",15)
-    .style("fill","red")
+    .attr("x",30)
+    .attr("y",3)
+    .attr("width",60)
+    .attr("height",28)
+    .style("fill","white")
     .style("fill-opacity",0)
     .on("click", function(d) {
         plan = [];
@@ -93,7 +98,7 @@ for (var k=0; k<40; k++){
                     .attr("width",47)
                     .attr("height", 47)
                     .attr("x",31+j*54)
-                    .attr("y",31+i*54)
+                    .attr("y",37+i*54)
                     
                     .attr("xlink:href",function(d){return "m5-imgs/dists/im_"+kk+".png";});  
 
@@ -103,7 +108,7 @@ for (var k=0; k<40; k++){
                 .attr("width",50)
                 .attr("height", 50)
                 .attr("x",30+j*54)
-                .attr("y",30+i*54)
+                .attr("y",36+i*54)
                 .style("stroke-width",2)
                 .style("stroke","purple")
                 .style("fill-opacity",0)
@@ -136,7 +141,7 @@ else if (plan.length >= 1){
                     .attr("width",47)
                     .attr("height", 47)
                     .attr("x",31+j*54)
-                    .attr("y",31+i*54)
+                    .attr("y",37+i*54)
                     
                     .attr("xlink:href",function(d){return "m5-imgs/dists/im_"+kk+".png";});  
                     
@@ -144,7 +149,7 @@ else if (plan.length >= 1){
                 .attr("width",50)
                 .attr("height", 50)
                 .attr("x",30+j*54)
-                .attr("y",30+i*54)
+                .attr("y",36+i*54)
                 .style("stroke-width",2)
                 .style("stroke","purple")
                 .style("fill-opacity",0)
@@ -208,11 +213,15 @@ var distbox2 = d3.select("#chart2").append("svg")
             .attr("height",500);
 
 distbox2.append("rect")
-    .attr("x",0)
-    .attr("y",0)
-    .attr("width",100)
-    .attr("height",15)
-    .style("fill","red")
+    .attr("x",30)
+    .attr("y",3)
+    .attr("rx",6)
+    .attr("ry",6)
+    .attr("width",60)
+    .attr("height",28)
+    .style("fill","#aac")
+    .style("stroke","black")
+    .style("stroke-width",3)
     .on("click", function(d) {
         plan = [];
         distbox2.selectAll("g").remove();
@@ -220,10 +229,11 @@ distbox2.append("rect")
         constr_distbox2();
     })
 distbox2.append("text")
-   .attr("x",0)
-   .attr("y",7)
-   .text("RESET")
+   .attr("x",32)
+   .attr("y",17)
+   .text("Reset")
    .attr('dy','0.35em')
+   .style("font-size","20px")
        .on("click", function(d) {
         plan = [];
         distbox2.selectAll("g").remove();
@@ -231,11 +241,11 @@ distbox2.append("text")
         constr_distbox2();
        });
 distbox2.append("rect")
-    .attr("x",0)
-    .attr("y",0)
-    .attr("width",100)
-    .attr("height",15)
-    .style("fill","red")
+    .attr("x",30)
+    .attr("y",3)
+    .attr("width",60)
+    .attr("height",28)
+    .style("fill","white")
     .style("fill-opacity",0)
     .on("click", function(d) {
         plan = [];
@@ -261,7 +271,7 @@ for (var k=0; k<40; k++){
                     .attr("width",47)
                     .attr("height", 47)
                     .attr("x",31+j*54)
-                    .attr("y",31+i*54)
+                    .attr("y",37+i*54)
                     
                     .attr("xlink:href",function(d){return "m5-imgs/dists/im_"+kk+".png";});  
 
@@ -271,7 +281,7 @@ for (var k=0; k<40; k++){
                 .attr("width",50)
                 .attr("height", 50)
                 .attr("x",30+j*54)
-                .attr("y",30+i*54)
+                .attr("y",36+i*54)
                 .style("stroke-width",2)
                 .style("stroke","purple")
                 .style("fill-opacity",0)
@@ -304,7 +314,7 @@ else if (plan.length >= 1){
                     .attr("width",47)
                     .attr("height", 47)
                     .attr("x",31+j*54)
-                    .attr("y",31+i*54)
+                    .attr("y",37+i*54)
                     
                     .attr("xlink:href",function(d){return "m5-imgs/dists/im_"+kk+".png";});  
                     
@@ -312,7 +322,7 @@ else if (plan.length >= 1){
                 .attr("width",50)
                 .attr("height", 50)
                 .attr("x",30+j*54)
-                .attr("y",30+i*54)
+                .attr("y",36+i*54)
                 .style("stroke-width",2)
                 .style("stroke","purple")
                 .style("fill-opacity",0)

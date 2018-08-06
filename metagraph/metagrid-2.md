@@ -14,30 +14,39 @@ customjs:
 ---
 
 
+<style>
 
 
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
 
-### UNDER CONSTRUCTION: COME BACK SOON!
+.next {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.round {
+    border-radius: 50%;
+}
+</style>
+
+<p style="text-align:left;">
+<a href="./metagrid" class="previous" style="padding: 10px 20px">&laquo; Go back to the 4x4 analysis</a>
+</p>
 
 
-
-
-
-
-<!-- 
-
-	<center>
+<center>
 <h2> Welcome Back to Gridlandia!</h2>
 <br/>
-
 <p align="center">
   <img width="200"  src="imgs/blankgrid5.png?raw=true"> <br />
 
 </p>
 
-
 </center>
-<br/>
+
 
 In the meantime, we've incorporated nine additional cells, for a total of 25.  Since the population has increased, we'd now like to draw *five* districts.  The same rules apply: each district must be contiguous and of the same size.  There are 4006 districting plans which satisfy these criteria, and we can construct the metagraph in the same way, with a node for each plan and an edge between plans that can be transformed into each other by swapping cells in adjacent districts.  We can write these all down, but this is too many to show all at once as a metagraph.  Instead, we'll show a local picture of the metagraph where you can see a districting plan and all of the other plans which can be formed by swapping one or two pairs of cells.
 
@@ -60,10 +69,6 @@ The first histogram shows how many distributions of voters with the same number 
 
 The second histogram shows how many <span style="color:#b2abd2"> <b>Purple</b></span> seats your distribution gives over all 4006 possible districting plans.  The number of <span style="color:#b2abd2"> <b>Purple</b></span> seats in your selected plan is indicated by the <span style="color:#66ABFF"> <b>Blue</b></span> bar.
 
-<span style="color:#b2abd2"> <b>Purple</b></span>
-<span style="color:#fdb863"> <b>Orange</b></span>
-<span style="color:#99CC9A"> <b>Green</b></span>
-<span style="color:#66ABFF"> <b>Blue</b></span>
 
 <div id="chart2" style="width:100% text-align:left"></div>
 
@@ -72,13 +77,16 @@ The second histogram shows how many <span style="color:#b2abd2"> <b>Purple</b></
 How should we interpret this?  
 
 Let's start with the first histogram, which we can look at as a *distribution over seat shares*.  If the <span style="color:#99CC9A"> <b>Green</b></span> bar is to the right of most of the distribution, it means that your plan gives *more* seats to the <span style="color:#b2abd2"> <b>Purple</b></span> Party than most of the other plans.  Conversely, if the <span style="color:#99CC9A"> <b>Green</b></span> bar is to the left of most of the distribution, it means your plan gives more seats to the 
-<span style="color:#fdb863"> <b>Orange</b></span> Party than most of the other plans. If we are concerned about gerrymandering, this may be evidence that the plan was selected to favor one of the parties. 
+<span style="color:#fdb863"> <b>Orange</b></span> Party than most of the other plans, which may suggest that this particular plan was selected to favor one of the parties. 
 
-The second histogram tells the same story in the other direction.  If the <span style="color:#66ABFF"> <b>Blue</b></span> bar is to the right of most of the distribution, it means that among all ways to arrange the same number of <span style="color:#b2abd2"> <b>Purple</b></span> and <span style="color:#fdb863"> <b>Orange</b></span> votes, your arrangement of voters gives more seats to the <span style="color:#b2abd2"> <b>Purple</b></span> Party than the average.  Conversely, if the <span style="color:#66ABFF"> <b>Blue</b></span> bar is to the left of most of the distribution, it means that your current arrangement of voters favors the <span style="color:#fdb863"> <b>Orange</b></span> Party.  If we are concerned about gerrymandering, this tells us whether or not the distribution of voters makes it difficult to draw plans which give each party a number of seats (roughly) proportional to the number of votes they receive.
+The second histogram tells the same story in the other direction.  If the <span style="color:#66ABFF"> <b>Blue</b></span> bar is to the right of most of the distribution, it means that among all ways to arrange the same number of <span style="color:#b2abd2"> <b>Purple</b></span> and <span style="color:#fdb863"> <b>Orange</b></span> votes, your arrangement of voters gives more seats to the <span style="color:#b2abd2"> <b>Purple</b></span> Party than the average.  Conversely, if the <span style="color:#66ABFF"> <b>Blue</b></span> bar is to the left of most of the distribution, it means that your current arrangement of voters favors the <span style="color:#fdb863"> <b>Orange</b></span> Party.  Tthis tells us whether or not the distribution of voters makes it difficult to draw plans which give each party a number of seats (roughly) proportional to the number of votes they receive.
 
+<br/>
 
-### Is it possible for partial squares? 
+<p style="text-align:left;">
+<a href="./metagrid" class="previous" style="padding: 10px 20px">&laquo; Go back to the 4x4 analysis</a>
 
+</p>
 
 
 <div style="text-align:right; color:#888888;line-height:14px" width="100%"><small>
@@ -91,9 +99,16 @@ Seth Drew, Eugene Henninger-Voss, and Amara Jaeger. <br/>
 Special thanks to Mira Bernstein, whose <a href="https://docs.google.com/spreadsheets/d/1U8XXRwwJ3zLLu9Xx-xsrePBFsCXkYYFj_MB4t-ZaZ4k/edit#gid=2131508220">Liliputia project</a> served as inspiration.
 <br/><br/>
 
-Version 0.8 <br/>
-August 1, 2018 <br/>
+Version 0.9 <br/>
+August 5, 2018 <br/>
 
 
 </small>
-</div> -->
+</div>
+
+
+<!-- <span style="color:#b2abd2"> <b>Purple</b></span>
+<span style="color:#fdb863"> <b>Orange</b></span>
+<span style="color:#99CC9A"> <b>Green</b></span>
+<span style="color:#66ABFF"> <b>Blue</b></span>
+-->

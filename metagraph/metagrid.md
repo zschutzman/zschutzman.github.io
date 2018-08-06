@@ -13,33 +13,51 @@ customjs:
  - src-meta4/ising1-4-p.js
  - src-meta4/ising2-4-p.js
 ---
+
+
+
+
+<style>
+
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.round {
+    border-radius: 50%;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- <p style="margin:0;padding:0;font-size:70px;letter-spacing:-14px;line-height:50px;width:300px;float:left;justify:center;">
 <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> </p>
 <br/><br/> -->
-
-<!---
-
-
-
-
-
-
-
-<p style="float:left; width:150px">Here are two:</p> <center> <p style="margin:0;padding:0;font-size:20px;letter-spacing:-4px;line-height:14px;width:100px;float:left;justify:center;">
-<span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br/> <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br/> <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span><br/> <span style="color:#73C6B6">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span></p><p style="margin:0;padding:0;font-size:20px;letter-spacing:-4px;line-height:14px;width:100px;float:left;">
-<span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span> <span style="color:#73C6B6">&#9724;</span><br/> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br/> <span style="color:#A569BD">&#9724;</span> <span style="color:#F4D03F">&#9724;</span> <span style="color:#CD6155">&#9724;</span> <span style="color:#CD6155">&#9724;</span><br/> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#A569BD">&#9724;</span> <span style="color:#CD6155">&#9724;</span></p>
-</center>
-<br />
-
--->
-
-<!-- <div style="text-align:right; color:#aaaaaa;line-height:14px" width="100%"><small>
-This page developed from a project at the <a href="http://gerrydata.org">Voting Rights Data Institute</a> during the summer of 2018
-and is joint with Seth Drew, Eugene Henninger-Voss, and Amara Jaeger.
-Special thanks to Mira Bernstein, whose <a href="https://docs.google.com/spreadsheets/d/1U8XXRwwJ3zLLu9Xx-xsrePBFsCXkYYFj_MB4t-ZaZ4k/edit#gid=2131508220">Liliputia project</a> served as inspiration.
-</div>
-<hr style="width:80%"> -->
-
 
 
 
@@ -47,15 +65,11 @@ Special thanks to Mira Bernstein, whose <a href="https://docs.google.com/spreads
 <center>
 <h2> Welcome to Gridlandia!</h2>
 <br/>
-
 <p align="center">
   <img width="200"  src="imgs/blankgrid.png?raw=true"> <br />
-
 </p>
-
-
 </center>
-<br/>
+
 
 
 Gridlandia is trying to draw legislative districts for its upcoming elections.  The rules are that there must be four districts, they must be contiguous, and they must all be of the same size.  Since Gridlandia is laid out neatly in a four-by-four grid, it's not too hard to write all of the allowed districting plans down.  There are only 117 of them.  
@@ -107,25 +121,20 @@ Let's make things a little more realistic.  Instead of each cell voting entirely
 <div id="chart3" style="width:100% text-align:left"></div>
 
 
-<!--
-<h2> Welcome Back to Gridlandia </h2>
-
-In the meantime, we've incorporated nine additional cells, for a total of 25.  Since the population has increased, we'd now like to draw *five* districts.  The same rules apply: each district must be contiguous and of the same size.  There are 4006 districting plans which satisfy these criteria, and we can construct the metagraph in the same way, with a node for each plan and an edge between plans that can be transformed into each other by swapping cells in adjacent districts.  We can write these all down, but this is too many to show all at once as a metagraph.  Instead, we'll show a local picture of the metagraph where you can see a districting plan and all of the other plans which can be formed by swapping one or two pairs of cells.
+If we're interested in studying redistricting in the real-world, we'll need techniques which work on cases which are more complex than a 4x4 grid.  We will develop some of these techniques using the 5x5 grid, which has a much larger set of valid districting plans.
 
 
 
 
+<p style="text-align:left;">
+<span style="float:right;"><a href="./metagrid-2" class="next" style="padding: 10px 20px"> Check out the 5x5 analysis &raquo;</a></span>
 
 
+</p>
 
-### Meta-tree and recenter-er
-<div id="graph" style="width:100% text-align:left"></div>
+<br/>
 
 
-### Click squares and see histograms - whole squares
-<div id="graph2" style="width:100% text-align:left"></div>
-
-### Is it possible for partial squares?-->
 
 
 
@@ -139,8 +148,8 @@ Seth Drew, Eugene Henninger-Voss, and Amara Jaeger. <br/>
 Special thanks to Mira Bernstein, whose <a href="https://docs.google.com/spreadsheets/d/1U8XXRwwJ3zLLu9Xx-xsrePBFsCXkYYFj_MB4t-ZaZ4k/edit#gid=2131508220">Liliputia project</a> served as inspiration.
 <br/><br/>
 
-Version 0.8 <br/>
-August 1, 2018 <br/>
+Version 0.9 <br/>
+August 5, 2018 <br/>
 
 
 </small>

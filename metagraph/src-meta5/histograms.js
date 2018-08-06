@@ -10,19 +10,19 @@ var winbox = d3.select("#chart2").append("svg")
 
 
             
-            var wgrp = winbox.append("g").attr("transform","translate(0,15)");
+            var vgrp = winbox.append("g").attr("transform","translate(0,15)");
             
-            //wgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
-            wgrp.append("text") .text("This distribution, all plans:")  .attr('dy','0.35em').attr('h',0).style("font-size","18px").attr("x",50);
-            var wr0 = wgrp.append("rect").attr("x",  0).attr("width",50).attr("fill","none").attr("i",0).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
-            var wr1 = wgrp.append("rect").attr("x", 55).attr("width",50).attr("fill","none").attr("i",1).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
-            var wr2 = wgrp.append("rect").attr("x",110).attr("width",50).attr("fill","none").attr("i",2).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
-            var wr3 = wgrp.append("rect").attr("x",165).attr("width",50).attr("fill","none").attr("i",3).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
-            var wr4 = wgrp.append("rect").attr("x",220).attr("width",50).attr("fill","none").attr("i",4).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
-            var wr5 = wgrp.append("rect").attr("x",275).attr("width",50).attr("fill","none").attr("i",5).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            //vgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
+            vgrp.append("text") .text("This distribution, all plans:")  .attr('dy','0.35em').attr('h',0).style("font-size","18px").attr("x",50);
+            var wr0 = vgrp.append("rect").attr("x",  0).attr("width",50).attr("fill","none").attr("i",0).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr1 = vgrp.append("rect").attr("x", 55).attr("width",50).attr("fill","none").attr("i",1).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr2 = vgrp.append("rect").attr("x",110).attr("width",50).attr("fill","none").attr("i",2).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr3 = vgrp.append("rect").attr("x",165).attr("width",50).attr("fill","none").attr("i",3).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr4 = vgrp.append("rect").attr("x",220).attr("width",50).attr("fill","none").attr("i",4).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr5 = vgrp.append("rect").attr("x",275).attr("width",50).attr("fill","none").attr("i",5).attr("height",50).attr("y",200).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
 
 
-        wgrp.append("line")
+        vgrp.append("line")
           .attr("stroke","#000")
           .attr("stroke-width",3)
           .attr("x1",0)
@@ -32,18 +32,18 @@ var winbox = d3.select("#chart2").append("svg")
 
 
             
-            wgrp.append("text") .text("0 Seats")  .attr('dy','0.15em').attr("x","3").attr('h',1).attr("y",259).style("font-size","12px");
-            wgrp.append("text") .text("1 Seat")  .attr('dy','0.15em').attr("x","58").attr('h',1).attr("y",259).style("font-size","12px");
-            wgrp.append("text") .text("2 Seats")  .attr('dy','0.15em').attr("x","113").attr('h',1).attr("y",259).style("font-size","12px");
-            wgrp.append("text") .text("3 Seats")  .attr('dy','0.15em').attr("x","168").attr('h',1).attr("y",259).style("font-size","12px");
-            wgrp.append("text") .text("4 Seats")  .attr('dy','0.15em').attr("x","223").attr('h',1).attr("y",259).style("font-size","12px");
-            wgrp.append("text") .text("5 Seats")  .attr('dy','0.15em').attr("x","278").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("0 Seats")  .attr('dy','0.15em').attr("x","3").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("1 Seat")  .attr('dy','0.15em').attr("x","58").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("2 Seats")  .attr('dy','0.15em').attr("x","113").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("3 Seats")  .attr('dy','0.15em').attr("x","168").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("4 Seats")  .attr('dy','0.15em').attr("x","223").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("5 Seats")  .attr('dy','0.15em').attr("x","278").attr('h',1).attr("y",259).style("font-size","12px");
 
 
             
             var dgrp = winbox.append("g").attr("transform","translate(0,15)");
             
-            //wgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
+            //vgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
             dgrp.append("text") .text("This plan, all distributions with "+num_red+" Purple voters:")  .attr('dy','0.35em').attr("h",0).attr("x","15").attr("y",325).style("font-size","14px");
             var tr0 = dgrp.append("rect").attr("x",  0).attr("width",50).attr("fill","none").attr("i",0).attr("height",50).attr("y",500).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);;
             var tr1 = dgrp.append("rect").attr("x", 55).attr("width",50).attr("fill","none").attr("i",1).attr("height",50).attr("y",500).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);;
@@ -80,7 +80,7 @@ function update_textboxes(){
 
     });
     
-wgrp.selectAll("rect").each(function(d){
+vgrp.selectAll("rect").each(function(d){
     
     var i = d3.select(this).attr("i");
 
