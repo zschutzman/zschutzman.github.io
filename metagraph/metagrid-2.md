@@ -81,7 +81,7 @@ Let's start with the first histogram, which we can look at as a *distribution ov
 
 The second histogram tells the same story in the other direction.  If the <span style="color:#66ABFF"> <b>Blue</b></span> bar is to the right of most of the distribution, it means that among all ways to arrange the same number of <span style="color:#b2abd2"> <b>Purple</b></span> and <span style="color:#fdb863"> <b>Orange</b></span> votes, your arrangement of voters gives more seats to the <span style="color:#b2abd2"> <b>Purple</b></span> Party than the average.  Conversely, if the <span style="color:#66ABFF"> <b>Blue</b></span> bar is to the left of most of the distribution, it means that your current arrangement of voters favors the <span style="color:#fdb863"> <b>Orange</b></span> Party.  This tells us whether or not the distribution of voters makes it difficult to draw plans which give each party a number of seats (roughly) proportional to the number of votes they receive.
 
-<br/>
+
 
 <p style="text-align:left;">
 <a href="./metagrid" class="previous" style="padding: 10px 20px">&laquo; Go back to the 4x4 analysis</a>
