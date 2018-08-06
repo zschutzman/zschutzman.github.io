@@ -71,8 +71,8 @@ _.times(square5sColumn, function(n) {
 
 
 var grd4 = d3.select('#chart2').append('svg')
-  .attr("width", (square5*7))
-  .attr("height",square5*7).attr("transform","translate(0,-200)");
+  .attr("width", 100+(square5*7))
+  .attr("height",150+square5*7).attr("transform","translate(0,-80)");
 
 // loop over number of columns
 _.times(square5sColumn, function(n) {
@@ -94,9 +94,9 @@ _.times(square5sColumn, function(n) {
       .attr("width", square5)
       .attr("height",square5)
       .attr("x", function(d, i) {
-        return (i * 1.07*square5);
+        return 60+(i * 1.07*square5);
       })
-      .attr("y", (square5 + n * 1.07*square5))
+      .attr("y", 150+(square5 + n * 1.07*square5))
     
      .attr("party",function(d,i) {return party_init[4*n+i];})
     .style("fill",function(d) {return simp_fill[1+parseInt(d3.select(this).attr("party"))];})
@@ -172,3 +172,7 @@ function do_update2(r){
 
         
 }
+
+ var distpic = grd4.append("image")
+ .attr("width", 130).attr("height",130).attr("transform","translate("+(305/2-65)+",0)")
+ .attr("xlink:href",function(d){return "m5-imgs/whole/im_"+idno2+".png";});
