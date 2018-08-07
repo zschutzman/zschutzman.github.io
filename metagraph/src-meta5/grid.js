@@ -2,7 +2,7 @@ var parties = [-1,1];
 
 var grd3 = d3.select('#chart1').append('svg')
   .attr("width", (square5*7))
-  .attr("height",square5*7).attr("transform","translate(35,-200)");
+  .attr("height",150+square5*7).attr("transform","translate(50,-50)");
   
   
 var chk = "";
@@ -36,7 +36,7 @@ _.times(square5sColumn, function(n) {
       .attr("width", square5)
       .attr("height",square5)
       .attr("x", function(d, i) {
-        return (i * 1.07*square5);
+        return (30+i * 1.07*square5);
       })
       .attr("y", (square5 + n * 1.07*square5))
     
@@ -72,7 +72,7 @@ _.times(square5sColumn, function(n) {
 
 var grd4 = d3.select('#chart2').append('svg')
   .attr("width", 100+(square5*7))
-  .attr("height",150+square5*7).attr("transform","translate(0,-80)");
+  .attr("height",604);
 
 // loop over number of columns
 _.times(square5sColumn, function(n) {
@@ -96,7 +96,7 @@ _.times(square5sColumn, function(n) {
       .attr("x", function(d, i) {
         return 60+(i * 1.07*square5);
       })
-      .attr("y", 150+(square5 + n * 1.07*square5))
+      .attr("y", 320+(square5 + n * 1.07*square5))
     
      .attr("party",function(d,i) {return party_init[4*n+i];})
     .style("fill",function(d) {return simp_fill[1+parseInt(d3.select(this).attr("party"))];})
@@ -174,5 +174,16 @@ function do_update2(r){
 }
 
  var distpic = grd4.append("image")
- .attr("width", 130).attr("height",130).attr("transform","translate("+(305/2-65)+",0)")
+ .attr("width", 130).attr("height",130).attr("transform","translate("+(305/2-65)+",105)")
  .attr("xlink:href",function(d){return "m5-imgs/whole/im_"+idno2+".png";});
+
+
+ grd4.append("text").attr("x", 153).attr("y",103).text("Current Plan").attr("text-anchor","middle");
+
+
+grd4.append("text").attr("x", 153).attr("y",350).text("Current Distribution").attr("text-anchor","middle");
+grd4.append("text").attr("x", 153).attr("y",555).text("Click cells to change their color").style("font-size","12px").attr("text-anchor","middle");
+
+grd3.append("text").attr("x", 120).attr("y",30).text("Current Distribution").attr("text-anchor","middle");
+grd3.append("text").attr("x", 120).attr("y",233).text("Click cells to change their color").style("font-size","12px").attr("text-anchor","middle");
+

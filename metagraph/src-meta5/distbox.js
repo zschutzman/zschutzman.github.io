@@ -38,7 +38,13 @@ function distboxclick(){
 var distbox = d3.select("#chart1").append("svg")
             .attr("width",300)
             .attr("height",500);
-
+distbox.append("text")
+   .attr("x",180)
+   .attr("y",17)
+   .text("Build a Plan")
+   .attr('dy','0.35em')
+   .style("font-size","20px")
+   .attr("text-anchor","middle");
 distbox.append("rect")
     .attr("x",30)
     .attr("y",3)
@@ -211,6 +217,15 @@ else if (plan.length >= 1){
 var distbox2 = d3.select("#chart2").append("svg")
             .attr("width",300)
             .attr("height",500);
+
+
+distbox2.append("text")
+   .attr("x",180)
+   .attr("y",17)
+   .text("Build a Plan")
+   .attr('dy','0.35em')
+   .style("font-size","20px")
+   .attr("text-anchor","middle");
 
 distbox2.append("rect")
     .attr("x",30)

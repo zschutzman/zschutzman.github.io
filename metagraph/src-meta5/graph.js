@@ -252,5 +252,5 @@ function swapgraph2(){
 
     
 }
-
+graph.append("text").attr("x", 275).attr("y",480).text("Click a node to recenter the graph").style("font-size","12px").attr("text-anchor","middle");
 ////
