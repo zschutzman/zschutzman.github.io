@@ -90,14 +90,12 @@ We can impose a *graph* structure on the collection of all of these plans, where
 
 We call this structure the **metagraph of districting plans**.  Below, you can interact with this mathematical object.  The graph on the left is the complete metagraph.  Since Gridlandia is so symmetric, it might be useful to consider two districting plans to be *the same* if one can be transformed into the other by rotating or flipping the plan.  For example,
 
-
 <p style="text-align:center"> <img width="75"  src="imgs/fillgrid.png?raw=true">&nbsp;&nbsp;&nbsp;&nbsp; <img width="75"  src="imgs/rotgrid.png?raw=true"><br/>
 	<font size="3"> We can transfom the plan on the left into the plan on the right by rotating 90 degrees. </font>
 
 </p>
 
-
-The graph on the right is the metagraph where plans which are symmetric are merged into the same node, and two nodes are linked if any two of their two constituent nodes are linked in the full metagraph.
+The graph on the right is the metagraph where plans which are symmetric are merged into the same node, and two nodes are linked if any two of their two constituent nodes are linked in the full metagraph.  Mouse over a node in the graph on the left to see the corresponding plan and highlight all of the other nodes corresponding to symmetric plans.  Click a node to highlight all of its neighbors.  Clicking a node in the graph on the right will highlight all nodes in that symmetry class in the graph on the left as well as all of the neighbors of all of those plans.
 
 
 <div id="chart1" style="width:100% text-align:left"></div>
