@@ -56,7 +56,7 @@ customjs:
 
 
 <!-- <p style="margin:0;padding:0;font-size:70px;letter-spacing:-14px;line-height:50px;width:300px;float:left;justify:center;">
-<span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> </p>
+<span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> </p>
 <br/><br/> -->
 
 
@@ -66,7 +66,7 @@ customjs:
 <h2> Welcome to Gridlandia!</h2>
 <br/>
 <p align="center">
-  <img width="200"  src="imgs/blankgrid.png?raw=true"> <br />
+  <img width="200"  src="imgs/blankgrid.png?raw=true"><br />
 </p>
 </center>
 
@@ -76,14 +76,14 @@ Gridlandia is trying to draw legislative districts for its upcoming elections.  
 <center>
 Here is one:
 <p align="center">
-  <img width="150"  src="imgs/fillgrid.png?raw=true"> <br />
+  <img width="150"  src="imgs/fillgrid.png?raw=true"><br />
 </p>
 
 </center>
 
 We can impose a *graph* structure on the collection of all of these plans, where each node is a plan and two plans are connected if one can be transformed into the other by swapping a pair of cells in adjacent districts.
 
-<p style="text-align:center;"> <img width="75"  src="imgs/fillgrid.png?raw=true">&nbsp; &nbsp;&nbsp;&nbsp;<img width="75"  src="imgs/showswapgrid.png?raw=true"> &nbsp;&nbsp;&nbsp;&nbsp;<img width="75"  src="imgs/swapgrid.png?raw=true"> <br/>
+<p style="text-align:center;"> <img width="75"  src="imgs/fillgrid.png?raw=true">&nbsp; &nbsp;&nbsp;&nbsp;<img width="75"  src="imgs/showswapgrid.png?raw=true"> &nbsp;&nbsp;&nbsp;&nbsp;<img width="75"  src="imgs/swapgrid.png?raw=true"><br/>
 	<font size="3"> We can transfom the plan on the left into the plan on the right by swapping these two cells. </font>
 
 </p>
@@ -102,7 +102,7 @@ The graph on the right is the metagraph where plans which are symmetric are merg
 
 Now let's think about elections in Gridlandia.  Gridlandia has plurality elections and two political parties, the <span style="color:#b2abd2"> **Purple** </span> Party and the <span style="color:#fdb863"> **Orange** </span>
  Party.  For simplicity, we'll start by assuming that everyone in the same cell votes the same way -- either for the <span style="color:#b2abd2"> **Purple** </span> candidate or the <span style="color:#fdb863"> **Orange** </span>
- candidate.  Within each district, the candidate which gets the most votes wins the election, and ties are not resolved.  Below, click a cell once to change its color.  On the left, the nodes in the metagraph will change color to indicate which party wins a legislative majority under the corresponding plan.  A node will remain grey if the number of <span style="color:#b2abd2"> <b>Purple</b></span>- and <span style="color:#fdb863"><b>Orange</b></span>-favoring districts is equal.
+ candidate.  Within each district, the candidate which gets the most votes wins the election, and ties are not resolved.  Below, click a cell once to change its color.  On the left, the nodes in the metagraph will change color to indicate which party wins a legislative majority under the corresponding plan.  A node will remain grey if the number of <span style="color:#b2abd2"><b>Purple</b></span>- and <span style="color:#fdb863"><b>Orange</b></span>-favoring districts is equal.
 
 
 <div id="chart2" style="width:100% text-align:left"></div>
@@ -112,7 +112,7 @@ Let's make things a little more realistic.  Instead of each cell voting entirely
  supporters in each cell -- a total of ten in each square.  The same electoral rules apply, but now we can think about a *distribution* of votes in each cell.  Left click on a square to increase the percentage of <span style="color:#fdb863"> **Orange** </span>
  voters, or right click it to decrease the percentage of <span style="color:#fdb863"> **Orange** </span> voters.  
 
- What happens when the <span style="color:#fdb863"> **Orange** </span> party has a slight majority in most of the cells but a few are 90 or 100 percent <span style="color:#b2abd2"> <b>Purple</b></span>?  Under which configurations can the minority party still win three out of four districts?  Are there any distributions of voters that cause there to be a <span style="color:#b2abd2"> **Purple** </span> colored metagraph node surrounded entirely by <span style="color:#fdb863"> **Orange** </span> colored nodes?
+ What happens when the <span style="color:#fdb863"> **Orange** </span> party has a slight majority in most of the cells but a few are 90 or 100 percent <span style="color:#b2abd2"><b>Purple</b></span>?  Under which configurations can the minority party still win three out of four districts?  Are there any distributions of voters that cause there to be a <span style="color:#b2abd2"> **Purple** </span> colored metagraph node surrounded entirely by <span style="color:#fdb863"> **Orange** </span> colored nodes?
 
 
 <div id="chart3" style="width:100% text-align:left"></div>
@@ -138,15 +138,15 @@ If we're interested in studying redistricting in the real-world, we'll need tech
 <div style="text-align:right; color:#888888;line-height:14px" width="100%"><small>
 <hr style="width:100%">
 
-This page developed from a project at the <br/>
+This page developed from a project at the<br/>
 <a href="http://gerrydata.org">Voting Rights Data Institute</a>,
-Summer 2018 and is joint with <br/>
-Seth Drew, Eugene Henninger-Voss, and Amara Jaeger. <br/>
+Summer 2018 and is joint with<br/>
+Seth Drew, Eugene Henninger-Voss, and Amara Jaeger.<br/>
 Special thanks to Mira Bernstein, whose <a href="https://docs.google.com/spreadsheets/d/1U8XXRwwJ3zLLu9Xx-xsrePBFsCXkYYFj_MB4t-ZaZ4k/edit#gid=2131508220">Liliputia project</a> served as inspiration.
 <br/><br/>
 
-Version 0.9 <br/>
-August 5, 2018 <br/>
+Version 0.9<br/>
+August 5, 2018<br/>
 
 
 </small>
