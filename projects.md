@@ -13,7 +13,7 @@ permalink: /projects/
 
 <!-- <div style="border: 4px solid black; border-radius: 6px; padding: 25px">
 	<h1> GERRYMANDERING? </h1> -->
-<div style="border: 4px solid black;border-radius: 15px; background: #e3e3e3; position:relative;">
+<div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;">
     <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
         <img src="/metagraph/imgs/fillgrid.png" width="150" height="150" style="border-radius: 5%; border: solid black 2px; transform: translate(15px,0px);" />
     </div>
@@ -34,7 +34,7 @@ permalink: /projects/
 <!-- </div> -->
 <div style="margin:20px"></div>
 
-<div style="border: 4px solid black;border-radius: 15px; background: #e3e3e3; position:relative;">
+<div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;">
     <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
         <img src="/assets/images/wqss.png" width="150" height="150" style="transform: translate(15px,0px); border-radius: 5%; border: solid black 2px" />
     </div>
