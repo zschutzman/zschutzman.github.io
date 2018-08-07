@@ -76,10 +76,10 @@ The second histogram shows how many <span style="color:#b2abd2"> <b>Purple</b></
 
 How should we interpret this?  
 
-Let's start with the first histogram, which we can look at as a *distribution over seat shares*.  If the <span style="color:#99CC9A"> <b>Green</b></span> bar is to the right of most of the distribution, it means that your plan gives *more* seats to the <span style="color:#b2abd2"> <b>Purple</b></span> Party than most of the other plans.  Conversely, if the <span style="color:#99CC9A"> <b>Green</b></span> bar is to the left of most of the distribution, it means your plan gives more seats to the 
-<span style="color:#fdb863"> <b>Orange</b></span> Party than most of the other plans, which may suggest that this particular plan was selected to favor one of the parties. 
+Let's start with the first histogram. This histogram shows the number of distributions which award the <span style="color:#b2abd2"> <b>Purple</b></span> Party wins a certain number of seats in your plan.  We can use this to compare the outcome with your distribution with all of the other outcomes.  If the <span style="color:#66ABFF"> <b>Blue</b></span> bar is to the left of most of the mass in the histogram, it means that your arrangement of voters has fewer <span style="color:#b2abd2"> <b>Purple</b></span> seats than if we had chosen a random arrangement of the same voters for the same districting plan.  Conversely, if the <span style="color:#66ABFF"> <b>Blue</b></span> bar is to the right of most of the mass in the histogram, then your arrangement of voters awards *more* seats than average to the <span style="color:#b2abd2"> <b>Purple</b></span> Party, fixing your districting plan.
 
-The second histogram tells the same story in the other direction.  If the <span style="color:#66ABFF"> <b>Blue</b></span> bar is to the right of most of the distribution, it means that among all ways to arrange the same number of <span style="color:#b2abd2"> <b>Purple</b></span> and <span style="color:#fdb863"> <b>Orange</b></span> votes, your arrangement of voters gives more seats to the <span style="color:#b2abd2"> <b>Purple</b></span> Party than the average.  Conversely, if the <span style="color:#66ABFF"> <b>Blue</b></span> bar is to the left of most of the distribution, it means that your current arrangement of voters favors the <span style="color:#fdb863"> <b>Orange</b></span> Party.  This tells us whether or not the distribution of voters makes it difficult to draw plans which give each party a number of seats (roughly) proportional to the number of votes they receive.
+The second histogram tells the same story, but in reverse.  If the <span style="color:#99CC9A"> <b>Green</b></span> bar is to the left of most of the distribution, it means that, fixing your *arrangment of voters*, among all possible ways to draw the districts, your plan gives fewer than the average number of seats to the <span style="color:#b2abd2"> <b>Purple</b></span> Party, and if the <span style="color:#99CC9A"> <b>Green</b></span> bar is to the right of most of the mass in the histogram, then your plan has *more* <span style="color:#b2abd2"> <b>Purple</b></span> seats than the average plan.
+
 
 
 
@@ -107,7 +107,8 @@ August 5, 2018 <br/>
 </div>
 
 
-<!-- <span style="color:#b2abd2"> <b>Purple</b></span>
+<!-- 
+<span style="color:#b2abd2"> <b>Purple</b></span>
 <span style="color:#fdb863"> <b>Orange</b></span>
 <span style="color:#99CC9A"> <b>Green</b></span>
 <span style="color:#66ABFF"> <b>Blue</b></span>
