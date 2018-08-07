@@ -47,8 +47,8 @@ _.times(squaresColumn, function(n) {
       y: (n * 1.07*square + square/2),
     })
     
-    .attr("party",function(d,i) {return i<2 ? -1:1;})
-    .style("fill",function(d,i){ return i<2 ? simp_fill[0]:simp_fill[2];})
+    .attr("party",function(d,i) {return n<2 ? -1:1;})
+    .style("fill",function(d,i){ return n<2 ? simp_fill[0]:simp_fill[2];})
     .style("stroke","#555")
     .style("stroke-width",1)
     
