@@ -170,7 +170,7 @@ function do_update2(r){
         compute_hists();
 
 
-        
+  
 }
 
  var distpic = grd4.append("image")
@@ -186,4 +186,242 @@ grd4.append("text").attr("x", 153).attr("y",555).text("Click cells to change the
 
 grd3.append("text").attr("x", 120).attr("y",30).text("Current Distribution").attr("text-anchor","middle");
 grd3.append("text").attr("x", 120).attr("y",233).text("Click cells to change their color").style("font-size","12px").attr("text-anchor","middle");
+
+
+
+
+
+
+
+function grid_borders(){
+
+
+grd3.selectAll("line").remove();
+
+
+console.log(cur_plan_str);
+  grd3.selectAll("rect").each(function(){
+    var nm = d3.select(this).attr("id");
+    var cr = d3.select(this);
+    if (nm[2] == 1){
+      grd3.append("line")
+      .attr("x1", parseFloat(cr.attr("x")-1))
+      .attr("x2", square5+(parseFloat(cr.attr("x"))+1 + (nm[3] == 5 ? 0 : 1)))
+      .attr("y1", parseFloat(cr.attr("y")))
+      .attr("y2",parseFloat(cr.attr("y")))
+      .style("stroke-width", 2)
+      .attr("stroke","#333");
+    }
+    else if (nm[2] == 5){
+      grd3.append("line")
+      .attr("x1", parseFloat(cr.attr("x")-1))
+      .attr("x2", square5+(parseFloat(cr.attr("x"))+1 + (nm[3] == 5 ? 0 : 1)))
+      .attr("y1", square5+(parseFloat(cr.attr("y"))))
+      .attr("y2",square5+(parseFloat(cr.attr("y"))))
+      .style("stroke-width", 2)
+      .attr("stroke","#333");
+    }
+    else{
+
+      var cellchar = cur_plan_str[5*(nm[2]-1) + (nm[3]-1)]
+      var checkcell_up = cur_plan_str[5*(nm[2]-1) + (nm[3]-1)-5]
+      var checkcell_dn = cur_plan_str[5*(nm[2]-1) + (nm[3]-1)+5]
+
+
+      if (cellchar != checkcell_up){
+         grd3.append("line")
+        .attr("x1", parseFloat(cr.attr("x")-1))
+        .attr("x2", square5+(parseFloat(cr.attr("x"))+1 + (nm[3] == 5 ? 0 : 1)))
+        .attr("y1", parseFloat(cr.attr("y")-1))
+        .attr("y2",parseFloat(cr.attr("y")-1))
+        .style("stroke-width", 2)
+        .attr("stroke","#333");
+      }
+      if (cellchar != checkcell_dn && nm[2]==4){
+        grd3.append("line")
+        .attr("x1", parseFloat(cr.attr("x")-1))
+        .attr("x2", square5+(parseFloat(cr.attr("x"))+1+ (nm[3] == 5 ? 0 : 1)))
+        .attr("y1", square5+(parseFloat(cr.attr("y"))+1))
+        .attr("y2",square5+(parseFloat(cr.attr("y")) +1))
+        .style("stroke-width", 2)
+        .attr("stroke","#333");
+      }
+
+
+    }
+
+
+
+    if (nm[3] == 1){
+      grd3.append("line")
+      .attr("x1", parseFloat(cr.attr("x")))
+      .attr("x2", (parseFloat(cr.attr("x"))))
+      .attr("y1", parseFloat(cr.attr("y")-1))
+      .attr("y2",square5+(parseFloat(cr.attr("y"))+1 + (nm[2] == 5 ? 0 : 1)))
+      .style("stroke-width", 2)
+      .attr("stroke","#333");
+    }
+    else if (nm[3] == 5){
+      grd3.append("line")
+      .attr("x1", square5+(parseFloat(cr.attr("x"))))
+      .attr("x2", square5+(parseFloat(cr.attr("x"))))
+      .attr("y1", (parseFloat(cr.attr("y"))-1))
+      .attr("y2",square5+(parseFloat(cr.attr("y"))+1+ (nm[2] == 5 ? 0 : 1)))
+      .style("stroke-width", 2)
+      .attr("stroke","#333");
+    }
+    else {
+
+      var cellchar = cur_plan_str[5*(nm[2]-1) + (nm[3]-1)]
+      var checkcell_lf = cur_plan_str[5*(nm[2]-1) + (nm[3]-1)-1]
+      var checkcell_rt = cur_plan_str[5*(nm[2]-1) + (nm[3]-1)+1]
+
+      if (cellchar != checkcell_lf){
+        grd3.append("line")
+        .attr("x1", parseFloat(cr.attr("x")-1))
+        .attr("x2", parseFloat(cr.attr("x")-1))
+        .attr("y1", parseFloat(cr.attr("y")-1))
+        .attr("y2",square5+(parseFloat(cr.attr("y"))+1+ (nm[2] == 5 ? 0 : 1)))
+        .style("stroke-width", 2)
+        .attr("stroke","#333");        
+      }
+      if (cellchar != checkcell_rt && nm[3] == 4){
+
+        grd3.append("line")
+        .attr("x1", square5+(parseFloat(cr.attr("x"))+1.5))
+        .attr("x2", square5+(parseFloat(cr.attr("x"))+1.5))
+        .attr("y1", (parseFloat(cr.attr("y"))-1))
+        .attr("y2",square5+(parseFloat(cr.attr("y"))+1+ (nm[2] == 5 ? 0 : 1)))
+        .style("stroke-width", 2)
+        .attr("stroke","#333");
+
+      }
+
+
+
+
+
+    }
+
+
+
+
+  });
+
+
+
+grd4.selectAll("line").remove();
+
+
+console.log(cur_plan_str);
+  grd4.selectAll("rect").each(function(){
+    var nm = d3.select(this).attr("id");
+    var cr = d3.select(this);
+    if (nm[2] == 1){
+      grd4.append("line")
+      .attr("x1", parseFloat(cr.attr("x")-1))
+      .attr("x2", square5+(parseFloat(cr.attr("x"))+1 + (nm[3] == 5 ? 0 : 1)))
+      .attr("y1", parseFloat(cr.attr("y")))
+      .attr("y2",parseFloat(cr.attr("y")))
+      .style("stroke-width", 2)
+      .attr("stroke","#333");
+    }
+    else if (nm[2] == 5){
+      grd4.append("line")
+      .attr("x1", parseFloat(cr.attr("x")-1))
+      .attr("x2", square5+(parseFloat(cr.attr("x"))+1 + (nm[3] == 5 ? 0 : 1)))
+      .attr("y1", square5+(parseFloat(cr.attr("y"))))
+      .attr("y2",square5+(parseFloat(cr.attr("y"))))
+      .style("stroke-width", 2)
+      .attr("stroke","#333");
+    }
+    else{
+
+      var cellchar = cur_plan_str[5*(nm[2]-1) + (nm[3]-1)]
+      var checkcell_up = cur_plan_str[5*(nm[2]-1) + (nm[3]-1)-5]
+      var checkcell_dn = cur_plan_str[5*(nm[2]-1) + (nm[3]-1)+5]
+
+
+      if (cellchar != checkcell_up){
+         grd4.append("line")
+        .attr("x1", parseFloat(cr.attr("x")-1))
+        .attr("x2", square5+(parseFloat(cr.attr("x"))+1 + (nm[3] == 5 ? 0 : 1)))
+        .attr("y1", parseFloat(cr.attr("y")-1))
+        .attr("y2",parseFloat(cr.attr("y")-1))
+        .style("stroke-width", 2)
+        .attr("stroke","#333");
+      }
+      if (cellchar != checkcell_dn && nm[2]==4){
+        grd4.append("line")
+        .attr("x1", parseFloat(cr.attr("x")-1))
+        .attr("x2", square5+(parseFloat(cr.attr("x"))+1+ (nm[3] == 5 ? 0 : 1)))
+        .attr("y1", square5+(parseFloat(cr.attr("y"))+1))
+        .attr("y2",square5+(parseFloat(cr.attr("y")) +1))
+        .style("stroke-width", 2)
+        .attr("stroke","#333");
+      }
+
+
+    }
+
+
+
+    if (nm[3] == 1){
+      grd4.append("line")
+      .attr("x1", parseFloat(cr.attr("x")))
+      .attr("x2", (parseFloat(cr.attr("x"))))
+      .attr("y1", parseFloat(cr.attr("y")-1))
+      .attr("y2",square5+(parseFloat(cr.attr("y"))+1 + (nm[2] == 5 ? 0 : 1)))
+      .style("stroke-width", 2)
+      .attr("stroke","#333");
+    }
+    else if (nm[3] == 5){
+      grd4.append("line")
+      .attr("x1", square5+(parseFloat(cr.attr("x"))))
+      .attr("x2", square5+(parseFloat(cr.attr("x"))))
+      .attr("y1", (parseFloat(cr.attr("y"))-1))
+      .attr("y2",square5+(parseFloat(cr.attr("y"))+1+ (nm[2] == 5 ? 0 : 1)))
+      .style("stroke-width", 2)
+      .attr("stroke","#333");
+    }
+    else {
+
+      var cellchar = cur_plan_str[5*(nm[2]-1) + (nm[3]-1)]
+      var checkcell_lf = cur_plan_str[5*(nm[2]-1) + (nm[3]-1)-1]
+      var checkcell_rt = cur_plan_str[5*(nm[2]-1) + (nm[3]-1)+1]
+
+      if (cellchar != checkcell_lf){
+        grd4.append("line")
+        .attr("x1", parseFloat(cr.attr("x")-1))
+        .attr("x2", parseFloat(cr.attr("x")-1))
+        .attr("y1", parseFloat(cr.attr("y")-1))
+        .attr("y2",square5+(parseFloat(cr.attr("y"))+1+ (nm[2] == 5 ? 0 : 1)))
+        .style("stroke-width", 2)
+        .attr("stroke","#333");        
+      }
+      if (cellchar != checkcell_rt && nm[3] == 4){
+
+        grd4.append("line")
+        .attr("x1", square5+(parseFloat(cr.attr("x"))+1.5))
+        .attr("x2", square5+(parseFloat(cr.attr("x"))+1.5))
+        .attr("y1", (parseFloat(cr.attr("y"))-1))
+        .attr("y2",square5+(parseFloat(cr.attr("y"))+1+ (nm[2] == 5 ? 0 : 1)))
+        .style("stroke-width", 2)
+        .attr("stroke","#333");
+
+      }
+
+
+
+
+
+    }
+
+
+
+
+  });
+
+}
+
 

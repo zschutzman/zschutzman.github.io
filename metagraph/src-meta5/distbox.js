@@ -209,6 +209,7 @@ else if (plan.length >= 1){
         plan = [];}
     constr_distbox();
     constr_distbox2();
+    grid_borders();
     
 }
 

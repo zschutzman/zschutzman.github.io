@@ -96,7 +96,7 @@ var rwin = 0;
 var bwin=0;
 
 
-
+var cur_plan_str = '1222311223413334155544455';
 
 var hoff = 130;
 var voff = 15;

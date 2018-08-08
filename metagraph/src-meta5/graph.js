@@ -23,6 +23,7 @@ var tree = d3.tree()
     
 function mk_gr2(fn,num) {
     idno2 = num;
+    console.log("idno2",idno2);
     distpic.attr("xlink:href",function(d){return "m5-imgs/whole/im_"+idno2+".png";});
     
 d3.json(fn, function(error, treeData) {
@@ -115,7 +116,7 @@ var link = treegroup.selectAll(".link")
       .style("stroke-width",6)
        .attr("x", -20)//-37
       .attr("y", -20)//-37
-      .attr("str_rep", function(d){ return d.data.str_rep.split('\n').join("").split(" ").join("");})
+      .attr("str_rep", function(d){ if (d.data.name == idno2){cur_plan_str = d.data.str_rep.split('\n').join("").split(" ").join(""); console.log(cur_plan_str); grid_borders();}    return d.data.str_rep.split('\n').join("").split(" ").join("");})
       
         .attr("districts", function(d) { return d.data.tup;})
         .attr("idno2", function(d) {return d.data.name;})
@@ -131,6 +132,10 @@ var link = treegroup.selectAll(".link")
  
 
 });
+
+
+
+
 
 
 }
@@ -238,7 +243,8 @@ function swapgraph2(){
                                     graph.selectAll("g").transition()
     .duration(200)
     .style("opacity",1);
-                                   }
+    
+                 }
                         });
     var cnt = 0;
     var chk = compute_hists();
@@ -246,11 +252,8 @@ function swapgraph2(){
     do_update2(-1);
 
 
-    
-    
-
 
     
 }
 graph.append("text").attr("x", 275).attr("y",480).text("Click a node to recenter the graph").style("font-size","12px").attr("text-anchor","middle");
-////
+
