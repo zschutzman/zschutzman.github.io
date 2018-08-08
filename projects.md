@@ -20,11 +20,11 @@ permalink: /projects/
 	<div style="margin-left: 180px;padding: 15px; padding-top:0px">
 	    <h2 style="font-size:1.2em; margin-top:0px; text-align:center; word-break: break-all; hyphens: auto; color:$text-color">
 	    	<a href="/metagraph/metagrid" style="color: black; text-decoration: none;" >
-	    	Redistricting the 4x4 Grid
+	    	Redistricting the Grid
 	    </a>
 	    </h2>
 	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
-	        A construction and analysis of drawing legislative districts on a toy example of a four-by-four grid.  Includes interactive elements to explore the effect of different districting plans and distributions of voters on two-party electoral outcomes.
+	        A construction and analysis of drawing legislative districts on toy examples of grid graphs.  Includes interactive elements to explore the effect of different districting plans and distributions of voters on two-party electoral outcomes.
 	   		<br/>
 	        <a href="/metagraph/metagrid" style="float: left; position:absolute; bottom:10px; left:180px"><b>
 	        	View Project
