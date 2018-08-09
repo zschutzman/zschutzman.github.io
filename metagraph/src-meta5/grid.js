@@ -421,7 +421,8 @@ console.log(cur_plan_str);
 
 
   });
-
+grd4.selectAll("line").style("color","black").attr("stroke",3);
+grd4.selectAll("line").style("color","black").attr("stroke",3);
 }
 
 

@@ -53,6 +53,8 @@ d3v3.json("src-meta4/data/gr.json", function(json) {
       .attr("str_rep", function(d){ return d.str_rep.split('\n').join("").split(" ").join("");})
       .attr("html_rep", function(d) {return d.html_rep;})
       .attr("r", function(d) {return Math.round(2*d.deg)-1;})
+            .attr("name",function(d){return d.name;})
+
       .style("stroke-width", 0)
       .style("stroke", "black")
       .style("opacity", 1.)
@@ -65,8 +67,7 @@ d3v3.json("src-meta4/data/gr.json", function(json) {
         var t = d3v3.select(this).attr("type");
         var c = d3v3.select(this)          
         tooltip.style("visibility", "visible");
-        tooltip.html('<p style="margin:0;padding:0;font-size:50px;letter-spacing:-10px;line-height:35px;">' + c.attr( "html_rep" ) + "</p>");
-        
+        tooltip.html(function(d){return "<div  style='; width:100px; height:100px; background-color:#555; padding:5px'><img width='100' src='m4-imgs/im_"+c.attr("name")+".png'></div>";});          
         
         
         tooltip.transition()		

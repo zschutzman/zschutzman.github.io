@@ -10,8 +10,8 @@ var square=10*Math.round(Math.min(4,(w-wp)/5));
 // create the svg
 var grd = d3v3.select('#chart2').append('svg').attr("transform","translate("+(w-wp)/4+","+(-h/3) +")")
   .attr({
-    width: 5*square,
-    height: 5*square
+    width: 6*square,
+    height: 6*square
   });
 
 
@@ -132,7 +132,7 @@ do_updateis(-1);
  
     
   
-    
+
     
     
 

@@ -80,7 +80,7 @@ var link = treegroup.selectAll(".link")
    
        
         tooltip2.style("visibility", "visible");
-        tooltip2.html(function(d){return "<span><img width='100' src='m5-imgs/whole/im_"+c.data()[0].data.name+".png'></span>";});  
+        tooltip2.html(function(d){return "<div  style='; width:100px; height:100px; background-color:#555; padding:5px'><img width='100' height='100' src='m5-imgs/whole/im_"+c.data()[0].data.name+".png'></div>";});  
 
 
         tooltip2.transition()		
@@ -120,14 +120,15 @@ var link = treegroup.selectAll(".link")
       
         .attr("districts", function(d) { return d.data.tup;})
         .attr("idno2", function(d) {return d.data.name;})
-        .style("fill", function(d) {return get_my_col2(d);})
+        .style("fill", "#555")
 
 
  node.append("image")
- .attr("width", function(d){return d.data.name == idno2 ? 60:40;})
- .attr("height", function(d){return d.data.name == idno2 ? 60:40;})
- .attr("x",-20)
- .attr("y",-20)
+ .attr("width", function(d){return d.data.name == idno2 ? 50:30;})
+ .attr("height", function(d){return d.data.name == idno2 ? 50:30;})
+
+ .attr("x",-15)
+ .attr("y",-15)
  .attr("xlink:href",function(d){return "m5-imgs/whole/im_"+d.data.name+".png";});  
  
 
@@ -205,7 +206,7 @@ function get_col_2(){
 
         var col = Math.sign(cnt) + 1;
 
-        d3.select(this).style("fill", simp_fill[col]);
+        d3.select(this).style("fill", "#555");
         d3.select(this).style("stroke", simp_fill[col]);
     
     });

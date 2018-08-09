@@ -37,28 +37,16 @@ customjs:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <p style="margin:0;padding:0;font-size:70px;letter-spacing:-14px;line-height:50px;width:300px;float:left;justify:center;">
-<span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> </p>
-<br/><br/> -->
-
+<!-- <p style="margin:0;padding:0;font-size:70px;letter-spacing:-14px;line-height:50px;width:400px;float:left;justify:center;">
+<span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> 
+<span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> 
+<span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> 
+<span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> 
+<span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> 
+<span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> 
+<span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span> <span style="color:#660339">&#9724;</span><br/> 
+<br/><br/> 
+ -->
 
 
 
@@ -68,9 +56,17 @@ customjs:
 <p align="center">
   <img width="200"  src="imgs/blankgrid.png?raw=true"><br />
 </p>
+
+<hr style="width:40%; margin:15px auto 15px auto">
+<div style="width: 60%; font-size: .7em; line-height: 1.1em">
+
+This project uses interactive widgets and visualizations to explore some of the mathematical tools used to analyze the legislative redistricting process, particularly the detection of gerrymandering.  We use the toy examples of 4x4, 5x5, and 7x7 grids to develop and demonstrate these techniques.  We present the construction of the <i>metagraph</i> on the 4x4 grid, the <i>statistical techniques</i> to determine whether a plan is an electoral outlier on the 5x5 grid, and <i>Markov chain Monte Carlo</i> methods for sampling on the 7x7 grid.
+
+</div>
+<hr style="width:40%; margin:15px auto 15px auto;">
+
+
 </center>
-
-
 
 Gridlandia is trying to draw legislative districts for its upcoming elections.  The rules are that there must be four districts, they must be contiguous, and they must all be of the same size.  Since Gridlandia is laid out neatly in a four-by-four grid, it's not too hard to write all of the allowed districting plans down.  There are only 117 of them.  
 <center>
@@ -100,19 +96,19 @@ The graph on the right is the metagraph where plans which are symmetric are merg
 
 <div id="chart1" style="width:100% text-align:left"></div>
 
-Now let's think about elections in Gridlandia.  Gridlandia has plurality elections and two political parties, the <span style="color:#b2abd2"> **Purple** </span> Party and the <span style="color:#fdb863"> **Orange** </span>
- Party.  For simplicity, we'll start by assuming that everyone in the same cell votes the same way -- either for the <span style="color:#b2abd2"> **Purple** </span> candidate or the <span style="color:#fdb863"> **Orange** </span>
- candidate.  Within each district, the candidate which gets the most votes wins the election, and ties are not resolved.  Below, click a cell once to change its color.  On the left, the nodes in the metagraph will change color to indicate which party wins a legislative majority under the corresponding plan.  A node will remain grey if the number of <span style="color:#b2abd2"><b>Purple</b></span>- and <span style="color:#fdb863"><b>Orange</b></span>-favoring districts is equal.
+Now let's think about elections in Gridlandia.  Gridlandia has plurality elections and two political parties, the <span style="color:#857ab8"> **Purple** </span> Party and the <span style="color:#fca336"> **Orange** </span>
+ Party.  For simplicity, we'll start by assuming that everyone in the same cell votes the same way -- either for the <span style="color:#857ab8"> **Purple** </span> candidate or the <span style="color:#fca336"> **Orange** </span>
+ candidate.  Within each district, the candidate which gets the most votes wins the election, and ties are not resolved.  Below, click a cell once to change its color.  On the left, the nodes in the metagraph will change color to indicate which party wins a legislative majority under the corresponding plan.  A node will remain grey if the number of <span style="color:#857ab8"><b>Purple</b></span>- and <span style="color:#fca336"><b>Orange</b></span>-favoring districts is equal.
 
 
 <div id="chart2" style="width:100% text-align:left"></div>
 
 
-Let's make things a little more realistic.  Instead of each cell voting entirely for one party, there are some <span style="color:#b2abd2"> **Purple** </span> and some <span style="color:#fdb863"> **Orange** </span>
- supporters in each cell -- a total of ten in each square.  The same electoral rules apply, but now we can think about a *distribution* of votes in each cell.  Left click on a square to increase the percentage of <span style="color:#fdb863"> **Orange** </span>
- voters, or right click it to decrease the percentage of <span style="color:#fdb863"> **Orange** </span> voters.  
+Let's make things a little more realistic.  Instead of each cell voting entirely for one party, there are some <span style="color:#857ab8"> **Purple** </span> and some <span style="color:#fca336"> **Orange** </span>
+ supporters in each cell -- a total of ten in each square.  The same electoral rules apply, but now we can think about a *distribution* of votes in each cell.  Left click on a square to increase the percentage of <span style="color:#fca336"> **Orange** </span>
+ voters, or right click it to decrease the percentage of <span style="color:#fca336"> **Orange** </span> voters.  
 
- What happens when the <span style="color:#fdb863"> **Orange** </span> party has a slight majority in most of the cells but a few are 90 or 100 percent <span style="color:#b2abd2"><b>Purple</b></span>?  Under which configurations can the minority party still win three out of four districts?  Are there any distributions of voters that cause there to be a <span style="color:#b2abd2"> **Purple** </span> colored metagraph node surrounded entirely by <span style="color:#fdb863"> **Orange** </span> colored nodes?
+ What happens when the <span style="color:#fca336"> **Orange** </span> party has a slight majority in most of the cells but a few are 90 or 100 percent <span style="color:#857ab8"><b>Purple</b></span>?  Under which configurations can the minority party still win three out of four districts?  Are there any distributions of voters that cause there to be a <span style="color:#857ab8"> **Purple** </span> colored metagraph node surrounded entirely by <span style="color:#fca336"> **Orange** </span> colored nodes?
 
 
 <div id="chart3" style="width:100% text-align:left"></div>
@@ -123,14 +119,14 @@ If we're interested in studying redistricting in the real-world, we'll need tech
 
 
 
-<!-- <p style="text-align:left;">
-<span style="float:right;"><a href="./metagrid-2" class="next" style="padding: 10px 20px"> Check out the 5x5 analysis &raquo;</a></span>
+<p style="text-align:left;">
+<span style="float:right;"><a href="./metagrid-2" class="next" style="padding: 10px 20px"> Check out statistical techniques on the 5x5 grid &raquo;</a></span>
 
 
 </p>
 
 <br/>
- -->
+
 
 
 
@@ -146,7 +142,7 @@ Special thanks to Mira Bernstein, whose <a href="https://docs.google.com/spreads
 <br/><br/>
 
 Version 0.9<br/>
-August 5, 2018<br/>
+August 9, 2018<br/>
 
 
 </small>

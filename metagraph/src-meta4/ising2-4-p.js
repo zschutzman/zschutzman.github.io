@@ -12,8 +12,8 @@ var cnt = 0;
 var grd2 = d3v3.select('#chart3').append('svg')
 .attr("transform","translate("+(w-wp)/4+","+(-h/3) +")")
   .attr({
-    width: 5*square,
-    height: 5*square
+    width: 6*square,
+    height: 6*square
   });
 
 var grd2grp = grd2.append("g")
@@ -271,7 +271,10 @@ do_update;
     
     
     
-
+grd.append("text").attr("x", 104).attr("y",15).text("Current Distribution").attr("text-anchor","middle");
+grd.append("text").attr("x", 104).attr("y",200).text("Click cells to change their color").style("font-size","12px").attr("text-anchor","middle");
+grd2.append("text").attr("x", 104).attr("y",15).text("Current Distribution").attr("text-anchor","middle");
+grd2.append("text").attr("x", 104).attr("y",200).text("Click cells to change their color").style("font-size","12px").attr("text-anchor","middle");
 
 
 

@@ -56,6 +56,7 @@ d3v3.json("src-meta4/data/gr.json", function(json) {
       .attr("cx", function(d) { return d.x; })
       .attr("cy", function(d) { return d.y; })
       .attr("type", function(d) {return d.Type;})
+      .attr("name",function(d){return d.name;})
       .attr("html_rep", function(d) {return d.html_rep;})
       .attr("r", function(d) {return Math.round(2*d.deg)-1;})
       .style("stroke-width", 0)
@@ -70,7 +71,8 @@ d3v3.json("src-meta4/data/gr.json", function(json) {
         var t = d3v3.select(this).attr("type");
         var c = d3v3.select(this)          
         tooltip.style("visibility", "visible");
-        tooltip.html('<p style="margin:0;padding:0;font-size:50px;letter-spacing:-10px;line-height:35px;">' + c.attr( "html_rep" ) + "</p>");
+        //tooltip.html('<p style="margin:0;padding:0;font-size:50px;letter-spacing:-10px;line-height:35px;">' + c.attr( "html_rep" ) + "</p>");
+        tooltip.html(function(d){return "<div  style='; width:100px; height:100px; background-color:#555; padding:5px'><img width='100' src='m4-imgs/im_"+c.attr("name")+".png'></div>";});  
         
         
         

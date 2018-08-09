@@ -6,9 +6,9 @@ var w = Math.round(.5*document.getElementById("chart1").clientWidth);
 
 var elecfill = ['#0000ff','#5934df','#7250c0','#7d69a0','#808080','#aa7264','#ca6048','#e6462a','#ff0000'];
 
-elecfill[0] = '#fdb863';
+elecfill[0] = '#fca336';
 elecfill[4] = '#909090';
-elecfill[8] = '#b2abd2';
+elecfill[8] = '#857ab8';
 
 var simp_fill = [elecfill[0],elecfill[4],elecfill[8]];
 

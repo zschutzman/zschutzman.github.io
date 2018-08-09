@@ -10,7 +10,7 @@ var winbox = d3.select("#chart2").append("svg")
 
 
             
-            var vgrp = winbox.append("g").attr("transform","translate(0,15)");
+            var vgrp = winbox.append("g").attr("transform","translate(3,15)");
             
             //vgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
             vgrp.append("text") .text("This distribution, all 4006 plans:")  .attr('dy','0.35em').attr('h',0).style("font-size","18px").attr("x",50).attr("y",325);
@@ -46,7 +46,7 @@ var winbox = d3.select("#chart2").append("svg")
 
 
             
-            var dgrp = winbox.append("g").attr("transform","translate(0,15)");
+            var dgrp = winbox.append("g").attr("transform","translate(3,15)");
             
             //vgrp.append("rect").style("fill","none").style("width",100).style("height",100).style("stroke-width",2).style("stroke","black");
             dgrp.append("text") .text("This plan, all distributions with "+num_red+" Purple voters:")  .attr('dy','0.35em').attr("h",0).attr("x","175").style("font-size","14px").attr("text-anchor","middle").attr("width",350);
