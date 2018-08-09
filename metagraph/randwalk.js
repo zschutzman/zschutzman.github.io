@@ -1,10 +1,10 @@
 
-cur_plan_str2 = '1111111222222233333334444444555555566666667777777';
+cur_plan_str2 = '4455511445551144566114376661337766233772223377222';
 
 
 var grdrw = d3.select('#randomwalk').append('svg')
-  .attr("width", (square7*9))
-  .attr("height",square7*9);
+  .attr("width", (square7*8))
+  .attr("height",square7*8);
   
   
 
@@ -31,9 +31,9 @@ _.times(square7sColumn, function(n) {
       .attr("width", square7sm)
       .attr("height",square7sm)
       .attr("x", function(d, i) {
-        return (30+i * 1.04*square7sm);
+        return (16+i * 1.04*square7sm);
       })
-      .attr("y", (square7sm + n * 1.04*square7sm))
+      .attr("y", (16 + n * 1.04*square7sm))
     
     .style("fill",function(d,i) { return distfills(cur_plan_str2[7*n + i]);})
     .style("stroke","#555")
@@ -157,6 +157,8 @@ grdrw.selectAll("line").remove();
 
 
   });
+
+  grdrw.selectAll("line").style("stroke","#000").style("stroke-width", 3);
 }
 
 function swap_cells2() {

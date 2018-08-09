@@ -123,14 +123,14 @@ If we're interested in studying redistricting in the real-world, we'll need tech
 
 
 
-<p style="text-align:left;">
+<!-- <p style="text-align:left;">
 <span style="float:right;"><a href="./metagrid-2" class="next" style="padding: 10px 20px"> Check out the 5x5 analysis &raquo;</a></span>
 
 
 </p>
 
 <br/>
-
+ -->
 
 
 
