@@ -186,7 +186,7 @@ var go_btn2 = go_button_g2.append("rect")
 
         cur_plan_str3 = (' ' + best_so_far).slice(1);
         update_dists2();
-        res_txt.text("BEST IS THIS ONE: " + best_val + " SEATS");
+        res_txt.text("This plan has: " + best_val + " Purple seats");
 
     });
 
