@@ -201,6 +201,7 @@ function grid_borders2(){
 
 
   grd4.selectAll("rect").each(function(){
+    if (d3.select(this).attr("button") == null){
     var nm = d3.select(this).attr("id");
     var cr = d3.select(this);
     if (nm[2] == 1){
@@ -298,7 +299,7 @@ function grid_borders2(){
       }
 
     }
-
+}
   });
 
 
@@ -431,11 +432,12 @@ function do_update4(r){
   
 
     grd4.selectAll('rect').each(function(d){
+      if (d3.select(this).attr("button") == null){
     	var idnum = 7*(parseInt(d3.select(this).attr("id")[2])-1) + parseInt(d3.select(this).attr("id")[3])-1
         if (d3.select(this).attr("party") == 0) {d3.select(this).style("fill", simp_fill[1]);  cell_cols2[idnum] = 0;}
         if (d3.select(this).attr("party") == 1) {d3.select(this).style("fill", simp_fill[2]); cell_cols2[idnum] = 1;}
         if (d3.select(this).attr("party") == -1) {d3.select(this).style("fill", simp_fill[0]); cell_cols2[idnum] = -1;}
-
+}
     });
 
 
@@ -473,7 +475,7 @@ grid_borders2();
 
 
 
-var helptxt = grd4.append("svg").attr("height",10*square7).attr("width",300).attr("x",0);
+var helptxt = grd4.append("svg").attr("height",11*square7).attr("width",300).attr("x",0);
    
 
 
@@ -500,6 +502,47 @@ helptxt.append("text")
    .attr("text-anchor","middle")
    .style("font-size","12px")
    .text("Click cells to change their color");
+
+helptxt.append("text")
+   .attr('dy','0.35em')
+   .attr("width",300)
+   .attr("x", 146)
+   .attr("y", 281)
+   .attr("transform","translate(0,15)")
+   .attr("text-anchor","middle")
+   .style("font-size","12px")
+   .text("Randomize");
+
+ helptxt.append("rect")
+  .attr("button",true)
+    .attr("width",100)
+    .attr("height",25)
+    .attr("x",96)
+    .attr("y",284)
+    .attr("rx",8)
+    .attr("ry",8)
+
+    .style("fill","brown")
+    .style("fill-opacity",.5)
+    .on("click", function(d) {
+      party_init = shuffle(party_init);
+      grd4.selectAll("rect").each(function(d){
+        if (d3.select(this).attr("button")==null){
+        var nm = d3.select(this).attr("id");
+        var n = nm[2]-1;
+        var k = nm[3]-1;
+        
+        d3.select(this).attr("party",function(d) {return party_init[7*n+k];})
+        d3.select(this).style("fill",function(d) { return simp_fill[1+parseInt(d3.select(this).attr("party"))];})
+
+        do_update4(-1);
+
+}
+      });
+
+      });
+
+
 
 
 grid_borders();
