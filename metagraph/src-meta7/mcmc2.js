@@ -5,6 +5,7 @@ var cur_plan_str3 = '4455511445551144566114376661337766233772223377222'
 cell_cols2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 var mcmcsteps = 1500;
+var mcmcreset = 150;
 
 
 
@@ -172,7 +173,7 @@ var go_btn2 = go_button_g2.append("rect")
       var cand = (' ' + cur_plan_str3).slice(1);
 
       for (var j=0; j<mcmcsteps; j++){
-        if (j%250 == 0){cand = (' ' + best_so_far).slice(1);}
+        if (j%mcmcreset == 0){cand = (' ' + best_so_far).slice(1);}
         else { cand = swap_cells(cand);}
 
           temph = [0,0,0,0,0,0,0];
@@ -217,7 +218,7 @@ var go_btn3 = go_button_g2.append("rect")
       var cand = (' ' + cur_plan_str3).slice(1);
 
       for (var j=0; j<mcmcsteps; j++){
-        if (j%250 == 0){cand = (' ' + best_so_far).slice(1);}
+        if (j%mcmcreset == 0){cand = (' ' + best_so_far).slice(1);}
         else { cand = swap_cells(cand);}
 
           temph = [0,0,0,0,0,0,0];

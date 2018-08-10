@@ -63,31 +63,53 @@ Once again, you can pick your own distribution of voters.  You can design a plan
 
 
 
-You'll notice that if you leave your distribution of voters alone and click the Sample button multiple times, the histogram will change, but not by too much, and the general shape will still be the same.  This is because even though 1,000 is a very small number compared to 158,753,814, it's still a large enough sample of plans that we can be reasonably confident that it is *representative* of the whole collection of plans.  How to do this in the real world where we need to draw districts on states and municipalities which may have hundreds or thousands of cells is a hot area of research in redistricting.
+If you leave your distribution of voters alone and click the Sample button multiple times, the histogram will change, but not by too much, and the general shape will still be the same.  This is because even though 1,000 is a very small number compared to 158,753,814, it's still a large enough sample of plans that we can be reasonably confident that the sample is *representative* of the whole collection of plans.  How to do this in the real world where we need to draw districts on states and municipalities which may have hundreds or thousands of cells is a hot area of research in redistricting.
 
 
 
 
 We promised earlier to talk about MCMC for optimization, and just as it can be a powerful tool for analyzing districting plans, it can also be used to *draw* the plans.  What if we had some distribution of <span style="color:#857ab8"><b>Purple</b></span> and <span style="color:#fca336"><b>Orange</b></span> voters, and what we really want to do is find a plan which maximizes the number of seats that the <span style="color:#857ab8"><b>Purple</b></span> party wins.  On a small example like this, it's probably not too hard to do by hand, although you might end up painting yourself into a corner, so to speak, if you draw six districts that you really like but are unable to draw the seventh.  
 
-We can use MCMC to help us out. Choose a distribution of voters, then when you click a button, the random walk algorithm will run for 1,500 steps, keeping track of the most <span style="color:#857ab8"><b>Purple</b></span>- or <span style="color:#fca336"><b>Orange</b></span>-favoring plan it's seen so far.  Every 250 steps, it restarts its walk from that best-so-far plan, and at the end it draws the best one it found.  The idea behind this is that plans which disproportionately favor one particular party tend to be near each other in the metagraph, so we should search for improvements near the best plan we've already seen.   However, we don't want to get stuck in a neighborhood which has good plans, but not the best ones, so we include the possibility for the random walk to move to a better location, which is controlled by the restart frequency.
+We can use MCMC to help us out. Choose a distribution of voters, then when you click a button, the random walk algorithm will run for 1,500 steps, keeping track of the most <span style="color:#857ab8"><b>Purple</b></span>- or <span style="color:#fca336"><b>Orange</b></span>-favoring plan it's seen so far.  Every 150 steps, it restarts its walk from that best-so-far plan, and at the end it draws the best one it found.  
 
 
 
 <div id="optspace" style="display: block; margin: auto; text-align:center"></div>
 
 
+The idea behind this is that plans which disproportionately favor one particular party tend to be near each other in the metagraph, so we should search for improvements near the best plan we've already seen.   However, we don't want to get stuck in a neighborhood which has good plans, but not the best ones, so we include the possibility for the random walk to move to a better location, which is controlled by the restart frequency.
 
-You'll notice that this does really well, but not always perfectly.  For example, if you make the top three rows all <span style="color:#fca336"><b>Orange</b></span> and the bottom four all <span style="color:#857ab8"><b>Purple</b></span>, the algorithm will probably find a plan that lets the <span style="color:#857ab8"><b>Purple</b></span> Party win six seats, but not not seven.  This is for two reasons -- first, that there is only one plan which has seven <span style="color:#857ab8"><b>Purple</b></span>-favoring districts, and the second is that this plan has very low degree in the metagraph, so it's hard for the random walk to find it.  It's remarkable that it can even find a plan with six <span style="color:#857ab8"><b>Purple</b></span>-favoring districts.  If you plug that distribution into the sampling tool above and look at the histograms, you'll see that the vast majority of plans have four <span style="color:#857ab8"><b>Purple</b></span> seats, with a small handful of plans with five.  Very rarely will it even find a six-<span style="color:#857ab8"><b>Purple</b></span>-seat plan, which demonstrates the effectiveness of the restarting mechanism. 
+
+You'll notice that this does really well, but not always perfectly.  For example, if you make the top three rows all <span style="color:#fca336"><b>Orange</b></span> and the bottom four all <span style="color:#857ab8"><b>Purple</b></span>, if you try a few times, the algorithm will probably find a plan that lets the <span style="color:#857ab8"><b>Purple</b></span> Party win six seats, but almost certainly not one with seven <span style="color:#857ab8"><b>Purple</b></span> districts.  This is for two reasons -- first, that there is only one plan which has seven <span style="color:#857ab8"><b>Purple</b></span>-favoring districts (seven vertical strips), and the second is that this plan has very low degree in the metagraph, so it's hard for the random walk to find it.  It's remarkable that it can even find a plan with six <span style="color:#857ab8"><b>Purple</b></span>-favoring districts.  If you plug that distribution into the sampling tool above and look at the histograms, you'll see that the vast majority of plans have four <span style="color:#857ab8"><b>Purple</b></span> seats, with a small handful of plans with five.  Very rarely will it even find a six-<span style="color:#857ab8"><b>Purple</b></span>-seat plan, which demonstrates the effectiveness of the restarting mechanism. 
 
 
 Of course, the world is more complicated than a 7x7 grid, but all of these methodologies can be used in real settings to examine the redistricting process, which has enormous impacts on electoral and political outcomes.  
+
+
+
 
 <p style="text-align:left;">
 <a href="./metagrid" class="previous" style="padding: 10px 20px">&laquo; Go back to statistical techniques on the 5x5</a>
 <!-- <span style="float:right;"><a href="./metagrid-3" class="next" style="padding: 10px 20px"> Check out sampling on the 7x7 grid &raquo;</a></span>
  -->
 </p>
+
+
+
+
+<center>
+<hr style="width:50%; margin:15px auto 15px auto">
+<div style="width: 70%; font-size: .7em; line-height: 1.1em">
+
+Thanks for reading! <!-- Questions and comments can be directed to the authors at <a href="mailto:info@zachschutzman.com">info@zachschutzman.com</a>.<br/> -->
+Source code for all of the components here can be found in <a href="http://github.com/zschutzman/zschutzman.github.io/metagraph"> this GitHub repository.</a>
+
+</div>
+<hr style="width:50%; margin:15px auto 15px auto;">
+
+
+</center>
+
 
 
 
