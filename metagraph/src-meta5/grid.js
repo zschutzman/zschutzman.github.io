@@ -173,7 +173,13 @@ function do_update2(r){
   
 }
 
+
+ grd4.append("rect").attr("width",140).attr("height",140).attr("transform","translate("+((305/2-65)-5)+",100)")
+ .attr("fill","#555");
+
+
  var distpic = grd4.append("image")
+
  .attr("width", 130).attr("height",130).attr("transform","translate("+(305/2-65)+",105)")
  .attr("xlink:href",function(d){return "m5-imgs/whole/im_"+idno2+".png";});
 
