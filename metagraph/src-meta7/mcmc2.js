@@ -71,6 +71,7 @@ _.times(square7sColumn, function(n) {
     })
     
     .on("click", function(d){
+      res_txt.text("");
      clsq = true;
      do_update4(this);
 
