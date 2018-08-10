@@ -3,6 +3,7 @@ function distboxclick(){
   
     distbox.selectAll("g").remove();
     distbox2.selectAll("g").remove();
+
     if (plan.length ==5){
      
         var newgr = "("+plan.join(", ")+")";
@@ -181,7 +182,7 @@ else if (plan.length >= 1){
  
  function distbox2click(){
     plan.push(parseInt(d3.select(this).attr("distno")));
-  
+    distbox.selectAll("g").remove();
     distbox2.selectAll("g").remove();
     if (plan.length ==5){
      
