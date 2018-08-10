@@ -174,13 +174,13 @@ function do_update2(r){
 } 
 
 
- grd4.append("rect").attr("width",140).attr("height",136).attr("transform","translate("+((305/2-65)-5)+",103)")
+ grd4.append("rect").attr("width",140).attr("height",136).attr("transform","translate("+((305/2-65)-5)+",105)")
  .attr("fill","#555").attr("bg",true);
 
 
  var distpic = grd4.append("image")
 
- .attr("width", 130).attr("height",130).attr("transform","translate("+(305/2-65)+",105)")
+ .attr("width", 130).attr("height",130).attr("transform","translate("+(305/2-65)+",107)")
  .attr("xlink:href",function(d){return "m5-imgs/whole/im_"+idno2+".png";});
 
 
