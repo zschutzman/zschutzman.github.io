@@ -102,7 +102,7 @@ Of course, the world is more complicated than a 7x7 grid, but all of these metho
 <div style="width: 70%; font-size: .7em; line-height: 1.1em">
 
 Thanks for reading! <!-- Questions and comments can be directed to the authors at <a href="mailto:info@zachschutzman.com">info@zachschutzman.com</a>.<br/> -->
-Source code for all of the components here can be found in <a href="http://github.com/zschutzman/zschutzman.github.io/metagraph"> this GitHub repository.</a>
+Source code for all of the components here can be found in <a href="https://github.com/zschutzman/zschutzman.github.io/tree/master/metagraph"> this GitHub repository.</a>
 
 </div>
 <hr style="width:50%; margin:15px auto 15px auto;">
