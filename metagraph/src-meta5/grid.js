@@ -171,7 +171,7 @@ function do_update2(r){
 
 
   
-}
+} 
 
 
  grd4.append("rect").attr("width",140).attr("height",136).attr("transform","translate("+((305/2-65)-5)+",103)")
