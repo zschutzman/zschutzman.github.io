@@ -4,7 +4,7 @@ var cur_plan_str3 = '4455511445551144566114376661337766233772223377222'
 
 cell_cols2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
-
+var mcmcsteps = 1500;
 
 
 
@@ -128,11 +128,21 @@ var go_button_g2 = grd3.append("svg").attr("height",10*square7);
 var go_txt2 = go_button_g2.append("text")
    .attr('dy','0.35em')
    .attr("width",200)
-   .attr("x", 145)
+   .attr("x", 95)
    .attr("transform","translate(0,15)")
    .attr("text-anchor","middle")
    .style("font-size","12px")
-   .text("Click to find the best Purple plan");
+   .text("Max Purple");
+
+
+var go_txt3 = go_button_g2.append("text")
+   .attr('dy','0.35em')
+   .attr("width",200)
+   .attr("x", 190)
+   .attr("transform","translate(0,15)")
+   .attr("text-anchor","middle")
+   .style("font-size","12px")
+   .text("Max Orange");
 
 var res_txt = go_button_g2.append("text")
    .attr('dy','0.35em')
@@ -147,21 +157,21 @@ var res_txt = go_button_g2.append("text")
 
 var go_btn2 = go_button_g2.append("rect")
 .attr("button",true)
-    .attr("width",180)
+    .attr("width",80)
     .attr("height",30)
     .attr("x",55)
     .attr("rx",8)
     .attr("ry",8)
 
-    .style("fill","blue")
+    .style("fill","#857ab8")
     .style("fill-opacity",.5)
     .on("click", function(d) {
       var best_so_far = (' ' + cur_plan_str3).slice(1);
       var best_val = 0;
       var cand = (' ' + cur_plan_str3).slice(1);
 
-      for (var j=0; j<1000; j++){
-        if (j%200 == 0){cand = (' ' + best_so_far).slice(1);}
+      for (var j=0; j<mcmcsteps; j++){
+        if (j%250 == 0){cand = (' ' + best_so_far).slice(1);}
         else { cand = swap_cells(cand);}
 
           temph = [0,0,0,0,0,0,0];
@@ -190,6 +200,50 @@ var go_btn2 = go_button_g2.append("rect")
 
     });
 
+var go_btn3 = go_button_g2.append("rect")
+.attr("button",true)
+    .attr("width",80)
+    .attr("height",30)
+    .attr("x",150)
+    .attr("rx",8)
+    .attr("ry",8)
+
+    .style("fill","#fca336")
+    .style("fill-opacity",.5)
+    .on("click", function(d) {
+      var best_so_far = (' ' + cur_plan_str3).slice(1);
+      var best_val = 0;
+      var cand = (' ' + cur_plan_str3).slice(1);
+
+      for (var j=0; j<mcmcsteps; j++){
+        if (j%250 == 0){cand = (' ' + best_so_far).slice(1);}
+        else { cand = swap_cells(cand);}
+
+          temph = [0,0,0,0,0,0,0];
+          var c = 0;
+          for (var i=0; i<49; i++){
+            temph[parseInt(cand[i])-1] += parseInt(cell_cols2[i]);
+          }
+          for (var i=0; i<7; i++){
+            if (temph[i] < 0) {c+=1;}
+          }
+          if (c > best_val){
+            console.log(c);
+            best_val = c;
+            best_so_far = (' ' + cand).slice(1);
+          }
+
+
+
+
+
+      }
+
+        cur_plan_str3 = (' ' + best_so_far).slice(1);
+        update_dists2();
+        res_txt.text("This plan has: " + best_val + " Orange seats");
+
+    });
 
 
 
