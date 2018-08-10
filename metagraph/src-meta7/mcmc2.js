@@ -592,6 +592,7 @@ helptxt.append("text")
         do_update4(-1);
 
 }
+        res_txt.text("");
       });
 
       });
