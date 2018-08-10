@@ -174,7 +174,7 @@ function do_update2(r){
 }
 
 
- grd4.append("rect").attr("width",140).attr("height",140).attr("transform","translate("+((305/2-65)-5)+",100)")
+ grd4.append("rect").attr("width",140).attr("height",138).attr("transform","translate("+((305/2-65)-5)+",102)")
  .attr("fill","#555");
 
 
