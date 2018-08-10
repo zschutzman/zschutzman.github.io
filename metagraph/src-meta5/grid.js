@@ -175,7 +175,7 @@ function do_update2(r){
 
 
  grd4.append("rect").attr("width",140).attr("height",136).attr("transform","translate("+((305/2-65)-5)+",103)")
- .attr("fill","#555");
+ .attr("fill","#555").attr("bg",true);
 
 
  var distpic = grd4.append("image")
@@ -321,6 +321,7 @@ grd4.selectAll("line").remove();
 
 console.log(cur_plan_str);
   grd4.selectAll("rect").each(function(){
+    if (d3.select(this).attr("bg") == null){
     var nm = d3.select(this).attr("id");
     var cr = d3.select(this);
     if (nm[2] == 1){
@@ -423,7 +424,7 @@ console.log(cur_plan_str);
 
     }
 
-
+}
 
 
   });
