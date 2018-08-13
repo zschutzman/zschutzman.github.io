@@ -120,7 +120,7 @@ Summer 2018 and is joint with<br/>
 Seth Drew, Eugene Henninger-Voss, Amara Jaeger, and Heather Newman.<br/>
 Special thanks to Mira Bernstein, whose <a href="https://docs.google.com/spreadsheets/d/1U8XXRwwJ3zLLu9Xx-xsrePBFsCXkYYFj_MB4t-ZaZ4k/edit#gid=2131508220">Liliputia project</a> served as inspiration.<br/><br/>
 
-Version 1.<br/>
+Version 1.0<br/>
 August 13, 2018<br/>
 
 
