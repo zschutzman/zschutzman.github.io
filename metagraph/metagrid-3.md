@@ -99,7 +99,7 @@ Sampling real-world districting plans is of course much more complex than sampli
 <hr style="width:50%; margin:15px auto 15px auto">
 <div style="width: 70%; font-size: .7em; line-height: 1.1em">
 
-Thanks for reading! <!-- Questions and comments can be directed to the authors at <a href="mailto:info@zachschutzman.com">info@zachschutzman.com</a>.<br/> -->
+Thanks for reading! Questions and comments can be directed to the authors at <a href="mailto:info@zachschutzman.com">info@zachschutzman.com</a>.<br/>
 Source code for all of the components here can be found in <a href="https://github.com/zschutzman/zschutzman.github.io/tree/master/metagraph"> this GitHub repository.</a>
 
 </div>
