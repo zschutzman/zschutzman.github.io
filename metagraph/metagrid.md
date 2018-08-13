@@ -60,7 +60,7 @@ customjs:
 <hr style="width:40%; margin:15px auto 15px auto">
 <div style="width: 60%; font-size: .7em; line-height: 1.1em">
 
-This project uses interactive widgets and visualizations to explore some of the mathematical tools used to analyze the legislative redistricting process, particularly the detection of gerrymandering.  We use the toy examples of 4x4, 5x5, and 7x7 grids to develop and demonstrate these techniques.  We present the construction of the <i>metagraph</i> on the 4x4 grid, the <i>statistical techniques</i> to determine whether a plan is an electoral outlier on the 5x5 grid, and <i>Markov chain Monte Carlo</i> methods for sampling on the 7x7 grid.
+This project uses interactive widgets and visualizations to explore some of the mathematical tools used to analyze the legislative redistricting process, particularly the detection of gerrymandering.  We use the toy examples of grd4, 5x5, and 7x7 grids to develop and demonstrate these techniques.  We present the construction of the <i>metagraph</i> on the 4x4 grid, the <i>statistical techniques</i> to determine whether a plan is an electoral outlier on the 5x5 grid, and <i>Markov chain Monte Carlo</i> methods for sampling on the 7x7 grid.
 
 </div>
 <hr style="width:40%; margin:15px auto 15px auto;">
@@ -140,8 +140,8 @@ Summer 2018 and is joint with<br/>
 Seth Drew, Eugene Henninger-Voss, Amara Jaeger, and Heather Newman.<br/>
 Special thanks to Mira Bernstein, whose <a href="https://docs.google.com/spreadsheets/d/1U8XXRwwJ3zLLu9Xx-xsrePBFsCXkYYFj_MB4t-ZaZ4k/edit#gid=2131508220">Liliputia project</a> served as inspiration.<br/><br/>
 
-Version 0.9<br/>
-August 9, 2018<br/>
+Version 1.<br/>
+August 13, 2018<br/>
 
 
 </small>
