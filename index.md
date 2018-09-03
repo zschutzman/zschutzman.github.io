@@ -22,7 +22,7 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 
 ---
 
- <h2 style="margin-bottom: 15px"> New Stuff!</h2>
+
 
 <div> Our paper "Fair Algorithms for Learning in Allocation Problems" is now [on ArXiv](https://arxiv.org/abs/1808.10549)  </div>
  
@@ -53,7 +53,9 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 	</div>
 </div>
 <br/>
+
 <div> Our paper "Strategic Classification from Revealed Preferences" appeared at EC in June </div> 
+
 
 
 

@@ -325,6 +325,7 @@ console.log(cur_plan_str);
     var nm = d3.select(this).attr("id");
     var cr = d3.select(this);
     if (nm[2] == 1){
+      console.log("IN HERE");
       grd4.append("line")
       .attr("x1", parseFloat(cr.attr("x")-1))
       .attr("x2", square5+(parseFloat(cr.attr("x"))+1 + (nm[3] == 5 ? 0 : 1)))
@@ -428,8 +429,8 @@ console.log(cur_plan_str);
 
 
   });
-grd4.selectAll("line").style("color","black").attr("stroke",3);
-grd4.selectAll("line").style("color","black").attr("stroke",3);
+grd3.selectAll("line").attr("stroke","#000").attr("stroke-width",3);
+grd4.selectAll("line").attr("stroke","#000").attr("stroke-width",3);
 }
 
 
