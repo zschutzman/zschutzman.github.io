@@ -26,7 +26,7 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 
 <div> Our paper "Fair Algorithms for Learning in Allocation Problems" is now [on ArXiv](https://arxiv.org/abs/1808.10549)  </div>
  
-</br>
+<br/>
 <div style="text-align: center"> My project on redistricting on the grid is now live!  Check it out here: </div>
 
 
