@@ -11,7 +11,7 @@ permalink: /research/
 
 
 - *Fair Algorithms for Learning in Allocation Problems* (2018)  
-with Hadi Elzayn, Shahin Jabbari, Michael Kearns, Seth Neel, and Aaron Roth.  
+with Hadi Elzayn, Shahin Jabbari, Christopher Jung, Michael Kearns, Seth Neel, and Aaron Roth.  
 [[arXiv]](https://arxiv.org/abs/1808.10549) 
 
 - *Strategic Classification from Revealed Preferences* (2018)  
