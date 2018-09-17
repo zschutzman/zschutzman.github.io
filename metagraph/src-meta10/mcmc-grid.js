@@ -6,10 +6,10 @@ var square10sm = square10/1.25;
 square10 = square10sm;
 var square10sRow = 10;
 var square10sColumn = 10;
-var degreeweight = true;
+var degreeweight = false;
 red_this = 0;
-var cur_plan_str = '0000000000111111111122222222223333333333444444444455555555556666666666777777777788888888889999999999';
-var num_chain = 1000;
+var cur_plan_str = '0000011111000001111122222333332222233333444445555544444555556666677777666667777788888999998888899999';
+var num_chain = 100000;
 cell_cols = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 var r_win_i = [0,0,0,0,0,0];
@@ -40,6 +40,7 @@ function shuffle(a) {
 
 party_init = [1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1,1,-1];
 party_init = shuffle(party_init);
+
 
 var parties = [-1,1];
 
@@ -312,18 +313,19 @@ var go_btn = go_button_g.append("rect")
       var oldsv = (' ' + cur_plan_str).slice(1);
       var samples = [];
       var countlist = [];
-      var histo = [0,0,0,0,0,0,0,0,0,0,0];
+      var histo = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ];
       
 
-          temph = [0,0,0,0,0,0,0,0,0,0,0];
+          temph = [0,0,0,0,0,0,0,0,0,0];
           var c = 0;
           for (var i=0; i<100; i++){
-            temph[parseInt(cur_plan_str[i])-1] += parseInt(cell_cols[i]);
+            temph[parseInt(cur_plan_str[i])] += parseInt(cell_cols[i]);
           }
           for (var i=0; i<10; i++){
-            if (temph[i] > 0) {c+=1;}
+            if (temph[i] > 0) {c+=2;}
+            if (temph[i]==0) {c+=1;}
           }
-      red_this = c;
+          red_this=c;
 
 
 
@@ -337,29 +339,28 @@ var go_btn = go_button_g.append("rect")
         }
         if (!already){
 
-          temph = [0,0,0,0,0,0,0,0,0,0,0];
+          temph = [0,0,0,0,0,0,0,0,0,0];
           var c = 0;
           for (var i=0; i<100; i++){
-            temph[parseInt(cur_plan_str[i])-1] += parseInt(cell_cols[i]);
+            temph[parseInt(cur_plan_str[i])] += parseInt(cell_cols[i]);
           }
           for (var i=0; i<10; i++){
-            if (temph[i] > 0) {c+=1;}
-            if (temph[i] == 0) {c+=.5;}
+            if (temph[i] > 0) {c+=2;}
+            if (temph[i] == 0) {c+=1;}
           }
-          histo[Math.floor(c)] +=.5;
-          histo[Math.ceil(c)] +=.5;
+          histo[c] += 1;
+          
 
           samples.push((' ' + cur_plan_str).slice(1));
-          countlist.push(count_valid_moves((' ' + cur_plan_str).slice(1)));
 
 
         }
       }
-
+      
         cur_plan_str = (' ' + oldsv).slice(1);
         update_dists();
         update_histo(histo);
-        console.log("MAX DEGREE: ", Math.max(...countlist));
+
 
     });
 
@@ -746,7 +747,7 @@ return string_copy;
 
 
 var winbox = d3.select("#gridspace").append("svg")
-            .attr("width",610)
+            .attr("width",1300)
             .attr("height",320);
 
 
@@ -768,14 +769,23 @@ var winbox = d3.select("#gridspace").append("svg")
             var wr8 = vgrp.append("rect").attr("x",440).attr("width",50).attr("fill","none").attr("i",8).attr("height",0).attr("y",250).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
             var wr9 = vgrp.append("rect").attr("x",495).attr("width",50).attr("fill","none").attr("i",9).attr("height",0).attr("y",250).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
             var wr10 = vgrp.append("rect").attr("x",550).attr("width",50).attr("fill","none").attr("i",10).attr("height",0).attr("y",250).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
-
+            var wr11 = vgrp.append("rect").attr("x",  0+605).attr("width",50).attr("fill","none").attr("i",11).attr("height",0).attr("y",250).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr12 = vgrp.append("rect").attr("x", 55+605).attr("width",50).attr("fill","none").attr("i",12).attr("height",0).attr("y",250).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr13 = vgrp.append("rect").attr("x",110+605).attr("width",50).attr("fill","none").attr("i",13).attr("height",0).attr("y",250).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr14 = vgrp.append("rect").attr("x",165+605).attr("width",50).attr("fill","none").attr("i",14).attr("height",0).attr("y",250).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr15 = vgrp.append("rect").attr("x",220+605).attr("width",50).attr("fill","none").attr("i",15).attr("height",0).attr("y",250).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr16 = vgrp.append("rect").attr("x",275+605).attr("width",50).attr("fill","none").attr("i",16).attr("height",0).attr("y",250).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr17 = vgrp.append("rect").attr("x",330+605).attr("width",50).attr("fill","none").attr("i",17).attr("height",0).attr("y",250).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr18 = vgrp.append("rect").attr("x",385+605).attr("width",50).attr("fill","none").attr("i",18).attr("height",0).attr("y",250).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr19 = vgrp.append("rect").attr("x",440+605).attr("width",50).attr("fill","none").attr("i",19).attr("height",0).attr("y",250).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
+            var wr20 = vgrp.append("rect").attr("x",495+605).attr("width",50).attr("fill","none").attr("i",20).attr("height",0).attr("y",250).style("fill-opacity",1).style("stroke","black").style("stroke-width",2);
 
         vgrp.append("line")
           .attr("stroke","#000")
           .attr("stroke-width",3)
           .attr("x1",0)
           .attr("y1", 250)
-          .attr("x2", 610)
+          .attr("x2", 1500)
           .attr("y2", 250);
 
             vgrp.append("text")  .attr('dy','0.15em').attr("x","25").attr('h',2).attr("y",259) .style("font-size","12px").attr("i",0).attr("text-anchor","middle");
@@ -789,28 +799,48 @@ var winbox = d3.select("#gridspace").append("svg")
             vgrp.append("text")  .attr('dy','0.15em').attr("x","465").attr('h',2).attr("y",259).style("font-size","12px").attr("i",8).attr("text-anchor","middle");
             vgrp.append("text")  .attr('dy','0.15em').attr("x","520").attr('h',2).attr("y",259).style("font-size","12px").attr("i",9).attr("text-anchor","middle");
             vgrp.append("text")  .attr('dy','0.15em').attr("x","575").attr('h',2).attr("y",259).style("font-size","12px").attr("i",10).attr("text-anchor","middle");
+            vgrp.append("text")  .attr('dy','0.15em').attr("x","630").attr('h',2).attr("y",259) .style("font-size","12px").attr("i",11).attr("text-anchor","middle");
+            vgrp.append("text")   .attr('dy','0.15em').attr("x","685").attr('h',2).attr("y",259) .style("font-size","12px").attr("i",12).attr("text-anchor","middle");
+            vgrp.append("text")  .attr('dy','0.15em').attr("x","740").attr('h',2).attr("y",259).style("font-size","12px").attr("i",13).attr("text-anchor","middle");
+            vgrp.append("text")   .attr('dy','0.15em').attr("x","795").attr('h',2).attr("y",259).style("font-size","12px").attr("i",14).attr("text-anchor","middle");
+            vgrp.append("text")  .attr('dy','0.15em').attr("x","850").attr('h',2).attr("y",259).style("font-size","12px").attr("i",15).attr("text-anchor","middle");
+            vgrp.append("text")  .attr('dy','0.15em').attr("x","905").attr('h',2).attr("y",259).style("font-size","12px").attr("i",16).attr("text-anchor","middle");
+            vgrp.append("text")  .attr('dy','0.15em').attr("x","960").attr('h',2).attr("y",259).style("font-size","12px").attr("i",17).attr("text-anchor","middle");
+            vgrp.append("text")  .attr('dy','0.15em').attr("x","1015").attr('h',2).attr("y",259).style("font-size","12px").attr("i",18).attr("text-anchor","middle");
+            vgrp.append("text")  .attr('dy','0.15em').attr("x","1070").attr('h',2).attr("y",259).style("font-size","12px").attr("i",19).attr("text-anchor","middle");
+            vgrp.append("text")  .attr('dy','0.15em').attr("x","1125").attr('h',2).attr("y",259).style("font-size","12px").attr("i",20).attr("text-anchor","middle");
 
 
 
 
             vgrp.append("text") .text("0 Seats")  .attr('dy','0.15em').attr("x","3").attr('h',1).attr("y",259).style("font-size","12px");
-            vgrp.append("text") .text("1 Seat")  .attr('dy','0.15em').attr("x","58").attr('h',1).attr("y",259).style("font-size","12px");
-            vgrp.append("text") .text("2 Seats")  .attr('dy','0.15em').attr("x","113").attr('h',1).attr("y",259).style("font-size","12px");
-            vgrp.append("text") .text("3 Seats")  .attr('dy','0.15em').attr("x","168").attr('h',1).attr("y",259).style("font-size","12px");
-            vgrp.append("text") .text("4 Seats")  .attr('dy','0.15em').attr("x","223").attr('h',1).attr("y",259).style("font-size","12px");
-            vgrp.append("text") .text("5 Seats")  .attr('dy','0.15em').attr("x","278").attr('h',1).attr("y",259).style("font-size","12px");
-            vgrp.append("text") .text("6 Seats")  .attr('dy','0.15em').attr("x","333").attr('h',1).attr("y",259).style("font-size","12px");
-            vgrp.append("text") .text("7 Seats")  .attr('dy','0.15em').attr("x","388").attr('h',1).attr("y",259).style("font-size","12px");
-            vgrp.append("text") .text("8 Seats")  .attr('dy','0.15em').attr("x","443").attr('h',1).attr("y",259).style("font-size","12px");
-            vgrp.append("text") .text("9 Seats")  .attr('dy','0.15em').attr("x","498").attr('h',1).attr("y",259).style("font-size","12px");
-            vgrp.append("text") .text("10 Seats")  .attr('dy','0.15em').attr("x","553").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("0.5 Seats")  .attr('dy','0.15em').attr("x","58").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("1 Seat")  .attr('dy','0.15em').attr("x","113").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("1.5 Seats")  .attr('dy','0.15em').attr("x","168").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("2 Seats")  .attr('dy','0.15em').attr("x","223").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("2.5 Seats")  .attr('dy','0.15em').attr("x","278").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("3 Seats")  .attr('dy','0.15em').attr("x","333").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("3.5 Seats")  .attr('dy','0.15em').attr("x","388").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("4 Seats")  .attr('dy','0.15em').attr("x","443").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("4.5 Seats")  .attr('dy','0.15em').attr("x","498").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("5 Seats")  .attr('dy','0.15em').attr("x","553").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("5.5 Seats")  .attr('dy','0.15em').attr("x","608").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("6 Seats")  .attr('dy','0.15em').attr("x","663").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("6.5 Seats")  .attr('dy','0.15em').attr("x","718").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("7 Seats")  .attr('dy','0.15em').attr("x","773").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("7.5 Seats")  .attr('dy','0.15em').attr("x","828").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("8 Seats")  .attr('dy','0.15em').attr("x","883").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("8.5 Seats")  .attr('dy','0.15em').attr("x","938").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("9 Seats")  .attr('dy','0.15em').attr("x","993").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("9.5 Seats")  .attr('dy','0.15em').attr("x","1048").attr('h',1).attr("y",259).style("font-size","12px");
+            vgrp.append("text") .text("10 Seats")  .attr('dy','0.15em').attr("x","1103").attr('h',1).attr("y",259).style("font-size","12px");
 
 function update_histo(newhist){
 
-
+console.log(newhist);
 vgrp.selectAll("rect").each(function(d){
     var i = d3.select(this).attr("i");
-
+    console.log(i);
     if (i != null){
         var newh = 200*newhist[i]/num_chain;
         d3.select(this).attr("height",newh);
