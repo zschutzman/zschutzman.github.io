@@ -53,7 +53,7 @@ d3v3.json("src-meta4/data/gr.json", function(json) {
       .attr("type", function(d) {return d.Type;})
       .attr("str_rep", function(d){ return d.str_rep.split('\n').join("").split(" ").join("");})
       .attr("html_rep", function(d) {return d.html_rep;})
-            .attr("name",function(d){return d.name;})
+            .attr("name",function(d){return d.id;})
 
       .attr("r", function(d) {return Math.round(2*d.deg)-1;})
       .style("stroke-width", 0)
