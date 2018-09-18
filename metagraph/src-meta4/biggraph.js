@@ -56,7 +56,7 @@ d3v3.json("src-meta4/data/gr.json", function(json) {
       .attr("cx", function(d) { return d.x; })
       .attr("cy", function(d) { return d.y; })
       .attr("type", function(d) {return d.Type;})
-      .attr("name",function(d){return d.name;})
+      .attr("name",function(d){return d.id;})
       .attr("html_rep", function(d) {return d.html_rep;})
       .attr("r", function(d) {return Math.round(2*d.deg)-1;})
       .style("stroke-width", 0)
