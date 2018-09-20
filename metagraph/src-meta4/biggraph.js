@@ -3,6 +3,7 @@ console.log(w,wp,h);
 var linkedByIndex = {};
 
 var toggle = 0;
+
  
 var vis = d3v3.select("#chart1")
   .append("svg")
@@ -63,7 +64,7 @@ d3v3.json("src-meta4/data/gr.json", function(json) {
       .style("stroke", "black")
       .style("opacity", 1.)
       .attr("on",0)
-      .style("fill", function(d) { if (d.Type == 20) return 'PapayaWhip'; if (d.Type == 21) return 'Gold'; return fill(d.Type); })
+      .style("fill", function(d) { console.log(d.Type, mgfill[parseInt(d.Type)]); return mgfill[parseInt(d.Type)]; })
       .call(force.drag)
       .on("mousemove", function(){return tooltip.style("top", (d3v3.event.pageY-10)+"px").style("left",(d3v3.event.pageX+10)+"px");})
 

@@ -36,7 +36,7 @@ d3v3.json("src-meta4/data/gr2.json", function(json) {
       .attr("cy", function(d) { return d.y; })
       .attr("r", function(d) {return Math.round(1.2*d.orbit)+2;})
       .attr("type", function(d) {return d.Type;})
-      .style("fill", function(d) { if (d.Type == 20) return 'PapayaWhip'; if (d.Type == 21) return 'Gold'; return fill(d.Type); })
+      .style("fill", function(d) { return mgfill[d.Type]; })
       .call(force.drag)
       .attr("on",0)
       .style("stroke-width", 0)
