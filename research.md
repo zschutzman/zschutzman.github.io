@@ -10,6 +10,10 @@ permalink: /research/
 <br>
 
 
+- *Total Variation Isoperimetric Profiles* (2018)
+with Daryl Deford, Hugo Lavenant, and Justin Solomon.
+[[arXiv]](https://arxiv.org/abs/1809.07943)
+
 - *Fair Algorithms for Learning in Allocation Problems* (2018)  
 with Hadi Elzayn, Shahin Jabbari, Christopher Jung, Michael Kearns, Seth Neel, and Aaron Roth.  
 [[arXiv]](https://arxiv.org/abs/1808.10549) 
