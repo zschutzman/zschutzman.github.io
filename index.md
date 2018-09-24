@@ -22,7 +22,9 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 
 ---
 
-
+<div> Our paper "Total Variation Isoperimetric Profiles" is now [on ArXiv](https://arxiv.org/abs/1809.07943)  </div>
+ 
+<br/>
 
 <div> Our paper "Fair Algorithms for Learning in Allocation Problems" is now [on ArXiv](https://arxiv.org/abs/1808.10549)  </div>
  
