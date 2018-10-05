@@ -22,12 +22,6 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 
 ---
 
-Our paper "Total Variation Isoperimetric Profiles" is now [on ArXiv](https://arxiv.org/abs/1809.07943) 
- 
-
-
-Our paper "Fair Algorithms for Learning in Allocation Problems" is now [on ArXiv](https://arxiv.org/abs/1808.10549) 
- 
 
 <div style="text-align: center"> My project on redistricting on the grid is now live!  Check it out here: </div>
 
@@ -55,10 +49,6 @@ Our paper "Fair Algorithms for Learning in Allocation Problems" is now [on ArXiv
 	</div>
 </div>
 <br/>
-
-Our paper "Strategic Classification from Revealed Preferences" appeared at EC in June
-
-
 
 
 
