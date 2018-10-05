@@ -56,7 +56,7 @@ Our paper "Fair Algorithms for Learning in Allocation Problems" is now [on ArXiv
 </div>
 <br/>
 
-<div> Our paper "Strategic Classification from Revealed Preferences" appeared at EC in June </div> 
+Our paper "Strategic Classification from Revealed Preferences" appeared at EC in June
 
 
 
