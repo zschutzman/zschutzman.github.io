@@ -22,13 +22,13 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 
 ---
 
-<div> Our paper "Total Variation Isoperimetric Profiles" is now [on ArXiv](https://arxiv.org/abs/1809.07943)  </div>
+Our paper "Total Variation Isoperimetric Profiles" is now [on ArXiv](https://arxiv.org/abs/1809.07943) 
  
-<br/>
 
-<div> Our paper "Fair Algorithms for Learning in Allocation Problems" is now [on ArXiv](https://arxiv.org/abs/1808.10549)  </div>
+
+Our paper "Fair Algorithms for Learning in Allocation Problems" is now [on ArXiv](https://arxiv.org/abs/1808.10549) 
  
-<br/>
+
 <div style="text-align: center"> My project on redistricting on the grid is now live!  Check it out here: </div>
 
 
