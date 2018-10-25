@@ -16,11 +16,12 @@ with Daryl Deford, Hugo Lavenant, and Justin Solomon.
 
 - *Fair Algorithms for Learning in Allocation Problems* (2018)  
 with Hadi Elzayn, Shahin Jabbari, Christopher Jung, Michael Kearns, Seth Neel, and Aaron Roth.  
+To appear at FAT*\ '19  
 [[arXiv]](https://arxiv.org/abs/1808.10549) 
 
 - *Strategic Classification from Revealed Preferences* (2018)  
 with Jinshuo Dong, Aaron Roth, Bo Waggoner, and Zhiwei Steven Wu.  
-EC '18, appeared at the Workshop on Learning in the Presence of Strategic Behavior at NIPS '17  
+In the Proceedings of EC '18, appeared at the Workshop on Learning in the Presence of Strategic Behavior at NIPS '17  
 [[arXiv]](https://arxiv.org/abs/1710.07887) 
 
 
