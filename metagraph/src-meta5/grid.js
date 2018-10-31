@@ -16,6 +16,51 @@ var cnt = 0;
 var ptmp = 0;
 var pinit = [];
 
+
+
+// loop over number of columns
+_.times(square5sColumn, function(n) {
+
+  // create each set of rows
+  var rows = grd3
+    .selectAll('text' + ' .row-' + (n + 1))
+    .data(d3.range(square5sRow))
+    .enter()
+    .append("text")
+
+    .attr("class", function(d, i) {
+      return "square5 row-" + (n + 1) + " " + "col-" + (i + 1);
+    })
+    .attr("id", function(d, i) {
+      return "s-" + (n + 1) + (i + 1);
+    })
+    .attr("width", square5)
+    .attr("height", square5)
+    .attr("x", function(d, i) {
+      return 30 + square5/2 + i * 1.07 * square5;
+    })
+    .attr("y", 1.5*square5 + n * 1.07 * square5)
+
+    .attr("party", function(d, i) {
+      return party_init[4 * n + i];
+    })
+    .style("fill", function(d) {
+      return simp_fill[1 + parseInt(d3.select(this).attr("party"))];
+    })
+
+
+    .text(function(d){
+      return simp_char[1 + parseInt(d3.select(this).attr("party"))];
+    })
+    .attr("text-anchor","middle")
+    .attr("dy", ".35em")
+    .style("font-size", function(d){
+      return (square5-7) + "px";
+    });
+});
+
+
+
 // loop over number of columns
 _.times(square5sColumn, function(n) {
 
@@ -23,13 +68,9 @@ _.times(square5sColumn, function(n) {
   var rows = grd3.selectAll('rect' + ' .row-' + (n + 1))
     .data(d3.range(square5sRow))
     .enter().append('rect')
-    
-
-    
-    
-    
-    
-    .attr("class", function(d, i) {return 'square5 row-' + (n + 1) + ' ' + 'col-' + (i + 1);})
+    .attr("class", function(d, i) {
+      return 'square5 row-' + (n + 1) + ' ' + 'col-' + (i + 1);
+    })
     .attr("id", function(d, i) {
         return 's-' + (n + 1) + (i + 1);
     })
@@ -40,11 +81,15 @@ _.times(square5sColumn, function(n) {
       })
       .attr("y", (square5 + n * 1.07*square5))
     
-    .attr("party",function(d,i) {return party_init[4*n+i];})
-    .style("fill",function(d) { return simp_fill[1+parseInt(d3.select(this).attr("party"))];})
+    .attr("party",function(d,i) {
+      return party_init[4*n+i];
+    })
+    .style("fill",function(d) { 
+      return simp_fill[1+parseInt(d3.select(this).attr("party"))];
+    })
     .style("stroke","#555")
     .style("stroke-width",1)
-    
+    .style("fill-opacity",.4)
     
     
     .on("mouseover",function(d){
@@ -69,10 +114,54 @@ _.times(square5sColumn, function(n) {
 
 });
 
-
 var grd4 = d3.select('#chart2').append('svg')
   .attr("width", 100+(square5*7))
   .attr("height",604);
+
+
+
+
+_.times(square5sColumn, function(n) {
+
+  // create each set of rows
+  var rows = grd4
+    .selectAll('text' + ' .row-' + (n + 1))
+    .data(d3.range(square5sRow))
+    .enter()
+    .append("text")
+
+    .attr("class", function(d, i) {
+      return 'square5 row-' + (n + 1) + ' ' + 'col-' + (i + 1);
+    })
+    .attr("id", function(d, i) {
+        return 's-' + (n + 1) + (i + 1);
+    })
+      .attr("width", square5)
+      .attr("height",square5)
+      .attr("x", function(d, i) {
+        return 60+(i * 1.07*square5) + square5/2;
+      })
+      .attr("y", 320+(square5 + n * 1.07*square5) + square5/2)
+    
+     .attr("party",function(d,i) {
+      return party_init[4*n+i];
+     })
+    .style("fill",function(d) {
+      return simp_fill[1+parseInt(d3.select(this).attr("party"))];
+    })
+
+    .text(function(d){
+      return simp_char[1 + parseInt(d3.select(this).attr("party"))];
+    })
+    .attr("text-anchor","middle")
+    .attr("dy", ".35em")
+    .style("font-size", function(d){
+      return (square5-7) + "px";
+    });
+});
+
+
+
 
 // loop over number of columns
 _.times(square5sColumn, function(n) {
@@ -87,7 +176,9 @@ _.times(square5sColumn, function(n) {
     
     
     
-    .attr("class", function(d, i) {return 'square5 row-' + (n + 1) + ' ' + 'col-' + (i + 1);})
+    .attr("class", function(d, i) {
+      return 'square5 row-' + (n + 1) + ' ' + 'col-' + (i + 1);
+    })
     .attr("id", function(d, i) {
         return 's-' + (n + 1) + (i + 1);
     })
@@ -98,11 +189,15 @@ _.times(square5sColumn, function(n) {
       })
       .attr("y", 320+(square5 + n * 1.07*square5))
     
-     .attr("party",function(d,i) {return party_init[4*n+i];})
-    .style("fill",function(d) {return simp_fill[1+parseInt(d3.select(this).attr("party"))];})
+     .attr("party",function(d,i) {
+      return party_init[4*n+i];
+     })
+    .style("fill",function(d) {
+      return simp_fill[1+parseInt(d3.select(this).attr("party"))];
+    })
     .style("stroke","#555")
     .style("stroke-width",1)
-    
+    .style("fill-opacity",.4)
     
     
     .on("mouseover",function(d){
@@ -132,36 +227,102 @@ _.times(square5sColumn, function(n) {
 function do_update2(r){
         if (d3.event != null && r != -1){
             var t = parseInt(d3.select(r).attr("party"));
+            var tid = d3.select(r).attr("id");
+
         grd3.selectAll('rect').each(function(d){
             if (d3.select(this).attr("id") == d3.select(r).attr("id")){
               d3.select(this).attr("party",t+2)
-              if (d3.select(this).attr("party") == 3){d3.select(this).attr("party",-1);}
+              if (d3.select(this).attr("party") == 3){
+                d3.select(this).attr("party",-1);
+              }
             }
         });
                 grd4.selectAll('rect').each(function(d){
             if (d3.select(this).attr("id") == d3.select(r).attr("id")){
               d3.select(this).attr("party",t+2)
-              if (d3.select(this).attr("party") == 3){d3.select(this).attr("party",-1);}
+              if (d3.select(this).attr("party") == 3){
+                d3.select(this).attr("party",-1);
+              }
             }
         });
       }
 
 
-  
-
     grd3.selectAll('rect').each(function(d){
-        if (d3.select(this).attr("party") == 0) d3.select(this).style("fill", simp_fill[1]);
-        if (d3.select(this).attr("party") == 1) d3.select(this).style("fill", simp_fill[2]);
-        if (d3.select(this).attr("party") == -1) d3.select(this).style("fill", simp_fill[0]);
+        //console.log(d3.select(this).attr("party"));
+        if (d3.select(this).attr("party") == 0) 
+          d3.select(this).style("fill", simp_fill[1]);
+        if (d3.select(this).attr("party") == 1) {
+          d3.select(this).style("fill", simp_fill[2]);
+          d3.select(this).style("fill-opacity",opacity_red);
+        }
+        if (d3.select(this).attr("party") == -1) {
+          d3.select(this).style("fill", simp_fill[0]);
+          d3.select(this).style("fill-opacity",opacity_blk);
+      }
 
-    })
+    });
+    grd3.selectAll('text').each(function(d){
+        if (d3.select(this).attr("id") == tid){
+            d3.select(this).attr("party", t+2);
+            if (d3.select(this).attr("party") >= 2){
+              d3.select(this).attr("party",-1);
+            }
+        }
 
-        grd4.selectAll('rect').each(function(d){
-        if (d3.select(this).attr("party") == 0) d3.select(this).style("fill", simp_fill[1]);
-        if (d3.select(this).attr("party") == 1) d3.select(this).style("fill", simp_fill[2]);
-        if (d3.select(this).attr("party") == -1) d3.select(this).style("fill", simp_fill[0]);
+        //console.log(d3.select(this).attr("party"));
+        if (d3.select(this).attr("party") == 0) 
+          d3.select(this).style("fill", simp_fill[1]);
+        if (d3.select(this).attr("party") == 0) 
+          d3.select(this).text(simp_char[1]);       
+        if (d3.select(this).attr("party") == 1) 
+          d3.select(this).style("fill", simp_fill[2]);
+        if (d3.select(this).attr("party") == 1) 
+          d3.select(this).text(simp_char[2]); 
+        if (d3.select(this).attr("party") == -1) 
+          d3.select(this).style("fill", simp_fill[0]);
+        if (d3.select(this).attr("party") == -1) 
+          d3.select(this).text(simp_char[0]); 
 
-    })
+    });
+
+    grd4.selectAll('rect').each(function(d){
+        //console.log(d3.select(this).attr("party"));
+        if (d3.select(this).attr("party") == 0) 
+          d3.select(this).style("fill", simp_fill[1]);
+        if (d3.select(this).attr("party") == 1) {
+          d3.select(this).style("fill", simp_fill[2]);
+          d3.select(this).style("fill-opacity",opacity_red);
+        }
+        if (d3.select(this).attr("party") == -1) {
+          d3.select(this).style("fill", simp_fill[0]);
+          d3.select(this).style("fill-opacity",opacity_blk);
+      }
+
+    });
+    grd4.selectAll('text').each(function(d){
+        if (d3.select(this).attr("id") == tid){
+            d3.select(this).attr("party", t+2);
+            if (d3.select(this).attr("party") >= 2){
+              d3.select(this).attr("party",-1);
+            }
+        }
+
+        //console.log(d3.select(this).attr("party"));
+        if (d3.select(this).attr("party") == 0) 
+          d3.select(this).style("fill", simp_fill[1]);
+        if (d3.select(this).attr("party") == 0) 
+          d3.select(this).text(simp_char[1]);       
+        if (d3.select(this).attr("party") == 1) 
+          d3.select(this).style("fill", simp_fill[2]);
+        if (d3.select(this).attr("party") == 1) 
+          d3.select(this).text(simp_char[2]); 
+        if (d3.select(this).attr("party") == -1) 
+          d3.select(this).style("fill", simp_fill[0]);
+        if (d3.select(this).attr("party") == -1) 
+          d3.select(this).text(simp_char[0]); 
+
+    });
 
         r_win_i = [0,0,0,0,0,0];
         b_win_i = [0,0,0,0,0,0];
@@ -205,7 +366,7 @@ function grid_borders(){
 grd3.selectAll("line").remove();
 
 
-console.log(cur_plan_str);
+//console.log(cur_plan_str);
   grd3.selectAll("rect").each(function(){
     var nm = d3.select(this).attr("id");
     var cr = d3.select(this);
@@ -300,18 +461,8 @@ console.log(cur_plan_str);
         .attr("y2",square5+(parseFloat(cr.attr("y"))+1+ (nm[2] == 5 ? 0 : 1)))
         .style("stroke-width", 2)
         .attr("stroke","#333");
-
       }
-
-
-
-
-
     }
-
-
-
-
   });
 
 
@@ -319,13 +470,13 @@ console.log(cur_plan_str);
 grd4.selectAll("line").remove();
 
 
-console.log(cur_plan_str);
+//console.log(cur_plan_str);
   grd4.selectAll("rect").each(function(){
     if (d3.select(this).attr("bg") == null){
     var nm = d3.select(this).attr("id");
     var cr = d3.select(this);
     if (nm[2] == 1){
-      console.log("IN HERE");
+      //console.log("IN HERE");
       grd4.append("line")
       .attr("x1", parseFloat(cr.attr("x")-1))
       .attr("x2", square5+(parseFloat(cr.attr("x"))+1 + (nm[3] == 5 ? 0 : 1)))
@@ -418,19 +569,11 @@ console.log(cur_plan_str);
         .attr("stroke","#333");
 
       }
-
-
-
-
-
     }
+  }
 
-}
+});
 
-
-  });
 grd3.selectAll("line").attr("stroke","#000").attr("stroke-width",3);
 grd4.selectAll("line").attr("stroke","#000").attr("stroke-width",3);
 }
-
-

@@ -1,5 +1,5 @@
 
-var distfills = d3.scaleOrdinal(d3.schemeSet2);
+var distfills = ['#7bc8f6','#6fc276','#0343df','#bbf90f','#6a79f7','#475f94','#13eac9'];
 
 var square10 = 40;
 var square10sm = square10/1.25;

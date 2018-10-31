@@ -121,6 +121,7 @@ var link = treegroup.selectAll(".link")
         .attr("districts", function(d) { return d.data.tup;})
         .attr("idno2", function(d) {return d.data.name;})
         .style("fill", "#555")
+        .style("opacity",.9)
 
 
  node.append("image")
