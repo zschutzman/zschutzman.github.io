@@ -15,7 +15,10 @@ customjs:
 ---
 
 
+<head>
+<meta http-equiv="refresh" content="0; URL='http://mggg.org/metagraph/'" />
 
+</head>
 
 <style>
 
