@@ -27,7 +27,7 @@ permalink: /projects/
 	        figures, animations, and interactives to argue for a more nuanced approach to political geometry than the dominant methods currently 
 	        allow.
 	   		<br/>
-	        <a href="https://www.github.com/mggg/gerrychain/" style="float: left; position:absolute; bottom:10px; left:180px"><b>
+	        <a href="https://zachschutzman.com/distflow" style="float: left; position:absolute; bottom:10px; left:180px"><b>
 	        	View Project
 	        </b></a>
 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
