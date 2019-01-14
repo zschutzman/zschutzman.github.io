@@ -14,17 +14,18 @@ I am a third-year PhD student in the [CIS Department](http://cis.upenn.edu) at t
 
 My research interests include game theory and mechanism design, learning theory, algorithmic fairness, and computational social science, which is to say I am interested in how stragegic agents, algorithmic processes, and social norms interact, both mathematically and in practice.
 
-I'm also interested in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), the intentional drawing of district lines to favor some electoral outcome, especially the mathematical and computational aspects of the related problems. I am extremely excited to be working with the [Metric Geometry and Gerrymandering Group](http://mggg.org) in Boston, where I was a Graduate Fellow this past summer at the [Voting Rights Data Institute](http://gerrydata.org).
+I'm also interested in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), the intentional drawing of district lines to favor some electoral outcome, especially the mathematical and computational aspects of the related problems. I am affiliated with the [Metric Geometry and Gerrymandering Group](http://mggg.org) in Boston. I was a Graduate Fellow last summer at the [Voting Rights Data Institute](http://gerrydata.org) and will be returning this year as faculty. Interested undergraduate and graduate students (including those between college and graduate school) should consider applying.
 
 I am affiliated with the [CS Theory Reserach Group](http://theory.cis.upenn.edu/index.html), the [Warren Center for Network & Data Sciences](http://warrencenter.upenn.edu/), and the [Penn Research in Machine Learning (PRiML)](https://priml.upenn.edu/) group.
 
 Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) in beautiful Waterville, Maine.  I was a [mathematics](http://colby.edu/math) and [economics](http://colby.edu/econ) double major with a [computer science](http://colby.edu/cs) minor.
 
 ---
+## Recent Stuff 
+{: style="color:#800000;" :}
 
-
-<div style="text-align: center"> My project on redistricting on the grid is now live!  Check it out on the MGGG website: </div>
-
+<div style="text-align: center"> Our paper <i>Fair Algorithms for Learning in Allocation Problems</i> will be at <a href="http://fatconference.org"> FAT* in January! </a></div>
+<br />
 
 <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
     <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
@@ -43,7 +44,7 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 	        	View Project
 	        </b></a>
 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
-	        August 5th, 2018
+	        Fall 2018
 	    </span>
 	    </p>
 	</div>

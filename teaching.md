@@ -17,7 +17,7 @@ Notes for [Theory of Computation (UPenn CIS 511, Spring 2017)](http://zachschutz
 
 My (exceptionally incomplete) notes for [Topology (UPenn Math 500, Fall 2017)](http://zachschutzman.com/assets/notes/topo500.pdf)
 
-My notes from [the Metric Geometry and Gerrymandering Group's August 2017 Conference](http://zachschutzman.com/assets/notes/mggg.pdf).  For more information about the MGGG, see their site [here](http://sites.tufts.edu/gerrymandr)
+My notes from [the Metric Geometry and Gerrymandering Group's August 2017 Conference](http://zachschutzman.com/assets/notes/mggg.pdf).  For more information about the MGGG, see their site [here](https://mggg.org)
 
 ----
 
