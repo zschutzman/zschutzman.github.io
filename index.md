@@ -14,7 +14,7 @@ I am a third-year PhD student in the [CIS Department](http://cis.upenn.edu) at t
 
 My research interests include game theory and mechanism design, learning theory, algorithmic fairness, and computational social science, which is to say I am interested in how stragegic agents, algorithmic processes, and social norms interact, both mathematically and in practice.
 
-I'm also interested in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), the intentional drawing of district lines to favor some electoral outcome, especially the mathematical and computational aspects of the related problems. I am affiliated with the [Metric Geometry and Gerrymandering Group](http://mggg.org) in Boston. I was a Graduate Fellow last summer at the [Voting Rights Data Institute](http://gerrydata.org) and will be returning this year as faculty. Interested undergraduate and graduate students (including those between college and graduate school) should consider applying.
+I'm also interested in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), the intentional drawing of district lines to favor some electoral outcome, especially the mathematical and computational aspects of the related problems. I am affiliated with the [Metric Geometry and Gerrymandering Group](http://mggg.org) in Boston. I was a Graduate Fellow last summer at the [Voting Rights Data Institute](http://gerrydata.org) and will be returning this year as faculty.
 
 I am affiliated with the [CS Theory Reserach Group](http://theory.cis.upenn.edu/index.html), the [Warren Center for Network & Data Sciences](http://warrencenter.upenn.edu/), and the [Penn Research in Machine Learning (PRiML)](https://priml.upenn.edu/) group.
 

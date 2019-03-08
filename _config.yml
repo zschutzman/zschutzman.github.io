@@ -9,7 +9,7 @@ twitter_username: zschutzy
 github_username:  zschutzman
 curriculumurl: "http://zachschutzman.com"
 permalink: /blog/:year/:month/:title.html
-gems:
+plugins:
   - jekyll-sitemap
 
 # Build settings
