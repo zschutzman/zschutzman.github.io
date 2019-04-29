@@ -10,19 +10,23 @@ permalink: /research/
 <br>
 
 
+
 *Total Variation Isoperimetric Profiles* (2018)  
-with Daryl Deford, Hugo Lavenant, and Justin Solomon.  
-[[arXiv]](https://arxiv.org/abs/1809.07943)
+with Daryl DeFord, Hugo Lavenant, and Justin Solomon.  
+[[arXiv]](https://arxiv.org/abs/1809.07943)  
+(In submission)
 
 *Fair Algorithms for Learning in Allocation Problems* (2018)  
 with Hadi Elzayn, Shahin Jabbari, Christopher Jung, Michael Kearns, Seth Neel, and Aaron Roth.  
-In the proceedings of at FAT\* '19  
-[[arXiv]](https://arxiv.org/abs/1808.10549) 
+In the proceedings of FAT\* '19  
+[[conference proceedings version (ACM Digital Library)]](https://dl.acm.org/citation.cfm?id=3287571)  
+[[full version (arXiv)]](https://arxiv.org/abs/1808.10549) 
 
 *Strategic Classification from Revealed Preferences* (2018)  
 with Jinshuo Dong, Aaron Roth, Bo Waggoner, and Zhiwei Steven Wu.  
-In the Proceedings of EC '18, appeared at the Workshop on Learning in the Presence of Strategic Behavior at NIPS '17  
-[[arXiv]](https://arxiv.org/abs/1710.07887) 
+In the Proceedings of EC '18, appeared at the Workshop on Learning in the Presence of Strategic Behavior at NeurIPS '17  
+[[conference proceedings version (ACM Digital Library)]](https://dl.acm.org/citation.cfm?id=3219193)  
+[[full version (arXiv)]](https://arxiv.org/abs/1710.07887) 
 
 
 ----
