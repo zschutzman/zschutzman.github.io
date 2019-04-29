@@ -2,15 +2,14 @@
 layout: twocol
 title: Projects
 permalink: /projects/
+order: 2
 ---
 
 
 # Projects
-{: style="color:#800000;" :}
 
 
 
-<br/>
 
 <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
     <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
@@ -26,7 +25,7 @@ permalink: /projects/
 	        A minimally technical case study of "multiscale compactness" using curve-shortening flow. We present the concepts intuitively and use 
 	        figures, animations, and interactives to argue for a more nuanced approach to political geometry than the dominant methods currently 
 	        allow.
-	   		<br/>
+	   		<br/><br/>
 	        <a href="https://zachschutzman.com/distflow" style="float: left; position:absolute; bottom:10px; left:180px"><b>
 	        	View Project
 	        </b></a>

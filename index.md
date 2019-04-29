@@ -6,9 +6,7 @@ invisible: true
 
 
 # About Me 
-{: style="color:#800000;" :}
 
-<br/>
 I am a third-year PhD student in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth). 
 
 
@@ -16,15 +14,13 @@ My research interests include game theory and mechanism design, learning theory,
 
 I'm also interested in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), the intentional drawing of district lines to favor some electoral outcome, especially the mathematical and computational aspects of the related problems. I am affiliated with the [Metric Geometry and Gerrymandering Group](http://mggg.org) in Boston. I was a Graduate Fellow last summer at the [Voting Rights Data Institute](http://gerrydata.org) and will be returning this year as faculty.
 
-I am affiliated with the [CS Theory Reserach Group](http://theory.cis.upenn.edu/index.html), the [Warren Center for Network & Data Sciences](http://warrencenter.upenn.edu/), and the [Penn Research in Machine Learning (PRiML)](https://priml.upenn.edu/) group.
+I am affiliated with the [CS Theory Research Group](http://theory.cis.upenn.edu/index.html), the [Warren Center for Network & Data Sciences](http://warrencenter.upenn.edu/), and the [Penn Research in Machine Learning (PRiML)](https://priml.upenn.edu/) group.
 
 Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) in beautiful Waterville, Maine.  I was a [mathematics](http://colby.edu/math) and [economics](http://colby.edu/econ) double major with a [computer science](http://colby.edu/cs) minor.
 
 ---
 ## Recent Stuff 
-{: style="color:#800000;" :}
 
-<br/>
 
 <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
     <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">

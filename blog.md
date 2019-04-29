@@ -2,11 +2,10 @@
 layout: blog
 permalink: /blog/
 title: Blog
+order: 100
 ---
 
 # The Blog
-{: style="color:#800000;" :}
-
 
 ---
 
@@ -23,7 +22,7 @@ title: Blog
  <h2 style="font-size:1.2em; margin-top:0px; text-align:center; word-break: break-all; hyphens: auto; color:$text-color">
 {% else %}
  <div style="margin-left: 15px; padding: 15px; ">
- <h2 style="font-size:1.2em; margin-top:0px; text-align:center; word-break: break-all; hyphens: auto; color:$text-color">
+ <h2 style="font-size:1.2em; margin-top:0px; margin-bottom:1px; text-align:center; word-break: break-all; hyphens: auto; color:$text-color">
  {% endif %}
   <a href="{{ post.url }}">{{ post.title }}</a> </h2>
 <p style="color: $text-color; margin: 0 0 5px 0; font-size: 0.85em; line-height: 115%;">

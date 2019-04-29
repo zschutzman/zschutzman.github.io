@@ -2,17 +2,15 @@
 layout: twocol
 title: Slides, Notes, and Teaching
 permalink: /teaching/
+order: 3
 ---
 
 # Slides, Notes, and Teaching
-{: style="color:#800000;" :}
 
 ----
 
 ## Slides
-{: style="color:#800000;" :}
 
-<br/>
 
 <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
     <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
@@ -69,9 +67,7 @@ permalink: /teaching/
 ----
 
 ## Notes
-{: style="color:#800000;" :}
 
-<br/>
 
 Notes for [Theory of Computation (UPenn CIS 511, Spring 2017)](http://zachschutzman.com/assets/notes/toc511.pdf)
 
@@ -82,9 +78,7 @@ My notes from [the Metric Geometry and Gerrymandering Group's August 2017 Confer
 ----
 
 ## Teaching
-{: style="color:#800000;" :}
 
-<br/>
 
 * I was a TA for [Bo Waggoner's](https://www.bowaggoner.com/) course [Algorithmic Game Theory (NETS 412)](https://www.bowaggoner.com/courses/2018/nets412/) in Spring 2018
 

@@ -13,7 +13,7 @@
 {% if nblangs > 1 %}
   {% assign pages = site.pages | where:"lang",plang %}
 {% else %}
-  {% assign pages = site.pages %}
+  {% assign pages = site.pages |sort:"order" %}
 {% endif %}
 
 {% for my_page in pages %}

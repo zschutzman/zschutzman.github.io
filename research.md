@@ -2,37 +2,40 @@
 layout: twocol
 title: Research
 permalink: /research/
+order: 1
 ---
 
 # Research
-{: style="color:#800000;" :}
-
-<br>
 
 
 
-*Total Variation Isoperimetric Profiles* (2018)  
-with Daryl DeFord, Hugo Lavenant, and Justin Solomon.  
-[[arXiv]](https://arxiv.org/abs/1809.07943)  
-(In submission)
 
-*Fair Algorithms for Learning in Allocation Problems* (2018)  
-with Hadi Elzayn, Shahin Jabbari, Christopher Jung, Michael Kearns, Seth Neel, and Aaron Roth.  
+
+
+*Fair Algorithms for Learning in Allocation Problems* (2019)  
+with [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}, [Shahin Jabbari](http://cis.upenn.edu/~jabbari/){: style="color:#111;" :}, [Christopher Jung](https://www.cis.upenn.edu/~chrjung/){: style="color:#111;" :}, [Michael Kearns](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :}, [Seth Neel](https://sethstatistics.wordpress.com/){: style="color:#111;" :}, and [Aaron Roth](http://www.cis.upenn.edu/~aaroth/){: style="color:#111;" :}.  
 In the proceedings of FAT\* '19  
 [[conference proceedings version (ACM Digital Library)]](https://dl.acm.org/citation.cfm?id=3287571)  
 [[full version (arXiv)]](https://arxiv.org/abs/1808.10549) 
 
+
+*Total Variation Isoperimetric Profiles* (2018)  
+with [Daryl DeFord](https://people.csail.mit.edu/ddeford/){: style="color:#111;" :}, [Hugo Lavenant](https://www.math.u-psud.fr/~lavenant/){: style="color:#111;" :}, and [Justin Solomon](https://people.csail.mit.edu/jsolomon/){: style="color:#111;" :}.  
+[[arXiv]](https://arxiv.org/abs/1809.07943)  
+
+
 *Strategic Classification from Revealed Preferences* (2018)  
-with Jinshuo Dong, Aaron Roth, Bo Waggoner, and Zhiwei Steven Wu.  
-In the Proceedings of EC '18, appeared at the Workshop on Learning in the Presence of Strategic Behavior at NeurIPS '17  
+with Jinshuo Dong, [Aaron Roth](http://www.cis.upenn.edu/~aaroth/){: style="color:#111;" :}, [Bo Waggoner](https://www.bowaggoner.com/){: style="color:#111;" :}, and [Zhiwei Steven Wu](https://www-users.cs.umn.edu/~zsw/){: style="color:#111;" :}.  
+In the Proceedings of EC '18  
 [[conference proceedings version (ACM Digital Library)]](https://dl.acm.org/citation.cfm?id=3219193)  
-[[full version (arXiv)]](https://arxiv.org/abs/1710.07887) 
+[[full version (arXiv)]](https://arxiv.org/abs/1710.07887)  
+Appeared at the Workshop on Learning in the Presence of Strategic Behavior at NeurIPS '17  
 
 
 ----
-- [My Honors Thesis on developing a genetic algorithm to optimize selection of sites for conservation in a landscape auction](http://zachschutzman.com/assets/papers_and_presentations/landscape_auctions_thesis.pdf) in the Colby College Department of Economics.
+[My Honors Thesis on developing a genetic algorithm to optimize selection of sites for conservation in a landscape auction](http://zachschutzman.com/assets/papers_and_presentations/landscape_auctions_thesis.pdf) in the Colby College Department of Economics.  
 
-- [An expository analysis of various course registration auction mechanisms](http://zachschutzman.com/assets/papers_and_presentations/course_registration_auctions.pdf) for Tim Hubbard's Auctions seminar (Colby College, Spring 2016) and the [slides from my presentation](http://zachschutzman.com/assets/papers_and_presentations/course_reg_auctions_pres.pptx)
+[An expository analysis of various course registration auction mechanisms](http://zachschutzman.com/assets/papers_and_presentations/course_registration_auctions.pdf) for Tim Hubbard's Auctions seminar (Colby College, Spring 2016) and the [slides from my presentation](http://zachschutzman.com/assets/papers_and_presentations/course_reg_auctions_pres.pptx)  
 
 
 
