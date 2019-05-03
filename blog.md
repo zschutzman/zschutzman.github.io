@@ -3,6 +3,7 @@ layout: blog
 permalink: /blog/
 title: Blog
 order: 100
+invisible: true
 ---
 
 # The Blog

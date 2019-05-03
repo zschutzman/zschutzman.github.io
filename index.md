@@ -12,14 +12,18 @@ I am a third-year PhD student in the [CIS Department](http://cis.upenn.edu) at t
 
 My research interests include game theory and mechanism design, learning theory, algorithmic fairness, and computational social science, which is to say I am interested in how stragegic agents, algorithmic processes, and social norms interact, both mathematically and in practice.
 
-I'm also interested in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), the intentional drawing of district lines to favor some electoral outcome, especially the mathematical and computational aspects of the related problems. I am affiliated with the [Metric Geometry and Gerrymandering Group](http://mggg.org) in Boston. I was a Graduate Fellow last summer at the [Voting Rights Data Institute](http://gerrydata.org) and will be returning this year as faculty.
+At Penn, I am affiliated with the [CS Theory Research Group](http://theory.cis.upenn.edu/index.html), the [Warren Center for Network & Data Sciences](http://warrencenter.upenn.edu/), and the [Penn Research in Machine Learning (PRiML)](https://priml.upenn.edu/) group.
 
-I am affiliated with the [CS Theory Research Group](http://theory.cis.upenn.edu/index.html), the [Warren Center for Network & Data Sciences](http://warrencenter.upenn.edu/), and the [Penn Research in Machine Learning (PRiML)](https://priml.upenn.edu/) group.
+I'm also interested in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), the intentional drawing of district lines to favor some electoral outcome, especially the mathematical and computational aspects of the related problems and I am a research collaborator with the [Metric Geometry and Gerrymandering Group](http://mggg.org) in Boston. MGGG is hosting the second annual [Voting Rights Data Institute](http://gerrydata.org) this summer, at which I will be a member of the faculty.
 
-Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) in beautiful Waterville, Maine.  I was a [mathematics](http://colby.edu/math) and [economics](http://colby.edu/econ) double major with a [computer science](http://colby.edu/cs) minor.
+
+Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) in beautiful Waterville, Maine.  I graduated with a double major in [mathematics](http://colby.edu/math) and [economics](http://colby.edu/econ) and a [computer science](http://colby.edu/cs) minor.
 
 ---
 ## Recent Stuff 
+
+<div style="text-align: center"> Our paper <i><a href="https://arxiv.org/abs/1905.00844" > Price of Privacy in the Keynesian Beauty Contest </a></i> will appear at <a href="http://sigecom.org/ec19"> EC </a> in June!</div>
+<br />
 
 
 <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
@@ -47,10 +51,6 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 	</div>
 </div>
 <br/>
-
-<div style="text-align: center"> Our paper <i><a href="https://arxiv.org/abs/1808.10549" > Fair Algorithms for Learning in Allocation Problems </a></i> appeared at <a href="http://fatconference.org"> FAT* in January! </a></div>
-<br />
-
 
 
 <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
