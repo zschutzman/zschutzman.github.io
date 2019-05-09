@@ -9,7 +9,7 @@ order: 1
 
 
 *The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores* (2019)  
-with [Assaf Bar-Natan](http://www.math.toronto.edu/safibn/){: style="color:#111;" :} and Lorenzo Najt.
+with [Assaf Bar-Natan](http://www.math.toronto.edu/safibn/){: style="color:#111;" :} and Lorenzo Najt.  
 [[arXiv]](https://arxiv.org/abs/1905.03173)  
 
 
