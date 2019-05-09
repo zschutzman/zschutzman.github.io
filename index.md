@@ -22,6 +22,11 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 ---
 ## Recent Stuff 
 
+
+<div style="text-align: center"> Our paper <i><a href="https://arxiv.org/abs/1905.03173" > The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores </a></i> is on arXiv!</div>
+<br />
+
+
 <div style="text-align: center"> Our paper <i><a href="https://arxiv.org/abs/1905.00844" > Price of Privacy in the Keynesian Beauty Contest </a></i> will appear at <a href="http://sigecom.org/ec19"> EC </a> in June!</div>
 <br />
 
