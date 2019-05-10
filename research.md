@@ -7,6 +7,11 @@ order: 1
 
 # Research
 
+*Equilibrium Characterization for Data Acquisition Games*  
+with Jinshuo Dong, [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}, [Shahin Jabbari](http://cis.upenn.edu/~jabbari/){: style="color:#111;" :}, and [Michael Kearns](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :}.  
+In the Proceedings of IJCAI '19 (*forthcoming*).  
+
+
 
 *The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores* (2019)  
 with [Assaf Bar-Natan](http://www.math.toronto.edu/safibn/){: style="color:#111;" :} and Lorenzo Najt.  
@@ -17,7 +22,7 @@ with [Assaf Bar-Natan](http://www.math.toronto.edu/safibn/){: style="color:#111;
 
 *Price of Privacy in the Keynesian Beauty Contest*   
 with [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}.  
-In the Proceedings of EC '19.  
+In the Proceedings of EC '19 (*forthcoming*).  
 [[full version (arXiv)]](https://arxiv.org/abs/1905.00844) 
 
 
