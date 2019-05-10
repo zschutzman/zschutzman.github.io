@@ -7,9 +7,10 @@ order: 1
 
 # Research
 
+
 **Equilibrium Characterization for Data Acquisition Games**  
 with Jinshuo Dong, [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}, [Shahin Jabbari](http://cis.upenn.edu/~jabbari/){: style="color:#111;" :}, and [Michael Kearns](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :}.  
-In the Proceedings of IJCAI '19 (*forthcoming*).  
+In the Proceedings of IJCAI '19 (*forthcoming*)  
 
 
 
@@ -22,7 +23,7 @@ with [Assaf Bar-Natan](http://www.math.toronto.edu/safibn/){: style="color:#111;
 
 **Price of Privacy in the Keynesian Beauty Contest**   
 with [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}.  
-In the Proceedings of EC '19 (*forthcoming*).  
+In the Proceedings of EC '19 (*forthcoming*)  
 [[full version (arXiv)]](https://arxiv.org/abs/1905.00844) 
 
 
@@ -44,7 +45,8 @@ with Jinshuo Dong, [Aaron Roth](http://www.cis.upenn.edu/~aaroth/){: style="colo
 In the Proceedings of EC '18  
 [[conference proceedings version (ACM Digital Library)]](https://dl.acm.org/authorize?N671376)    
 [[full version (arXiv)]](https://arxiv.org/abs/1710.07887)  
-Appeared at the Workshop on Learning in the Presence of Strategic Behavior at NeurIPS '17  
+Appeared at the Workshop on Learning in the Presence of Strategic Behavior at NeurIPS '17
+
 
 
 ----
