@@ -14,8 +14,9 @@ In the Proceedings of IJCAI '19 (*forthcoming*)
 
 
 
-**The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores** (2019)  
+**The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores**
 with [Assaf Bar-Natan](http://www.math.toronto.edu/safibn/){: style="color:#111;" :} and Lorenzo Najt.  
+Preprint, May 2019    
 [[arXiv]](https://arxiv.org/abs/1905.03173)  
 
 
@@ -35,8 +36,9 @@ In the proceedings of FAT\* '19
 [[full version (arXiv)]](https://arxiv.org/abs/1808.10549) 
 
 
-**Total Variation Isoperimetric Profiles** (2018)  
+**Total Variation Isoperimetric Profiles**  
 with [Daryl DeFord](https://people.csail.mit.edu/ddeford/){: style="color:#111;" :}, [Hugo Lavenant](https://www.math.u-psud.fr/~lavenant/){: style="color:#111;" :}, and [Justin Solomon](https://people.csail.mit.edu/jsolomon/){: style="color:#111;" :}.  
+Preprint, September 2018  
 [[arXiv]](https://arxiv.org/abs/1809.07943)  
 
 
