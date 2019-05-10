@@ -14,7 +14,7 @@ In the Proceedings of IJCAI '19 (*forthcoming*)
 
 
 
-**The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores**
+**The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores**  
 with [Assaf Bar-Natan](http://www.math.toronto.edu/safibn/){: style="color:#111;" :} and Lorenzo Najt.  
 Preprint, May 2019    
 [[arXiv]](https://arxiv.org/abs/1905.03173)  
