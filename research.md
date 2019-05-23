@@ -47,14 +47,15 @@ with Jinshuo Dong, [Aaron Roth](http://www.cis.upenn.edu/~aaroth/){: style="colo
 In the Proceedings of EC '18  
 [[conference proceedings version (ACM Digital Library)]](https://dl.acm.org/authorize?N671376)    
 [[full version (arXiv)]](https://arxiv.org/abs/1710.07887)  
-Appeared at the Workshop on Learning in the Presence of Strategic Behavior at NeurIPS '17
+Appeared at the Workshop on Learning in the Presence of Strategic Behavior at NeurIPS '17  
+
 
 
 
 ----
-[My Honors Thesis on developing a genetic algorithm to optimize selection of sites for conservation in a landscape auction](http://zachschutzman.com/assets/papers_and_presentations/landscape_auctions_thesis.pdf) in the Colby College Department of Economics.  Supervised by [Tim Hubbard](http://www.colby.edu/economics/faculty/thubbard/){: style="color:#111;" :} and [Sahan Dissanayake](http://sahan.org/){: style="color:#111;" :}
+[My Honors Thesis on developing a genetic algorithm to optimize selection of sites for conservation in a landscape auction](https://zachschutzman.com/assets/colby_papers/landscape_auctions_thesis.pdf) in the Colby College Department of Economics.  Supervised by [Tim Hubbard](https://www.colby.edu/economics/faculty/thubbard/){: style="color:#111;" :} and [Sahan Dissanayake](http://sahan.org/){: style="color:#111;" :}
 
-[An expository analysis of various course registration auction mechanisms](http://zachschutzman.com/assets/papers_and_presentations/course_registration_auctions.pdf) for Tim Hubbard's Auctions seminar (Colby College, Spring 2016) and the [slides from my presentation](http://zachschutzman.com/assets/papers_and_presentations/course_reg_auctions_pres.pptx)  
+[An expository analysis of various course registration auction mechanisms](https://zachschutzman.com/assets/colby_papers/course_registration_auctions.pdf) for Tim Hubbard's Auctions seminar (Colby College, Spring 2016) and the [slides from my presentation](https://zachschutzman.com/assets/colby_papers/course_reg_auctions_pres.pptx)  
 
 
 
