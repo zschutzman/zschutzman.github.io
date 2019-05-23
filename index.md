@@ -14,7 +14,7 @@ My research interests include game theory and mechanism design, learning theory,
 
 At Penn, I am affiliated with the [CS Theory Research Group](http://theory.cis.upenn.edu/index.html), the [Warren Center for Network & Data Sciences](http://warrencenter.upenn.edu/), and the [Penn Research in Machine Learning (PRiML)](https://priml.upenn.edu/) group.
 
-I'm also interested in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), the intentional drawing of district lines to favor some electoral outcome, especially the mathematical and computational aspects of the related problems and I am a research collaborator with the [Metric Geometry and Gerrymandering Group](http://mggg.org) in Boston. MGGG is hosting the second annual [Voting Rights Data Institute](http://gerrydata.org) this summer, at which I will be a member of the faculty.
+I'm also interested in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), especially the mathematical and computational aspects of the related problems. I am a research collaborator with the [Metric Geometry and Gerrymandering Group](http://mggg.org) in Boston. I will be on the faculty for MGGG's second annual [Voting Rights Data Institute](http://gerrydata.org) this summer.
 
 
 Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) in beautiful Waterville, Maine.  I graduated with a double major in [mathematics](http://colby.edu/math) and [economics](http://colby.edu/econ) and a [computer science](http://colby.edu/cs) minor.
@@ -23,7 +23,7 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 ## Recent Stuff 
 
 
-<div style="text-align: center"> Our paper <i>Equilibrium Characterization for Data Acquisition Games </i> will appear at <a href="https://ijcai19.org">IJCAI</a> in August!</div>
+<div style="text-align: center"> Our paper <i><a href="https://arxiv.org/abs/1905.08909" >Equilibrium Characterization for Data Acquisition Games </a></i> will appear at <a href="https://ijcai19.org">IJCAI</a> in August!</div>
 <br />
 
 <div style="text-align: center"> Our paper <i><a href="https://arxiv.org/abs/1905.03173" > The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores </a></i> is on arXiv!</div>

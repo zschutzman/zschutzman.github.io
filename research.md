@@ -11,7 +11,7 @@ order: 1
 _**Equilibrium Characterization for Data Acquisition Games**_  
 with Jinshuo Dong, [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}, [Shahin Jabbari](http://cis.upenn.edu/~jabbari/){: style="color:#111;" :}, and [Michael Kearns](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :}.  
 In the Proceedings of IJCAI '19 (*forthcoming*)  
-
+[[arXiv]](https://arxiv.org/abs/1905.08909)
 
 
 _**The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores**_  
