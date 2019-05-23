@@ -1,0 +1,67 @@
+---
+layout: twocol
+mathjax: true
+invisible: true
+---
+
+
+# About Me 
+
+I am a third-year PhD student in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth). 
+
+
+My research interests include game theory and mechanism design, learning theory, algorithmic fairness, and computational social science, which is to say I am interested in how stragegic agents, algorithmic processes, and social norms interact, both mathematically and in practice.
+
+At Penn, I am affiliated with the [CS Theory Research Group](http://theory.cis.upenn.edu/index.html), the [Warren Center for Network & Data Sciences](http://warrencenter.upenn.edu/), and the [Penn Research in Machine Learning (PRiML)](https://priml.upenn.edu/) group.
+
+I'm also interested in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), especially the mathematical and computational aspects of the related problems. I am a research collaborator with the [Metric Geometry and Gerrymandering Group](http://mggg.org) in Boston. I will be on the faculty for MGGG's second annual [Voting Rights Data Institute](http://gerrydata.org) this summer.
+
+
+Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) in beautiful Waterville, Maine.  I graduated with a double major in [mathematics](http://colby.edu/math) and [economics](http://colby.edu/econ) and a [computer science](http://colby.edu/cs) minor.
+
+---
+## Recent Stuff 
+
+
+<<<<<<< HEAD
+<div style="text-align: center"> Our paper <i><a href="https://arxiv.org/abs/1905.08909" >Equilibrium Characterization for Data Acquisition Games </a></i> will appear at <a href="https://ijcai19.org">IJCAI</a> in August!</div>
+<br />
+=======
+- Our paper <i>Equilibrium Characterization for Data Acquisition Games </i> will appear at <a href="https://ijcai19.org">IJCAI</a> in August!
+>>>>>>> 876954c908062f74dca8d61b72510081368d48e1
+
+
+- Our paper <i><a href="https://arxiv.org/abs/1905.03173" > The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores </a></i> is on arXiv!
+
+
+- Our paper <i><a href="https://arxiv.org/abs/1905.00844" > Price of Privacy in the Keynesian Beauty Contest </a></i> will appear at <a href="https://sigecom.org/ec19"> EC </a> in June!
+
+
+<div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
+    <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
+        <img src="/assets/images/csfgif.gif" width="150" height="150" style="border-radius: 5%; border: solid black 2px; transform: translate(15px,0px);" />
+    </div>
+	<div style="margin-left: 180px;padding: 15px; padding-top:0px">
+	    <h2 style="font-size:1.2em; margin-top:0px; text-align:center; word-break: break-all; hyphens: auto; color:$text-color">
+	    	<a href="https://zachschutzman.com/distflow/" style="color: black; text-decoration: none;" >
+	    	District-Shortening Flow
+	    </a>
+	    </h2>
+	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
+	        A minimally technical case study of "multiscale compactness" using curve-shortening flow. We present the concepts intuitively and use 
+	        figures, animations, and interactives to argue for a more nuanced approach to political geometry than the dominant methods currently 
+	        allow.
+	   		<br/><br/>
+	        <a href="https://zachschutzman.com/distflow" style="float: left; position:absolute; bottom:10px; left:180px"><b>
+	        	View Project
+	        </b></a>
+	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
+	        Winter 2019
+	    </span>
+	    </p>
+	</div>
+</div>
+<br/>
+
+
+
