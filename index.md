@@ -23,12 +23,7 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 ## Recent Stuff 
 
 
-<<<<<<< HEAD
-<div style="text-align: center"> Our paper <i><a href="https://arxiv.org/abs/1905.08909" >Equilibrium Characterization for Data Acquisition Games </a></i> will appear at <a href="https://ijcai19.org">IJCAI</a> in August!</div>
-<br />
-=======
-- Our paper <i>Equilibrium Characterization for Data Acquisition Games </i> will appear at <a href="https://ijcai19.org">IJCAI</a> in August!
->>>>>>> 876954c908062f74dca8d61b72510081368d48e1
+- Our paper <i><a href="https://arxiv.org/abs/1905.08909" >Equilibrium Characterization for Data Acquisition Games </a></i> will appear at <a href="https://ijcai19.org">IJCAI</a> in August!
 
 
 - Our paper <i><a href="https://arxiv.org/abs/1905.03173" > The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores </a></i> is on arXiv!
