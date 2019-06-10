@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--   <script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=UA-128973402-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-128973402-1");
+  </script> -->
+  <title>
+   ReCom: A Brief Illustration | Metric Geometry and Gerrymandering Group
+ </title>
+ <meta charset="utf-8" />
+ <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta
+ name="description"
+ content="A nonpartisan research organization studying applications of geometry and computing to U.S. redistricting."
+ />
+ <link rel="canonical" href="https://www.mggg.org/recomintro/" />
+ <link
+ href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Lora:400,400i,700|Source+Sans+Pro:300,400"
+ rel="stylesheet"
+ />
+ <link rel="stylesheet" href="style.css" />
+ <link
+ rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css"
+ integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv"
+ crossorigin="anonymous"
+ />
+ <script
+ defer
+ src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js"
+ integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O"
+ crossorigin="anonymous"
+ ></script>
+ <script
+ defer
+ src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js"
+ integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF"
+ crossorigin="anonymous"
+ onload="renderMathInElement(document.body, {delimiters: [
+  {left: '$', right: '$', display: false}
+  ]});"
+  ></script>
+</head>
+
+<body>
+    <!-- <div class="banner">
+      <a href="/">
+        <img
+        class="logo"
+        src="logo.svg"
+        alt="Metric Geometry and Gerrymandering Group"
+        />
+      </a>
+    </div> -->
+
+    <header>
+      <img width="500" src="imgs/gerryconstruct.png?raw=true"  />
+      <summary>
+        THIS PAGE IS UNDER CONSTRUCTION
+      </summary>
+    </header>
+
+
+    <header>
+      <h1>ReCombination</h1>
+      <p class="subtitle">
+        an illustrated introduction to spanning trees for Markov chain Monte Carlo
+      </p>
+      <summary>
+        This project uses interactive widgets and visualizations to introduce 
+        our novel method of performing Markov chain Monte Carlo random walks,
+        which we call <em>Recombination</em> or <em>ReCom</em>, for short.
+        This technique was first outlined in the <a href=https://mggg.org/VA-report.pdf>
+          MGGG report <em>Comparison of Districting Plans for the Virginia 
+          House of Delegates</em></a> and developed from work at the 
+          2018 Voting Rights Data Institute.
+        </summary>
+      </header>
+
+      <main>
+
+
+
+        <section>
+          <p>
+            Let's suppose our fictional state of Gridlandia, which is nicely laid out 
+            in a 20-by-20 grid needs to draw four geographically connected electoral 
+            districts of equal size (each consisting of 100 squares). The legislature 
+            has decided to implement the below plan, where each of the four districts 
+            is a 5-by-10 arrangement of grid cells horizontal stripes across the state.
+          </p>
+
+          <section class="chart center" id='grid'></section>
+
+          <p>
+            As part of the 
+            redistricting process, the Gridlandians would like to use Markov chain 
+            Monte Carlo (MCMC) methods to generate a large ensemble of possible plans 
+            so they can be confident that the plan implemented doesn't treat any 
+            groups unfairly.  As designers of the MCMC tool, we'd like for the sample 
+            of plans generated to be very diverse; it wouldn't be good if we only compared 
+            the chosen plan to a bunch of other very similar plans.  We therefore would 
+            like the MCMC algorithm to <em>move quickly</em> through the <em> space of 
+            all plans</em> so that we can gather a diverse sample without needing to 
+            run the program for an impossible amount of time.
+          </p>
+
+
+          <p>
+            The main way we affect how the algorithm moves through the space is with 
+            the <em>proposal function</em>.  Basically, the proposal function looks 
+            at the current plan and uses it to figure out what the next plan 
+            along the chain should be, using some randomness.  The first proposal 
+            to consider is what we call the "swap method", and it's the one introduced 
+            in our (very gentle) <a href="https://mggg.org/metagraph">interactive introduction 
+            to the math of redistricting</a>. The way the swap proposal works is that we choose 
+            two adjacent districts (randomly) and pick a cell in each (randomly).  Then, we 
+            try to move each cell to the other district, which succeeds if this results in a 
+            legal plan.  If not, we try again.
+          </p>
+          <figure>
+            <div id="edgeswap"></div>
+            <figcaption>
+              We can transfom the plan on the left into the
+              plan on the right by swapping the district
+              assignments of the two cells that are grayed out in the center
+              image.
+            </figcaption>
+          </figure>
+
+          <p>
+            Variations of this method are the standard one used in MCMC for redistricting, 
+            for good reason. It's easy to understand and visualize, it's very, very fast 
+            for a computer to take a step along the chain using this method, and, in general, 
+            any plan can be transformed into any other plan by taking enough of these steps.
+
+            However, a serious drawback of this method is that it often requires an enormous 
+            number of steps to really explore the total universe of plans.  We can illustrate 
+            this with the following example:
+          </p>
+
+          <section class="chart three-columns">
+            <div><div id='swapgrid-static'></div><br /> <div id='swapgrid-final'></div>  </div>
+            <div id='swapgrid-anim'></div><div style="width:35px" id="swapstepno"></div>
+
+          </section>
+
+
+
+          <!-- animation of a few hundred steps -->
+
+          <p>
+            This animation runs through one thousand steps of the random walk 
+            with the swap proposal.  We've frozen an image of the initial 
+            plan on the left and the final plan on 
+            the right.  You can notice two features of this plan.  First, it doesn't 
+            look all that different from the initial plan.  If we told you that we 
+            constructed the plan on the right by making a few random edits to some 
+            mystery plan and asked you to guess what that secret plan was, you'd 
+            probably correctly guess the original one.  
+            This relates to what is called 
+            the <em>mixing time</em> of the Markov chain.  In brief, the mixing time 
+            is the number of steps you need to take before you can't guess the mystery 
+            starting plan.  We can see that the mixing time of the Markov chain 
+            based on the swap proposal is much more than a few hundred steps.
+          </p>
+
+          <p>
+            The second thing to notice is that the ways in which the final plan 
+            differs from the original is not that the districts are substantively 
+            different, but rather that the random process has caused our original 
+            districts to sprout tentacles which shoot off in several directions; 
+            what we might call the <em>district cores</em> remain unchanged.
+
+            If we run a few thousand more steps, the district cores do disappear, 
+            but not because the districts have new cores.  Rather, the districts 
+            become entirely snakelike,.  Is there a way to somehow solve both of 
+            these issues at once?  Can we conceive of a proposal function that 
+            is easy to compute, rapidly changes the plan (i.e. has a small mixing time), 
+            <em>and</em> favors plans which have districts that have nice, 
+            sensible, plump shapes?
+          </p>
+
+        </section>
+
+
+
+
+        <section>
+          <h3>The Spanning Tree</h3>
+
+          <p>
+            While it sounds too-good-to-be-true, the answer turns out to be
+            <strong>yes</strong>.  In order to explain how it works, we'll need some 
+            light mathematical terminology and machinery.
+          </p>
+          <p>
+            First, imagine a <em>graph</em> or <em>network</em> structure 
+            on Gridlandia, where each square cell is associated with a 
+            node, and there is an edge between two nodes if they are 
+            geographically adjacent.  We call this the <em>dual graph</em>.
+          </p>
+
+          <section class="chart two-columns">
+            <div id='dualgraph'></div>
+            <div id='dualgraph-d'></div>
+          </section>
+
+
+          <p>
+            A districting plan corresponds to a <em>partition</em> of this dual 
+            graph; each district manifests as a <em>connected subgraph</em>.  
+            In the language of graphs, We can specify a districting plan in 
+            several ways.  One way is to list off the nodes in each district. 
+            Implicitly, that's what we've been doing up until now; we can say 
+            that this node is in the green district and that one in the purple 
+            district, and so on.  A different way to give a districting plan is 
+            that we can list off the <em>severed edges in the dual graph</em>.  
+            If we tell you the list of all edges in the original Gridlandia 
+            dual graph which go between two districts in my plan, you can delete 
+            those edges and arrive at a partition of the original graph, which 
+            exactly gives you the districting plan.
+          </p>
+
+
+
+
+
+          <p>
+
+            For any connected graph, we can find a <em>spanning tree</em>
+            of that graph.  A spanning tree of a graph is a subgraph which 
+            contains of all of the nodes in the graph and exactly enough edges 
+            such that the tree is connected but it contains no cycles.
+
+
+
+
+          </p>
+          <section class="chart two-columns">
+            <div id='graph_ex'></div>
+            <div id='graph_ex-st'></div>
+          </section>
+          <p>
+
+            In general a single graph may have an enormous number of spanning trees, 
+            but that's okay, because we don't need to write them all down. Our proposal 
+            function will need to be able to pick one randomly, and fortunately this is 
+            a very easy thing to do.  One simple way to do it is to shuffle the list 
+            of edges in the graph, and one-by-one, check if removing that edge disconnects 
+            the graph. If so, remove it, and if not, skip it and move to the next one.  
+            There are lots of other ways to randomly generate a spanning tree, and each 
+            samples from a slightly different distribution. For the purposes of this 
+            introduction, we aren't going to worry about exactly which procedure we use.
+
+
+          </p>
+
+
+          <p>
+            The final thing to notice about trees is that removing a single edge 
+            disconnects a tree and turns it into a collection of (at least two) 
+            trees.  If our tree is a spanning tree of a graph, we can use this to 
+            identify a partition of a graph into (at least two) pieces.  Some, 
+            but not all, spanning trees have the property that there is an edge 
+            which, when removed, identifies a partition of the graph into 
+            two pieces of equal size.  See the illustration below for a graph 
+            with two spanning trees, one with this property and one without.
+
+          </section>
+
+
+
+
+
+
+
+        </section>
+
+        <section>
+          <h3> The ReCom Proposal </h3>
+          <p>
+           We can use this random spanning tree idea to create a new 
+           proposal function!  First, we can pick two adjacent districts 
+           and <strong>merge</strong> them in the dual graph, creating a 
+           "superdistrict" which is twice as large as a regular district.  
+           Then, we will draw a <strong>random spanning tree</strong> of the 
+           superdistrict and <strong>cut the edge</strong> which splits it 
+           into two equal-sized parts, which become the new districts.  If 
+           our tree does not have the equal-size cut property, we will draw 
+           a new random spanning tree until we find one that does.
+
+           This is where we get the name <em>Recombination</em> or <em>ReCom</em>.
+           We "recombine" two districts and then split them in order to create 
+           a new plan.
+         </p>
+
+         <section class="chart three-columns">
+          <div><div id='treegrid-static'></div><br /> <div id='treegrid-final'></div>  </div>
+          <div id='treegrid-anim'></div><div style="width:35px" id="treestepno"></div>
+
+        </section>
+
+        <p>
+
+          Below is an animation like the earlier one, where we run a 
+          few hundred steps of the random walk, this time using the 
+          ReCom proposal.  You'll notice that both of our problems 
+          went away.  The plan on the right doesn't look like the 
+          plan on the left and the snakey tendrils have been kept 
+          under control.  In fact, we didn't even need all that 
+          many steps to get to a plan which doesn't resemble 
+          the original.
+
+
+
+        </p>
+
+
+
+        <p>
+
+          Why does this work? Is it magic? Did we just get lucky?  
+          No! There are good mathematical reasons for why ReCom 
+          has both of these nice features.  
+
+          <p>
+            First, why does it move quickly 
+            through the space of partitions?  During a swap step, we move 
+            exactly two geographic units into different districts, but a ReCom 
+            step will move <em>at least</em> two units and often quite a bit more. 
+            It's possible that up to half of the units in a pair of districts will 
+            be swapped, which is 100 units moving all at once.  Furthermore, ReCom 
+            gives a wider range of options for plans to move to in a single step.  
+            From the original plan, there are only about 2,000 different plans the 
+            swap proposal can move to while ReCom has unfathomably many options.
+          </p>
+          <p>
+            Second, how does ReCom avoid making districts with lots of long 
+            tendrils?  Remember, ReCom picks a random <em>spanning tree</em> 
+            and a pair of districts generated from a superdistrict may be 
+            realizable from more than one choice of spanning tree, often times very many choices 
+            of spanning tree.  In this 
+            way, ReCom favors generating districts with lots of spanning trees.  
+            What kinds of districts have lots of spanning trees?  Graphs which 
+            have a lot of cycles have a lot of spanning trees, and graphs with 
+            few cycles (like snakey, tendrily ones!) have very few spanning trees.  
+            Therefore, ReCom <em>naturally drives the MCMC process away from plans 
+            which have snakey districts</em>.
+
+
+          </p>
+
+
+
+        </section>
+
+        <section>
+          <h3> ReCom in the wild </h3>
+
+          <p>
+            ReCom is implemented in <a href="https://github.com/mggg/GerryChain">GerryChain</a> 
+            and is available for public use and experimentation.  We've used it in 
+            <a href=https://mggg.org/VA-report.pdf> our Virginia report</a> and 
+            <a href="https://mggg.org/reports/news/2019/04/15/chicago.html"> our study  
+            of reforms for the Chicago city council</a> and to effectively replicate 
+            existing MCMC results for the analysis of gerrymandering in North Carolina 
+            in <a href="https://mggg.org/amicus"> Mathematicians' <i>Amicus Curiae</i> 
+            Brief</a>.
+          </p>
+
+
+
+        </section>
+
+
+
+
+      </main>
+
+<!--     <nav>
+      <div class="current"><p class="current-page">4x4 grid</p></div>
+
+      <div class="next">
+        <a href="./5x5.html" class="nav-link">5x5 grid &raquo;</a>
+        <a href="./7x7.html" class="nav-link">7x7 grid &raquo;</a>
+        <a href="../table.html" class="nav-link">Everything we know &raquo;</a>
+      </div>
+    </nav> -->
+
+    <footer>
+      <p>
+        This page was created by
+        <a href="http://zachschutzman.com/"><b>Zachary Schutzman</b></a> and some other people whose names should go here. (Lorenzo, Lily, Daryl, Justin, Max, Moon, Justin, Assaf, Eduardo, )
+      </p>
+    </footer>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="src/edgeswap.js"></script>
+    <script src="src/swap_plans.js"></script>
+    <script src="src/tree_plans.js"></script>
+    <script src="src/recom_graphics_head.js"></script>
+    <script src="src/static_grid.js"></script>
+    <script src="src/swap_anim.js"></script>
+    <script src="src/tree_anim.js"></script>
+
+
+    <script src="src/dualgraph.js"></script>
+
+    <script src="src/spanningtree-example.js"></script>
+
+  </body>
+  </html>
