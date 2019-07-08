@@ -255,12 +255,10 @@ PLATFORMS
 
 DEPENDENCIES
   academic
-  ffi
   github-pages
-  jekyll
   jekyll-data
   jekyll-tagging
   minima
 
 BUNDLED WITH
-   1.16.3
+   2.0.1

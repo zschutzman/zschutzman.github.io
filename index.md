@@ -29,7 +29,7 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 - Our paper <i><a href="https://arxiv.org/abs/1905.03173" > The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores </a></i> is on arXiv!
 
 
-- Our paper <i><a href="https://arxiv.org/abs/1905.00844" > Price of Privacy in the Keynesian Beauty Contest </a></i> will appear at <a href="https://sigecom.org/ec19"> EC </a> in June!
+- Our paper <i><a href="https://arxiv.org/abs/1905.00844" > Price of Privacy in the Keynesian Beauty Contest </a></i> appeared at <a href="https://sigecom.org/ec19"> EC </a> in June!
 
 
 <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
@@ -38,7 +38,7 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
     </div>
 	<div style="margin-left: 180px;padding: 15px; padding-top:0px">
 	    <h2 style="font-size:1.2em; margin-top:0px; text-align:center; word-break: break-all; hyphens: auto; color:$text-color">
-	    	<a href="https://zachschutzman.com/distflow/" style="color: black; text-decoration: none;" >
+	    	<a href="https://mggg.org/distflow/" style="color: black; text-decoration: none;" >
 	    	District-Shortening Flow
 	    </a>
 	    </h2>
@@ -47,7 +47,7 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 	        figures, animations, and interactives to argue for a more nuanced approach to political geometry than the dominant methods currently 
 	        allow.
 	   		<br/><br/>
-	        <a href="https://zachschutzman.com/distflow" style="float: left; position:absolute; bottom:10px; left:180px"><b>
+	        <a href="https://mggg.org/distflow" style="float: left; position:absolute; bottom:10px; left:180px"><b>
 	        	View Project
 	        </b></a>
 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">

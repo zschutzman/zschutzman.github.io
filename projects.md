@@ -17,7 +17,7 @@ order: 2
     </div>
 	<div style="margin-left: 180px;padding: 15px; padding-top:0px">
 	    <h2 style="font-size:1.2em; margin-top:0px; text-align:center; word-break: break-all; hyphens: auto; color:$text-color">
-	    	<a href="https://zachschutzman.com/distflow/" style="color: black; text-decoration: none;" >
+	    	<a href="https://mggg.org/distflow/" style="color: black; text-decoration: none;" >
 	    	District-Shortening Flow
 	    </a>
 	    </h2>
@@ -26,7 +26,7 @@ order: 2
 	        figures, animations, and interactives to argue for a more nuanced approach to political geometry than the dominant methods currently 
 	        allow.
 	   		<br/><br/>
-	        <a href="https://zachschutzman.com/distflow" style="float: left; position:absolute; bottom:10px; left:180px"><b>
+	        <a href="https://mggg.org/distflow" style="float: left; position:absolute; bottom:10px; left:180px"><b>
 	        	View Project
 	        </b></a>
 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
