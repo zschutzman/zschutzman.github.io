@@ -11,7 +11,8 @@ order: 1
 _**Equilibrium Characterization for Data Acquisition Games**_  
 with Jinshuo Dong, [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}, [Shahin Jabbari](http://cis.upenn.edu/~jabbari/){: style="color:#111;" :}, and [Michael Kearns](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :}.  
 In the Proceedings of IJCAI '19 (*forthcoming*)  
-[[arXiv]](https://arxiv.org/abs/1905.08909)
+[[technical version (arXiv)]](https://arxiv.org/abs/1905.08909)
+
 
 
 _**The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores**_  
@@ -25,6 +26,7 @@ Preprint, May 2019
 _**Price of Privacy in the Keynesian Beauty Contest**_   
 with [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}.  
 In the Proceedings of EC '19 (*forthcoming*)  
+[[conference proceedings version (ACM Digital Library)]](https://dl.acm.org/authorize?N687434)  
 [[full version (arXiv)]](https://arxiv.org/abs/1905.00844) 
 
 
