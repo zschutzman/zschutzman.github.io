@@ -10,7 +10,8 @@ order: 1
 
 _**Equilibrium Characterization for Data Acquisition Games**_  
 with Jinshuo Dong, [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}, [Shahin Jabbari](http://cis.upenn.edu/~jabbari/){: style="color:#111;" :}, and [Michael Kearns](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :}.  
-In the Proceedings of IJCAI '19 (*forthcoming*)  
+In the Proceedings of IJCAI '19  
+[[proceedings version (IJCAI)]](https://doi.org/10.24963/ijcai.2019/36)  
 [[technical version (arXiv)]](https://arxiv.org/abs/1905.08909)
 
 
@@ -25,7 +26,7 @@ Preprint, May 2019
 
 _**Price of Privacy in the Keynesian Beauty Contest**_   
 with [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}.  
-In the Proceedings of EC '19 (*forthcoming*)  
+In the Proceedings of EC '19   
 [[conference proceedings version (ACM Digital Library)]](https://dl.acm.org/authorize?N687434)  
 [[full version (arXiv)]](https://arxiv.org/abs/1905.00844) 
 
