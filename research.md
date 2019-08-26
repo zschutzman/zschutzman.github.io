@@ -7,6 +7,12 @@ order: 1
 
 # Research
 
+_**Total Variation Isoperimetric Profiles**_  
+with [Daryl DeFord](https://people.csail.mit.edu/ddeford/){: style="color:#111;" :}, [Hugo Lavenant](https://www.math.u-psud.fr/~lavenant/){: style="color:#111;" :}, and [Justin Solomon](https://people.csail.mit.edu/jsolomon/){: style="color:#111;" :}.  
+To appear in the SIAM Journal on Applied Algebra and Geometry  
+[[preprint (arXiv)]](https://arxiv.org/abs/1809.07943)  
+
+
 
 _**Equilibrium Characterization for Data Acquisition Games**_  
 with Jinshuo Dong, [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}, [Shahin Jabbari](http://cis.upenn.edu/~jabbari/){: style="color:#111;" :}, and [Michael Kearns](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :}.  
@@ -38,11 +44,6 @@ In the proceedings of FAT\* '19
 [[conference proceedings version (ACM Digital Library)]](https://dl.acm.org/authorize?N671375)  
 [[full version (arXiv)]](https://arxiv.org/abs/1808.10549) 
 
-
-_**Total Variation Isoperimetric Profiles**_  
-with [Daryl DeFord](https://people.csail.mit.edu/ddeford/){: style="color:#111;" :}, [Hugo Lavenant](https://www.math.u-psud.fr/~lavenant/){: style="color:#111;" :}, and [Justin Solomon](https://people.csail.mit.edu/jsolomon/){: style="color:#111;" :}.  
-Preprint, September 2018  
-[[arXiv]](https://arxiv.org/abs/1809.07943)  
 
 
 _**Strategic Classification from Revealed Preferences**_  
