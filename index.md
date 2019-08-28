@@ -7,7 +7,7 @@ invisible: true
 
 # About Me 
 
-I am a third-year PhD student in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth). 
+I am a fourth-year PhD student in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth). 
 
 
 My research interests include game theory and mechanism design, learning theory, algorithmic fairness, and computational social science, which is to say I am interested in how stragegic agents, algorithmic processes, and social norms interact, both mathematically and in practice.

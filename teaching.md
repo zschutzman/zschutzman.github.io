@@ -5,14 +5,21 @@ permalink: /teaching/
 order: 3
 ---
 
-# Slides, Notes, and Teaching
+# Talks, Notes, and Teaching
 
 ----
 
-## Slides
+## Talks
+
+- <i> Introduction to the Metagraph of Districting Plans</i> given at the Voting Rights Data Institute, June 18, 2019
+
+- <i> Graphs, Geometry, and Gerrymanders </i> given at the University of Toronto Dept. of Mathematics Diet Graduate Seminar <a href="/assets/slides/gerrymath.pdf">[link to slides]</a>, Feb. 21, 2019  
+
+- <i> Shape Analysis for Redistricting </i> given at the University of Toronto Dept. of Mathematics Hyperbolic Lunch Seminar <a href="/assets/slides/gerrymath.pdf">[link to slides]</a>, Feb. 21, 2019
 
 
-<div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
+
+<!-- <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
     <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
         <img src="/assets/images/dualgerry2.png" width="150" height="150" style="border-radius: 5%; border: solid black 2px; transform: translate(15px,0px);" />
     </div>
@@ -61,7 +68,7 @@ order: 3
 	    </span>
 	    </p>
 	</div>
-</div>
+</div> -->
 
 
 ----
@@ -79,6 +86,8 @@ My notes from [the Metric Geometry and Gerrymandering Group's August 2017 Confer
 
 ## Teaching
 
+
+* I co-led a workshop introducing various optimization techniques to undergraduate and graduate students of varying backgrounds at the 2019 Voting Rights Data Institute.  The accompanying handouts can be found here: [Dynamic Programming](https://sites.tufts.edu/vrdi/files/2019/06/Opt-Day-1.pdf), [Greedy Algorithms](https://sites.tufts.edu/vrdi/files/2019/06/Opt-Day-2.pdf), [Linear and Integer Programming](https://sites.tufts.edu/vrdi/files/2019/06/Opt-Day-3.pdf)
 
 * I was a TA for [Bo Waggoner's](https://www.bowaggoner.com/) course [Algorithmic Game Theory (NETS 412)](https://www.bowaggoner.com/courses/2018/nets412/) in Spring 2018
 
