@@ -10,11 +10,11 @@ invisible: true
 I am a fourth-year PhD student in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth). 
 
 
-My research interests include game theory and mechanism design, learning theory, algorithmic fairness, and computational social science, which is to say I am interested in how stragegic agents, algorithmic processes, and social norms interact, both mathematically and in practice.
+My main research interests include game theory, learning theory, algorithmic fairness, and computational social science. I like to think about how stragegic agents, algorithmic processes, and social norms come together and interact, both mathematically and practically.
 
 At Penn, I am affiliated with the [CS Theory Research Group](http://theory.cis.upenn.edu/index.html), the [Warren Center for Network & Data Sciences](http://warrencenter.upenn.edu/), and the [Penn Research in Machine Learning (PRiML)](https://priml.upenn.edu/) group.
 
-I'm also interested in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), especially the mathematical and computational aspects of the related problems. I am a research associate with the [Metric Geometry and Gerrymandering Group](http://mggg.org) at MIT and Tufts.
+I'm also interested in [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering), especially the mathematical and computational aspects of the related problems. I am a research associate with the [Metric Geometry and Gerrymandering Group](http://mggg.org) at MIT and Tufts and was on the faculty for their 2019 [Voting Rights Data Institute](https://gerrydata.org) summer program.
 
 
 Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) in beautiful Waterville, Maine.  I graduated with a double major in [mathematics](http://colby.edu/math) and [economics](http://colby.edu/econ) and a [computer science](http://colby.edu/cs) minor.
