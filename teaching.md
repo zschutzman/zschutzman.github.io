@@ -15,7 +15,7 @@ order: 3
 
 * I was on the faculty for the [2019 Voting Rights Data Institute](https://gerrydata.org) where I: 
 	* co-led independent research groups
-		* <i>Investigating locality splitting</i> [[report]](https://github.com/vrdi/splitting/blob/master/SplittingReport.pdf)
+		* <i>Investigating locality splitting</i> 
 		* <i>Hackathon for education</i>
 		* <i>Optimal transport distances</i>    
 	* co-led a four-afternoon workshop introducing various optimization techniques  Accompanying handouts here:  
