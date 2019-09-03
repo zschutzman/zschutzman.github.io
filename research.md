@@ -17,7 +17,7 @@ To appear in the SIAM Journal on Applied Algebra and Geometry
 _**Equilibrium Characterization for Data Acquisition Games**_  
 with Jinshuo Dong, [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}, [Shahin Jabbari](http://cis.upenn.edu/~jabbari/){: style="color:#111;" :}, and [Michael Kearns](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :}.  
 In the proceedings of IJCAI '19  
-[[proceedings version (IJCAI)]](https://doi.org/10.24963/ijcai.2019/36)  
+[[conference proceedings version (IJCAI)]](https://doi.org/10.24963/ijcai.2019/36)  
 [[technical version (arXiv)]](https://arxiv.org/abs/1905.08909)
 
 
@@ -25,7 +25,7 @@ In the proceedings of IJCAI '19
 _**The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores**_  
 with [Assaf Bar-Natan](http://www.math.toronto.edu/safibn/){: style="color:#111;" :} and Lorenzo Najt.  
 Preprint, May 2019    
-[[arXiv]](https://arxiv.org/abs/1905.03173)  
+[[preprint (arXiv)]](https://arxiv.org/abs/1905.03173)  
 
 
 
