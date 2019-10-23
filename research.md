@@ -7,6 +7,14 @@ order: 1
 
 # Research
 
+
+_**Geometry of Graph Partitions via Optimal Transport**_  
+with [Tara Abrishami](https://www.pacm.princeton.edu/people/tara-abrishami){: style="color:#111;" :}, [Nestor Guillen](https://ndguillen.github.io/){: style="color:#111;" :}, [Parker Rule](https://pjrule.github.io/){: style="color:#111;" :}, [Justin Solomon](https://people.csail.mit.edu/jsolomon/){: style="color:#111;" :}, [Thomas Weighill](https://mggg.org/people/thomas_weighill){: style="color:#111;" :}, and [Si Wu](https://florissiwu.wordpress.com/){: style="color:#111;" :}.  
+Manuscript, October 2019  
+[[preprint (arXiv)]](https://arxiv.org/abs/1910.09618)  
+
+
+
 _**Total Variation Isoperimetric Profiles**_  
 with [Daryl DeFord](https://people.csail.mit.edu/ddeford/){: style="color:#111;" :}, [Hugo Lavenant](https://www.math.u-psud.fr/~lavenant/){: style="color:#111;" :}, and [Justin Solomon](https://people.csail.mit.edu/jsolomon/){: style="color:#111;" :}.  
 To appear in the SIAM Journal on Applied Algebra and Geometry  
@@ -15,7 +23,7 @@ To appear in the SIAM Journal on Applied Algebra and Geometry
 
 
 _**Equilibrium Characterization for Data Acquisition Games**_  
-with Jinshuo Dong, [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}, [Shahin Jabbari](http://cis.upenn.edu/~jabbari/){: style="color:#111;" :}, and [Michael Kearns](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :}.  
+with Jinshuo Dong, [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}, [Shahin Jabbari](https://shahin-jabbari.github.io/){: style="color:#111;" :}, and [Michael Kearns](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :}.  
 In the proceedings of IJCAI '19  
 [[conference proceedings version (IJCAI)]](https://doi.org/10.24963/ijcai.2019/36)  
 [[technical version (arXiv)]](https://arxiv.org/abs/1905.08909)
@@ -23,8 +31,8 @@ In the proceedings of IJCAI '19
 
 
 _**The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores**_  
-with [Assaf Bar-Natan](http://www.math.toronto.edu/safibn/){: style="color:#111;" :} and Lorenzo Najt.  
-Preprint, May 2019    
+with [Assaf Bar-Natan](http://www.math.toronto.edu/safibn/){: style="color:#111;" :} and [Lorenzo Najt](https://lorenzonajt.github.io/){: style="color:#111;" :}.  
+Manuscript, May 2019    
 [[preprint (arXiv)]](https://arxiv.org/abs/1905.03173)  
 
 
@@ -39,7 +47,7 @@ In the proceedings of EC '19
 
 
 _**Fair Algorithms for Learning in Allocation Problems**_  
-with [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}, [Shahin Jabbari](http://cis.upenn.edu/~jabbari/){: style="color:#111;" :}, [Christopher Jung](https://www.cis.upenn.edu/~chrjung/){: style="color:#111;" :}, [Michael Kearns](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :}, [Seth Neel](https://sethstatistics.wordpress.com/){: style="color:#111;" :}, and [Aaron Roth](http://www.cis.upenn.edu/~aaroth/){: style="color:#111;" :}.  
+with [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="color:#111;" :}, [Shahin Jabbari](https://shahin-jabbari.github.io/){: style="color:#111;" :}, [Christopher Jung](https://www.cis.upenn.edu/~chrjung/){: style="color:#111;" :}, [Michael Kearns](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :}, [Seth Neel](https://sethstatistics.wordpress.com/){: style="color:#111;" :}, and [Aaron Roth](http://www.cis.upenn.edu/~aaroth/){: style="color:#111;" :}.  
 In the proceedings of FAT\* '19  
 [[conference proceedings version (ACM Digital Library)]](https://dl.acm.org/authorize?N671375)  
 [[full version (arXiv)]](https://arxiv.org/abs/1808.10549) 

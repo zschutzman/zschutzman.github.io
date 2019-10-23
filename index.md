@@ -23,10 +23,10 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 ## Recent Stuff 
 
 
-- Our paper <i><a href="https://arxiv.org/abs/1905.08909" >Equilibrium Characterization for Data Acquisition Games </a></i> appeared at <a href="https://ijcai19.org">IJCAI</a> in August!
+- Our paper <i><a href="https://arxiv.org/abs/1910.09618" >Geometry of Graph Partitions via Optimal Transport </a></i> is on the arXiv!
 
 
-- Our paper <i><a href="https://arxiv.org/abs/1905.03173" > The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores </a></i> is on arXiv!
+- Our paper <i><a href="https://arxiv.org/abs/1905.03173" > The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores </a></i> is on the arXiv!
 
 
 - Our paper <i><a href="https://arxiv.org/abs/1905.00844" > Price of Privacy in the Keynesian Beauty Contest </a></i> appeared at <a href="https://sigecom.org/ec19"> EC </a> in June!
