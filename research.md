@@ -12,6 +12,7 @@ _**Geometry of Graph Partitions via Optimal Transport**_
 with [Tara Abrishami](https://www.pacm.princeton.edu/people/tara-abrishami){: style="color:#111;" :}, [Nestor Guillen](https://ndguillen.github.io/){: style="color:#111;" :}, [Parker Rule](https://pjrule.github.io/){: style="color:#111;" :}, [Justin Solomon](https://people.csail.mit.edu/jsolomon/){: style="color:#111;" :}, [Thomas Weighill](https://mggg.org/people/thomas_weighill){: style="color:#111;" :}, and [Si Wu](https://florissiwu.wordpress.com/){: style="color:#111;" :}.  
 Manuscript, October 2019  
 [[preprint (arXiv)]](https://arxiv.org/abs/1910.09618)  
+[[accompanying code (GitHub)]](https://github.com/vrdi/geometry-of-graph-partitions)
 
 
 
@@ -19,6 +20,7 @@ _**Total Variation Isoperimetric Profiles**_
 with [Daryl DeFord](https://people.csail.mit.edu/ddeford/){: style="color:#111;" :}, [Hugo Lavenant](https://www.math.u-psud.fr/~lavenant/){: style="color:#111;" :}, and [Justin Solomon](https://people.csail.mit.edu/jsolomon/){: style="color:#111;" :}.  
 To appear in the SIAM Journal on Applied Algebra and Geometry  
 [[preprint (arXiv)]](https://arxiv.org/abs/1809.07943)  
+[[accompanying code (GitHub)]](https://github.com/justso1/tv_profile)
 
 
 
