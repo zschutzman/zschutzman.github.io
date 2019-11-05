@@ -8,15 +8,19 @@ url: "http://www.zachschutzman.com" # the base hostname & protocol for your site
 twitter_username: zschutzy
 github_username:  zschutzman
 curriculumurl: "http://zachschutzman.com"
-permalink: /blog/:year/:month/:title.html
+
 plugins:
   - jekyll-sitemap
 
 # Build settings
 markdown: kramdown
 theme: minima
-bio: PhD Student, Department of Computer and Information Science, University of Pennsylvania
-shortbio: Zach is a PhD student at the University of Pennsylvania, Department of Computer and Information Science.  His research interests include game theory and mechanism design, machine learning, and computing for the social sciences.
+bio: 
+ PhD Student, <br/>
+ Department of Computer and Information Science, <br/>
+ University of Pennsylvania
+
+shortbio: Zach is a PhD student at the University of Pennsylvania in the Department of Computer and Information Science.  His research interests include game theory and mechanism design, machine learning, algorithmic fairness, and computing for the social sciences.
 
 tag_page_layout: tag_page
 tag_page_dir: tag

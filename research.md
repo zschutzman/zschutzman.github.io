@@ -5,8 +5,9 @@ permalink: /research/
 order: 1
 ---
 
-# Research
+<h2 style="margin-bottom: 7px; margin-top:10px" >  Research </h2>
 
+All author lists are alphabetical.
 
 _**Geometry of Graph Partitions via Optimal Transport**_  
 with [Tara Abrishami](https://www.pacm.princeton.edu/people/tara-abrishami){: style="color:#111;" :}, [Nestor Guillen](https://ndguillen.github.io/){: style="color:#111;" :}, [Parker Rule](https://pjrule.github.io/){: style="color:#111;" :}, [Justin Solomon](https://people.csail.mit.edu/jsolomon/){: style="color:#111;" :}, [Thomas Weighill](https://mggg.org/people/thomas_weighill){: style="color:#111;" :}, and [Si Wu](https://florissiwu.wordpress.com/){: style="color:#111;" :}.  
@@ -62,6 +63,7 @@ In the proceedings of EC '18
 [[conference proceedings version (ACM Digital Library)]](https://dl.acm.org/authorize?N671376)    
 [[full version (arXiv)]](https://arxiv.org/abs/1710.07887)  
 Appeared at the Workshop on Learning in the Presence of Strategic Behavior at NeurIPS '17  
+[[workshop version (pdf)]](https://zachschutzman.com/assets/papers/stratclass_neurips.pdf)  
 
 
 

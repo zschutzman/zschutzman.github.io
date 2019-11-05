@@ -5,7 +5,9 @@ date:   2017-05-24
 tags: personal gradschool research
 mathjax: true
 author: Zach
-comments: true
+permalink: /blog/first-post
+summary: > 
+     In which I commit to writing a blog, then largely neglect it for two years.
 ---
 So I'm one academic year into grad school.  A lot has happened in the year since I graduated from Colby: I moved from Waterville to Philadelphia, I completed two semeseters of graduate level CS coursework with minimal undergrad training in the discipline, I've started working on some interesting research problems, and I've met some interesting people.  I've now tried three times to get a blog going, but I had very little time and energy this year to sit down, set up the site, and get some content out there.
 
@@ -20,7 +22,7 @@ A lot of people (both in and outside of my academic circle) ask me *what exactly
 #### 1. ***Computational Economics*** 
 {: style="color:#800000;" :}
 
- Economics is the study of how society, institutions, and individuals allocate scarse resources.  One way that this happens in the everyday world is people buying goods and services from companies.  There are only so many apples at the Whole Foods, and they choose to set their price at, like, $7 per pound because that's what they've determined is the profit-maximizing price (for whatever reason).  What happens when we have multiple people and multiple goods AND the people have more complex desires than just wanting some apples?  What if Alice and Bob show up to the store and Alice wants an apple and an orange and Bob wants an apple and a pear, neither of them will settle for having only one of the fruits (all-or-none), and there is only one apple?  How do we decide who gets the apple?  What if there dozens or hundreds of people and produce items?  It turns out that deciding the best allocation of goods in these settings is actually a really difficult problem for computers to solve, so Computational Economists come up with methods for finding approximate solutions to these kinds of problems in various settings.
+ Economics is the study of how society, institutions, and individuals allocate scarce resources.  One way that this happens in the everyday world is people buying goods and services from companies.  There are only so many apples at the Whole Foods, and they choose to set their price at, like, $7 per pound because that's what they've determined is the profit-maximizing price (for whatever reason).  What happens when we have multiple people and multiple goods AND the people have more complex desires than just wanting some apples?  What if Alice and Bob show up to the store and Alice wants an apple and an orange and Bob wants an apple and a pear, neither of them will settle for having only one of the fruits (all-or-none), and there is only one apple?  How do we decide who gets the apple?  What if there dozens or hundreds of people and produce items?  It turns out that deciding the best allocation of goods in these settings is actually a really difficult problem for computers to solve, so Computational Economists come up with methods for finding approximate solutions to these kinds of problems in various settings.
 
 #### 2. ***Statistical Learning Theory*** 
 {: style="color:#800000;" :}

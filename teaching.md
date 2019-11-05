@@ -5,14 +5,8 @@ permalink: /teaching/
 order: 3
 ---
 
-# Teaching, Notes, and Talks
 
-
-
-----
-
-## Teaching
-
+<h2 style="margin-bottom: 7px; margin-top:10px" > Teaching </h2>
 
 
 <ul>
@@ -56,7 +50,7 @@ order: 3
 
 ----
 
-## Notes
+<h2 style="margin-bottom: 7px" > Notes </h2>
 
 
 * Notes for [Theory of Computation (UPenn CIS 511, Spring 2017)](http://zachschutzman.com/assets/notes/toc511.pdf)
@@ -71,10 +65,11 @@ order: 3
 
 ----
 
-## Talks
+<h2 style="margin-bottom: 7px" > Talks </h2>
 
+- <i> Equilibrium Characterization for Data Acquisition Games </i> given at IJCAI, August 8, 2019.  [[slides]](/assets/slides/mlgames_ijcai.pdf)
 
-- <i> Introduction to the Metagraph of Districting Plans</i> given at the Voting Rights Data Institute, June 18, 2019
+- <i> Introduction to the Metagraph of Districting Plans</i> given at the Voting Rights Data Institute, June 18, 2019.  
 
 - <i> Graphs, Geometry, and Gerrymanders </i> given at the University of Toronto Dept. of Mathematics Diet Graduate Seminar, Feb. 21, 2019. [[slides]](/assets/slides/gerrymath.pdf).
 

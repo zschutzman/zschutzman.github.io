@@ -4,7 +4,9 @@ title:  "Graphs are PAC-Learnable from Subgraphs"
 date:   2017-05-25
 tags: research math
 mathjax: true
-author: Zach
+permalink: /blog/graphs-pac-subgraph
+summary: >
+    A result from Hadi's and my research project for Computational Learning Theory, and an excuse to practice $\rm\LaTeX$ for the website.
 ---
 
 This semester I took a course on Computational Learning Theory, which deals with the statistical and computational underpinnings of machine learning.  As part of our final project, Hadi Elzayn and I proved that graphs are Probabily-Approximately Correct (PAC)-learnable from labeled supergraph/subgraph examples in polynomial sample complexity.  Here's a presentation of that proof as well as a fun little way of trying out $\TeX$ on the blog.

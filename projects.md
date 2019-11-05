@@ -6,10 +6,10 @@ order: 2
 ---
 
 
-# Projects
+<h2 style="margin-bottom: 7px; margin-top:10px" >  Projects </h2>
 
 
-
+Here are some projects I've worked on with some amazing friends and colleagues.
 
 <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
     <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
