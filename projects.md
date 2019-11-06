@@ -11,6 +11,38 @@ order: 2
 
 Here are some projects I've worked on with some amazing friends and colleagues.
 
+
+
+<div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
+    <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
+        <img src="/assets/images/enumerator.gif" width="150" height="150" style="border-radius: 5%; border: solid black 2px; transform: translate(15px,0px);" />
+    </div>
+	<div style="margin-left: 180px;padding: 15px; padding-top:0px">
+	    <h2 style="font-size:1.2em; margin-top:0px; text-align:center; word-break: break-all; hyphens: auto; color:$text-color">
+	    	<a href="https://github.com/zschutzman/emumerator/" style="color: black; text-decoration: none;" >
+	    	enumerator
+	    </a>
+	    </h2>
+	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
+	        Some Julia code to enumerate the connected partitions of grid graphs.
+	   		<br/><br/>
+	        <a href="https://github.com/zschutzman/emumerator/" style="float: left; position:absolute; bottom:10px; left:180px"><b>
+	        	View Project
+	        </b></a>
+	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
+	        Summer 2019
+	    </span>
+	    </p>
+	</div>
+</div>
+<!-- </div> -->
+<div style="margin:20px"></div>
+
+
+
+
+
+
 <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
     <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
         <img src="/assets/images/csfgif.gif" width="150" height="150" style="border-radius: 5%; border: solid black 2px; transform: translate(15px,0px);" />
