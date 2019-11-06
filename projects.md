@@ -24,7 +24,7 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 	    </a>
 	    </h2>
 	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
-	        Some Julia code to enumerate the connected partitions of grid graphs.
+	        Some Julia code to enumerate the connected partitions of grid graphs, used as examples in several computational geometry and redistricting projects.  See the repository for more details.
 	   		<br/><br/>
 	        <a href="https://github.com/zschutzman/emumerator/" style="float: left; position:absolute; bottom:10px; left:180px"><b>
 	        	View Project
