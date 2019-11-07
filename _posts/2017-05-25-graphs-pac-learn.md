@@ -9,7 +9,7 @@ summary: >
     A result from Hadi's and my research project for Computational Learning Theory, and an excuse to practice $\rm\LaTeX$ for the website.
 ---
 
-This semester I took a course on Computational Learning Theory, which deals with the statistical and computational underpinnings of machine learning.  As part of our final project, Hadi Elzayn and I proved that graphs are Probabily-Approximately Correct (PAC)-learnable from labeled supergraph/subgraph examples in polynomial sample complexity.  Here's a presentation of that proof as well as a fun little way of trying out $\TeX$ on the blog.
+This semester I took a course on Computational Learning Theory, which deals with the statistical and computational underpinnings of machine learning.  As part of our final project, Hadi Elzayn and I proved that graphs are Probably-Approximately Correct (PAC)-learnable from labeled supergraph/subgraph examples in polynomial sample complexity.  Here's a presentation of that proof as well as a fun little way of trying out $\TeX$ on the blog.
 
 ----
 
@@ -82,9 +82,9 @@ We have $m$ polynomial in $\|E\|$ (which is itself polynomial in the number of v
 
 ## The Same As Conjunctions
 
-This proof almost exactly followed the proof in Kearns and Vazirani of boolean conjuctions being efficiently PAC-learnable.  In fact, everything from the structure to the sample complexity bound carries through because learning a graph from supergraphs is equivalent to learning a boolean conjuction from positive examples.
+This proof almost exactly followed the proof in Kearns and Vazirani of boolean conjuctions being efficiently PAC-learnable.  In fact, everything from the structure to the sample complexity bound carries through because learning a graph from supergraphs is equivalent to learning a boolean conjunction from positive examples.
 
-Let $e_{ij}$ be a possible edge in $G$, and let $x_{ij}$ be the boolean variable which takes on the value $1$ (or true) when $e_{ij}$ is actually an edge in $G$ and $0$ (or false) otherwise.  Then a graph is just a conjuction over the positive instances of the literals corresponding to edges in the graph.  Deleting edges when they do not appear in a supergraph is equivalent to deleting literals which are $0$ in a positive example.
+Let $e_{ij}$ be a possible edge in $G$, and let $x_{ij}$ be the boolean variable which takes on the value $1$ (or true) when $e_{ij}$ is actually an edge in $G$ and $0$ (or false) otherwise.  Then a graph is just a conjunction over the positive instances of the literals corresponding to edges in the graph.  Deleting edges when they do not appear in a supergraph is equivalent to deleting literals which are $0$ in a positive example.
 
 From here, it should be simple to see how we can learn a graph $G$ from positive examples which are subgraphs of $G$, simply by considering the negation of the previous problem.
 

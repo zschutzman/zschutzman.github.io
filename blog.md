@@ -9,5 +9,5 @@ mathjax: true
 
 <h2 style="margin-bottom: 7px; margin-top:10px" >  The Blog </h2>
 
----
+<hr style="margin:25px" />
 
