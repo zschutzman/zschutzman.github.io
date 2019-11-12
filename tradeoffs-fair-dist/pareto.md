@@ -28,7 +28,7 @@ for Pennsylvania, including the four displayed in the paper.  Click a state belo
 
 <div style="text-align: center">
 <div style="display: inline-block; text-align: center; width:325px">
-<a href="nc-maps"> 
+<a href="./nc-maps"> 
     <div>North Carolina</div>
     <img border="0" alt="North Carolina" src="/assets/images/nc_outline.png" height="150">
 </a>
@@ -36,7 +36,7 @@ for Pennsylvania, including the four displayed in the paper.  Click a state belo
 
 
 <div style="display: inline-block; text-align: center; width:325px">
-<a href="pa-maps">
+<a href="./pa-maps">
     <div>Pennsylvania</div>
     <img border="0" alt="Pennsylvania" src="/assets/images/pa_outline.png" height="150">
 </a>
