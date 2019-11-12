@@ -60,7 +60,7 @@ invisible: true
 
 [**Go Back**](..)
 
-
+## Pennsylvania -- Pareto-Optimal Plans 
 
 These are the 25 Pareto-optimal plans for Pennsylvania, ordered from least compact to most compact (and therefore in descending order according to partisan symmetry).
 The districts are colored on a red-grey-blue scale, according to the margin of victory in the 2016 U.S. Senate race.  Districts with a wider margin for Democrat Katie McGinty appear 
@@ -71,7 +71,7 @@ be understood as the degree to which the black dots align with the centers of th
 
 The maps with a high degree   Because the concentration of Democrats in the cities is much higher than the concentration of Republicans in the rural areas, achieving a high degree 
 of partisan symmetry requires diluting the Democratic voters in the Philadelphia region to match the natural partisan breakdown of the middle of the state.  In the 
-highly compact plans, we can observe that the most Democratic districts are far, far bluer than the most Republican district is red, causing the high degree of partisan asymmetry.
+highly compact plans, we can observe that the most Democratic-favoring districts have a more extreme partisan imbalance than the most Republican-favoring districts, causing the high degree of partisan asymmetry.
 
 <div class="parent">
 <div id="pamap0" class="map"></div>
