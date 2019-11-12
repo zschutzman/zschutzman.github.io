@@ -1,7 +1,7 @@
 ---
 layout: twocol
 title: Trade-offs in Fair Redistricting Online Appendix
-permalink: /tradeoffs-fair-dist
+permalink: /tradeoffs-fair-dist/
 order: 7
 customjs: 
 
