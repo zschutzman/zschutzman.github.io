@@ -70,7 +70,7 @@ function colorplan(feature) {
             plancolor = [];
             var map = new L.map(bindto, {
                 maxZoom:10, minZoom:4, attributionControl: false,
-            }).fitBounds([[31.7,-85],[37,-74]]);
+            });
 
             var layer =  L.geoJson(varname, {
                 style: colorplan,
@@ -79,6 +79,8 @@ function colorplan(feature) {
             
             
             ncplancolors.push(plancolor.slice(0).sort())
+
+            map.fitBounds(layer.getBounds());
             return layer;
         };
 
@@ -178,7 +180,48 @@ function colorplan(feature) {
             .style("stroke-width",3)
             .style("stroke","#999999");
 
+            svg.append("line")
+            .attr("x1", 0)
+            .attr("x2", 5)
+            .attr("y1", .75*h)
+            .attr("y2", .75*h )
+            .style("stroke","#242424")
+            .style("stroke-width", 3);
 
+
+            svg.append("line")
+            .attr("x1", 0)
+            .attr("x2", 5)
+            .attr("y1", .5*h)
+            .attr("y2", .5*h )
+            .style("stroke","#242424")
+            .style("stroke-width", 3);
+
+            svg.append("text")
+            .text("0.5")
+            .attr("x", 10)
+            .attr("y", .5*h+5)
+            .style("font-size", ".7em");
+
+            svg.append("line")
+            .attr("x1", 0)
+            .attr("x2", 5)
+            .attr("y1", .25*h)
+            .attr("y2", .25*h )
+            .style("stroke","#242424")
+            .style("stroke-width", 3);
+
+
+            for (var i=1; i<=13; i+=1){
+            svg.append("line")
+            .attr("x1", i*w/15)
+            .attr("x2", i*w/15)
+            .attr("y1", h)
+            .attr("y2", h-5 )
+            .style("stroke","#242424")
+            .style("stroke-width", 3);
+
+}
 
 
             var circs = svg.selectAll("circle")
