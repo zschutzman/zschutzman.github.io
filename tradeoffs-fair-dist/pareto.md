@@ -15,7 +15,7 @@ invisible: true
 
 
 
-
+## *Trade-offs in Fair Redistricting* -- Online Appendix
 
 This is the online appendix for the paper *Trade-offs in Fair Redistricting* which is, inconveniently to you, not available as a 
 preprint right now, but this website isn't linked anywhere, so...  
