@@ -6,8 +6,10 @@
 
   {% if page.seo.title %}
   <title>{{ page.seo.title }}</title>
-  {% else %}
+  {% elsif page.title %}
   <title>{{ page.title }} | {% include _i18n/i18n.html value=site.title %}</title>
+  {% else %}
+  <title>{% include _i18n/i18n.html value=site.title %}</title>
   {% endif %}
 
   {% if page.seo.description %}
