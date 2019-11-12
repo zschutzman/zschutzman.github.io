@@ -52,7 +52,7 @@ invisible: true
 
 These are the 13 Pareto-optimal plans for North Carolina, ordered from least compact to most compact (and therefore in descending order according to partisan symmetry).  
 The districts are colored on a red-grey-blue scale, according to the margin of victory in the 2014 U.S. Senate race.  Districts with a wider margin for Democrat Kay Hagan appear 
-bluer and those with a wider margin for Thom Tillis appear redder.  
+bluer and those with a wider margin for Republican Thom Tillis appear redder.  
 
 
 Next to each map is a representation of the seats-votes curve in large colored dots and the inversion about the midpoint in smaller black dots.  The partisan symmetry score can 

@@ -64,7 +64,7 @@ invisible: true
 
 These are the 25 Pareto-optimal plans for Pennsylvania, ordered from least compact to most compact (and therefore in descending order according to partisan symmetry).
 The districts are colored on a red-grey-blue scale, according to the margin of victory in the 2016 U.S. Senate race.  Districts with a wider margin for Democrat Katie McGinty appear 
-bluer and those with a wider margin for Pat Toomey appear redder.  The maps are interactive and the curious reader is encouraged to zoom in on the Philadelphia area in the southeast corner of the state, as the high population density in that region results in several small districts which may be hard to see in the default view.
+bluer and those with a wider margin for Republican Pat Toomey appear redder.  The maps are interactive and the curious reader is encouraged to zoom in on the Philadelphia area in the southeast corner of the state, as the high population density in that region results in several small districts which may be hard to see in the default view.
 
 Next to each map is a representation of the seats-votes curve in large colored dots and the inversion about the midpoint in smaller black dots.  The partisan symmetry score can 
 be understood as the degree to which the black dots align with the centers of the colored dots and the asymmetry is the normalized sum of the vertical discrepancies.
