@@ -1,6 +1,6 @@
         var percentColors = [
         { pct: 0.0, color: { r: 0x00, g: 0x00, b: 0xff } },
-        { pct: 0.5, color: { r: 0xcc, g: 0xcc, b: 0xcc } },
+        { pct: 0.5, color: { r: 0xaa, g: 0xaa, b: 0xaa } },
         { pct: 1.0, color: { r: 0xff, g: 0, b: 0x00 } } ];
 
         var getColorForPercentage = function(pct) {
