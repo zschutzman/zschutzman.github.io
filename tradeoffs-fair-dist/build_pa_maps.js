@@ -280,7 +280,7 @@ const scores_24 = [0.36, 0.926];
             .attr("cx" ,function(d) {return w - ((d[0]+1)*w/20) }  )
             .attr("cy", function(d) { return d[1]*h })
             .attr("r",2)
-            .style("fill", "#323232");
+            .style("fill", "#242424");
 
 
         }
