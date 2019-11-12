@@ -5,13 +5,12 @@ layout: default
 <div class="about-col-wrapper">
   <div class="about-col about-col-1" style="max-width:25%">
 
-
     {% if site.github_username %}
     <img style="max-width:200px" class="user-picture" src="https://github.com/{{ site.github_username }}.png" alt="{{ site.author }}">
     {% endif %}
 
     <div class="contact-list", style="max-width:50%">
-      PhD Student, Department of Computer and Information Science, University of Pennsylvania
+      PhD Student, <br />Department of Computer and Information Science, <br />University of Pennsylvania
     </div>
 
     <ul class="contact-list">
@@ -34,20 +33,11 @@ layout: default
 
     {% include contactlist.html %}
 
-
-
-
   </div>
 
-
-
   <article class="about-col about-col-2" itemscope itemtype="http://schema.org/BlogPosting" style="max-width=75%">
-
-   
-
     <div class="post-content" itemprop="articleBody">
       {{ content }}
     </div>
-
   </article>
 </div>
