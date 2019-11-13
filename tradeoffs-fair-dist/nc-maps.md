@@ -51,6 +51,7 @@ invisible: true
 ## North Carolina -- Pareto-Optimal Plans 
 
 These are the 13 Pareto-optimal plans for North Carolina, ordered from least compact to most compact (and therefore in descending order according to partisan symmetry).  
+All figures are rounded to three decimal places of precision.  
 The districts are colored on a red-grey-blue scale, according to the margin of victory in the 2014 U.S. Senate race.  Districts with a wider margin for Democrat Kay Hagan appear 
 bluer and those with a wider margin for Republican Thom Tillis appear redder.  
 
