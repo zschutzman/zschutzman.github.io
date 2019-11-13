@@ -314,14 +314,14 @@ const scores_24 = [0.36, 0.926];
             .attr("cy", function(d) {
                 return h-(d[1]*h);
             })
-            .attr("r", 6)
+            .attr("r", 7)
             .style("fill",function(d) {  return getColorForPercentage( paplancolors[parseInt(name)][d[0]-1] )})
             
 
             circs.append("circle")
             .attr("cx" ,function(d) {return w - ((d[0]+1)*w/20) }  )
             .attr("cy", function(d) { return d[1]*h })
-            .attr("r",2)
+            .attr("r",3)
             .style("fill", "#242424");
 
 
