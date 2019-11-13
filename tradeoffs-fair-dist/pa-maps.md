@@ -74,7 +74,7 @@ The maps with a high degree   Because the concentration of Democrats in the citi
 of partisan symmetry requires diluting the Democratic voters in the Philadelphia region to match the natural partisan breakdown of the middle of the state.  In the 
 highly compact plans, we can observe that the most Democratic-favoring districts have a more extreme partisan imbalance than the most Republican-favoring districts, causing the high degree of partisan asymmetry.
 
-Several pairs of plans adjacent in this list look highly similar to each other. This is because they were found along the same run of the Markov chain Monte Carlo search procedure.  
+Several pairs of plans in this list look highly similar to each other. This is because they were found along the same run of the Markov chain Monte Carlo search procedure.  
 
 <div class="parent">
 <div id="pamap0" class="map"></div>
