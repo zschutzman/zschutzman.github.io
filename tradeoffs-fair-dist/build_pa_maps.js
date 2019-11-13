@@ -249,21 +249,21 @@ const scores_24 = [0.36, 0.926];
             .attr("x2",0)
             .attr("y2",h)
             .style("stroke-width",3)
-            .style("stroke","#999999");
+            .style("stroke","#888888");
             svg.append("line")
             .attr("x1",0)
             .attr("y1",h)
             .attr("x2",w)
             .attr("y2",h)
             .style("stroke-width",3)
-            .style("stroke","#999999");
+            .style("stroke","#888888");
 
             svg.append("line")
             .attr("x1", 0)
             .attr("x2", 5)
             .attr("y1", .75*h)
             .attr("y2", .75*h )
-            .style("stroke","#242424")
+            .style("stroke","#888888")
             .style("stroke-width", 3);
 
 
@@ -272,7 +272,7 @@ const scores_24 = [0.36, 0.926];
             .attr("x2", 5)
             .attr("y1", .5*h)
             .attr("y2", .5*h )
-            .style("stroke","#242424")
+            .style("stroke","#888888")
             .style("stroke-width", 3);
 
             svg.append("text")
@@ -286,7 +286,7 @@ const scores_24 = [0.36, 0.926];
             .attr("x2", 5)
             .attr("y1", .25*h)
             .attr("y2", .25*h )
-            .style("stroke","#242424")
+            .style("stroke","#888888")
             .style("stroke-width", 3);
 
 
@@ -296,7 +296,7 @@ const scores_24 = [0.36, 0.926];
             .attr("x2", i*w/20)
             .attr("y1", h)
             .attr("y2", h-5 )
-            .style("stroke","#242424")
+            .style("stroke","#888888")
             .style("stroke-width", 3);
 
 }
