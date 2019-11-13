@@ -60,7 +60,7 @@ Next to each map is a representation of the seats-votes curve in large colored d
 be understood as the degree to which the black dots align with the centers of the colored dots and the asymmetry is the normalized sum of the vertical discrepancies. 
 
 
-The first map has only marginally more partisan symmetry than the second but the second is significantly more compact than the first, as can be seen below and in Figure (DO REF) in the paper.  The last two maps are extremely similar and were indeed both found on the same run of the Markov chain Monte Carlo procedure.  
+The first map has only marginally more partisan symmetry than the second but the second is significantly more compact than the first, as can be seen below and in Figure 4 in the paper.  The last two maps are extremely similar and were indeed both found on the same run of the Markov chain Monte Carlo procedure.  
 
 
 
