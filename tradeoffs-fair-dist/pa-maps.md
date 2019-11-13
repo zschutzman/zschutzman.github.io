@@ -5,7 +5,7 @@ permalink: /tradeoffs-fair-dist/pa-maps/
 order: 7
 customjs: 
 - https://d3js.org/d3.v5.min.js
-- ../leaflet/js/leaflet.js
+- https://unpkg.com/leaflet@1.5.1/dist/leaflet.js
 - ../pa_data/pa_0.geojson
 - ../pa_data/pa_1.geojson
 - ../pa_data/pa_2.geojson

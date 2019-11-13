@@ -5,7 +5,7 @@ permalink: /tradeoffs-fair-dist/nc-maps/
 order: 7
 customjs: 
 - https://d3js.org/d3.v5.min.js
-- ../leaflet/js/leaflet.js
+- https://unpkg.com/leaflet@1.5.1/dist/leaflet.js
 - ../nc_data/nc_0.geojson
 - ../nc_data/nc_1.geojson
 - ../nc_data/nc_2.geojson
