@@ -16,13 +16,14 @@ order: 3
 		<ul style="padding:0px;margin-bottom:0px">
 			<li> <i>Investigating locality splitting</i></li>
 			<li> <i>Hackathon for education</i></li>
-			<li><i>Optimal transport distances</i></li>
+			<li><i>Optimal transport distances between districting plans</i></li>
 		</ul>
 		<li> co-led a workshop introducing topics in optimization</li>
 		<ul style="padding:0px;margin-bottom:0px">
 			<li> <a href="https://sites.tufts.edu/vrdi/files/2019/06/Opt-Day-1.pdf">Greedy Algorithms</a></li>
 			<li><a href="https://sites.tufts.edu/vrdi/files/2019/06/Opt-Day-2.pdf">Dynamic Programming</a></li>
 			<li><a href="https://sites.tufts.edu/vrdi/files/2019/06/Opt-Day-3.pdf">Linear and Integer Programming</a></li>
+			<li>Optimal Transport</li>
 		</ul>
 		<li> gave tutorials on Python and <a href="https://github.com/mggg/gerrychain">gerrychain</a></li>
 	</ul>
@@ -33,7 +34,7 @@ order: 3
 	<li>I was a graduate TA for <a href="https://www.bowaggoner.com/">Bo Waggoner's</a> course <a href="https://www.bowaggoner.com/courses/2018/nets412/">Algorithmic Game Theory (NETS 412)</a> in Spring 2018</li>
 </ul>
 <ul>
-	<li>I was a graudate TA for <a href = "https://cis.upenn.edu/~mkearns">Michael Kearns'</a> course <a href="https://www.cis.upenn.edu/~mkearns/teaching/NetworkedLife/">Networked Life (NETS 112)</a> in Fall 2017</li>
+	<li>I was a graduate TA for <a href = "https://cis.upenn.edu/~mkearns">Michael Kearns'</a> course <a href="https://www.cis.upenn.edu/~mkearns/teaching/NetworkedLife/">Networked Life (NETS 112)</a> in Fall 2017</li>
 </ul>
 <ul>
 	<li>I was a TA/grader/tutor at Colby College for:</li>
