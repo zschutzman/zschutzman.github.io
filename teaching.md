@@ -68,13 +68,13 @@ order: 3
 
 <h2 style="margin-bottom: 7px" > Talks </h2>
 
-- <i> Equilibrium Characterization for Data Acquisition Games </i> given at IJCAI, August 8, 2019.  [[slides]](/assets/slides/mlgames_ijcai.pdf)
+- <i> Equilibrium Characterization for Data Acquisition Games</i>. IJCAI, August 8, 2019.  [[slides]](/assets/slides/mlgames_ijcai.pdf)
 
-- <i> Introduction to the Metagraph of Districting Plans</i> given at the Voting Rights Data Institute, June 18, 2019.  
+- <i> Introduction to the Metagraph of Districting Plans</i>. Voting Rights Data Institute, June 18, 2019.  
 
-- <i> Graphs, Geometry, and Gerrymanders </i> given at the University of Toronto Dept. of Mathematics Diet Graduate Seminar, Feb. 21, 2019. [[slides]](/assets/slides/gerrymath.pdf).
+- <i> Graphs, Geometry, and Gerrymanders</i>.  University of Toronto Dept. of Mathematics Diet Graduate Seminar, Feb. 21, 2019. [[slides]](/assets/slides/gerrymath.pdf).
 
-- <i> Shape Analysis for Redistricting </i> given at the University of Toronto Dept. of Mathematics Hyperbolic Lunch Seminar Feb. 21, 2019. [[slides]](/assets/slides/gerrygeom.pdf).
+- <i> Shape Analysis for Redistricting</i>. University of Toronto Dept. of Mathematics Hyperbolic Lunch Seminar Feb. 21, 2019. [[slides]](/assets/slides/gerrygeom.pdf).
 
 
 
