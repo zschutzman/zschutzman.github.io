@@ -20,7 +20,7 @@ Manuscript, October 2019
 _**Total Variation Isoperimetric Profiles**_  
 with [Daryl DeFord](https://people.csail.mit.edu/ddeford/){: style="color:#111;" :}, [Hugo Lavenant](https://www.math.u-psud.fr/~lavenant/){: style="color:#111;" :}, and [Justin Solomon](https://people.csail.mit.edu/jsolomon/){: style="color:#111;" :}.  
 In the SIAM Journal on Applied Algebra and Geometry, Vol. 3 Issue 4    
-[[journal version]](https://epubs.siam.org/doi/abs/10.1137/18M1215943)
+[[journal version]](https://epubs.siam.org/doi/abs/10.1137/18M1215943)  
 [[preprint (arXiv)]](https://arxiv.org/abs/1809.07943)  
 [[accompanying code (GitHub)]](https://github.com/justso1/tv_profile)
 
