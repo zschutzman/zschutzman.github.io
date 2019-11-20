@@ -21,7 +21,7 @@
   
   {% if site.curriculuml %}
   <li>
-    {% include _icons/file.html curriculum=site.curriculumurl %}
+    {% include _icons/cv.html curriculum=site.curriculumurl %}
   </li>
   {% endif %}
 
@@ -34,6 +34,12 @@
   {% if site.keybase_username %}
   <li>
     {% include _icons/keybase.html username=site.keybase_username %}
+  </li>
+  {% endif %}
+
+  {% if site.google_scholar %}
+  <li>
+    {% include _icons/gscholar.html %}
   </li>
   {% endif %}
 

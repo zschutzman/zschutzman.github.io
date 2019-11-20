@@ -29,10 +29,13 @@ layout: default
         {% include _icons/website.html url=site.author_website %}
       </li>
       {% endif %}
+      {% if site.google_scholar %}
+      <li>
+        {% include _icons/gscholar.html %}
+      </li>
+      {% endif %}
     </ul>
-
-    {% include contactlist.html %}
-
+      {% include contactlist.html %}
   </div>
 
   <article class="about-col about-col-2" itemscope itemtype="http://schema.org/BlogPosting" style="max-width=75%">
