@@ -27,7 +27,7 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 	        Some Julia code to enumerate the connected partitions of grid graphs, used as examples in several computational geometry and redistricting projects.  See the repository for more details.
 	   		<br/><br/>
 	        <a href="https://github.com/zschutzman/emumerator/" style="float: left; position:absolute; bottom:10px; left:180px"><b>
-	        	View Project
+	        	View Project (GitHub)
 	        </b></a>
 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
 	        Summer 2019
@@ -59,7 +59,7 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 	        allow.
 	   		<br/><br/>
 	        <a href="https://mggg.org/distflow/" style="float: left; position:absolute; bottom:10px; left:180px"><b>
-	        	View Project
+	        	View Project (mggg.org)
 	        </b></a>
 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
 	        Winter 2019
