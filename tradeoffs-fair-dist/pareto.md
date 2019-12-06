@@ -17,11 +17,10 @@ invisible: true
 
 ## *Trade-offs in Fair Redistricting* -- Online Appendix
 
-This is the online appendix for the paper *Trade-offs in Fair Redistricting* which is, inconveniently to you, not available as a 
-preprint right now, but this website isn't linked anywhere, so...  
+This is the online appendix for the paper *Trade-offs in Fair Redistricting*, to appear at [AI, Ethics, and Society 2020](https://aies-conference.com).   
 
 
-In that paper, we explore empirically the 'price' one must pay in terms of the compactness of districts in order to improve the partisan 
+In the paper, we explore empirically the 'price' one must pay in terms of the compactness of districts in order to improve the partisan 
 symmetry of a plan (and vice versa) in North Carolina and Pennsylvania.  Due to space constraints, we could not include all 
 of the Pareto-optimal plans in the paper itself, so we include them here.  There are 13 plans for North Carolina and 25 
 for Pennsylvania, including the four displayed in the paper.  Click a state below to see the plans for that state.
@@ -43,6 +42,9 @@ for Pennsylvania, including the four displayed in the paper.  Click a state belo
 </div>
 
 </div>
+
+A Jupyter notebook containing a skeleton of the code used to perform the Markov chain Monte Carlo search is [[here]](./tradeoffs-skeleton.ipynb).  
+It can be opened in NBViewer at this link.
 
 
 
