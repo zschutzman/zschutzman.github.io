@@ -43,8 +43,8 @@ for Pennsylvania, including the four displayed in the paper.  Click a state belo
 
 </div>
 
-A Jupyter notebook containing a skeleton of the code used to perform the Markov chain Monte Carlo search is [[here]](./tradeoffs-skeleton.ipynb).  
-It can be opened in NBViewer at this link.
+A Jupyter notebook containing a skeleton of the code used to perform the Markov chain Monte Carlo search is [[here (nbviewer)]](https://nbviewer.jupyter.org/github/zschutzman/zschutzman.github.io/blob/master/tradeoffs-fair-dist/tradeoffs-skeleton.ipynb)
+
 
 
 
