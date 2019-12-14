@@ -33,6 +33,6 @@ be tempted to send a lot of our resource there in the future and perhaps not lea
 both find a lot of candidates while also learning enough about every distribution to be confident that it's not being unfair.  In the paper, we give such an 
 algorithm, and it's actually a pretty natural one.  If you use some statistical tools to keep careful track of *estimates* for the distribution of candidates 
 in each group and, at each time step, give an allocation to each group which is fair *with respect to those estimates* you get both of these properties.  We 
-show that this converges to a fair allocation in expectation and run some experiments on the Philadelphia Crime Dataset which shows that it converges pretty quickly.  
+show that this converges to a fair allocation in expectation and run some experiments on the Philadelphia Crime Dataset which show that it converges pretty quickly.  
 
 Check out the paper on the arXiv [here](https://arxiv.org/abs/1808.10549).

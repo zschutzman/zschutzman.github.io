@@ -48,10 +48,11 @@ invisible: true
 [**Go Back**](..)
 
 
-## North Carolina -- Pareto-Optimal Plans 
+<h2 style="margin-bottom: 7px; margin-top:10px" >North Carolina</h2>
+<h3 style="margin-bottom: 15px; margin-top:10px; " >Pareto-Optimal Plans</h3>
 
-These are the 13 Pareto-optimal plans for North Carolina, ordered from least compact to most compact (and therefore in descending order according to partisan symmetry).  
-All figures are rounded to three decimal places of precision.  
+These are the 13 Pareto-optimal plans for North Carolina, ordered from most compact to least compact (and therefore in ascending order according to partisan symmetry).  The first map here is show in Figure 8 in the paper and the last map in Figure 9.  All scores are rounded to three decimal places of precision.
+
 The districts are colored on a red-grey-blue scale, according to the margin of victory in the 2014 U.S. Senate race.  Districts with a wider margin for Democrat Kay Hagan appear 
 bluer and those with a wider margin for Republican Thom Tillis appear redder.  
 
@@ -67,78 +68,8 @@ The first map has only marginally more partisan symmetry than the second but the
 
 
 <div class="parent">
-    <div id="ncmap0" class="map"></div>
-    <div id="ncmap_0_plot" class="plot"></div>
-</div>
-<br />
-
-
-<div class="parent">
-    <div id="ncmap1" class="map"></div>
-    <div id="ncmap_1_plot" class="plot"></div>
-</div>
-<br />
-
-
-<div class="parent">
-    <div id="ncmap2" class="map"></div>
-    <div id="ncmap_2_plot" class="plot"></div>
-</div>
-<br />
-
-
-<div class="parent">
-    <div id="ncmap3" class="map"></div>
-    <div id="ncmap_3_plot" class="plot"></div>
-</div>
-<br />
-
-
-<div class="parent">
-    <div id="ncmap4" class="map"></div>
-    <div id="ncmap_4_plot" class="plot"></div>
-</div>
-<br />
-
-
-<div class="parent">
-    <div id="ncmap5" class="map"></div>
-    <div id="ncmap_5_plot" class="plot"></div>
-</div>
-<br />
-
-
-<div class="parent">
-    <div id="ncmap6" class="map"></div>
-    <div id="ncmap_6_plot" class="plot"></div>
-</div>
-<br />
-
-
-<div class="parent">
-    <div id="ncmap7" class="map"></div>
-    <div id="ncmap_7_plot" class="plot"></div>
-</div>
-<br />
-
-
-<div class="parent">
-    <div id="ncmap8" class="map"></div>
-    <div id="ncmap_8_plot" class="plot"></div>
-</div>
-<br />
-
-
-<div class="parent">
-    <div id="ncmap9" class="map"></div>
-    <div id="ncmap_9_plot" class="plot"></div>
-</div>
-<br />
-
-
-<div class="parent">
-    <div id="ncmap10" class="map"></div>
-    <div id="ncmap_10_plot" class="plot"></div>
+    <div id="ncmap12" class="map"></div>
+    <div id="ncmap_12_plot" class="plot"></div>
 </div>
 <br />
 
@@ -151,7 +82,77 @@ The first map has only marginally more partisan symmetry than the second but the
 
 
 <div class="parent">
-    <div id="ncmap12" class="map"></div>
-    <div id="ncmap_12_plot" class="plot"></div>
+    <div id="ncmap10" class="map"></div>
+    <div id="ncmap_10_plot" class="plot"></div>
+</div>
+<br />
+
+
+<div class="parent">
+    <div id="ncmap9" class="map"></div>
+    <div id="ncmap_9_plot" class="plot"></div>
+</div>
+<br />
+
+
+<div class="parent">
+    <div id="ncmap8" class="map"></div>
+    <div id="ncmap_8_plot" class="plot"></div>
+</div>
+<br />
+
+
+<div class="parent">
+    <div id="ncmap7" class="map"></div>
+    <div id="ncmap_7_plot" class="plot"></div>
+</div>
+<br />
+
+
+<div class="parent">
+    <div id="ncmap6" class="map"></div>
+    <div id="ncmap_6_plot" class="plot"></div>
+</div>
+<br />
+
+
+<div class="parent">
+    <div id="ncmap5" class="map"></div>
+    <div id="ncmap_5_plot" class="plot"></div>
+</div>
+<br />
+
+
+<div class="parent">
+    <div id="ncmap4" class="map"></div>
+    <div id="ncmap_4_plot" class="plot"></div>
+</div>
+<br />
+
+
+<div class="parent">
+    <div id="ncmap3" class="map"></div>
+    <div id="ncmap_3_plot" class="plot"></div>
+</div>
+<br />
+
+
+<div class="parent">
+    <div id="ncmap2" class="map"></div>
+    <div id="ncmap_2_plot" class="plot"></div>
+</div>
+<br />
+
+
+<div class="parent">
+    <div id="ncmap1" class="map"></div>
+    <div id="ncmap_1_plot" class="plot"></div>
+</div>
+<br />
+
+
+<div class="parent">
+    <div id="ncmap0" class="map"></div>
+    <div id="ncmap_0_plot" class="plot"></div>
 </div>
 <br />

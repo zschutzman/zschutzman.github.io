@@ -3,17 +3,17 @@ layout: default
 ---
 
 <div class="about-col-wrapper">
-  <div class="about-col about-col-1" style="max-width:25%">
+  <div class="about-col about-col-1">
 
     {% if site.github_username %}
-    <img style="max-width:200px" class="user-picture" src="https://github.com/{{ site.github_username }}.png" alt="{{ site.author }}">
+    <img style=";align-content: center" class="user-picture" src="https://github.com/{{ site.github_username }}.png" alt="{{ site.author }}">
     {% endif %}
 
-    <div class="contact-list", style="max-width:50%">
-      PhD Student, <br />Department of Computer and Information Science, <br />University of Pennsylvania
+    <div class="contact-list", style="margin-left:10%; margin-right: 10%;align-content: left">
+      PhD Student, Department of Computer and Information Science, University of Pennsylvania
     </div>
 
-    <ul class="contact-list">
+    <ul class="contact-list", style="margin-left:10%; margin-right: 10%;align-content: left">
       {% if site.email %}
       <li>
         {% include _icons/email.html username=site.email %}

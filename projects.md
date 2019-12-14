@@ -11,6 +11,7 @@ order: 2
 
 Here are some projects I've worked on with some amazing friends and colleagues.
 
+[[I have been made aware that the layout of this page is ... suboptimal on mobile. I am working to fix this ASAP.]]
 
 
 <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">

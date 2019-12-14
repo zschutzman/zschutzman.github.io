@@ -687,7 +687,6 @@
 
 .about-col {
   float: left;
-
   @include media-query($on-palm) {
     float: none;
 
@@ -699,6 +698,7 @@
       }
     }
   }
+
 
 }
 
@@ -731,8 +731,14 @@
 
   .user-picture {
     margin-bottom: $spacing-unit / 2;
+    
   }
-
+  max-width: 25%;
+  @media only screen and (max-width: 629px) {
+  float: none;
+  max-width: 100%;
+  width: 100%;
+  }
 }
 
 .about-col-2 {
