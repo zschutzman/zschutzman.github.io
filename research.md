@@ -9,6 +9,13 @@ order: 1
 
 All author lists are alphabetical.
 
+
+_**Trade-Offs in Fair Redistricting**_  
+In the proceedings of AIES '20 (*to appear*)  
+[[preprint]](../assets/papers/tradeoffs-fair-redist.pdf)  
+[[online supplement, with accompanying code]](/tradeoffs-fair-dist)  
+
+
 _**Geometry of Graph Partitions via Optimal Transport**_  
 with [Tara Abrishami](https://www.pacm.princeton.edu/people/tara-abrishami){: style="color:#111;" :}, [Nestor Guillen](https://ndguillen.github.io/){: style="color:#111;" :}, [Parker Rule](https://pjrule.github.io/){: style="color:#111;" :}, [Justin Solomon](https://people.csail.mit.edu/jsolomon/){: style="color:#111;" :}, [Thomas Weighill](https://mggg.org/people/thomas_weighill){: style="color:#111;" :}, and [Si Wu](https://florissiwu.wordpress.com/){: style="color:#111;" :}.  
 Manuscript, October 2019  
