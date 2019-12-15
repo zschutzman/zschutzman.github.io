@@ -20,17 +20,15 @@ This blog will host a variety of post types.  There will be personal stuff (like
 A lot of people (both in and outside of my academic circle) ask me *what exactly it is that I do*.  Admittedly, I'm still very early in the grad school process and there are no guarantees that what I do now will be what I do in five years or even five months, but here's a quick rundown of the stuff that I spend sixty hours a week thinking about.
 
 #### 1. ***Computational Economics*** 
-{: style="color:#800000;" :}
+
 
  Economics is the study of how society, institutions, and individuals allocate scarce resources.  One way that this happens in the everyday world is people buying goods and services from companies.  There are only so many apples at the Whole Foods, and they choose to set their price at, like, $7 per pound because that's what they've determined is the profit-maximizing price (for whatever reason).  What happens when we have multiple people and multiple goods AND the people have more complex desires than just wanting some apples?  What if Alice and Bob show up to the store and Alice wants an apple and an orange and Bob wants an apple and a pear, neither of them will settle for having only one of the fruits (all-or-none), and there is only one apple?  How do we decide who gets the apple?  What if there dozens or hundreds of people and produce items?  It turns out that deciding the best allocation of goods in these settings is actually a really difficult problem for computers to solve, so Computational Economists come up with methods for finding approximate solutions to these kinds of problems in various settings.
 
 #### 2. ***Statistical Learning Theory*** 
-{: style="color:#800000;" :}
 
  The topic of *machine learning* is a hot one these days.  In general, machine learning is really just applied statistics.  There are a lot of different algorithms for machine learning and people who use these in applied settings spend a lot of time thinking about which kinds of algorithms are good at their task at hand.  On the theoretical side, we are often interested in *mathematically proving* limitations and capabilities of machine learning.  This area deals with questions like *how much data do I need for my model to be 'good'?* As it turns out, there are some kinds of problems that are hard for computers to learn (given current assumptions about the computational complexity of problems like factoring integers or graph coloring).
 
 #### 3. ***Computing for the Social Sciences*** 
-{: style="color:#800000;" :}
 
  In the last 25 years or so, personal computers have become powerful and accessible enough to chug through and solve a variety of really big problems which are provably computationally difficult and large volumes of data have become available at the click of a button.  This opens up new doors for research on problems which affect the day-to-day lives of people and the governance of society.  The problem that I am currently working on is related to optimal drawing of congressional districts, which given access to voting records and Census data, is now something that can be rigorously studied.  Some of my peers are working on using computational techniques to improve health insurance markets, school choice and drawing school districts, and using crowdsourcing techniques for gathering data.
 
