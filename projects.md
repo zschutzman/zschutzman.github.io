@@ -11,7 +11,6 @@ order: 2
 
 Here are some projects I've worked on with some amazing friends and colleagues.
 
-[[I have been made aware that the layout of this page is ... suboptimal on mobile. I am working to fix this ASAP.]]
 
 
 <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
@@ -27,12 +26,12 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
 	        Some Julia code to enumerate the connected partitions of grid graphs, used as examples in several computational geometry and redistricting projects.  See the repository for more details.
 	   		<br/><br/>
-	        <a href="https://github.com/zschutzman/emumerator/" style="float: left; position:absolute; bottom:10px; left:180px"><b>
+	        <a href="https://github.com/zschutzman/emumerator/" style="float: right; position:absolute; bottom:10px; right:10px"><b>
 	        	View Project (GitHub)
 	        </b></a>
-	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
+<!-- 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
 	        Summer 2019
-	    </span>
+	    </span> -->
 	    </p>
 	</div>
 </div>
@@ -59,12 +58,12 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 	        figures, animations, and interactives to argue for a more nuanced approach to political geometry than the dominant methods currently 
 	        allow.
 	   		<br/><br/>
-	        <a href="https://mggg.org/distflow/" style="float: left; position:absolute; bottom:10px; left:180px"><b>
+	        <a href="https://mggg.org/distflow/" style="float: right; position:absolute; bottom:10px; right:10px"><b>
 	        	View Project (mggg.org)
 	        </b></a>
-	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
+<!-- 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
 	        Winter 2019
-	    </span>
+	    </span> -->
 	    </p>
 	</div>
 </div>
@@ -86,13 +85,13 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 <br /> <br />
 	        Developed at the 2018 
 	        <a href="gerrydata.org"> Voting Rights Data Institute</a>.
-	   		<br/>
-	        <a href="https://www.github.com/mggg/gerrychain/" style="float: left; position:absolute; bottom:10px; left:180px"><b>
+	   		<br/><br />
+	        <a href="https://www.github.com/mggg/gerrychain/" style="float: right; position:absolute; bottom:10px; right:10px"><b>
 	        	View Project (GitHub)
 	        </b></a>
-	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
+<!-- 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
 	        Ongoing
-	    </span>
+	    </span> -->
 	    </p>
 	</div>
 </div>
@@ -112,13 +111,13 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 	    </h2>
 	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
 	        A construction and analysis of drawing legislative districts on toy examples of grid graphs.  Includes interactive elements to explore the effect of different districting plans and distributions of voters on two-party electoral outcomes.
-	   		<br/>
-	        <a href="https://mggg.org/metagraph" style="float: left; position:absolute; bottom:10px; left:180px"><b>
+	   		<br/><br />
+	        <a href="https://mggg.org/metagraph" style="float: right; position:absolute; bottom:10px; right:10px"><b>
 	        	View Project (mggg.org)
 	        </b></a>
-	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
+<!-- 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
 	        Autumn 2018
-	    </span>
+	    </span> -->
 	    </p>
 	</div>
 </div>
@@ -136,12 +135,12 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
 	        A short game made in the three week Game Design course (CS369) at Colby College.  Features original art, voice acting, and story.
 	        <br/><br/>
-	        <a href="https://github.com/zschutzman/wizard_quest" style="float: left; position:absolute; bottom:10px; left:180px"><b>
+	        <a href="https://github.com/zschutzman/wizard_quest" style="float: right; position:absolute; bottom:10px; right:10px"><b>
 	        	View Project (GitHub)
 	        </b></a>
-	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px">
+<!-- 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px">
 	        January 2015
-	    </span>
+	    </span> -->
 	    </p>
 	</div>
 </div>

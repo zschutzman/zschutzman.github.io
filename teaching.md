@@ -58,7 +58,7 @@ order: 3
 
 * Notes for the point-set portion of [Topology (UPenn Math 500, Fall 2017)](http://zachschutzman.com/assets/notes/topo500-ptset.pdf)
 
-* My notes from [the Metric Geometry and Gerrymandering Group's August 2017 Conference](http://zachschutzman.com/assets/notes/mggg.pdf).  Videos of the talks can be found [on the MGGG YouTube channel](https://www.youtube.com/channel/UCXhynY38HLgR8Bp6918i5lg)
+* Notes from [the Metric Geometry and Gerrymandering Group's August 2017 Conference](http://zachschutzman.com/assets/notes/mggg.pdf).  Videos of the talks can be found [on the MGGG YouTube channel](https://www.youtube.com/channel/UCXhynY38HLgR8Bp6918i5lg)
 
 
 
