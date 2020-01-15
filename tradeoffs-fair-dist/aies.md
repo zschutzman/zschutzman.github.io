@@ -17,6 +17,6 @@ invisible: true
 
 
 - <h4 style="margin-bottom: 7px; margin-top:10px" ><i><a href="../../assets/papers/tradeoffs-fair-redist.pdf">Paper</a></i></h4>
-- <h4 style="margin-bottom: 7px; margin-top:10px" ><i><a href="..">Online Supplement</a></i></h4>
+- <h4 style="margin-bottom: 7px; margin-top:10px" ><i><a href="../tradeoffs-fair-dist/">Online Supplement</a></i></h4>
 - <h4 style="margin-bottom: 7px; margin-top:10px" ><i><a href="">Slides</a></i></h4>
 - <h4 style="margin-bottom: 7px; margin-top:10px" ><i><a href="../../assets/posters/tradeoffs-fair-redist-poster.pdf">Poster</a></i></h4>
