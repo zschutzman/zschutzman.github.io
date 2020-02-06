@@ -10,6 +10,14 @@ order: 1
 All author lists are alphabetical.
 
 
+_**The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores**_  
+with [Assaf Bar-Natan](http://www.math.toronto.edu/safibn/){: style="color:#111;" :} and [Lorenzo Najt](https://lorenzonajt.github.io/){: style="color:#111;" :}.  
+In *Cartography and Geographic Information Science* (to appear)  
+Manuscript, May 2019    
+[[preprint (arXiv)]](https://arxiv.org/abs/1905.03173)  
+
+
+
 _**Trade-Offs in Fair Redistricting**_  
 In the proceedings of AIES '20 (*to appear*)  
 [[preprint]](../assets/papers/tradeoffs-fair-redist.pdf)  
@@ -38,14 +46,6 @@ with Jinshuo Dong, [Hadi Elzayn](https://www.math.upenn.edu/~hads/){: style="col
 In the proceedings of IJCAI '19  
 [[conference proceedings version (IJCAI)]](https://doi.org/10.24963/ijcai.2019/36)  
 [[technical version (arXiv)]](https://arxiv.org/abs/1905.08909)
-
-
-
-_**The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores**_  
-with [Assaf Bar-Natan](http://www.math.toronto.edu/safibn/){: style="color:#111;" :} and [Lorenzo Najt](https://lorenzonajt.github.io/){: style="color:#111;" :}.  
-Manuscript, May 2019    
-[[preprint (arXiv)]](https://arxiv.org/abs/1905.03173)  
-
 
 
 

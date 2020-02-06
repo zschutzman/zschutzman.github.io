@@ -68,6 +68,8 @@ order: 3
 
 <h2 style="margin-bottom: 7px" > Talks </h2>
 
+- <i> Trade-Offs in Fair Redistricting</i>. AIES, February 7, 2020. [[sildes]](/assets/slides/tradeoffs_aies.pdf)  
+
 - <i> Equilibrium Characterization for Data Acquisition Games</i>. IJCAI, August 8, 2019.  [[slides]](/assets/slides/mlgames_ijcai.pdf)
 
 - <i> Introduction to the Metagraph of Districting Plans</i>. Voting Rights Data Institute, June 18, 2019.  
