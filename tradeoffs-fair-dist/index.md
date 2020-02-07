@@ -19,7 +19,7 @@ invisible: true
 <h3 style="margin-bottom: 15px; margin-top:10px; " >Maps and Code</h3>
 
 
-This is additional material for the paper [*Trade-Offs in Fair Redistricting*](../assets/papers/tradeoffs-fair-redist.pdf), to appear at [AI, Ethics, and Society 2020](https://aies-conference.com).   
+This is additional material for the paper [*Trade-Offs in Fair Redistricting*](https://dl.acm.org/doi/abs/10.1145/3375627.3375802), in the proceedings of [AI, Ethics, and Society 2020](https://aies-conference.com).   
 
 
 In the paper, we explore empirically the 'price' one must pay in terms of the compactness of districts in order to improve the partisan 
