@@ -22,12 +22,15 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 ---
 <h2 style="margin-bottom: 15px" > Recent Stuff </h2>
 
-- My paper <i><a href="/assets/papers/tradeoffs-fair-redist.pdf">Trade-Offs in Fair Redistricting</a></i> will appear at <a href="https://aies-conference.com">AIES</a> in February!
+
+- Our paper <i><a href="https://arxiv.org/abs/1905.03173" > The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores </a></i> will appear in *Cartography and Geoographic Information Science*!
+
+
+- My paper <i><a href="https://dl.acm.org/doi/abs/10.1145/3375627.3375802">Trade-Offs in Fair Redistricting</a></i> was at <a href="https://aies-conference.com">AIES</a> in February!  Slides from my talk are [[here]](/assets/slides/tradeoffs_aies.pdf)
 
 - Our paper <i><a href="https://arxiv.org/abs/1910.09618" >Geometry of Graph Partitions via Optimal Transport </a></i> is on the arXiv!
 
 
-- Our paper <i><a href="https://arxiv.org/abs/1905.03173" > The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores </a></i> is on the arXiv!
 
 
 
