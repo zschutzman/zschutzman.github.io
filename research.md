@@ -20,7 +20,7 @@ Manuscript, May 2019
 
 _**Trade-Offs in Fair Redistricting**_  
 In the proceedings of AIES '20  
-[[conference proceedings version (ACM Dgital Library)]](https://dl.acm.org/doi/abs/10.1145/3375627.3375802)  
+[[conference proceedings version (ACM Digital Library)]](https://dl.acm.org/doi/abs/10.1145/3375627.3375802)  
 [[online supplement, with accompanying code]](/tradeoffs-fair-dist)  
 
 
