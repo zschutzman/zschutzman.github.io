@@ -13,7 +13,7 @@ All author lists are alphabetical.
 _**The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores**_  
 with [Assaf Bar-Natan](http://www.math.toronto.edu/safibn/){: style="color:#111;" :} and [Lorenzo Najt](https://lorenzonajt.github.io/){: style="color:#111;" :}.  
 In *Cartography and Geographic Information Science* (forthcoming)  
-[[journal version of record (Taylor and Francis)]](https://www.tandfonline.com/doi/abs/10.1080/15230406.2020.1737575)
+[[journal version of record (Taylor and Francis)]](https://www.tandfonline.com/doi/abs/10.1080/15230406.2020.1737575)  
 [[accepted manuscript]](/assets/papers/jumble.pdf)
 
 
