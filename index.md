@@ -10,7 +10,7 @@ invisible: true
 I am a fourth-year PhD student in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth). 
 
 
-I like to think about game theory, learning theory, algorithmic fairness, and computational social science. I like to think about how stragegic agents, algorithmic processes, and social norms come together and interact, both mathematically and practically.
+I like to think about game theory, learning theory, algorithmic fairness, and computational social science. I like to think about how strategic agents, algorithmic processes, and social norms come together and interact, both mathematically and practically.
 
 My recent work has focused on using algorithmic frameworks to offer insight into non-computational settings, including using examining how self-interested agents might lie about their information to [protect their privacy](/blog/ec19-privacykbc), considering how [algorithmic approaches to drawing fair districts](/tradeoffs-fair-dist) might fall short, and solving computational geometry problems inspired by issues in shape analysis for redistricting.
 
