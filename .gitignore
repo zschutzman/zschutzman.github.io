@@ -1,6 +1,10 @@
 ##ignore drafts
 /_drafts/*
 /assets/notes/NOTE*
-
+.sass-cache/*
 /_site/*
 .jekyll-metadata
+
+######
+
+/lp-reconstruction/*
