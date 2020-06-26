@@ -34,3 +34,5 @@ tag_permalink_style: pretty
 
 google_analytics: UA-99847995-1
 
+
+staticman_url: https://zach-database.herokuapp.com/v2/entry/zschutzman/static-data-test/master/comments
