@@ -13,6 +13,36 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 
 
 
+
+<div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
+    <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
+        <img src="/assets/images/districts-lol-preview.png" width="150" height="150" style="border-radius: 5%; border: solid black 2px; transform: translate(15px,0px);" />
+    </div>
+	<div style="margin-left: 180px;padding: 15px; padding-top:0px">
+	    <h2 style="font-size:1.2em; margin-top:0px; text-align:center; word-break: break-all; hyphens: auto; color:$text-color">
+	    	<a href="https://districts.lol" style="color: black; text-decoration: none;" >
+	    	districts.lol
+	    </a>
+	    </h2>
+	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
+	        A silly "hot-or-not" web app for U.S. Congressional districts.
+	   		<br/><br/>
+	        <a href="https://districts.lol" style="float: right; position:absolute; bottom:10px; right:10px"><b>
+	        	Go to districts.lol
+	        </b></a>
+<!-- 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
+	        Summer 2019
+	    </span> -->
+	    </p>
+	</div>
+</div>
+<!-- </div> -->
+<div style="margin:20px"></div>
+
+
+
+
+
 <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
     <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
         <img src="/assets/images/enumerator.gif" width="150" height="150" style="border-radius: 5%; border: solid black 2px; transform: translate(15px,0px);" />
@@ -54,8 +84,8 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 	    </a>
 	    </h2>
 	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
-	        A minimally technical case study of "multiscale compactness" using curve-shortening flow. We present the concepts intuitively and use 
-	        figures, animations, and interactives to argue for a more nuanced approach to political geometry than the dominant methods currently 
+	        A minimally technical case study of "multiscale compactness" using curve-shortening flow. We present the concepts intuitively and use
+	        figures, animations, and interactives to argue for a more nuanced approach to political geometry than the dominant methods currently
 	        allow.
 	   		<br/><br/>
 	        <a href="https://mggg.org/distflow/" style="float: right; position:absolute; bottom:10px; right:10px"><b>
@@ -81,9 +111,9 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 	    </a>
 	    </h2>
 	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
-	        An open-source, user-friendly implementation of Markov chain Monte Carlo methods for the analysis of electoral redistricting. 
+	        An open-source, user-friendly implementation of Markov chain Monte Carlo methods for the analysis of electoral redistricting.
 <br /> <br />
-	        Developed at the 2018 
+	        Developed at the 2018
 	        <a href="gerrydata.org"> Voting Rights Data Institute</a>.
 	   		<br/><br />
 	        <a href="https://www.github.com/mggg/gerrychain/" style="float: right; position:absolute; bottom:10px; right:10px"><b>
