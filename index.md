@@ -14,7 +14,7 @@ in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania,
 
 I like to think about game theory, learning theory, algorithmic fairness, and computational social science. I like to think about how strategic agents, algorithmic processes, and social norms come together and interact, both mathematically and practically.
 
-I am currently looking for postdoctoral opportunities for the fall of 2021 to work on problems broadly at the intersection of algorithms, AI, and social systems and norms.  
+**I am currently looking for postdoctoral opportunities** for the fall of 2021 to work on problems broadly at the intersection of algorithms, AI, and social systems and norms. 
 
 My current work examines social considerations of algorithmic outputs in a variety of contexts, including how differentially private census statistics might offer different levels of privacy protection for members of different demographic groups, the design of consumer financial products which can fairly serve customers with diverse risk tolerances, and the effects of using automated procedures to draw electoral districts on the representativeness of the elected slate of candidates.
 
