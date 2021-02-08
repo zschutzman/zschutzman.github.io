@@ -13,6 +13,39 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 
 
 
+<div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
+    <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
+        <img src="/assets/images/reconstruction-attack-preview.png" width="150" height="150" style="border-radius: 5%; border: solid black 2px; transform: translate(15px,0px);" />
+    </div>
+	<div style="margin-left: 180px;padding: 15px; padding-top:0px">
+	    <h2 style="font-size:1.2em; margin-top:0px; text-align:center; word-break: break-all; hyphens: auto; color:$text-color">
+	    	Diffix Bug Bounty Data Reconstruction Attack
+	    </h2>
+	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
+	        Travis Dick, Matthew Joseph, and I successfully ran a linear programming reconstuction attack on a commercial data anonymization product called <i>Diffix</i>, successfully reconstructing (synthetic) personally-identifying information such as sex and social security numbers from a purportedly secure database. 
+	        <br /> I coauthored a pair of blog posts on this with Aloni Cohen, Sasho Nikolov, and Aloni Cohen.
+	   		<br/><br/>
+	    	<a href="https://differentialprivacy.org/reconstruction-theory/" style="color: black; text-decoration: none;" >
+	    	<b>Reconstruction in theory blog post (differentialprivacy.org)</b>
+	    </a>
+	    <br />
+	    <a href="https://differentialprivacy.org/diffix-attack/" style="color: black; text-decoration: none;" >
+	    	<b>Reconstruction in practice blog post (differentialprivacy.org)</b>
+	    </a>
+<!-- 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
+	        Summer 2019
+	    </span> -->
+	    </p>
+	</div>
+</div>
+<!-- </div> -->
+<div style="margin:20px"></div>
+
+
+
+
+
+
 
 <div style="border: 4px solid black;border-radius: 15px; background: #f6f6f6; position:relative;min-height: 180px">
     <div style="width: 165px; height:150px; float: left; position: absolute; top: 0; bottom: 0; margin: auto;">
@@ -25,7 +58,7 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 	    </a>
 	    </h2>
 	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
-	        A silly "hot-or-not" web app for U.S. Congressional districts.
+	        A silly "hot-or-not" web app for U.S. Congressional districts (as used in the 2018 elections).
 	   		<br/><br/>
 	        <a href="https://districts.lol" style="float: right; position:absolute; bottom:10px; right:10px"><b>
 	        	Go to districts.lol
