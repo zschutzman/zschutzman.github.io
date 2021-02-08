@@ -68,6 +68,11 @@ order: 3
 
 <h2 style="margin-bottom: 7px" > Talks </h2>
 
+- <i>Algorithms for Applied Large-Scale Differential Privacy</i>. Written Preliminary Exam Presentation, October 2020. 
+
+
+- <i>Algorithms, Fairness, and Redistricting</i>. Penn CIS Student Colloquium, April 2020. 
+
 - <i> Trade-Offs in Fair Redistricting</i>. AIES, February 7, 2020. [[sildes]](/assets/slides/tradeoffs_aies.pptx)  
 
 - <i> Equilibrium Characterization for Data Acquisition Games</i>. IJCAI, August 8, 2019.  [[slides]](/assets/slides/mlgames_ijcai.pdf)
