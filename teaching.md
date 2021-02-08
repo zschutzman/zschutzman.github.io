@@ -70,7 +70,6 @@ order: 3
 
 - <i>Algorithms for Applied Large-Scale Differential Privacy</i>. Written Preliminary Exam Presentation, October 2020. 
 
-
 - <i>Algorithms, Fairness, and Redistricting</i>. Penn CIS Student Colloquium, April 2020. 
 
 - <i> Trade-Offs in Fair Redistricting</i>. AIES, February 7, 2020. [[sildes]](/assets/slides/tradeoffs_aies.pptx)  
