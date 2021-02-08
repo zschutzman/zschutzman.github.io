@@ -22,16 +22,13 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 	    	Diffix Bug Bounty Data Reconstruction Attack
 	    </h2>
 	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
-	        Travis Dick, Matthew Joseph, and I successfully ran a linear programming reconstuction attack on a commercial data anonymization product called <i>Diffix</i>, successfully reconstructing (synthetic) personally-identifying information such as sex and social security numbers from a purportedly secure database. 
-	        <br /> I coauthored a pair of blog posts on this with Aloni Cohen, Sasho Nikolov, and Aloni Cohen.
-	   		<br/><br/>
-	    	<a href="https://differentialprivacy.org/reconstruction-theory/" style="color: black; text-decoration: none;" >
-	    	<b>Reconstruction in theory blog post (differentialprivacy.org)</b>
-	    </a>
-	    <br />
-	    <a href="https://differentialprivacy.org/diffix-attack/" style="color: black; text-decoration: none;" >
-	    	<b>Reconstruction in practice blog post (differentialprivacy.org)</b>
-	    </a>
+	        We successfully ran a linear programming reconstuction attack on a commercial data anonymization product called <i>Diffix</i>, successfully reconstructing (synthetic) personally-identifying information such as sex and social security numbers from a purportedly secure database. More details are described in a pair of blog posts on differentialprivacy.org.
+	        <a href="https://differentialprivacy.org/reconstruction-theory/" style="float: right; position:absolute; bottom:10px; right:10px"><b>
+	        	Theory blog post (dp.org)
+	        </b></a><br />
+	        <a href="https://differentialprivacy.org/diffix-attack/" style="float: right; position:absolute; bottom:10px; right:10px"><b>
+	        	Diffix attack blog post (dp.org)
+	        </b></a>
 <!-- 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
 	        Summer 2019
 	    </span> -->
