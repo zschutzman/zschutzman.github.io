@@ -8,8 +8,7 @@ invisible: true
 <h2 style="margin-bottom: 10px; margin-top:10px" > About Me </h2>
 
 I am a
-fifth-year PhD student 
-in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth).  
+fifth-year PhD candidate in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth).  
 
 
 I like to think about game theory, learning theory, algorithmic fairness, and computational social science. I like to think about how strategic agents, algorithmic processes, and social norms come together and interact, both mathematically and practically.
