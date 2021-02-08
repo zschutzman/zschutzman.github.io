@@ -18,14 +18,15 @@ Here are some projects I've worked on with some amazing friends and colleagues.
         <img src="/assets/images/reconstruction-attack-preview.png" width="150" height="150" style="border-radius: 5%; border: solid black 2px; transform: translate(15px,0px);" />
     </div>
 	<div style="margin-left: 180px;padding: 15px; padding-top:0px">
-	    <h2 style="font-size:1.2em; margin-top:0px; text-align:center; word-break: break-all; hyphens: auto; color:$text-color">
+	    <h2 style="font-size:1.2em; margin-top:0px; text-align:center; word-break: break-all; hyphens: auto; color:black">
 	    	Diffix Bug Bounty Data Reconstruction Attack
 	    </h2>
 	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
 	        We successfully ran a linear programming reconstuction attack on a commercial data anonymization product called <i>Diffix</i>, successfully reconstructing (synthetic) personally-identifying information such as sex and social security numbers from a purportedly secure database. More details are described in a pair of blog posts on differentialprivacy.org.
 	        <a href="https://differentialprivacy.org/reconstruction-theory/" style="float: right; position:absolute; bottom:10px; right:10px"><b>
 	        	Theory blog post (dp.org)
-	        </b></a><br />
+	        </b></a>
+	        <br />
 	        <a href="https://differentialprivacy.org/diffix-attack/" style="float: right; position:absolute; bottom:10px; right:10px"><b>
 	        	Diffix attack blog post (dp.org)
 	        </b></a>
