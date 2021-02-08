@@ -24,11 +24,10 @@ Here are some projects I've worked on with some amazing friends and colleagues.
 	    <p style="color: $text-color; margin-left: 0px; margin-top: 5px; margin-right: 15px; margin-bottom: 10px; font-size: 0.9em; line-height: 110%;">
 	        We successfully ran a linear programming reconstuction attack on a commercial data anonymization product called <i>Diffix</i>, successfully reconstructing (synthetic) personally-identifying information such as sex and social security numbers from a purportedly secure database. More details are described in a pair of blog posts on differentialprivacy.org.
 	        <div  style="float: right; position:absolute; bottom:10px; right:10px"><a href="https://differentialprivacy.org/reconstruction-theory/"><b>
-	        	Theory blog post 
-	        </b></a>,
+	        	Theory blog post</b></a>, 
 	        <a href="https://differentialprivacy.org/diffix-attack/"><b>
 	        	Diffix attack blog post
-	        </b></a> (dp.org)
+	        </b></a> <b>(dp.org)</b>
 	    </div>
 <!-- 	        <span style="float: right; font-size: .9em; position:absolute; bottom:10px; right: 10px;">
 	        Summer 2019
