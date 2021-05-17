@@ -7,13 +7,11 @@ invisible: true
 
 <h2 style="margin-bottom: 10px; margin-top:10px" > About Me </h2>
 
-I am a
-fifth-year PhD candidate in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth).  
+I am a fifth-year PhD candidate in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth).  This fall, I will join the [MIT Institute for Data, Systems, and Society](https://idss.mit.edu) as a Hammer Postdoctoral Fellow. If you're in/around Boston and interested in talking about or collaborating on projects at the interface of algorthm design, data analysis, and game theory with societal issues like unfairness, discrimination, and injustice, feel free to get in touch.
 
 
 I like to think about game theory, learning theory, algorithmic fairness, and computational social science. I like to think about how strategic agents, algorithmic processes, and social norms come together and interact, both mathematically and practically.
 
-**I am currently looking for postdoctoral opportunities** for the fall of 2021 to work on problems broadly at the intersection of algorithms, AI, and social systems and norms. 
 
 My current work examines social considerations of algorithmic outputs in a variety of contexts, including how differentially private census statistics might offer different levels of privacy protection for members of different demographic groups, the design of consumer financial products which can fairly serve customers with diverse risk tolerances, and the effects of using automated procedures to draw electoral districts on the representativeness of the elected slate of candidates.
 
@@ -26,11 +24,10 @@ Before coming to Penn, I was an undergrad at [Colby College](http://colby.edu) i
 ---
 <h2 style="margin-bottom: 15px" > Recent Stuff </h2>
 
+- I am moving to Boston this summer and will be starting as a postdoc at [MIT IDSS](https://idss.mit.edu) this September!
 
-- Our paper <i><a href="https://arxiv.org/abs/2006.07281" > Algorithms and Learning for Fair Portfolio Design </a></i> is on the ArXiv!
+- Our paper <i><a href="https://arxiv.org/abs/2006.07281" > Algorithms and Learning for Fair Portfolio Design </a></i> was accepted to [EC 2021](https://ec21.sigecom.org/)!
 
 
 - Our paper <i><a href="https://arxiv.org/abs/1905.03173" > The Gerrymandering Jumble: Map Projections Permute Districts' Compactness Scores </a></i> will appear in *Cartography and Geoographic Information Science*!
 
-
-- My paper <i><a href="https://dl.acm.org/doi/abs/10.1145/3375627.3375802">Trade-Offs in Fair Redistricting</a></i> was at <a href="https://aies-conference.com">AIES</a> in February!  Slides from my talk are [[here]](/assets/slides/tradeoffs_aies.pptx).
