@@ -9,24 +9,6 @@ order: 1
 
 All author lists are alphabetical.
 
-
-_**Geometry of Graph Partitions via Optimal Transport**_  
-with
-[Tara Abrishami](https://www.pacm.princeton.edu/people/tara-abrishami){: style="color:#111;" :},
-[Nestor Guillen](https://ndguillen.github.io/){: style="color:#111;" :},
-[Parker Rule](https://pjrule.github.io/){: style="color:#111;" :},
-[Justin Solomon](https://people.csail.mit.edu/jsolomon/){: style="color:#111;" :},
-[Thomas Weighill](https://mggg.org/people/thomas_weighill){: style="color:#111;" :},
-and
-[Si Wu](https://florissiwu.wordpress.com/){: style="color:#111;" :}.  
-To appear in the *SIAM Journal on Scientific Computation*, 2020.  
-[[preprint (arXiv)]](https://arxiv.org/abs/1910.09618)  
-[[accompanying code (GitHub)]](https://github.com/vrdi/geometry-of-graph-partitions)
-
-
-
-
-
 _**Algorithms and Learning for Fair Portfolio Design**_  
 with
 [Emily Diana](https://www.emilyruthdiana.com/){: style="color:#111;" :},
@@ -37,9 +19,29 @@ with
 [Saeed Sharifi-Malvajerdi](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :},
 and
 [Juba Ziani](https://www.seas.upenn.edu/~jziani/){: style="color:#111;" :}.  
+To appear in *The Twenty-Second ACM Conference on Economics and Computation* (EC '21).   
 Manuscript, June 2020.  
 [[preprint (arXiv)]](https://arxiv.org/abs/2006.07281)  
 [[accompanying code (GitHub)]](https://github.com/TravisBarryDick/FairConsumerFinance)
+
+
+
+
+
+
+
+_**Geometry of Graph Partitions via Optimal Transport**_  
+with
+[Tara Abrishami](https://www.pacm.princeton.edu/people/tara-abrishami){: style="color:#111;" :},
+[Nestor Guillen](https://ndguillen.github.io/){: style="color:#111;" :},
+[Parker Rule](https://pjrule.github.io/){: style="color:#111;" :},
+[Justin Solomon](https://people.csail.mit.edu/jsolomon/){: style="color:#111;" :},
+[Thomas Weighill](https://mggg.org/people/thomas_weighill){: style="color:#111;" :},
+and
+[Si Wu](https://florissiwu.wordpress.com/){: style="color:#111;" :}.  
+In the *SIAM Journal on Scientific Computing*, Vol. 42 Issue 5, Oct. 2020.  
+[[preprint (arXiv)]](https://arxiv.org/abs/1910.09618)  
+[[accompanying code (GitHub)]](https://github.com/vrdi/geometry-of-graph-partitions)
 
 
 
