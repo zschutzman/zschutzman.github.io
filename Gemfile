@@ -9,3 +9,4 @@ gem "nokogiri", ">= 1.10.8"
 group :jekyll_plugins do
   gem "jekyll-data"
 end
+gem "addressable", ">= 2.8.0"
