@@ -19,9 +19,8 @@ with
 [Saeed Sharifi-Malvajerdi](http://www.cis.upenn.edu/~mkearns/){: style="color:#111;" :},
 and
 [Juba Ziani](https://www.seas.upenn.edu/~jziani/){: style="color:#111;" :}.  
-To appear in *The Twenty-Second ACM Conference on Economics and Computation* (EC '21).   
-Manuscript, June 2020.  
-[[preprint (arXiv)]](https://arxiv.org/abs/2006.07281)  
+In *The Twenty-Second ACM Conference on Economics and Computation* (EC '21).   
+[[conference proceedings version (ACM Digital Library)]](https://dl.acm.org/doi/10.1145/3465456.3467646)    
 [[accompanying code (GitHub)]](https://github.com/TravisBarryDick/FairConsumerFinance)
 
 
