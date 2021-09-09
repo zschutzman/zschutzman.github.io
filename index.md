@@ -20,7 +20,7 @@ At Penn, I was affiliated with the [CS Theory Research Group](http://theory.cis.
 I have also worked with the [Metric Geometry and Gerrymandering Group](http://mggg.org) at MIT and Tufts and was on the faculty for their 2019 [Voting Rights Data Institute](https://gerrydata.org) summer program.
 
 
-Before Penn, I was an undergrad at [Colby College](http://colby.edu) in beautiful Waterville, Maine.  I graduated with a double major in [mathematics](http://colby.edu/math) and [economics](http://colby.edu/econ) and a [computer science](http://colby.edu/cs) minor.
+Before going to Penn, I was an undergrad at [Colby College](http://colby.edu) in beautiful Waterville, Maine.  I graduated with a double major in [mathematics](http://colby.edu/math) and [economics](http://colby.edu/econ) and a [computer science](http://colby.edu/cs) minor.
 
 ---
 <h2 style="margin-bottom: 15px" > Recent Stuff </h2>
