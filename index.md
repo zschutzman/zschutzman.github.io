@@ -7,9 +7,9 @@ invisible: true
 
 <h2 style="margin-bottom: 10px; margin-top:10px" > About Me </h2>
 
-I've recently relocated to Boston, and starting in September, I will be a postdoc at MIT. If you're in the Boston area and are interested in talking about issues or research projects in the general area of algorithmic fairness, data privacy and reconstruction attacks, or redistricting, please feel free to send a message to zschutzman \[at\] gmail \[dot\] com.
+I've recently relocated to Boston, to start a postdoc at MIT. If you're in the Boston area and are interested in talking about issues or research projects in the general area of algorithmic fairness, data privacy and reconstruction attacks, or redistricting, please feel free to send a message to zschutzman \[at\] gmail \[dot\] com.
 
-At MIT, I will be a Michael Hammer Postdoctoral Fellow in the [Institute for Data, Systems, and Society](https://idss.mit.edu) and will have a partial appointment in the Schwartzman College of Computing's intiative for [Social and Ethical Responsibilities of Computing](https://computing.mit.edu/cross-cutting/social-and-ethical-responsibilities-of-computing/).  
+At MIT, I am a Michael Hammer Postdoctoral Fellow in the [Institute for Data, Systems, and Society](https://idss.mit.edu) with an appointment in the Schwartzman College of Computing's intiative for [Social and Ethical Responsibilities of Computing](https://computing.mit.edu/cross-cutting/social-and-ethical-responsibilities-of-computing/).  
 
 I recently completed my PhD in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth). I like to think about game theory, learning theory, algorithmic fairness, and computational social science and how strategic agents, algorithmic processes, and social norms come together and interact, both mathematically and practically.
 
