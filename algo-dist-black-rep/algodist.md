@@ -1,7 +1,7 @@
 ---
 layout: twocol
-title: Trade-offs in Fair Redistricting Online Supplement
-permalink: /tradeoffs-fair-dist/
+title: Algorithmic Redistricting and Black Representation Landing Page
+permalink: /algo-dist-black-rep/
 order: 7
 customjs: 
 
