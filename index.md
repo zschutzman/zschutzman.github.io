@@ -9,6 +9,8 @@ invisible: true
 
 I've recently relocated to Boston, to start a postdoc at MIT. If you're in the Boston area and are interested in talking about issues or research projects in the general area of algorithmic fairness, data privacy and reconstruction attacks, or redistricting, please feel free to send a message to zschutzman \[at\] gmail \[dot\] com.
 
+I'll be at MIT for the 2022-2023 academic year and will be looking for permanent positions, both within and outside of academia for after that. If you know of any opportunities, please don't hesitate to reach out.
+
 At MIT, I am a Michael Hammer Postdoctoral Fellow in the [Institute for Data, Systems, and Society](https://idss.mit.edu) with an appointment in the Schwartzman College of Computing's intiative for [Social and Ethical Responsibilities of Computing](https://computing.mit.edu/cross-cutting/social-and-ethical-responsibilities-of-computing/).  
 
 I recently completed my PhD in the [CIS Department](http://cis.upenn.edu) at the University of Pennsylvania, advised by [Aaron Roth](http://cis.upenn.edu/~aaroth). I like to think about game theory, learning theory, algorithmic fairness, and computational social science and how strategic agents, algorithmic processes, and social norms come together and interact, both mathematically and practically.
@@ -22,7 +24,7 @@ I have also worked with the [Metric Geometry and Gerrymandering Group](http://mg
 
 Before going to Penn, I was an undergrad at [Colby College](http://colby.edu) in beautiful Waterville, Maine.  I graduated with a double major in [mathematics](http://colby.edu/math) and [economics](http://colby.edu/econ) and a [computer science](http://colby.edu/cs) minor.
 
----
+<!-- ---
 <h2 style="margin-bottom: 15px" > Recent Stuff </h2>
 
 - I have moved to Boston and will be starting as a postdoc at [MIT IDSS](https://idss.mit.edu) this September!
@@ -31,3 +33,4 @@ Before going to Penn, I was an undergrad at [Colby College](http://colby.edu) in
 
 - Travis Dick, Matthew Joseph, and I ran successful attacks against Diffix, a purportedly privacy-preserving data analysis system. I contributed to a pair of blog posts on the [theoretical basis for our attacks](https://differentialprivacy.org/reconstruction-theory/) and the [practical details of executing the attacks and what kinds of information we could extract](https://differentialprivacy.org/diffix-attack/).
 
+ -->

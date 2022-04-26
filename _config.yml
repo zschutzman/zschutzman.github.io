@@ -2,7 +2,7 @@
 title: Zachary I. Schutzman
 email: zschutzman@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
- Computer science PhD student at UPenn
+ postdoctoral scholar @ mit
 # baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://www.zachschutzman.com" # the base hostname & protocol for your site
 twitter_username: zschutzy
@@ -17,9 +17,10 @@ plugins:
 markdown: kramdown
 theme: minima
 bio: 
- PhD Student, <br/>
- Department of Computer and Information Science, <br/>
- University of Pennsylvania
+ postdoctoral scholar, <br/>
+ institute for data, systems, and society & <br/>
+ social and ethical responsibilities of computing <br />
+ massachusetts institute of technology
 
 shortbio: Zach is a Postdoc at MIT IDSS.  His research interests include game theory and mechanism design, machine learning, algorithmic fairness, and computing for the social sciences.
 
