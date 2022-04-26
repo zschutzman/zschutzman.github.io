@@ -9,6 +9,17 @@ order: 1
 
 All author lists are alphabetical.
 
+
+_**Algorithmic Redistricting and Black Representation in US Elections**_  
+In *MIT Case Studies in Social and Ethical Responsibilities of Computing*, Winter 2022.  
+[[case study (MIT online journal)]](https://doi.org/10.21428/2c646de5.9f6d1cb5)  
+[[poster presented at EAAMO 2021]](https://zachschutzman.com/assets/posters/algo-dist-black-rep.pdf)
+
+
+
+
+
+
 _**Algorithms and Learning for Fair Portfolio Design**_  
 with
 [Emily Diana](https://www.emilyruthdiana.com/){: style="color:#111;" :},
