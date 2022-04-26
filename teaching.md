@@ -68,6 +68,13 @@ order: 3
 
 <h2 style="margin-bottom: 7px" > Talks </h2>
 
+
+- <i>Algorithmic Redistricting and Black Representation in US Elections</i>. MIT SERC Scholars seminar, October 2021. 
+
+
+- <i>Algorithmic Redistricting and Minority Representation</i>. MIT IDSS Workshop on Systemic Racism and Computation, May 2021. 
+
+
 - <i>Algorithms for Applied Large-Scale Differential Privacy</i>. Written Preliminary Exam Presentation, October 2020. 
 
 - <i>Algorithms, Fairness, and Redistricting</i>. Penn CIS Student Colloquium, April 2020. 
