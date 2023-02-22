@@ -9,7 +9,7 @@ invisible: true
 
 I've recently relocated to Boston, to start a postdoc at MIT. If you're in the Boston area and are interested in talking about issues or research projects in the general area of algorithmic fairness, data privacy and reconstruction attacks, or redistricting, please feel free to send a message to zschutzman \[at\] gmail \[dot\] com.
 
-I'll be at MIT for the 2022-2023 academic year and will be looking for permanent positions, both within and outside of academia for after that. If you know of any opportunities, please don't hesitate to reach out.
+
 
 At MIT, I am a Michael Hammer Postdoctoral Fellow in the [Institute for Data, Systems, and Society](https://idss.mit.edu) with an appointment in the Schwartzman College of Computing's intiative for [Social and Ethical Responsibilities of Computing](https://computing.mit.edu/cross-cutting/social-and-ethical-responsibilities-of-computing/).  
 
