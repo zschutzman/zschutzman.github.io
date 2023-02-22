@@ -10,6 +10,11 @@ order: 1
 All author lists are alphabetical.
 
 
+_**Simplistic Collection and Labeling Practices Limit the Utility of Benchmark Datasets for Twitter Bot Detection**_  
+with Chris Hays (co-first author), Manish Raghavan, Erin Walk, and Philipp Zimmer (contributional order)  
+To appear in *The Web Conference*, May 2023.  
+[[arxiv preprint]](https://arxiv.org/abs/2301.07015)  
+
 _**Algorithmic Redistricting and Black Representation in US Elections**_  
 In *MIT Case Studies in Social and Ethical Responsibilities of Computing*, Winter 2022.  
 [[case study (MIT online journal)]](https://doi.org/10.21428/2c646de5.9f6d1cb5)  
